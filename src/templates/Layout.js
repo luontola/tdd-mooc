@@ -118,13 +118,7 @@ class Layout extends React.Component {
                   meta={[
                     {
                       name: "description",
-                      content:
-                        "Helsingin yliopiston kaikille avoin ja ilmainen ohjelmoinnin perusteet opettava verkkokurssi. Kurssilla perehdytään nykyaikaisen ohjelmoinnin perusideoihin sekä ohjelmoinnissa käytettävien työvälineiden lisäksi algoritmien laatimiseen. Kurssille osallistuminen ei vaadi ennakkotietoja ohjelmoinnista.",
-                    },
-                    {
-                      name: "keywords",
-                      content:
-                        "ohjelmointi, java, programming, CS1, MOOC, 2019, ohjelmointikurssi, avoin, ilmainen, helsingin yliopisto",
+                      content: "Online course about Test-Driven Development",
                     },
                   ]}
                 />

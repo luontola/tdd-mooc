@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import CourseSettings from "../../course-settings"
 
-import BannerImage from "../../banner.svg"
+import BannerImage from "../../data/images/banner.png"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 
 const BannerWrapper = styled.header`

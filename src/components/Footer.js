@@ -1,6 +1,6 @@
-import React, { useContext } from "react"
+import React from "react"
 import styled from "styled-components"
-import BackgroundImage from "../images/banner.svg"
+import BackgroundImage from "../../data/images/banner.png"
 import { Card, CardContent } from "@material-ui/core"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { Link } from "gatsby"
@@ -11,14 +11,7 @@ import CourseSettings from "../../course-settings"
 import UHLogo from "../images/uh-logo.png"
 import MoocfiLogo from "../images/moocfi-logo-bw.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faTwitter,
-  faFacebook,
-  faYoutube,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons"
-import Button from "./Button"
-import PagesContext from "../contexes/PagesContext"
+import { faFacebook, faGithub, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons"
 
 const StyledIcon = styled(FontAwesomeIcon)`
   color: black;
@@ -39,10 +32,6 @@ const GithubContainer = styled.div`
     align-items: center;
     justify-content: center;
   }
-`
-
-const ButtonContainer = styled.div`
-  padding: 1rem 0;
 `
 
 const FooterWrapper = styled.footer`
@@ -99,9 +88,6 @@ const BrandsContainer = styled.div`
 `
 
 const Footer = ({ t }) => {
-  const pagesContextValue = useContext(PagesContext)
-  const filePath = pagesContextValue?.current?.filePath
-
   return (
     <FooterWrapper>
       <FooterBackground />
@@ -118,24 +104,19 @@ const Footer = ({ t }) => {
                 <div>{t("footer-src")}</div>
               </OutboundLink>
             </GithubContainer>
-            <ButtonContainer>
-              <Button to="/report-issue">{t("footer-report-issue")}</Button>
-              {filePath && (
-                <Button to={`/edit-page?path=${filePath}`}>
-                  {t("footer-edit-page")}
-                </Button>
-              )}
-            </ButtonContainer>
             <ContentContainer>
-              {t("makers")}{" "}
-              <OutboundLink
-                href="https://www.helsinki.fi/en/researchgroups/data-driven-education"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {t("rage")}
+              {"This course was brought to you by "}
+              <OutboundLink href="https://www.luontola.fi/"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                Esko Luontola
               </OutboundLink>
-              .
+              {" and "}
+              <OutboundLink href="https://nitor.com/"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                Nitor
+              </OutboundLink>.
             </ContentContainer>
 
             <ContentContainer>
