@@ -54,15 +54,29 @@ Read more:
 http://blog.orfjackal.net/2010/04/direct-and-indirect-effects-of-tdd.html
 
 
-## Test names should be sentences
+## What tests to write?
 
-When writing a test, ask yourself: What is the next most important behavior, which the system does not yet do? Write that down as the name of the test.
+What is the next most important thing, which the system *does not* yet do?
 
-When a test fails, look at the name of the test. It should describe that what the system should do. Possibilities:
+First test + simplification: Where to start writing a sudoku solver? Solving a 1×1 sudoku grid.
 
-- The implementation had a bug. Fix it.
-- The behavior is still needed, but the test needs updating. Change the test. Make it less coupled to the implementation details, so that you would get fewer false warnings.
+
+### Test names should be sentences
+
+The test names should describe the behaviour that the system does.
+
+Thought exercise: All production and test code has disappeared. The only thing remaining is the test names. Can a new person reimplement the system, so that it will do pretty much the same as before?
+
+When a test fails, look at the name of the test:
+
+- The system has a bug. Fix the implementation.
+- The behavior is still needed, but the test needs updating. Change the test. Think how to decouple the test from unrelated behaviors, to have fewer unwanted test failures.
 - The behavior is no more needed. Delete the test.
 
 Read more:
 https://dannorth.net/introducing-bdd/
+
+
+# Exercises
+
+TODO
