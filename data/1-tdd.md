@@ -79,4 +79,8 @@ https://dannorth.net/introducing-bdd/
 
 # Exercises
 
-TODO
+<tdd-decision>
+
+TODO: tetris exercise, link and instructions
+
+</tdd-decision>

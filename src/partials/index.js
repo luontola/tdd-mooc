@@ -71,9 +71,11 @@ import Summary from "./Summary"
 import Button from "../components/Button"
 import Vocabulary from "./Vocabulary"
 import VocabularyWord from "./Vocabulary/VocabularyWord"
+import TddDecision from "./TddDecision"
 
 const mapping = () => ({
   test: Test,
+  "tdd-decision": TddDecision,
   "pages-in-this-section": PagesInThisSection,
   "programming-exercise": ProgrammingExercise,
   "text-box": TextBox,
