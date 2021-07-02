@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euxo pipefail
 
-rm -rf public
+npm run clean
 git worktree prune
 git worktree add --no-checkout public gh-pages
 

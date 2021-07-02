@@ -102,6 +102,7 @@
   ],
   "license": "Apache-2.0",
   "scripts": {
+    "clean": "gatsby clean",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "serve": "gatsby serve",
