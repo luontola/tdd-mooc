@@ -1,6 +1,6 @@
 import React from "react"
 import Loading from "../../components/Loading"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 import {
   ExpansionPanel,
   ExpansionPanelSummary,

@@ -20,7 +20,7 @@
 
 // export default getNamedPartials
 
-import { OutboundLink } from "gatsby-plugin-google-analytics"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 import Test from "./Test"
 import PagesInThisSection from "./PagesInThisSection"

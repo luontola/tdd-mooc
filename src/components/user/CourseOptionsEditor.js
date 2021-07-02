@@ -14,7 +14,7 @@ import {
   TextField,
 } from "@material-ui/core"
 
-import { OutboundLink } from "gatsby-plugin-google-analytics"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 import {
   courseVariants,
