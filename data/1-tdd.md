@@ -86,6 +86,8 @@ https://dannorth.net/introducing-bdd/
 
 <tdd-decision>
 
-TODO: tetris exercise, link and instructions
+TODO: tetris exercise
+https://github.com/luontola/tdd-mooc-tetris
+https://github.com/luontola/tdd-tetris-tutorial
 
 </tdd-decision>
