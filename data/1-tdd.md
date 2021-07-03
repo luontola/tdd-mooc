@@ -7,7 +7,7 @@ information_page: true
 
 ## History
 
-Sometime in the 1970s, the 12 year old Kent Beck read in a book that his father had brought home, that this is how you write programs: *You take the input tape, look at its contents, and then type manually the output tape that you expect to create. Programming is the process of writing a program until the actual output tape matches the expected output tape.*
+Sometime in the 1970s, the 12 year old [Kent Beck](https://en.wikipedia.org/wiki/Kent_Beck) read in a book that his father had brought home, that this is how you write programs: *You take the input tape, look at its contents, and then type manually the output tape that you expect to create. Programming is the process of writing a program until the actual output tape matches the expected output tape.*
 
 Some things that should not have been forgotten were lost. And for two decades, the book passed out of all knowledge. Until an idea collided with another.
 
