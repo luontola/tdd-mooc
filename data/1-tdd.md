@@ -7,17 +7,17 @@ information_page: true
 
 ## History
 
-Sometime in the 1970s, the 12 year old [Kent Beck](https://en.wikipedia.org/wiki/Kent_Beck) read in a book that his father had brought home, that this is how you write programs: *You take the input tape, look at its contents, and then type manually the output tape that you expect to create. Programming is the process of writing a program until the actual output tape matches the expected output tape.*
+Sometime in the 1970s, the 12-year-old [Kent Beck](https://en.wikipedia.org/wiki/Kent_Beck) [[1]](https://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530) read in a book that his father had brought home, that this is how you write programs: *You take the input tape, look at its contents, and type manually the output tape that you expect to create. Then programming is the process of writing a program, until the actual output tape matches the expected output tape.*
 
 Some things that should not have been forgotten were lost. And for two decades, the technique passed out of all knowledge. Until, when chance came, it was rediscovered by the unlikeliest of creatures.
 
-Fast forward to 1990s, Kent Beck had written the first unit testing framework in the xUnit family, SUnit for Smalltalk. It was then that he remembered the book he had read as a kid. *"If I took this type-the-output-tape-first schema seriously, then I would write the test before I had the code."*
+Fast forward to 1990s, Kent Beck had written the first unit testing framework in the xUnit family, the SUnit for Smalltalk. It was then that he remembered the book he had read as a kid. *"If I took this type-the-output-tape-first schema seriously, then I would write the test before I had the code."*
 
 He thought the idea was stupid, so he had to try it.
 
 Kent tried it with a stack, and half an hour later he was hooked. All the anxieties he had felt while programming, which had been getting worse as experience accrued, just dropped away. *"I'm not done until all the tests that I can imagine are all passing. But I don't have to make them all pass at once. I can just type one in and then make it work. And type the next one and make that work. Eventually... can I think of any other tests? No. I must be done."* He was completely relaxed.
-<sup>[[1]](https://youtu.be/tM1iOJsR7p4?t=2080)</sup>
-<sup>[[2]](https://youtu.be/cGuTmOUdFbo?t=325)</sup>
+[[2]](https://youtu.be/tM1iOJsR7p4?t=2080)
+[[3]](https://youtu.be/cGuTmOUdFbo?t=325)
 
 
 ## Three rules of TDD
