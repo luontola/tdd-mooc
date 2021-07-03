@@ -1,12 +1,12 @@
 ---
-path: "/3-dragons"
+path: "/3-challenges"
 title: "Part 3: Here be dragons"
 hidden: false
 information_page: true
 ---
 
 
-## Untestables
+## The Untestables
 
 TODO
 
@@ -31,22 +31,32 @@ TODO
 TODO
 
 
-### UI
+### User interface
 
 TODO
 
 
-### Legacy code
+## Legacy code
 
 TODO
 
 
-## Code coverage
+### Fixing bugs test-first
 
 TODO
 
 
-## Golden master/Snapshot/Approval testing
+### Seams
+
+TODO
+
+
+### Code coverage
+
+TODO
+
+
+### Golden master/Snapshot/Approval testing
 
 TODO
 
