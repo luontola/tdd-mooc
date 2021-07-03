@@ -7,11 +7,11 @@ information_page: true
 
 ## History
 
-Sometime in the 1970s, the 12-year-old [Kent Beck](https://en.wikipedia.org/wiki/Kent_Beck) [[1]](https://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530) was reading books that his father had brought home. One of the books said that this is how you write programs: *You take the input tape, look at its contents, and type manually the output tape that you expect to create. Then programming is the process of writing a program, until the actual output tape matches the expected output tape.*
+Sometime in the 1970s, the 12-year-old [Kent Beck](https://en.wikipedia.org/wiki/Kent_Beck) [[1]](https://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530) was reading books that his father had brought home. One of the books said that this is how you write programs: *You take the input tape, look at its contents, and type manually the output tape that you expect to create. Then programming is the process of writing a program until the actual output tape matches the expected output tape.*
 
 Some things that should not have been forgotten were lost. And for two decades, the technique passed out of all knowledge. Until, when chance came, it was rediscovered.
 
-Fast forward to 1990s. Kent Beck had followed in his father's footsteps and was now a software consultant. He had written the first unit testing framework in the xUnit family, the SUnit for Smalltalk. It was then that he remembered the book he had read as a kid. *"If I took this type-the-output-tape-first schema seriously, then I would write the test before I had the code."*
+Fast forward to 1990s. Kent Beck had followed in his father's footsteps and was now a software consultant. He had written the first unit testing framework in the xUnit family, SUnit for Smalltalk. It was then that Kent remembered the book he had read as a kid. *"If I took this type-the-output-tape-first schema seriously, then I would write the test before I had the code."*
 
 He thought the idea was stupid, so he had to try it.
 
@@ -73,7 +73,7 @@ http://blog.orfjackal.net/2010/04/direct-and-indirect-effects-of-tdd.html
 
 Ask yourself: What is the next most important thing, which the system *does not* yet do?
 
-First test + simplification: Where to start writing a sudoku solver? Solving a 1×1 sudoku grid.
+The first test and the simplification strategy: Where to start writing a sudoku solver? Solving a 1×1 sudoku.
 
 
 ### Test names should be sentences
@@ -85,7 +85,7 @@ Thought exercise: All production and test code has disappeared. The only thing r
 When a test fails, look at the name of the test. There are three possibilities:
 
 - The system has a bug. Fix the implementation.
-- The behavior is still needed, but the test needs updating. Change the test. Think how to decouple the test from unrelated behaviors, to have fewer unwanted test failures.
+- The behavior is still needed, but the test needs updating. Change the test. Think of how to decouple the test from unrelated behaviors, to have fewer unwanted test failures.
 - The behavior is no more needed. Delete the test.
 
 Read more:
