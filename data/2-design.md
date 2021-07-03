@@ -11,6 +11,11 @@ information_page: true
 TODO
 
 
+## Composed method
+
+TODO
+
+
 ## Safe steps
 
 TODO
@@ -24,6 +29,8 @@ TODO
 ## Test quality
 
 TODO
+
+https://medium.com/@kentbeck_7670/programmer-test-principles-d01c064d7934
 
 
 ## Test smells
