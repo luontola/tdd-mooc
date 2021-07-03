@@ -9,7 +9,7 @@ information_page: true
 
 Sometime in the 1970s, the 12 year old [Kent Beck](https://en.wikipedia.org/wiki/Kent_Beck) read in a book that his father had brought home, that this is how you write programs: *You take the input tape, look at its contents, and then type manually the output tape that you expect to create. Programming is the process of writing a program until the actual output tape matches the expected output tape.*
 
-Some things that should not have been forgotten were lost. And for two decades, the book passed out of all knowledge. Until an idea collided with another.
+Some things that should not have been forgotten were lost. And for two decades, the technique passed out of all knowledge. Until, when chance came, it was rediscovered by the unlikeliest of creatures.
 
 Fast forward to 1990s, Kent Beck had written the first unit testing framework in the xUnit family, SUnit for Smalltalk. It was then that he remembered the book he had read as a kid. *"If I took this type-the-output-tape-first schema seriously, then I would write the test before I had the code."*
 
