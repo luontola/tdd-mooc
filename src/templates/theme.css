@@ -157,3 +157,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+blockquote {
+  margin-left: 2rem;
+  font-style: italic;
+}
+
+figcaption {
+  text-align: center;
+}

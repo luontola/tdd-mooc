@@ -54,14 +54,22 @@ https://farenda.com/patterns/composed-method-pattern/
 https://wiki.c2.com/?ComposedMethod
 
 
-## Safe steps
+## Small, safe steps
 
-TODO
+Many small changes is faster than one big change.
+
+When you refactor, don't change behavior. When you change behavior, don't refactor. Maintain three points of contact like a rock climber. 🧗
+
+Read more:
+https://www.infoq.com/presentations/responsive-design/
 
 
 ## Four strategies
 
-TODO
+- **Leap:** The change is small enough. Just do it.
+- **Parallel:** Build the new solution side-by-side with the old solution, until the new can replace the old.
+- **Stepping stone:** You want to build thing A, but if you built thing B first, that could make it easier to build thing A. (Beware of gold plating.)
+- **Simplification:** Solve a trivialized version of the problem first. 1×1 sudoku.
 
 Read more:
 https://www.infoq.com/presentations/responsive-design/
@@ -69,8 +77,23 @@ https://www.infoq.com/presentations/responsive-design/
 
 ## Test quality
 
-TODO
+Tests should be sensitive to behavior changes and insensitive to structure changes.
 
+Each test should test only one thing.
+
+Each bug should cause only one test to fail.
+
+From the pattern of failing tests, it should be possible to guess in which function or line the problem is.
+
+If some code can be commented out and no test fails, the code should be dead.
+
+In five seconds you will have forgotten over half of your working memory. Make test so fast that you won't forget what you were thinking.
+
+![Diagram: Decay of working memory if rehearsal is prevented. ](images/working-memory-decay.png "The first image search result for [working memory decay](https://www.researchgate.net/figure/Decay-of-working-memory-if-rehearsal-is-prevented-The-time-scale-is-of-the-order-of-a_fig7_35883885).")
+
+
+Read more:
+https://agileinaflash.blogspot.com/2009/02/first.html
 https://medium.com/@kentbeck_7670/programmer-test-principles-d01c064d7934
 
 
