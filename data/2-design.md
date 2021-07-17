@@ -99,7 +99,9 @@ https://medium.com/@kentbeck_7670/programmer-test-principles-d01c064d7934
 
 ## Test smells
 
-TODO
+**Many asserts per test:** Normally tests are structured in the [Arrange-Act-Assert](https://agileinaflash.blogspot.com/2009/03/arrange-act-assert.html)/[Given-When-Then](https://dannorth.net/introducing-bdd/)/[Hoare Triple](https://en.wikipedia.org/wiki/Hoare_logic) format. But if they are instead *Arrange-Act-Assert-Act-Assert-Act...*, that usually indicates that a test is lacking focus and testing many different things (making the test's purpose harder to decipher), or that it's testing how the system does things instead of what the system does (making refactoring harder). Depending on the testing framework, earlier test failures may also mask later test failures, making it harder to know why the test failed. Instead, write many small focused tests.
+
+**Complex test setup:** If the *arrange* part of a test is long, requiring the careful arrangement of many collaborators to get the system into the desired initial state for the test, it may indicate design problems in the code. Lots of constructor arguments is a similar smell (which is why dependency injection frameworks are best avoided - they make it too easy to add dependencies). Instead, try to think of a design which eliminates some of the dependencies.
 
 
 # Exercises
