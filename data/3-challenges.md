@@ -49,22 +49,35 @@ Make it easy to run the tests locally. Docker makes it easy to start databases l
 
 Usually tests create the database schema on test setup, and remove it on teardown. Another style is to remove and recreate the schema on test setup, which makes it the responsibility of the next text to clean up what the previous test produced.
 
-In focused integration tests, it may be possible to run each test in a transaction which is rolled back at the end of the test. This should make tests faster by avoiding the need to recreate the database schema for each test. If more than one thread is involved or the SUT is complex, this is strategy is usually not possible.
+In focused integration tests, it may be possible to run each test in a transaction which is rolled back at the end of the test. This should make tests faster by avoiding the need to recreate the database schema for each test. If more than one thread is involved or the SUT is complex, this strategy is usually not possible.
 
 Tests may create their own test data, or there may be a shared set of test data in the database. The former makes tests more understandable and decoupled from each other. The latter can be used for also testing database migrations.
 
-The test schema name may be hard-coded or unique. Unique schema names for each test makes it possible to run tests in parallel. If the test process is killed, test teardown is never executed, so the tests should automatically remove stale test schemas.
+The test schema name may be hard-coded or unique. Unique names for each test make it possible to run tests in parallel. If the test process is killed, test teardown is never executed, so the tests should automatically remove stale test schemas (especially if using a shared long-running database instead of a local container/VM).
 
 *Never run tests against a production database.* One trick is for the tests to only connect to a database whose name starts with "test".
 
-Database tests can be made faster by configuring the database to never fsync to disk, or by configuring Docker to use a RAM disk.
+Database tests can be made faster by [disabling fsync or using a RAM disk](https://pythonspeed.com/articles/faster-db-tests/).
+
+
+#### Dead ends
+
+You *could* replace the database with in-memory fake implementation for tests. It will make the tests faster, but will require maintaining two parallel implementations - the real and the fake persistence layer. Even when using [contract tests](https://blog.thecodewhisperer.com/permalink/getting-started-with-contract-tests) to make the implementations functionally equivalent, they will be leaky abstractions with non-obvious differences (transactions, foreign key contraints etc.). It's better to decouple business logic from persistence: you won't need to fake dependencies if you have no dependencies ([insert meme here](https://knowyourmeme.com/memes/roll-safe)).
+
+Some people use an embedded in-memory database in tests and a different database in production, for example HSQLDB vs PostgreSQL. This is a road to madness. Even if SQL is a standard, each implementation is different ([insert meme here](https://xkcd.com/927/)), so you will anyways need to run the tests against both databases. It might avoid having to install a database and the data will be removed after the test process exits, but nowadays `docker compose up -d db` is easy and even with an in-memory database you will need to handle isolation between test cases. Speed is not an argument either; a PostgreSQL which is already running is faster than a HSQLDB that needs to start every test run, not to speak of runtime performance. Most importantly, you would be limited to a subset of SQL that works on both databases, or you will need to maintain alternative versions of the queries; you would miss out on useful database-specific features such as [triggers/stored procedures](https://www.postgresql.org/docs/13/plpgsql-trigger.html) and [range types](https://medium.com/pyankit/postgres-range-types-are-dope-ca18923f3d46). Summa summarum, use the same technology in tests as in production.
+
+I just saved you 5-10 years of experimenting.
 
 
 ### Network sockets
 
 Network socket port numbers are a global variable at the operating system level.
 
-TODO
+If using a shared [continuous integration](https://martinfowler.com/articles/continuousIntegration.html) server, there can be many builds running on the same machine and they compete for the same port numbers. Even when running tests locally, you will typically an application instance for manual testing running at the same time as the automated tests. The local development instance may use hard-coded ports, but the tests should allocate a random free port for the database and web server.
+
+Most servers you can bind to listen on port 0 and the operating system will assign it an unused port number. After the server has started, you can find out what port was assigned to it and use that in the tests. [`docker compose port`](https://docs.docker.com/compose/reference/port/) is useful.
+
+P.S. Docker by default binds to network interface 0.0.0.0 and it [bypasses the firewall](https://github.com/moby/moby/issues/22054), so your development servers will be *publicly accessible even if your firewall is configured to block all incoming connections*. Always bind explicitly to 127.0.0.1 when publishing container ports to the host.
 
 
 ### Time
