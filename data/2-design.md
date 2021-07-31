@@ -104,8 +104,14 @@ https://medium.com/@kentbeck_7670/programmer-test-principles-d01c064d7934
 **Complex test setup:** If the *arrange* part of a test is long, requiring the careful arrangement of many collaborators to get the system into the desired initial state for the test, it may indicate design problems in the code. Lots of constructor arguments is a similar smell (which is why dependency injection frameworks are best avoided - they make it too easy to add dependencies). Instead, try to think of a design which eliminates some of the dependencies.
 
 
-# Exercises
+# Exercise 2: small, safe steps
 
-TODO: lift pass refactoring, safe steps, replace Date with Temporal.PlainDate
-https://github.com/martinsson/Refactoring-Kata-Lift-Pass-Pricing/tree/with_tests/typescript
-https://www.sitepoint.com/javascript-temporal-api-introduction/
+Clone the project <https://github.com/martinsson/Refactoring-Kata-Lift-Pass-Pricing> and switch to its `with_tests` branch. Use the JavaScript/TypeScript version in the `typescript` directory. Install the [@js-temporal/polyfill](https://www.npmjs.com/package/@js-temporal/polyfill) polyfill.
+
+The assignment is to *refactor the above code to replace [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) class with [Temporal.PlainDate](https://tc39.es/proposal-temporal/docs/plaindate.html) class.* Repeat this refactoring many times. Focus on doing as small changes as possible, so that all tests will pass between every change.
+
+Afterwards we will have a competition between the students of this course about doing this refactoring using the smallest possible steps.
+
+TODO: extract a minimal JS-only project, preinstall the polyfill, split the big function into many small functions
+
+**Course artifact:** Performing this refactoring live in the weekly exercise groups.
