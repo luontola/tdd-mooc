@@ -118,7 +118,7 @@ class Layout extends React.Component {
                   meta={[
                     {
                       name: "description",
-                      content: "Online course about Test-Driven Development",
+                      content: "Free online course for learning Test-Driven Development",
                     },
                   ]}
                 />
