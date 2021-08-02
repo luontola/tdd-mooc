@@ -148,6 +148,8 @@ Clone the project <https://github.com/emilybache/GildedRose-Refactoring-Kata>. T
 
 The assignment is to *write tests for the above code, until it has 100% mutation test coverage.*
 
+TODO: simplify the project, preconfigure stryker
+
 **Course artifact:** Git repository with the source code and history of you doing this exercise. Also include a file with the mutation test results.
 
 
