@@ -98,11 +98,9 @@ https://dannorth.net/introducing-bdd/
 
 Clone the project <https://github.com/luontola/tdd-mooc-tetris> and follow its instructions.
 
-The assignment is to *write a Tetris game using TDD, following the above tutorial.* The first few dozen tests have already been written for you, so that it'll be easier to get into the rhythm of writing tests first.
+The assignment is to *write a Tetris game using TDD.* The first couple dozen tests have already been written for you, so that it'll be easier to get into the rhythm of writing tests first.
 
-If you get stuck, you may watch [this example screencast](https://www.youtube.com/playlist?list=PLSADDT9dzgRCjVvS13ekPr1KwX_JkDQJM). It's based on an older version of the tutorial, so it's in Java instead of JavaScript, but otherwise it's pretty much the same.
-
-TODO: instructions and steps, translate the tests from https://github.com/luontola/tdd-tetris-tutorial
+If you get stuck, you may watch [this example screencast](https://www.youtube.com/playlist?list=PLSADDT9dzgRCjVvS13ekPr1KwX_JkDQJM). It's based on an older version of the exercise, so it's in Java instead of JavaScript, but otherwise it's pretty much the same.
 
 **Course artifact:** Git repository with the source code and history of you doing this exercise.
 
