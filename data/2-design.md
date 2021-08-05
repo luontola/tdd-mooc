@@ -50,9 +50,16 @@ https://martinfowler.com/bliki/TwoHardThings.html
 >
 > \- Kent Beck, Smalltalk Best Practice Patterns (1996)
 
+Each new method is an opportunity to introduce a new name.
+
+The code should read like a newspaper article. First the high level overview, then dig deeper into more details.
+
+Each refactoring can be done in two directions. If you inline everything into one big method, it may be possible to see a different way to split it into small methods.
+
 Read more:
 https://farenda.com/patterns/composed-method-pattern/
 https://wiki.c2.com/?ComposedMethod
+https://github.com/jnguyen095/clean-code/issues/28
 
 
 ## Small, safe steps
@@ -90,7 +97,7 @@ If some code can be commented out and no test fails, the code should be dead.
 
 In five seconds you will have forgotten over half of your working memory. Make test so fast that you won't forget what you were thinking.
 
-![Diagram: Decay of working memory if rehearsal is prevented. ](images/working-memory-decay.png "The first image search result for [working memory decay](https://www.researchgate.net/figure/Decay-of-working-memory-if-rehearsal-is-prevented-The-time-scale-is-of-the-order-of-a_fig7_35883885).")
+![Diagram: Decay of working memory if rehearsal is prevented. ](images/working-memory-decay.png "The first Google image search result for [working memory decay](https://www.researchgate.net/figure/Decay-of-working-memory-if-rehearsal-is-prevented-The-time-scale-is-of-the-order-of-a_fig7_35883885).")
 
 
 Read more:
