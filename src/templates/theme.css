@@ -139,6 +139,35 @@ h6,
   font-size: 1rem;
 }
 
+
+h1 {
+  counter-reset: h2counter;
+}
+
+h2 {
+  counter-reset: h3counter;
+}
+
+h3 {
+  counter-reset: h4counter;
+}
+
+h2:before {
+  content: counter(h2counter) ".\0000a0\0000a0";
+  counter-increment: h2counter;
+}
+
+h3:before {
+  content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
+  counter-increment: h3counter;
+}
+
+h4:before {
+  content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) ".\0000a0\0000a0";
+  counter-increment: h4counter;
+}
+
+
 p a {
   color: rgba(0, 0, 0, 0.84) !important;
   text-decoration: none;
