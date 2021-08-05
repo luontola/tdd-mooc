@@ -142,7 +142,7 @@ https://www.henricodolfing.com/2018/04/start-your-project-with-walking-skeleton.
 TODO
 
 
-# Exercise 3: testing legacy code
+# Exercise 3: Testing legacy code
 
 Clone the project <https://github.com/emilybache/GildedRose-Refactoring-Kata>. Take one of the JavaScript editions of that project and configure it to use the [Stryker mutation testing framework](https://stryker-mutator.io/).
 
@@ -153,7 +153,7 @@ TODO: simplify the project, preconfigure stryker
 **Course artifact:** Git repository with the source code and history of you doing this exercise. Also include a file with the mutation test results.
 
 
-# Exercise 4: full-stack web app
+# Exercise 4: Full-stack web app
 
 The assignment is to *write a To-Do List app using TDD.* It needs to have a web user interface, an API backend and a database.
 
