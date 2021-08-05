@@ -105,13 +105,18 @@ h6,
   color: inherit;
 }
 
+h1:first-child,
+h2:first-child {
+  margin-top: 0;
+}
+
+h1:first-child {
+  margin-bottom: 1.5rem;
+}
+
 h1,
 .h1 {
   font-size: 3rem;
-}
-
-article > h1:first-of-type {
-  margin-top: 0;
 }
 
 h2,
