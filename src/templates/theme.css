@@ -176,9 +176,9 @@ h2, h3, h4 {
   position: relative;
 }
 
-article > div > h2:before,
-article > div > h3:before,
-article > div > h4:before {
+article h2:before,
+article h3:before,
+article h4:before {
   position: absolute;
   left: -3rem;
   width: 2.5rem;
@@ -192,6 +192,19 @@ article > div > h4:before {
   align-items: center;
 }
 
+@media only screen and (max-width: 1200px) {
+  article h2:before,
+  article h3:before,
+  article h4:before {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    left: 0;
+    width: auto;
+    margin-top: 0.2em;
+    margin-right: 1ex;
+  }
+}
 
 
 p a {
