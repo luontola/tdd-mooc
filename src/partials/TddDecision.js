@@ -18,7 +18,7 @@ const Accepted = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  background: white;
+  background-color: #fcfcfc;
   font-size: 1.5rem;
   color: green;
   display: flex;
