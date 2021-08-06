@@ -105,3 +105,7 @@ If you get stuck, you may watch [this example screencast](https://www.youtube.co
 **Course artifact:** Git repository with the source code and history of you doing this exercise.
 
 </tdd-decision>
+
+---
+
+Proceed to [Part 2: Refactoring and design](/2-design)

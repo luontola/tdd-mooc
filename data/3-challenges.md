@@ -169,3 +169,7 @@ Start the app's development using the [walking skeleton](#walking-skeleton) appr
 TODO: project template, some example tests, docker-compose.yaml
 
 **Course artifact:** Git repository with the source code and history of you doing this exercise.
+
+---
+
+Proceed to [Part 4: To infinity and beyond](/4-afterword)

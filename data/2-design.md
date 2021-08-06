@@ -123,3 +123,7 @@ Afterwards we will have a competition between the students of this course about 
 TODO: extract a minimal JS-only project, preinstall the polyfill, split the big function into many small functions
 
 **Course artifact:** Performing this refactoring live in the weekly exercise groups.
+
+---
+
+Proceed to [Part 3: Here be dragons](/3-challenges)
