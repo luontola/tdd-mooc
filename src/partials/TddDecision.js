@@ -1,13 +1,10 @@
-import React, {useState} from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 
 const Header = styled.div`
-  height: 9rem;
-`
-
-const Question = styled.div`
+  position: relative;
 `
 
 const CheckboxLabel = styled.label`
@@ -16,9 +13,14 @@ const CheckboxLabel = styled.label`
 `
 
 const Accepted = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
   font-size: 1.5rem;
   color: green;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,22 +39,18 @@ const TextBox = (props) => {
   return (
     <div>
       <Header>
-        {accepted ? (
+        Before starting the exercises, you should make the following decision:
+        <CheckboxLabel>
+          <input type="checkbox" id="tdd-decision"
+            checked={accepted}
+            onClick={e => setAccepted(e.target.checked)}
+          /> During this course, I will not add any production code, unless it's required by a failing test.
+        </CheckboxLabel>
+        {accepted &&
           <Accepted>
-              ✅ Good. And don't you forget that.
+            ✅ Good. And don't you forget that.
           </Accepted>
-        ) : (
-          <Question>
-            <p>Before starting the exercises, you should make the following decision:</p>
-            <CheckboxLabel>
-              <input type="checkbox" id="tdd-decision"
-                    checked={accepted}
-                    onClick={e => setAccepted(e.target.checked)}
-                    /> During this course, I will not add any production code,
-                    unless it's required by a failing test.
-            </CheckboxLabel>
-          </Question>
-        )}
+        }
       </Header>
       <Body>{props.children}</Body>
     </div>
