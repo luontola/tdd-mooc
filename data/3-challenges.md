@@ -100,14 +100,24 @@ P.S. Docker by default binds to network interface 0.0.0.0 and it [bypasses the f
 
 Time is a global variable which is ever changing (hopefully monotonically increasing).
 
-TODO
+Code which reads the current time (e.g. using `new Date()`) is inherently untestable. Instead, pass in the current time as a method parameter, or inject a [clock](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html) which can be replaced with a [fake clock](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#fixed(java.time.Instant,java.time.ZoneId)) in tests.
 
 
 ### Concurrency
 
 The order of memory reads and writes between parallel threads, and the operating system's context switching, are unpredictable global variables.
 
-TODO: latches, no sleeps, inspect ruthlessly
+*If a test fails randomly, don't ignore it as an outlier.* The code *has* a concurrency bug, in the production or test code. Save any stack traces and logs of the failure, and *inspect the code ruthlessly*, until you know why it failed. It's important to know the [memory model](https://en.wikipedia.org/wiki/Memory_model_(programming)) of the programming language and the CPU.
+
+Minimize the amount of code that needs to be thread-safe. Use [concurrency abstractions](https://en.wikipedia.org/wiki/Concurrency_pattern) which allow most of the code to be single-threaded. [Immutability](https://en.wikipedia.org/wiki/Immutable_object) makes the code easier to reason about, also in single-threaded code.
+
+Don't use `sleep()` in tests. The sleep time is either too long, making the tests slower, or too short, making them flaky (i.e. they fail randomly). Instead, react to events or use polling.
+
+Concurrency artifacts such as [CountDownLatch](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountDownLatch.html) and [CyclicBarrier](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CyclicBarrier.html) are useful for unit testing concurrent code. With them you can make thread 1 wait at point A, until thread 2 has arrived at point B.
+
+[Testing cannot prove](https://www.goodreads.com/quotes/506689-program-testing-can-be-used-to-show-the-presence-of) that code is thread-safe, but together with code review, you can get quite far by writing a test which executes lots of tasks in parallel and then asserts invariants about what the tasks did. For example, each write happened exactly once, each task saw a consistent view of the state, tasks could read their own writes, and so on.
+
+Always have a timeout for asynchronous tests, in case the code gets stuck in an infinite loop or deadlock or doesn't send some event. The timeout needs to be long enough to not be triggered randomly when the computer is overloaded, but short enough that you don't need to wait long for the tests to fail.
 
 
 ### User interface
