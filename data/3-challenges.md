@@ -34,6 +34,17 @@ Read more:
 http://xunitpatterns.com/Test%20Double.html
 https://jesusvalerareales.medium.com/testing-with-test-doubles-7c3abb9eb3f2
 https://medium.com/@xpmatteo/how-i-learned-to-love-mocks-1-fb341b71328
+
+
+#### London school of TDD
+
+Mock objects were invented in meetup group in London, and it gave birth to a mock-based outside-in approach to TDD, which is commonly called London style TDD. This is in contrast to Detroit/Chicago/Classic style TDD, because Chrysler's C3 project, which gave birth to Extreme Programming, happened in Detroit.
+
+London style TDD focuses on the communication protocols between objects sending messages to each other. It goes hand-in-hand with Alan Kay's (who coined the term "object-oriented") view of object-oriented programming, where objects are like individual computers on the network sending messages to each other (thus Erlang is the most object-oriented programming language).
+
+When using mock objects, it's important to understand the object-oriented style for which they were created. It's best described in the book *Growing Object-Oriented Software, Guided by Tests* (Steve Freeman, Nat Pryce 2009).
+
+Read more:
 http://www.mockobjects.com/2009/09/brief-history-of-mock-objects.html
 
 
@@ -71,7 +82,7 @@ You *could* replace the database with an in-memory fake implementation for tests
 
 Some people use an embedded in-memory database in tests and a different database in production, for example HSQLDB vs PostgreSQL. This is a road to madness. Even if SQL is a standard, each implementation is different ([insert meme here](https://xkcd.com/927/)), so you will anyways need to run the tests against both databases. It might avoid having to install a database and the data will be removed after the test process exits, but nowadays `docker compose up -d db` is easy and even with an in-memory database you will need to handle isolation between test cases. Speed is not an argument either; a PostgreSQL which is already running is faster than a HSQLDB that needs to start every test run, not to speak of runtime performance. Most importantly, you would be limited to a subset of SQL that works on both databases, or you will need to maintain alternative versions of the queries; you would miss out on useful database-specific features such as [triggers/stored procedures](https://www.postgresql.org/docs/13/plpgsql-trigger.html) and [range types](https://medium.com/pyankit/postgres-range-types-are-dope-ca18923f3d46). Summa summarum, use the same technology in tests as in production.
 
-I just saved you 5-10 years of experimenting.
+You just saved 5+ years of experimenting.
 
 
 ### Network sockets
