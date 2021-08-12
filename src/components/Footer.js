@@ -106,7 +106,7 @@ const Footer = ({ t }) => {
             </GithubContainer>
             <ContentContainer>
               {"This course was brought to you by "}
-              <OutboundLink href="https://www.luontola.fi/"
+              <OutboundLink href="https://twitter.com/EskoLuontola"
                             target="_blank"
                             rel="noopener noreferrer">
                 Esko Luontola

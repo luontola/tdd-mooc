@@ -6,7 +6,7 @@ information_page: true
 sidebar_priority: 4000
 ---
 
-This course material was written by [Esko Luontola](https://www.luontola.fi/) and financed
+This course material was written by [Esko Luontola](https://twitter.com/EskoLuontola) and financed
 by [Nitor](https://nitor.com/) for use at the [University of Helsinki](https://www.mooc.fi/).
 
 The material is licensed under
