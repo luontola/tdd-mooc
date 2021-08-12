@@ -114,13 +114,11 @@ https://medium.com/@kentbeck_7670/programmer-test-principles-d01c064d7934
 
 # Exercise 2: Small, safe steps
 
-Clone the project <https://github.com/martinsson/Refactoring-Kata-Lift-Pass-Pricing> and switch to its `with_tests` branch. Use the JavaScript/TypeScript version in the `typescript` directory. Install the [@js-temporal/polyfill](https://www.npmjs.com/package/@js-temporal/polyfill) polyfill.
+Clone the project <https://github.com/luontola/tdd-mooc-small-steps> and follow its instructions.
 
 The assignment is to *refactor the above code to replace [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) class with [Temporal.PlainDate](https://tc39.es/proposal-temporal/docs/plaindate.html) class.* Repeat this refactoring many times. Focus on doing as small changes as possible, so that all tests will pass between every change.
 
 Afterwards we will have a competition between the students of this course about doing this refactoring using the smallest possible steps.
-
-TODO: extract a minimal JS-only project, preinstall the polyfill, split the big function into many small functions
 
 **Course artifact:** Performing this refactoring live in the weekly exercise groups.
 
