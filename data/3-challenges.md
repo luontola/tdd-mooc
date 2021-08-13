@@ -176,9 +176,11 @@ TODO: simplify the project, preconfigure stryker
 
 # Exercise 4: Full-stack web app
 
+You may clone the project template <https://github.com/luontola/tdd-mooc-webapp> to get started, but fundamentally the tool choices are up to you.
+
 The assignment is to *write a To-Do List app using TDD.* It needs to have a web user interface, an API backend and a database.
 
-Only a few basic features are needed: adding to-do items, renaming to-do items, marking to-to items completed. A to-do list doesn't have much business logic, so write at least comprehensive validation rules. Authentication is not needed.
+Only a few basic features are needed: add a to-do item, rename a to-do item, mark a to-to item completed, archive all completed to-do items. Authentication is not needed.
 
 Start the app's development using the [walking skeleton](#walking-skeleton) approach. Focus on writing tests on every level of the stack:
 
@@ -186,8 +188,6 @@ Start the app's development using the [walking skeleton](#walking-skeleton) appr
 - also unit test the user interface components (visual testing is optional)
 - focused integration tests for the database and API layers
 - one (1) end-to-end test against a fully deployed application (e.g. Docker containers running locally) to make sure that things are connected correctly (start with this - see [walking skeleton](#walking-skeleton))
-
-TODO: project template, some example tests, docker-compose.yaml
 
 **Course artifact:** Git repository with the source code and history of you doing this exercise.
 
