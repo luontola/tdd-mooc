@@ -31,7 +31,6 @@ There are five main categories of test doubles:
 Only mock types you own.
 
 Read more:
-http://xunitpatterns.com/Test%20Double.html
 https://jesusvalerareales.medium.com/testing-with-test-doubles-7c3abb9eb3f2
 https://medium.com/@xpmatteo/how-i-learned-to-love-mocks-1-fb341b71328
 
