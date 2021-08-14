@@ -122,7 +122,37 @@ Always have a timeout for asynchronous tests, in case the code gets stuck in an 
 
 ### User interface
 
-TODO
+Tests should be sensitive to behavior changes and insensitive to structure changes. This is even more important in the user interface. Changing the visual style or layout of the UI, should not break behavioral tests.
+
+The are patterns like [passive view](https://martinfowler.com/eaaDev/PassiveScreen.html) which try to separate the logic and visuals of the UI, to make the logic more testable. With the advent of [React](https://reactjs.org/), UI components can be written as stateless functions, which makes testing them easier.
+
+
+#### Unit testing web app components
+
+Asserting on the [innerText](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText) of a component (with whitespace normalization) produces tests which are decoupled from visual changes.
+
+Asserting the presence/absence of a CSS class is useful for testing logic that is observable only visually. Make sure to use the same constant for presence and absence checks; a mispelled <!-- sic --> CSS class is always absent.
+
+
+#### End-to-end testing web apps
+
+Don't click buttons directly in test code. Create an automation layer of high-level operations and call those. The tests should focus on *what* the system does, and the automation layer on *how* the system does it. That way when the UI changed, only the automation layer needs to be updated, instead of fixing all tests individually.
+
+Prefer selecting elements based on the visible text on the button/link/label; it makes the tests easier to read. But don't be afraid to add extra IDs, classes and [data attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) to simplify testing.
+
+Have only a few end-to-end tests. They are slow and flaky. Prefer unit tests. Set a hard limit for how many end-to-end tests the whole application may have (≤10 for even big apps) and stick to it. End-to-end tests should only check that things are wired together, not behavioral correctness.
+
+
+#### Visual testing
+
+It's hard to write an assertion that something looks good. But it's easy to a human to check it visually and make the computer check whether the visuals have changed since last approval.
+
+There are tools like [Storybook](https://storybook.js.org/) for rendering UI components in various states, and it's possible to [take a screenshot](https://storybook.js.org/docs/react/workflows/visual-testing) of the result and check whether it has changed.
+
+Optimize the diff for humans. Even video and audio can be diffed as an image.
+
+Read more:
+https://www.youtube.com/watch?v=5_IW7npQk9k
 
 
 ## Legacy code
@@ -185,7 +215,7 @@ Only a few basic features are needed: add a to-do item, rename a to-do item, mar
 Start the app's development using the [walking skeleton](#walking-skeleton) approach. Focus on writing tests on every level of the stack:
 
 - unit tests to cover as much of the code as is possible to unit test
-- also unit test the user interface components (visual testing is optional)
+- also unit test the user interface components ([visual testing](#visual-testing) is optional)
 - focused integration tests for the database and API layers
 - one (1) end-to-end test against a fully deployed application (e.g. Docker containers running locally) to make sure that things are connected correctly (start with this - see [walking skeleton](#walking-skeleton))
 
