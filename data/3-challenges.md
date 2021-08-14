@@ -38,7 +38,7 @@ https://medium.com/@xpmatteo/how-i-learned-to-love-mocks-1-fb341b71328
 
 #### London school of TDD
 
-Mock objects were invented in meetup group in London, and it gave birth to a mock-based outside-in approach to TDD, which is commonly called London style TDD. This is in contrast to Detroit/Chicago/Classic style TDD, because Chrysler's C3 project, which gave birth to Extreme Programming, happened in Detroit.
+Mock objects were invented in a London meetup, and it gave birth to a mock-based outside-in approach to TDD, which is commonly called London style TDD. This is in contrast to Detroit/Chicago style TDD, because Chrysler's C3 project, which gave birth to Extreme Programming, happened in Detroit. Also known as mockist and classicist styles.
 
 London style TDD focuses on the communication protocols between objects sending messages to each other. It goes hand-in-hand with Alan Kay's (who coined the term "object-oriented") view of object-oriented programming, where objects are like individual computers on the network sending messages to each other (thus Erlang is the most object-oriented programming language).
 
@@ -178,7 +178,7 @@ TODO: simplify the project, preconfigure stryker
 
 You may clone the project template <https://github.com/luontola/tdd-mooc-webapp> to get started, but fundamentally the tool choices are up to you.
 
-The assignment is to *write a To-Do List app using TDD.* It needs to have a web user interface, an API backend and a database.
+The assignment is to *write a To-Do List app using TDD.* It needs to have a [SPA](https://developer.mozilla.org/en-US/docs/Glossary/SPA) web user interface, an API backend and a database.
 
 Only a few basic features are needed: add a to-do item, rename a to-do item, mark a to-to item completed, archive all completed to-do items. Authentication is not needed.
 
