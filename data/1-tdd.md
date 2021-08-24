@@ -74,14 +74,16 @@ http://blog.orfjackal.net/2010/04/direct-and-indirect-effects-of-tdd.html
 
 Ask yourself: What is the next most important thing, which the system *does not* yet do?
 
-The first test and the simplification strategy: Where to start writing a sudoku solver? Solving a 1×1 sudoku.
+When writing the first test, it helps to start small and simplify the problem: Where to start writing a sudoku solver? Solving a 1×1 sudoku.
 
 
 ### Test names should be sentences
 
-The test names should describe the behaviour of the system - what the system should do.
+The test names should be sentences which describe what the system should do - its behavior.
 
-Thought exercise: All production and test code has disappeared. The only thing remaining is the test names. Can a new person reimplement the system, so that it will do pretty much the same things as before?
+Unlike in traditional software testing, in TDD the "tests" are thought of as a specification of the system's behavior, or as small examples of how the code functions.
+
+Thought exercise: All production and test code has disappeared. The only thing remaining is the test names. Can someone reimplement the system, so that it will do pretty much the same things as before?
 
 When a test fails, look at the name of the test. There are three possibilities:
 
