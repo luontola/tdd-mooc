@@ -22,6 +22,8 @@ Kent tried it with a stack, and half an hour later he was hooked. All the anxiet
 
 ## Three rules of TDD
 
+TDD can be described in terms of these three rules:
+
 1. You shall not write any production code, unless required by a failing unit test.
 2. You shall not write more of a unit test, than is required to fail (assertion failure/program crash/compile error).
 3. You shall not write more production code, than is sufficient to make the one failing unit test pass.
@@ -32,9 +34,9 @@ http://www.butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd
 
 ## Red, Green, Refactor
 
-Every minute or so:
+Another way to describe TDD is the following cycle of three phases. Every few minutes, in order:
 
-1. **Red**: Write a failing test. Run the test. See it fail. If it failed in an unexpected way, be surprised. Improve the failure's readability.
+1. **Red**: Write a failing test. Predict (mentally or out loud) how the test should fail. Run the test. See it fail. If it failed in an unexpected way, check your assumptions. Improve the failure's readability.
 2. **Green**: Make the test pass. ASAP. Commit any sins necessary. Hard-coded values. If statements. Fake it until you make it.
 3. **Refactor**: Improve the design of the code, without changing its behavior. Atone for your sins. Remove duplication. Fix bad names. Minimal code which passes the current tests.
 
