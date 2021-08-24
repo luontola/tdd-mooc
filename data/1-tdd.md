@@ -47,7 +47,6 @@ As the tests get more specific, the implementation gets more generic.
 Read more:
 http://www.jamesshore.com/v2/blog/2005/red-green-refactor
 https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html
-https://blog.cleancoder.com/uncle-bob/2013/05/27/TheTransformationPriorityPremise.html
 
 
 ## What it looks like
