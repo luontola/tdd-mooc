@@ -179,17 +179,28 @@ TODO
 TODO
 
 
-## Walking skeleton
+## Advanced techniques
+
+### Walking skeleton
 
 TODO
 
 Read more:
 https://www.henricodolfing.com/2018/04/start-your-project-with-walking-skeleton.html
 
-
-## Continuous delivery
+### Continuous delivery
 
 TODO
+
+Read more:
+http://www.jamesshore.com/v2/books/aoad2/continuous_deployment
+
+### Test-after
+
+TODO: spike and stabilize, ginger cake
+
+Read more:
+https://vimeo.com/24681032
 
 
 # Exercise 3: Testing legacy code
