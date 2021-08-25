@@ -81,9 +81,9 @@ When writing the first test, it helps to start small and simplify the problem: W
 
 ### Test names should be sentences
 
-The test names should be sentences which describe what the system should do - its behavior.
+Software testing attempts to find faults in the code. But in TDD, the "tests" are thought of as a specification of the system's behavior, or as small examples of how the code functions. The focus is more in requirements and design than in verification.
 
-Unlike in traditional software testing, in TDD the "tests" are thought of as a specification of the system's behavior, or as small examples of how the code functions.
+The test names should be sentences which describe what the system should do - its behavior.
 
 Thought exercise: All production and test code has disappeared. The only thing remaining is the test names. Can someone reimplement the system, so that it will do pretty much the same things as before?
 
