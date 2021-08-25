@@ -42,6 +42,8 @@ Another way to describe TDD is the following cycle of three phases. Every few mi
 
 Repeat until there are no more tests to write/until bored.
 
+If the current design makes it difficult to make a new test pass, consider commenting out the new test and refactoring first. "Make the change easy (warning: this may be hard), then make the easy change." [[1]](https://twitter.com/KentBeck/status/250733358307500032)
+
 As the tests get more specific, the implementation gets more generic.
 
 Read more:
