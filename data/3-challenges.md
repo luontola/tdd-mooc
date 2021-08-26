@@ -41,7 +41,7 @@ Mock objects were invented in a London meetup, and it gave birth to a mock-based
 
 London style TDD focuses on the communication protocols between objects sending messages to each other. It goes hand-in-hand [[1]](https://groups.google.com/g/growing-object-oriented-software/c/-t6fp3392oM/m/QO342CHAAwAJ) with [Alan Kay](https://en.wikipedia.org/wiki/Alan_Kay)'s view of object-oriented programming, where objects are like individual computers on the network sending messages to each other (thus Erlang is the most object-oriented programming language).
 
-When using mock objects, it's important to understand the object-oriented style for which they were created. Otherwise over-mocking may lead to tight coupling between tests and implementation details. The best description of how mock objects were meant to be used is the book *Growing Object-Oriented Software, Guided by Tests* (Steve Freeman, Nat Pryce 2009).
+When using mock objects, it's important to understand the object-oriented style for which they were created. Otherwise, over-mocking may lead to tight coupling between tests and implementation details. The best description of how mock objects were meant to be used is the book *Growing Object-Oriented Software, Guided by Tests* (Steve Freeman, Nat Pryce 2009).
 
 Read more:
 http://www.mockobjects.com/2009/09/brief-history-of-mock-objects.html
@@ -78,7 +78,7 @@ Database tests can be made faster by [disabling fsync or using a RAM disk](https
 
 #### Dead ends
 
-You *could* replace the database with an in-memory fake implementation for tests (e.g. hashmap). It will make the tests faster, but will require maintaining two parallel implementations - the real and the fake persistence layer. Even when using [contract tests](https://blog.thecodewhisperer.com/permalink/getting-started-with-contract-tests) to make the implementations functionally equivalent, they will be leaky abstractions with non-obvious differences (transactions, foreign key contraints etc.). It's better to decouple business logic from persistence: you won't need to fake dependencies if you have no dependencies.[¹](https://imgflip.com/i/5kxd8x)
+You *could* replace the database with an in-memory fake implementation for tests (e.g. hashmap). It will make the tests faster, but will require maintaining two parallel implementations - the real and the fake persistence layer. Even when using [contract tests](https://blog.thecodewhisperer.com/permalink/getting-started-with-contract-tests) to make the implementations functionally equivalent, they will be leaky abstractions with non-obvious differences (transactions, foreign key constraints etc.). It's better to decouple business logic from persistence: you won't need to fake dependencies if you have no dependencies.[¹](https://imgflip.com/i/5kxd8x)
 
 Some people use an embedded in-memory database in tests and a different database in production, for example HSQLDB vs PostgreSQL. This is a road to madness. Even if SQL is a standard,[²](https://xkcd.com/927/) each implementation is different, so you will anyways need to run the tests against both databases. It might avoid having to install a database and the data will be removed after the test process exits, but nowadays `docker compose up -d db` is easy and even with an in-memory database you will need to handle isolation between test cases. Speed is not an argument either; a PostgreSQL which is already running is faster than a HSQLDB that needs to start every test run, not to speak of runtime performance. Most importantly, you would be limited to a subset of SQL that works on both databases, or you will need to maintain alternative versions of the queries; you would miss out on useful database-specific features such as [triggers/stored procedures](https://www.postgresql.org/docs/13/plpgsql-trigger.html) and [range types](https://medium.com/pyankit/postgres-range-types-are-dope-ca18923f3d46). Summa summarum, use the same technology in tests as in production.
 
@@ -124,7 +124,7 @@ Always have a timeout for asynchronous tests, in case the code gets stuck in an 
 
 Tests should be sensitive to behavior changes and insensitive to structure changes. This is even more important in the user interface. Changing the visual style or layout of the UI, should not break behavioral tests.
 
-The are patterns like [passive view](https://martinfowler.com/eaaDev/PassiveScreen.html) which try to separate the logic and visuals of the UI, to make the logic more testable. With the advent of [React](https://reactjs.org/), UI components can be written as stateless functions, which makes testing them easier.
+There are patterns like [passive view](https://martinfowler.com/eaaDev/PassiveScreen.html) which try to separate the logic and visuals of the UI, to make the logic more testable. With the advent of [React](https://reactjs.org/), UI components can be written as stateless functions, which makes testing them easier.
 
 
 #### Unit testing web app components

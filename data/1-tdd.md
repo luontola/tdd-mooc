@@ -88,7 +88,7 @@ When writing the first test, it helps to start small and simplify the problem: W
 
 ### Test names should be sentences
 
-Software testing attempts to find faults in the code. But in TDD, the "tests" are thought of as a specification of the system's behavior, or as small examples of how the code functions. The focus is more in requirements and design than in verification.
+Software testing attempts to find faults in the code. But in TDD, the "tests" are thought of as a specification of the system's behavior, or as small examples of how the code functions. The focus is more on requirements and design than on verification.
 
 The test names should be sentences which describe what the system should do - its behavior.
 
