@@ -107,7 +107,7 @@ The assignment is to *write a Tetris game using TDD.* The first couple dozen tes
 
 If you get stuck, you may watch [this example screencast](https://www.youtube.com/playlist?list=PLSADDT9dzgRCjVvS13ekPr1KwX_JkDQJM). It's based on an older version of the exercise, so it's in Java instead of JavaScript, but otherwise it's pretty much the same.
 
-**Course artifact:** Git repository with the source code and history of you doing this exercise.
+**Submittable artifact:** Git repository with the source code and history of you doing this exercise.
 
 </tdd-decision>
 

@@ -120,7 +120,7 @@ The assignment is to *refactor the above code to replace [Date](https://develope
 
 Afterwards we will have a competition between the students of this course about doing this refactoring using the smallest possible steps.
 
-**Course artifact:** Performing this refactoring live in the weekly exercise groups.
+**Submittable artifact:** Performing this refactoring live in the weekly exercise groups.
 
 ---
 

@@ -211,7 +211,7 @@ The assignment is to *write tests for the above code, until it has 100% mutation
 
 TODO: simplify the project, preconfigure stryker
 
-**Course artifact:** Git repository with the source code and history of you doing this exercise. Also include a file with the mutation test results.
+**Submittable artifact:** Git repository with the source code and history of you doing this exercise. Also include a file with the mutation test results.
 
 
 # Exercise 4: Full-stack web app
@@ -229,7 +229,7 @@ Start the app's development using the [walking skeleton](#walking-skeleton) appr
 - focused integration tests for the database and API layers
 - one (1) end-to-end test against a fully deployed application (e.g. Docker containers running locally) to make sure that things are connected correctly (start with this - see [walking skeleton](#walking-skeleton))
 
-**Course artifact:** Git repository with the source code and history of you doing this exercise.
+**Submittable artifact:** Git repository with the source code and history of you doing this exercise.
 
 ---
 

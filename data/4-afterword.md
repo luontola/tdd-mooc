@@ -21,4 +21,4 @@ The assignment is to *write [Conway's Game of Life](https://en.wikipedia.org/wik
 
 TODO: example RLE files for test data, link to OBS screen recording instructions
 
-**Course artifact:** Video of you doing this exercise. Use a screen recording software (e.g. [OBS Studio](https://obsproject.com/)). Upload the video to YouTube (as unlisted video) and return a link to the video as the course artifact.
+**Submittable artifact:** Video of you doing this exercise. Use a screen recording software (e.g. [OBS Studio](https://obsproject.com/)). Upload the video to YouTube (as unlisted video) and return a link to the video as the course artifact.
