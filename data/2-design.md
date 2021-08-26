@@ -18,7 +18,7 @@ In priority order:
 With TDD, point 1 is a given. If points 2 and 3 are covered, then point 4 rarely comes up. Thus the rules can be summarized:
 
 - Remove duplication
-- Fix bad names
+- Improve names
 
 Keep practising these, and in a few decades every other design principle and pattern will emerge.
 
@@ -35,7 +35,7 @@ https://martinfowler.com/bliki/BeckDesignRules.html
 
 Removing duplication and improving names feed into each other in a virtuous cycle.
 
-Naming is a process: nonsense, vague, precise, meaningful. Never stop improving.
+Naming is a process: nonsense, accurate-but-vague, precise, meaningful. Never stop improving.
 
 Read more:
 https://agileinaflash.blogspot.com/2009/02/meaningful-names.html
