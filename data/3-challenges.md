@@ -117,7 +117,7 @@ Concurrency artifacts such as [CountDownLatch](https://docs.oracle.com/en/java/j
 
 [Testing cannot prove](https://www.goodreads.com/quotes/506689-program-testing-can-be-used-to-show-the-presence-of) that code is thread-safe, but together with code review, you can get quite far by writing a test which executes lots of tasks in parallel and then asserts invariants about what the tasks did. For example, each write happened exactly once, each task saw a consistent view of the state, tasks could read their own writes, and so on.
 
-Always have a timeout for asynchronous tests, in case the code gets stuck in an infinite loop or deadlock or doesn't send some event. The timeout needs to be long enough to not be triggered randomly when the computer is overloaded, but short enough that you don't need to wait long for the tests to fail.
+Always have a timeout for asynchronous tests, in case the code gets stuck in an infinite loop or deadlock or doesn't send some event. The timeout needs to be long enough to not be triggered randomly when the computer is overloaded, but short enough that you don't need to wait long for the tests to fail, especially if the wait time is `NumberOfTests * Timeout`.
 
 
 ### User interface
