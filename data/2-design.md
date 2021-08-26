@@ -47,7 +47,7 @@ https://www.digdeeproots.com/articles/on/naming-process/
 
 > Divide your program into methods that perform one identifiable task. Keep all of the operations in a method at the same level of abstraction. This will naturally result in programs with many small methods, each a few lines long.
 >
-> \- Kent Beck, Smalltalk Best Practice Patterns (1996)
+> \- Kent Beck, Smalltalk Best Practice Patterns (1996) [[1]](https://wiki.c2.com/?ComposedMethod)
 
 Each new method is an opportunity to introduce a new name.
 
@@ -57,7 +57,6 @@ Each refactoring can be done in two directions. If you inline everything into on
 
 Read more:
 https://farenda.com/patterns/composed-method-pattern/
-https://wiki.c2.com/?ComposedMethod
 https://github.com/jnguyen095/clean-code/issues/28
 
 
@@ -94,9 +93,9 @@ From the pattern of failing tests, it should be possible to guess in which funct
 
 If some code can be commented out and no test fails, the code should be dead.
 
-In five seconds you will have forgotten over half of your working memory. Make test so fast that you won't forget what you were thinking.
+In five seconds you will have forgotten over half of your [working memory](https://en.wikipedia.org/wiki/Working_memory). Make test so fast that you won't forget what you were thinking.
 
-![Diagram: Decay of working memory if rehearsal is prevented. ](images/working-memory-decay.png "The first Google image search result for [working memory decay](https://www.researchgate.net/figure/Decay-of-working-memory-if-rehearsal-is-prevented-The-time-scale-is-of-the-order-of-a_fig7_35883885).")
+![Decay of working memory if rehearsal is prevented. The time scale is of the order of a few seconds.](images/working-memory-decay.png "How quickly working memory decays when you think of something else. [[1]](https://www.researchgate.net/figure/Decay-of-working-memory-if-rehearsal-is-prevented-The-time-scale-is-of-the-order-of-a_fig7_35883885)")
 
 
 Read more:
