@@ -31,17 +31,16 @@ https://martinfowler.com/bliki/BeckDesignRules.html
 
 > There are only two hard things in Computer Science: cache invalidation and naming things.
 >
-> \- Phil Karlton
-
-Naming is a process: nonsense, vague, precise, meaningful. Never stop improving.
+> \- Phil Karlton [[1]](https://martinfowler.com/bliki/TwoHardThings.html)
 
 Removing duplication and improving names feed into each other in a virtuous cycle.
+
+Naming is a process: nonsense, vague, precise, meaningful. Never stop improving.
 
 Read more:
 https://agileinaflash.blogspot.com/2009/02/meaningful-names.html
 https://blog.thecodewhisperer.com/permalink/a-model-for-improving-names
 https://www.digdeeproots.com/articles/on/naming-process/
-https://martinfowler.com/bliki/TwoHardThings.html
 
 
 ## Composed method
