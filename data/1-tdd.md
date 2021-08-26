@@ -53,7 +53,14 @@ https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html
 
 ## What it looks like
 
-TODO: demo video, roman numerals kata, with steps explained
+<iframe style="width: 100%; aspect-ratio: 560/315;"  src="https://www.youtube-nocookie.com/embed/1o_EbACQpQ8" title="Bowling Kata in TypeScript - YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+The above video demonstrates TDD using the [Bowling Game Kata](https://kata-log.rocks/bowling-game-kata). Some points of note:
+
+- No more code is added than is required to pass the tests. At first the implementation is trivial.
+- The code is refactored early and often.
+- If the current design makes passing the next test hard, the test is commented out and the code is first refactored toward a better design.
+- As more tests are added to cover specific edge cases, the code grows toward a generic algorithm which handles them all.
 
 
 ## Direct and indirect effects of TDD
