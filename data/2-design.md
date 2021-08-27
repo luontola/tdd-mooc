@@ -70,6 +70,14 @@ Read more:
 https://www.infoq.com/presentations/responsive-design/
 
 
+### Refactoring hell
+
+If it's been more than a few minutes since the tests last passed, `git reset --hard` and try again. (Your IDE's [local history](https://www.jetbrains.com/help/idea/local-history.html) may also show when all tests last passed, so you can revert to that point in time.)
+
+Read more:
+https://wiki.c2.com/?RefactoringHell
+
+
 ## Four strategies
 
 - **Leap:** The change is small enough. Just do it.
