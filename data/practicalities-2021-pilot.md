@@ -26,6 +26,8 @@ It's not yet clear how long the course will take - something between 1-2 months.
 
 Please keep track of how much time you spend on each exercise (and in case of exercise 1: tetris, track the time for each level). We will ask you to fill questionnaires for each exercise, so that we can improve the course for future students.
 
+The exercise submitting service is at https://studies.cs.helsinki.fi/stats/courses/tdd-pilot
+
 
 ## Screen recording
 
