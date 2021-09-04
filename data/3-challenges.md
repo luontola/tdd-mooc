@@ -145,7 +145,7 @@ Have only a few end-to-end tests. They are slow and flaky. Prefer unit tests. Se
 
 #### Visual testing
 
-It's hard to write an assertion that something looks good. But it's easy to a human to check it visually and make the computer check whether the visuals have changed since last approval.
+It's hard to write an assertion that something looks good. But for a human it's easy to check it visually, and the computer can compare whether the pixels have changed since the last approval.
 
 There are tools like [Storybook](https://storybook.js.org/) for rendering UI components in various states, and it's possible to [take a screenshot](https://storybook.js.org/docs/react/workflows/visual-testing) of the result and check whether it has changed.
 
@@ -206,11 +206,11 @@ https://vimeo.com/24681032
 
 # Exercise 3: Testing legacy code
 
-Clone the project <https://github.com/emilybache/GildedRose-Refactoring-Kata>. Take one of the JavaScript editions of that project and configure it to use the [Stryker mutation testing framework](https://stryker-mutator.io/).
+Clone the project <https://github.com/emilybache/GildedRose-Refactoring-Kata>. Take one of the JavaScript editions of that project and configure it to use the [Stryker mutation testing framework](https://stryker-mutator.io/). Also install a basic code coverage tool which calculates line coverage.
 
 The assignment is to *write tests for the above code, until it has 100% mutation test coverage.*
 
-TODO: simplify the project, preconfigure stryker
+TODO: simplify the project, preconfigure stryker and some line coverage tool
 
 **Submittable artifact:** Git repository with the source code and history of you doing this exercise. Also include a file with the mutation test results.
 
