@@ -126,7 +126,7 @@ The assignment is to *refactor the above code to replace [Date](https://develope
 
 Afterwards we will have a competition between the students of this course about doing this refactoring using the smallest possible steps.
 
-**Submittable artifact:** Performing this refactoring live in the weekly exercise groups.
+**Submittable artifact:** Performing this refactoring live in the weekly exercise groups. Git repository with the history of you doing this refactoring, so that the commits are as small as possible and the tests pass on every commit.
 
 ---
 
