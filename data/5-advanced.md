@@ -34,7 +34,7 @@ Read more:
 https://vimeo.com/24681032
 
 
-# Exercise 4: Full-stack web app
+# Exercise 5: Full-stack web app
 
 You may clone the project template <https://github.com/luontola/tdd-mooc-webapp> to get started, but fundamentally the tool choices are up to you.
 

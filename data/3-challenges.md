@@ -152,6 +152,12 @@ Read more:
 https://www.youtube.com/watch?v=5_IW7npQk9k
 
 
+# Exercise 3: Untestable code
+
+Write a function which is as hard to test as possible. Then write tests for it.
+
+**Submittable artifact:** Git repository with the source code and history of you doing this exercise.
+
 ---
 
 Proceed to [Part 4: Legacy code](/4-legacy-code)

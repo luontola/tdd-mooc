@@ -52,7 +52,7 @@ https://www.infoq.com/news/2007/03/characterization-testing/
 https://www.youtube.com/watch?v=8OxH9Lz0Ckg
 
 
-# Exercise 3: Testing legacy code
+# Exercise 4: Testing legacy code
 
 Clone the project <https://github.com/emilybache/GildedRose-Refactoring-Kata>. Take one of the JavaScript editions of that project and configure it to use the [Stryker mutation testing framework](https://stryker-mutator.io/). Also install a basic code coverage tool which calculates line coverage.
 
