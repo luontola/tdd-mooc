@@ -26,6 +26,15 @@ TODO
 Read more:
 http://www.jamesshore.com/v2/books/aoad2/continuous_deployment
 
+
+## test && commit || revert (TCR)
+
+TODO
+
+Read more:
+https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864
+
+
 ## Test-after patterns
 
 TODO: spike and stabilize, ginger cake
