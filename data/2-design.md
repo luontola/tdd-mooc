@@ -80,6 +80,8 @@ https://wiki.c2.com/?RefactoringHell
 
 ## Four strategies
 
+There are four strategies to refactor and design using small, safe steps:
+
 - **Leap:** The change is small enough. Just do it.
 - **Parallel:** Build the new solution side-by-side with the old solution, until the new can replace the old.
 - **Stepping stone:** You want to build thing A, but if you built thing B first, that could make it easier to build thing A. (Beware of gold plating.)
