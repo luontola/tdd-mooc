@@ -1,22 +1,19 @@
 ---
 path: "/3-challenges"
-title: "Part 3: Here be dragons"
+title: "Part 3: The Untestables"
 hidden: false
 information_page: true
 ---
 
-
-## The Untestables
-
 There are things which make testing more challenging. Many of them are global variables of sorts. Global variables cause spooky action at a distance. Do the same thing over and over again, and get a different result. Tests may randomly pass or fail, depending on the order in which they are run.
 
 
-### Singletons
+## Singletons
 
 [Singleton](https://en.wikipedia.org/wiki/Singleton_pattern) is an anti-pattern. It is the object-oriented equivalent of a global variable. Instead, [just create one](http://www.butunclebob.com/ArticleS.UncleBob.SingletonVsJustCreateOne).
 
 
-### Test doubles
+## Test doubles
 
 If the SUT (system under test) is not a pure function and it's hard to test together with the real objects, its dependencies can be replaced with [test doubles](https://martinfowler.com/bliki/TestDouble.html). The dependencies can be provided as method or constructor arguments (aka dependency injection).
 
@@ -35,7 +32,7 @@ https://jesusvalerareales.medium.com/testing-with-test-doubles-7c3abb9eb3f2
 https://medium.com/@xpmatteo/how-i-learned-to-love-mocks-1-fb341b71328
 
 
-#### London school of TDD
+### London school of TDD
 
 Mock objects were invented in a London meetup, and it gave birth to a mock-based outside-in approach to TDD, which is commonly called London style TDD. This is in contrast to Detroit/Chicago style TDD, where the code is typically written bottom-up and dependencies are faked only when they complicate testing (named such because Chrysler's C3 project, which gave birth to Extreme Programming, happened in Detroit). They are also known as mockist and classicist styles.
 
@@ -48,7 +45,7 @@ http://www.mockobjects.com/2009/09/brief-history-of-mock-objects.html
 https://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627
 
 
-### File system
+## File system
 
 The file system is a global variable which persists between test executions.
 
@@ -57,7 +54,7 @@ If a test needs to write to the disk, create a unique temporary directory on tes
 If the test process is killed or there are file locks, the teardown may not be able to delete the temporary directory. Avoid using `/tmp` and instead place the temporary directory inside the project directory, under the build target directory, so that any stale directories will be removed on a clean build.
 
 
-### Database
+## Database
 
 The database is a global variable which persists between test executions.
 
@@ -76,7 +73,7 @@ The test schema name may be hard-coded or unique. Unique names for each test mak
 Database tests can be made faster by [disabling fsync or using a RAM disk](https://pythonspeed.com/articles/faster-db-tests/).
 
 
-#### Dead ends
+### Dead ends
 
 You *could* replace the database with an in-memory fake implementation for tests (e.g. hashmap). It will make the tests faster, but will require maintaining two parallel implementations - the real and the fake persistence layer. Even when using [contract tests](https://blog.thecodewhisperer.com/permalink/getting-started-with-contract-tests) to make the implementations functionally equivalent, they will be leaky abstractions with non-obvious differences (transactions, foreign key constraints etc.). It's better to decouple business logic from persistence: you won't need to fake dependencies if you have no dependencies.[¹](https://imgflip.com/i/5kxd8x)
 
@@ -85,7 +82,7 @@ Some people use an embedded in-memory database in tests and a different database
 You just saved 5+ years of experimenting.
 
 
-### Network sockets
+## Network sockets
 
 Network socket port numbers are a global variable at the operating system level.
 
@@ -96,14 +93,14 @@ Most servers you can bind to listen on port 0 and the operating system will assi
 P.S. Docker by default binds to network interface 0.0.0.0 and it [bypasses the firewall](https://github.com/moby/moby/issues/22054), so your development servers will be *publicly accessible even if your firewall is configured to block all incoming connections*. Always bind explicitly to 127.0.0.1 when publishing container ports to the host.
 
 
-### Time
+## Time
 
 Time is a global variable which is ever changing (hopefully monotonically increasing).
 
 Code which reads the current time (e.g. using `new Date()`) is inherently untestable. Instead, pass in the current time as a method parameter, or inject a [clock](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html) which can be replaced with a [fake clock](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#fixed(java.time.Instant,java.time.ZoneId)) in tests.
 
 
-### Concurrency
+## Concurrency
 
 The order of memory reads and writes between parallel threads, and the operating system's context switching, are unpredictable global variables.
 
@@ -120,21 +117,21 @@ Concurrency artifacts such as [CountDownLatch](https://docs.oracle.com/en/java/j
 Always have a timeout for asynchronous tests, in case the code gets stuck in an infinite loop or deadlock or doesn't send some event. The timeout needs to be long enough to not be triggered randomly when the computer is overloaded, but short enough that you don't need to wait long for the tests to fail, especially if the wait time is `NumberOfTests * Timeout`.
 
 
-### User interface
+## User interface
 
 Tests should be sensitive to behavior changes and insensitive to structure changes. This is even more important in the user interface. Changing the visual style or layout of the UI, should not break behavioral tests.
 
 There are patterns like [passive view](https://martinfowler.com/eaaDev/PassiveScreen.html) which try to separate the logic and visuals of the UI, to make the logic more testable. With the advent of [React](https://reactjs.org/), UI components can be written as stateless functions, which makes testing them easier.
 
 
-#### Unit testing web app components
+### Unit testing web app components
 
 Asserting on the [innerText](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText) of a component (with whitespace normalization) produces tests which are decoupled from visual changes.
 
 Asserting the presence/absence of a CSS class is useful for testing logic that is observable only visually. Make sure to use the same constant for presence and absence checks; a mispelled <!-- sic --> CSS class is always absent.
 
 
-#### End-to-end testing web apps
+### End-to-end testing web apps
 
 Don't click buttons directly in test code. Create an automation layer of high-level operations and call those. The tests should focus on *what* the system does, and the automation layer on *how* the system does it. That way when the UI changed, only the automation layer needs to be updated, instead of fixing all tests individually.
 
@@ -143,7 +140,7 @@ Prefer selecting elements based on the visible text on the button/link/label; it
 Have only a few end-to-end tests. They are slow and flaky. Prefer unit tests. Set a hard limit for how many end-to-end tests the whole application may have (≤10 for even big apps) and stick to it. End-to-end tests should only check that things are wired together, not behavioral correctness.
 
 
-#### Visual testing
+### Visual testing
 
 It's hard to write an assertion that something looks good. But for a human it's easy to check it visually, and the computer can compare whether the pixels have changed since the last approval.
 
@@ -155,113 +152,6 @@ Read more:
 https://www.youtube.com/watch?v=5_IW7npQk9k
 
 
-## Legacy code
-
-TODO
-
-
-### Fixing bugs test-first
-
-TODO
-
-
-### Seams
-
-TODO
-
-Read more:
-https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052
-
-
-### Code coverage
-
-Code coverage tools can be useful in finding untested areas, but not all of them can tell whether the code is well tested.
-
-**Line/statement coverage** says whether a line was executed by a test. (You could have 100% line coverage even if the tests have zero assertions.)
-
-**Branch/edge/condition coverage** also makes a distinction between partially executed lines. For example in `a = b() && c()`, if `b()` returns false then `c()` is never executed. Line coverage would say the line was 100% covered, but branch coverage would say it was 50% covered. (You could have 100% branch coverage even if the tests have zero assertions.)
-
-**Mutation coverage** introduces bugs into your code and alarms if no test noticed them. It'll actually test your tests. For a code like `a = b() && c()`, it could try mutations `a = b() || c()`, `a = b() == c()`, `a = b() != c()`, `a = !b() && c()`, `a = true && c()`, `a = false && c()` and so on. There can be some false warnings, so going through the coverage report takes more time, but refactoring the code to avoid the false warnings can sometimes improve code quality. Even when the mutation coverage tool is smart about which tests to run for each mutation, it's typically an order of magnitude slower than running the tests normally: if the tests normally run in 1 second, measuring mutation coverage might take 1 minute.
-
-When writing tests for legacy code, code coverage can be helpful. See which lines are not covered and for each conditional, write test cases that cause the code to take both branches.
-
-Read more:
-https://www.artima.com/weblogs/viewpost.jsp?thread=204677
-
-
-### Characterization tests
-
-*aka golden master, aka snapshot testing, aka approval testing.*
-
-With legacy code, the source code is the truth, even when it contains bugs. The first priority is improving the code coverage, so that the code can be refactored safely.
-
-Write tests which just assert that the code *does what it does*. Understanding the code is not necessary for writing such tests; use code coverage to your advantage and make sure that every code path is executed.
-
-After the code is covered with characterization tests, it can be refactored, making it easier to understand what the code does. After you understand the code, it's easier to write more descriptive tests for it and begin changing what the code does.
-
-Read more:
-https://www.infoq.com/news/2007/03/characterization-testing/
-https://www.youtube.com/watch?v=8OxH9Lz0Ckg
-
-
-## Advanced techniques
-
-### Walking skeleton
-
-Getting all the various technologies working together in a new project is a big job. Unfamiliar technologies often require experimenting and fiddling. If you don't know how something should be used, it's hard to write a test for it.
-
-The walking skeleton approach can help in this situation. The idea is to start with one end-to-end test against a system which is deployed to production(-like) environment. Then develop just the bare bones of the system, so that it'll contain the main architectural components.
-
-At start the test could just send a "hello world" message which goes through the frontend, backend, database and back again to the frontend. Focus on just getting the end-to-end test passing and putting the architectural components together. Focused unit and integration tests are best added *after* you have created the architecture, when there are less unknowns.
-
-Then when the end-to-end test passes through the whole architecture, you can start fleshing out the system. As the system grows, keep improving the end-to-end test along with it.
-
-Read more:
-https://www.henricodolfing.com/2018/04/start-your-project-with-walking-skeleton.html
-
-### Continuous delivery
-
-TODO
-
-Read more:
-http://www.jamesshore.com/v2/books/aoad2/continuous_deployment
-
-### Test-after patterns
-
-TODO: spike and stabilize, ginger cake
-
-Read more:
-https://vimeo.com/24681032
-
-
-# Exercise 3: Testing legacy code
-
-Clone the project <https://github.com/emilybache/GildedRose-Refactoring-Kata>. Take one of the JavaScript editions of that project and configure it to use the [Stryker mutation testing framework](https://stryker-mutator.io/). Also install a basic code coverage tool which calculates line coverage.
-
-The assignment is to *write tests for the above code, until it has 100% mutation test coverage.*
-
-TODO: simplify the project, preconfigure stryker and some line coverage tool
-
-**Submittable artifact:** Git repository with the source code and history of you doing this exercise. Also include a file with the mutation test results.
-
-
-# Exercise 4: Full-stack web app
-
-You may clone the project template <https://github.com/luontola/tdd-mooc-webapp> to get started, but fundamentally the tool choices are up to you.
-
-The assignment is to *write a To-Do List app using TDD.* It needs to have a [SPA](https://developer.mozilla.org/en-US/docs/Glossary/SPA) web user interface, an API backend and a database.
-
-Only a few basic features are needed: add a to-do item, rename a to-do item, mark a to-to item completed, archive all completed to-do items. Authentication is not needed.
-
-Start the app's development using the [walking skeleton](#walking-skeleton) approach. Focus on writing tests on every level of the stack:
-
-- unit tests to cover as much of the code as is possible to unit test
-- also unit test the user interface components ([visual testing](#visual-testing) is optional)
-- focused integration tests for the database and API layers
-- one (1) end-to-end test against a fully deployed application (e.g. Docker containers running locally) to make sure that things are connected correctly (start with this - see [walking skeleton](#walking-skeleton))
-
-**Submittable artifact:** Git repository with the source code and history of you doing this exercise.
-
 ---
 
-Proceed to [Part 4: To infinity and beyond](/4-afterword)
+Proceed to [Part 4: Legacy code](/4-legacy-code)

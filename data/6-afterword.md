@@ -1,6 +1,6 @@
 ---
-path: "/4-afterword"
-title: "Part 4: To infinity and beyond"
+path: "/6-afterword"
+title: "Part 6: To infinity and beyond"
 hidden: false
 information_page: true
 ---

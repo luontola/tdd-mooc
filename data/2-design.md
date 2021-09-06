@@ -130,4 +130,4 @@ Afterwards we will have a competition between the students of this course about 
 
 ---
 
-Proceed to [Part 3: Here be dragons](/3-challenges)
+Proceed to [Part 3: The Untestables](/3-challenges)
