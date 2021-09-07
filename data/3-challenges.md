@@ -156,7 +156,9 @@ https://www.youtube.com/watch?v=5_IW7npQk9k
 
 Write a function which is as hard to test as possible. Then write tests for it.
 
-**Submittable artifact:** Git repository with the source code and history of you doing this exercise.
+##### What to submit
+
+* Submit to https://studies.cs.helsinki.fi/stats/courses/tdd-pilot a **Git repository** with the source code and history of you doing this exercise.
 
 ---
 

@@ -21,4 +21,11 @@ The assignment is to *write [Conway's Game of Life](https://en.wikipedia.org/wik
 
 TODO: example RLE files for test data, link to OBS screen recording instructions
 
-**Submittable artifact:** Video of you doing this exercise. Use a screen recording software (e.g. [OBS Studio](https://obsproject.com/)). Upload the video to a streaming service (e.g. unlisted video on YouTube) and return a link to the video as the course artifact.
+##### What to submit
+
+* **Record a video** of you doing this exercise. Use a screen recording software (e.g. [OBS Studio](https://obsproject.com/)). Upload the video to a streaming service (e.g. unlisted video on YouTube) and include a **link to the video** in the comment field as you submit the Git repository.
+* Submit to https://studies.cs.helsinki.fi/stats/courses/tdd-pilot a **Git repository** with the source code and history of you doing this exercise.
+
+---
+
+EOF

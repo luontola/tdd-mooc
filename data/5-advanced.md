@@ -58,7 +58,9 @@ Start the app's development using the [walking skeleton](#walking-skeleton) appr
 - focused integration tests for the database and API layers
 - one (1) end-to-end test against a fully deployed application (e.g. Docker containers running locally) to make sure that things are connected correctly (start with this - see [walking skeleton](#walking-skeleton))
 
-**Submittable artifact:** Git repository with the source code and history of you doing this exercise.
+##### What to submit
+
+* Submit to https://studies.cs.helsinki.fi/stats/courses/tdd-pilot a **Git repository** with the source code and history of you doing this exercise.
 
 ---
 
