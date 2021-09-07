@@ -22,9 +22,9 @@ We will have exercise groups every Tuesday at 16:15-18:00 in Discord `tdd_voice`
 
 Do the exercises at your own pace and use the `#tdd_general` channel for peer help.
 
-It's not yet clear how long the course will take - something between 1-2 months. The initial guess is 5 weeks in total: 2 weeks for exercises 1-2, 2 weeks for exercises 3-4, and 1 week for exercise 5. Though likely some will do them all in one week.
+It's not yet clear how long the course will take - something between 1-2 months. The initial guess is 5 weeks in total: 2 weeks for exercises 1-2, 2 weeks for exercises 3-5, and 1 week for exercise 6. Though likely some will do them all in one week.
 
-Please keep track of how much time you spend on each exercise (and in case of exercise 1: tetris, track the time for each level). We will ask you to fill questionnaires for each exercise, so that we can improve the course for future students.
+Please [keep track](https://www.mytasktimer.com/) of how much time you spend on each exercise (and in case of exercise 1: tetris, track the time for each level). We will ask you to fill questionnaires for each exercise, so that we can improve the course for future students.
 
 The exercise submitting service is at https://studies.cs.helsinki.fi/stats/courses/tdd-pilot
 
@@ -34,3 +34,7 @@ The exercise submitting service is at https://studies.cs.helsinki.fi/stats/cours
 It would be really helpful for improving this course, if some people could record on video when they do the exercises, from beginning to end.
 
 It's [quite easy](https://obsproject.com/wiki/OBS-Studio-Quickstart) to do screen recording with [OBS Studio](https://obsproject.com/) - all the kids on Twitch can do it, and so can you. We'll likely provide an S3 bucket where you can upload the video files.
+
+---
+
+Proceed to [Part 1: What is TDD](/1-tdd)
