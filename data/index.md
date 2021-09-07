@@ -23,6 +23,8 @@ In the following short video, [Dave Farley](https://twitter.com/davefarley77) ex
 
 You are ready for this course if you have no problems writing small applications of a few thousand lines of code. Some experience in writing web apps and using a database is recommended (one of the projects is a small full-stack web app).
 
+You are expected to know (or learn quickly) the things that are covered in the courses [Full Stack (parts 0-5)](https://fullstackopen.com/en/), [DevOps with Docker (parts 0-2)](https://devopswithdocker.com/), [Tietokantojen perusteet](https://tikape.mooc.fi/)/[any SQL tutorial](https://www.postgresql.org/docs/current/tutorial.html).
+
 
 ## How?
 
