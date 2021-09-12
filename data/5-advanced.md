@@ -61,6 +61,7 @@ Start the app's development using the [walking skeleton](#walking-skeleton) appr
 ##### What to submit
 
 * Submit to https://studies.cs.helsinki.fi/stats/courses/tdd-pilot a **Git repository** with the source code and history of you doing this exercise.
+* Fill [this questionnaire](https://forms.gle/rQpKzRaFJJdb3ZkK9). Note the need for more detailed time tracking.
 
 ---
 

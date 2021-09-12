@@ -63,6 +63,7 @@ TODO: simplify the project, preconfigure stryker and some line coverage tool
 ##### What to submit
 
 * Submit to https://studies.cs.helsinki.fi/stats/courses/tdd-pilot a **Git repository** with the source code and history of you doing this exercise. Also include a file with the **mutation test results**.
+* Fill [this questionnaire](https://forms.gle/Z11PazAmaWyTXvX8A).
 
 ---
 

@@ -117,6 +117,7 @@ If you get stuck, you may watch [this example screencast](https://www.youtube.co
 ##### What to submit
 
 * Submit to https://studies.cs.helsinki.fi/stats/courses/tdd-pilot a **Git repository** with the source code and history of you doing this exercise.
+* Fill [this questionnaire](https://forms.gle/XCmGN4ZDvtdtGbLG6). Note the need for more detailed time tracking.
 
 </tdd-decision>
 

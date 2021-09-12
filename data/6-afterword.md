@@ -25,6 +25,7 @@ TODO: example RLE files for test data, link to OBS screen recording instructions
 
 * **Record a video** of you doing this exercise. Use a screen recording software (e.g. [OBS Studio](https://obsproject.com/)). Upload the video to a streaming service (e.g. unlisted video on YouTube) and include a **link to the video** in the comment field as you submit the Git repository.
 * Submit to https://studies.cs.helsinki.fi/stats/courses/tdd-pilot a **Git repository** with the source code and history of you doing this exercise.
+* Fill [this questionnaire](https://forms.gle/SyocAsQksBq5GUNk6). Note the need for more detailed time tracking.
 
 ---
 

@@ -132,6 +132,7 @@ Afterwards we will have a competition between the students of this course about 
 
 * **Perform this refactoring live** in the weekly exercise groups.
 * Submit to https://studies.cs.helsinki.fi/stats/courses/tdd-pilot a **Git repository** with the history of you doing this refactoring, so that the commits are **as small as possible** and all the tests **pass on every commit**.
+* Fill [this questionnaire](https://forms.gle/bN6YkZEssTTewBxq8).
 
 ---
 
