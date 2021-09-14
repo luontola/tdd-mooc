@@ -161,6 +161,10 @@ Write a function which is as hard to test as possible. Then write tests for it.
 * Submit to https://studies.cs.helsinki.fi/stats/courses/tdd-pilot a **Git repository** with the source code and history of you doing this exercise.
 * Fill [this questionnaire](https://forms.gle/27xgUm3WH4skKUj18).
 
+##### Effort estimate
+
+* 1-2 hours?
+
 ---
 
 Proceed to [Part 4: Legacy code](/4-legacy-code)

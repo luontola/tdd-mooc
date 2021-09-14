@@ -63,6 +63,10 @@ Start the app's development using the [walking skeleton](#walking-skeleton) appr
 * Submit to https://studies.cs.helsinki.fi/stats/courses/tdd-pilot a **Git repository** with the source code and history of you doing this exercise.
 * Fill [this questionnaire](https://forms.gle/rQpKzRaFJJdb3ZkK9). Note the need for more detailed time tracking.
 
+##### Effort estimate
+
+* 10-20 hours? Most of the effort is in setting up the infrastructure, and that becomes the faster the more old projects you have from where to copy-paste snippets.
+
 ---
 
 Proceed to [Part 6: To infinity and beyond](/6-afterword)

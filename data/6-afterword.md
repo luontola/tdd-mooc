@@ -27,6 +27,10 @@ TODO: example RLE files for test data, link to OBS screen recording instructions
 * Submit to https://studies.cs.helsinki.fi/stats/courses/tdd-pilot a **Git repository** with the source code and history of you doing this exercise.
 * Fill [this questionnaire](https://forms.gle/SyocAsQksBq5GUNk6). Note the need for more detailed time tracking.
 
+##### Effort estimate
+
+* 3-5 hours?
+
 ---
 
 EOF

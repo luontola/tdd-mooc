@@ -134,6 +134,10 @@ Afterwards we will have a competition between the students of this course about 
 * Submit to https://studies.cs.helsinki.fi/stats/courses/tdd-pilot a **Git repository** with the history of you doing this refactoring, so that the commits are **as small as possible** and all the tests **pass on every commit**.
 * Fill [this questionnaire](https://forms.gle/bN6YkZEssTTewBxq8).
 
+##### Effort estimate
+
+* 1-2 hours. Doing the refactoring once takes ~10 minutes, but you should repeat it many times and practice different approaches.
+
 ---
 
 Proceed to [Part 3: The Untestables](/3-challenges)

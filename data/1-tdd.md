@@ -119,6 +119,21 @@ If you get stuck, you may watch [this example screencast](https://www.youtube.co
 * Submit to https://studies.cs.helsinki.fi/stats/courses/tdd-pilot a **Git repository** with the source code and history of you doing this exercise.
 * Fill [this questionnaire](https://forms.gle/XCmGN4ZDvtdtGbLG6). Note the need for more detailed time tracking.
 
+##### Effort estimate
+
+The exercise is split into 10 levels:
+* Level 1 ≈ 1h
+* Level 2 ≈ 1h
+* Level 3 ≈ 1h
+* Between 3 and 4 is a good time to do [exercise 2](/2-design#exercise-2-small-safe-steps). Refactoring in small steps makes level 4 easier.
+* Level 4 ≈ 2h
+* Level 5 ≈ 1h?
+* Level 6 ≈ 1h?
+* Level 7 ≈ 1h?
+* Level 8 ≈ 1h?
+* Level 9 ≈ 1h?
+* Level 10 ≈ 1h?
+
 </tdd-decision>
 
 ---

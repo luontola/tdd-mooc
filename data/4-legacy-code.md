@@ -65,6 +65,10 @@ TODO: simplify the project, preconfigure stryker and some line coverage tool
 * Submit to https://studies.cs.helsinki.fi/stats/courses/tdd-pilot a **Git repository** with the source code and history of you doing this exercise. Also include a file with the **mutation test results**.
 * Fill [this questionnaire](https://forms.gle/Z11PazAmaWyTXvX8A).
 
+##### Effort estimate
+
+* 1-2 hours?
+
 ---
 
 Proceed to [Part 5: Advanced techniques](/5-advanced)
