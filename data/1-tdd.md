@@ -112,7 +112,7 @@ Clone the project <https://github.com/luontola/tdd-mooc-tetris> and follow its i
 
 The assignment is to *write a Tetris game using TDD.* The first couple dozen tests have already been written for you, so that it'll be easier to get into the rhythm of writing tests first.
 
-If you get stuck, you may watch [this example screencast](https://www.youtube.com/playlist?list=PLSADDT9dzgRCjVvS13ekPr1KwX_JkDQJM). It's based on an older version of the exercise, so it's in Java instead of JavaScript, but otherwise it's pretty much the same.
+If you get stuck, you may watch [this example screencast](https://www.youtube.com/playlist?list=PLSADDT9dzgRCjVvS13ekPr1KwX_JkDQJM) for inspiration. It's based on an older version of the exercise, so it's in Java instead of JavaScript, but otherwise it's pretty much the same.
 
 ##### What to submit
 
