@@ -49,7 +49,7 @@ You may clone the project template <https://github.com/luontola/tdd-mooc-webapp>
 
 The assignment is to *write a To-Do List app using TDD.* It needs to have a [SPA](https://developer.mozilla.org/en-US/docs/Glossary/SPA) web user interface, an API backend and a database.
 
-Only a few basic features are needed: add a to-do item, rename a to-do item, mark a to-to item completed, archive all completed to-do items. Authentication is not needed.
+Only a few basic features are needed: add a to-do item, rename a to-do item, mark a to-do item completed, archive all completed to-do items. Authentication is not needed.
 
 Start the app's development using the [walking skeleton](#walking-skeleton) approach. Focus on writing tests on every level of the stack:
 
