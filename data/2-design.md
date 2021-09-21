@@ -1,8 +1,9 @@
 ---
 path: "/2-design"
-title: "Part 2: Refactoring and design"
+title: "Chapter 2: Refactoring and design"
 hidden: false
 information_page: true
+sidebar_priority: 3000
 ---
 
 
@@ -119,25 +120,6 @@ https://medium.com/@kentbeck_7670/programmer-test-principles-d01c064d7934
 
 **Complex test setup:** If the *arrange* part of a test is long, requiring the careful arrangement of many collaborators to get the system into the desired initial state for the test, it may indicate design problems in the code. Lots of constructor arguments is a similar smell (which is why dependency injection frameworks are best avoided - they make it too easy to add dependencies). Instead, try to think of a design which eliminates some of the dependencies.
 
-
-# Exercise 2: Small, safe steps
-
-Clone the project <https://github.com/luontola/tdd-mooc-small-steps> and follow its instructions.
-
-The assignment is to *refactor the above code to replace [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) class with [Temporal.PlainDate](https://tc39.es/proposal-temporal/docs/plaindate.html) class.* Repeat this refactoring many times. Focus on doing as small changes as possible, so that all tests will pass between every change.
-
-Afterwards we will have a competition between the students of this course about doing this refactoring using the smallest possible steps.
-
-##### What to submit
-
-* **Perform this refactoring live** in the weekly exercise groups.
-* Submit to https://studies.cs.helsinki.fi/stats/courses/tdd-pilot a **Git repository** with the history of you doing this refactoring, so that the commits are **as small as possible** and all the tests **pass on every commit**.
-* Fill [this questionnaire](https://forms.gle/bN6YkZEssTTewBxq8).
-
-##### Effort estimate
-
-* 1-2 hours. Doing the refactoring once takes ~10 minutes, but you should repeat it many times and practice different approaches.
-
 ---
 
-Proceed to [Part 3: The Untestables](/3-challenges)
+Proceed to [Chapter 3: The Untestables](/3-challenges) or [Exercises](/exercises)

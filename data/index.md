@@ -37,4 +37,4 @@ The exercises are in JavaScript, but if you prefer, you may write the projects i
 
 ---
 
-Proceed to [Part 1: What is TDD](/1-tdd)
+Proceed to [Exercises and schedule](/exercises)

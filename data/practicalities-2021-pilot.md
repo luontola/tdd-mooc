@@ -37,4 +37,4 @@ It's [quite easy](https://obsproject.com/wiki/OBS-Studio-Quickstart) to do scree
 
 ---
 
-Proceed to [Part 1: What is TDD](/1-tdd)
+Proceed to [Exercises and schedule](/exercises)

@@ -3,7 +3,7 @@ path: "/credits"
 title: "About the material"
 hidden: false
 information_page: true
-sidebar_priority: 4000
+sidebar_priority: 2000
 ---
 
 This course material was written by [Esko Luontola](https://twitter.com/EskoLuontola) and financed

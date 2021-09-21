@@ -1,8 +1,9 @@
 ---
 path: "/3-challenges"
-title: "Part 3: The Untestables"
+title: "Chapter 3: The Untestables"
 hidden: false
 information_page: true
+sidebar_priority: 3000
 ---
 
 There are things which make testing more challenging. Many of them are global variables of sorts. Global variables cause spooky action at a distance. Do the same thing over and over again, and get a different result. Tests may randomly pass or fail, depending on the order in which they are run.
@@ -151,20 +152,6 @@ Optimize the diff for humans. Even video and audio can be diffed as an image.
 Read more:
 https://www.youtube.com/watch?v=5_IW7npQk9k
 
-
-# Exercise 3: Untestable code
-
-Write a function which is as hard to test as possible. Then write tests for it.
-
-##### What to submit
-
-* Submit to https://studies.cs.helsinki.fi/stats/courses/tdd-pilot a **Git repository** with the source code and history of you doing this exercise.
-* Fill [this questionnaire](https://forms.gle/27xgUm3WH4skKUj18).
-
-##### Effort estimate
-
-* 1-2 hours?
-
 ---
 
-Proceed to [Part 4: Legacy code](/4-legacy-code)
+Proceed to [Chapter 4: Legacy code](/4-legacy-code) or [Exercises](/exercises)

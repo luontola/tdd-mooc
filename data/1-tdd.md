@@ -1,8 +1,9 @@
 ---
 path: "/1-tdd"
-title: "Part 1: What is TDD"
+title: "Chapter 1: What is TDD"
 hidden: false
 information_page: true
+sidebar_priority: 3000
 ---
 
 ## History
@@ -103,39 +104,6 @@ When a test fails, look at the name of the test. There are three possibilities:
 Read more:
 https://dannorth.net/introducing-bdd/
 
-
-# Exercise 1: Tetris
-
-<tdd-decision>
-
-Clone the project <https://github.com/luontola/tdd-mooc-tetris> and follow its instructions.
-
-The assignment is to *write a Tetris game using TDD.* The first couple dozen tests have already been written for you, so that it'll be easier to get into the rhythm of writing tests first.
-
-If you get stuck, you may watch [this example screencast](https://www.youtube.com/playlist?list=PLSADDT9dzgRCjVvS13ekPr1KwX_JkDQJM) for inspiration. It's based on an older version of the exercise, so it's in Java instead of JavaScript, but otherwise it's pretty much the same.
-
-##### What to submit
-
-* Submit to https://studies.cs.helsinki.fi/stats/courses/tdd-pilot a **Git repository** with the source code and history of you doing this exercise.
-* Fill [this questionnaire](https://forms.gle/XCmGN4ZDvtdtGbLG6). Note the need for more detailed time tracking.
-
-##### Effort estimate
-
-The exercise is split into 10 levels:
-* Level 1 ≈ 1h
-* Level 2 ≈ 1h
-* Level 3 ≈ 1h
-* Between 3 and 4 is a good time to do [exercise 2](/2-design#exercise-2-small-safe-steps). Refactoring in small steps makes level 4 easier.
-* Level 4 ≈ 2h
-* Level 5 ≈ 1h?
-* Level 6 ≈ 1h?
-* Level 7 ≈ 1h?
-* Level 8 ≈ 1h?
-* Level 9 ≈ 1h?
-* Level 10 ≈ 1h?
-
-</tdd-decision>
-
 ---
 
-Proceed to [Part 2: Refactoring and design](/2-design)
+Proceed to [Chapter 2: Refactoring and design](/2-design) or [Exercises](/exercises)

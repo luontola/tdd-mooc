@@ -1,8 +1,9 @@
 ---
 path: "/4-legacy-code"
-title: "Part 4: Legacy code"
+title: "Chapter 4: Legacy code"
 hidden: false
 information_page: true
+sidebar_priority: 3000
 ---
 
 TODO: legacy code definition
@@ -51,24 +52,6 @@ Read more:
 https://www.infoq.com/news/2007/03/characterization-testing/
 https://www.youtube.com/watch?v=8OxH9Lz0Ckg
 
-
-# Exercise 4: Testing legacy code
-
-Clone the project <https://github.com/emilybache/GildedRose-Refactoring-Kata>. Take one of the JavaScript editions of that project and configure it to use the [Stryker mutation testing framework](https://stryker-mutator.io/). Also install a basic code coverage tool which calculates line coverage.
-
-The assignment is to *write tests for the above code, until it has 100% mutation test coverage.*
-
-TODO: simplify the project, preconfigure stryker and some line coverage tool
-
-##### What to submit
-
-* Submit to https://studies.cs.helsinki.fi/stats/courses/tdd-pilot a **Git repository** with the source code and history of you doing this exercise. Also include a file with the **mutation test results**.
-* Fill [this questionnaire](https://forms.gle/Z11PazAmaWyTXvX8A).
-
-##### Effort estimate
-
-* 1-2 hours?
-
 ---
 
-Proceed to [Part 5: Advanced techniques](/5-advanced)
+Proceed to [Chapter 5: Advanced techniques](/5-advanced) or [Exercises](/exercises)
