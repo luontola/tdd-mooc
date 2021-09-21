@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import styled from "styled-components"
 
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
@@ -41,11 +41,13 @@ const HideBody = styled.div`
 const ShowBody = styled.div`
 `
 
-const isBrowser = typeof window !== "undefined"
 
 const TextBox = (props) => {
   const [accepted, setAccepted] = useState(false)
-  const [previouslyAccepted] = useState(isBrowser && localStorage.getItem("tdd-decision") === "yes")
+  const [previouslyAccepted, setPreviouslyAccepted] = useState(false)
+  useEffect(() => {
+    setPreviouslyAccepted(localStorage.getItem("tdd-decision") === "yes")
+  }, [])
   const Body = (accepted || previouslyAccepted) ? ShowBody : HideBody
   const promiseText = "During this course, I will not add any production code, unless it is required by a failing test."
   return (
