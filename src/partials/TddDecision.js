@@ -13,10 +13,12 @@ const CheckboxLabel = styled.label`
   text-indent: -1em;
   margin-left: 1em;
 `
-const PreviouslyAccepted = styled(CheckboxLabel)`
-  color: green;
+const PreviouslyAccepted = styled.div`
+  font-size: 1.25rem;
+  padding: 1rem 3rem;
   text-indent: -1.25em;
   margin-left: 1.25em;
+  color: green;
 `
 
 const Accepted = styled.div`
