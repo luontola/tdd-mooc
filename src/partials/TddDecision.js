@@ -10,6 +10,13 @@ const Header = styled.div`
 const CheckboxLabel = styled.label`
   font-size: 1.25rem;
   padding: 1rem 3rem;
+  text-indent: -1em;
+  margin-left: 1em;
+`
+const PreviouslyAccepted = styled(CheckboxLabel)`
+  color: green;
+  text-indent: -1.25em;
+  margin-left: 1.25em;
 `
 
 const Accepted = styled.div`
@@ -32,26 +39,40 @@ const HideBody = styled.div`
 const ShowBody = styled.div`
 `
 
+const isBrowser = typeof window !== "undefined"
 
 const TextBox = (props) => {
-  const [accepted, setAccepted] = useState(false);
-  const Body = accepted ? ShowBody : HideBody;
+  const [accepted, setAccepted] = useState(false)
+  const [previouslyAccepted] = useState(isBrowser && localStorage.getItem("tdd-decision") === "yes")
+  const Body = (accepted || previouslyAccepted) ? ShowBody : HideBody
+  const promiseText = "During this course, I will not add any production code, unless it is required by a failing test."
   return (
     <div>
-      <Header>
-        Before starting the exercises, you should make the following decision:
-        <CheckboxLabel>
-          <input type="checkbox" id="tdd-decision"
-            checked={accepted}
-            onClick={e => setAccepted(e.target.checked)}
-          /> During this course, I will not add any production code, unless it's required by a failing test.
-        </CheckboxLabel>
-        {accepted &&
+      {previouslyAccepted ?
+        <Header>
+          <PreviouslyAccepted>
+            ✅ {promiseText}
+          </PreviouslyAccepted>
+        </Header> :
+        <Header>
+          Before starting the exercises, you should make the following decision:
+          <CheckboxLabel>
+            <input type="checkbox" id="tdd-decision"
+                   checked={accepted}
+                   onClick={e => {
+                     const accepted = e.target.checked
+                     setAccepted(accepted)
+                     localStorage.setItem("tdd-decision", accepted ? "yes" : "no")
+                   }}
+            /> {promiseText}
+          </CheckboxLabel>
+          {accepted &&
           <Accepted>
             ✅ Good. And don't you forget that.
           </Accepted>
-        }
-      </Header>
+          }
+        </Header>
+      }
       <Body>{props.children}</Body>
     </div>
   )

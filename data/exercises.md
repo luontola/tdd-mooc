@@ -29,8 +29,6 @@ TODO: save checkboxes in local storage, strikethrough done rows
 | 📖 | [Chapter 6: To infinity and beyond](/6-afterword) | 5 min | <input type="checkbox"> |
 
 
-TODO: store the decision in local storage, avoid having to click the checkbox every time when entering this page
-
 <tdd-decision>
 
 # Exercise 1: Tetris
