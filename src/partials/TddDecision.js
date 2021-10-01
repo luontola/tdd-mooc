@@ -63,7 +63,7 @@ const TextBox = (props) => {
           <CheckboxLabel>
             <input type="checkbox" id="tdd-decision"
                    checked={accepted}
-                   onClick={e => {
+                   onChange={e => {
                      const accepted = e.target.checked
                      setAccepted(accepted)
                      localStorage.setItem("tdd-decision", accepted ? "yes" : "no")
