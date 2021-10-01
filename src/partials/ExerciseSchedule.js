@@ -11,15 +11,15 @@ const Table = styled.table`
   border-radius: 4px;
   box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
 
-  & tr {
+  tr {
     border-bottom: 1px solid rgba(224, 224, 224, 1);
   }
 
-  & tbody tr:last-of-type {
+  tbody > tr:last-of-type {
     border-bottom: none;
   }
 
-  & td, th {
+  td, th {
     padding: 0.8em 0.25em 0.8em 1em;
   }
 `
