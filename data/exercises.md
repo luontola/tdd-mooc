@@ -10,24 +10,8 @@ In this course, 99% of the learning happens when doing the exercises. The prose 
 
 This is the suggested order of completing the material and exercises. You may use the checkboxes to keep track of your progress.
 
-TODO: save checkboxes in local storage, strikethrough done rows
-
-|    | What to read and do | Duration | Done |
-|----|---------------------|----------|------|
-| 📖 | [Chapter 1: What is TDD](/1-tdd) | 30 min | <input type="checkbox"> |
-| 🧑‍💻 | [Exercise 1: Tetris](#exercise-1-tetris), levels 1-3 | 3h | <input type="checkbox"> |
-| 📖 | [Chapter 2: Refactoring and design](/2-design) | 15 min | <input type="checkbox"> |
-| 🧑‍💻 | [Exercise 2: Small, safe steps](#exercise-2-small-safe-steps) | 2 h | <input type="checkbox"> |
-| 🧑‍💻 | [Exercise 1: Tetris](#exercise-1-tetris), levels 4-10 | 8 h | <input type="checkbox"> |
-| 📖 | [Chapter 3: The Untestables](/3-challenges) | 30 min | <input type="checkbox"> |
-| 🧑‍💻 | [Exercise 3: Untestable code](#exercise-3-untestable-code) | 2 h | <input type="checkbox"> |
-| 📖 | [Chapter 4: Legacy code](/4-legacy-code) | 15 min | <input type="checkbox"> |
-| 🧑‍💻 | [Exercise 4: Legacy code](#exercise-4-legacy-code) | 2 h | <input type="checkbox"> |
-| 📖 | [Chapter 5: Advanced techniques](/5-advanced) | 15 min | <input type="checkbox"> |
-| 🧑‍💻 | [Exercise 5: Full-stack web app](#exercise-5-full-stack-web-app) | 20 h | <input type="checkbox"> |
-| 🧑‍💻 | [Exercise 6: Conway's Game of Life](#exercise-6-conways-game-of-life) | 5 h | <input type="checkbox"> |
-| 📖 | [Chapter 6: To infinity and beyond](/6-afterword) | 5 min | <input type="checkbox"> |
-
+<exercise-schedule>
+</exercise-schedule>
 
 <tdd-decision>
 

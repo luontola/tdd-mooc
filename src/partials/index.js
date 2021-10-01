@@ -40,14 +40,7 @@ import AbStudy from "./AbStudy"
 import MoodleExercise from "./MoodleExercise"
 import SqlTrainerExercise from "./SqlTrainerExercise"
 
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableRow,
-  TableTh,
-} from "./Table"
+import { Table, TableBody, TableCell, TableHead, TableRow, TableTh } from "./Table"
 import Deadline from "./Deadline"
 import OnlyForAbGroup from "./AbStudy/OnlyForAbGroup"
 import H3 from "./Headers/H3"
@@ -72,10 +65,12 @@ import Button from "../components/Button"
 import Vocabulary from "./Vocabulary"
 import VocabularyWord from "./Vocabulary/VocabularyWord"
 import TddDecision from "./TddDecision"
+import ExerciseSchedule from "./ExerciseSchedule"
 
 const mapping = () => ({
   test: Test,
   "tdd-decision": TddDecision,
+  "exercise-schedule": ExerciseSchedule,
   "pages-in-this-section": PagesInThisSection,
   "programming-exercise": ProgrammingExercise,
   "text-box": TextBox,
