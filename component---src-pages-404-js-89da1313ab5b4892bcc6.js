@@ -1,2 +1,0 @@
-(self.webpackChunktdd_mooc=self.webpackChunktdd_mooc||[]).push([[883],{59616:function(e,t,l){"use strict";l.r(t);var n=l(67294),a=l(45115),c=l(86810),u=l(54021),o=l(35414);t.default=(0,u._N)((function(){return n.createElement(a.Z,null,n.createElement(c.Z,null,n.createElement(o.Z,{title:"404"}),n.createElement("h1",null,"Ei löytynyt"),n.createElement("p",null,"Olet päätynyt osoitteeseen, jota ei ole olemassa.")))}))}}]);
-//# sourceMappingURL=component---src-pages-404-js-89da1313ab5b4892bcc6.js.map
