@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import styled from "styled-components"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
+import { SMALL_MEDIUM_BREAKPOINT } from "../util/constants"
 
 const Table = styled.table`
   width: 100%;
@@ -20,6 +21,13 @@ const Table = styled.table`
 
   & td, th {
     padding: 0.8em 0.25em 0.8em 1em;
+  }
+`
+
+const IconCell = styled.td`
+  width: 0;
+  @media only screen and (max-width: ${SMALL_MEDIUM_BREAKPOINT}) {
+    display: none;
   }
 `
 
@@ -47,7 +55,7 @@ function Step({ id, icon, content, duration }) {
   const textStyle = done ? { textDecoration: "line-through" } : {}
   return (
     <tr style={rowStyle}>
-      <td aria-hidden="true">{icon}</td>
+      <IconCell aria-hidden="true">{icon}</IconCell>
       <td style={textStyle}>{content}</td>
       <td style={textStyle}>{duration}</td>
       <td><BigCheckbox type="checkbox" checked={done} onChange={onChange} /></td>
@@ -60,7 +68,7 @@ function ExerciseSchedule() {
     <Table>
       <thead>
       <tr>
-        <th aria-hidden="true" style={{ width: 0 }} />
+        <IconCell aria-hidden="true" />
         <th>What to read and do</th>
         <th>Duration</th>
         <th>Done</th>
