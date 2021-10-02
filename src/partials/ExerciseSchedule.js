@@ -80,7 +80,7 @@ function ExerciseSchedule() {
             content={<a href="/1-tdd">Chapter 1: What is TDD</a>}
             duration="30 min" />
       <Step id="exercise1a"
-            icon="🧑‍💻"
+            icon="👩‍💻"
             content={<><a href="#exercise-1-tetris">Exercise 1: Tetris</a>, levels 1-3</>}
             duration="3 h" />
       <Step id="chapter2"
@@ -88,11 +88,11 @@ function ExerciseSchedule() {
             content={<a href="/2-design">Chapter 2: Refactoring and design</a>}
             duration="15 min" />
       <Step id="exercise2"
-            icon="🧑‍💻"
+            icon="👨‍💻"
             content={<a href="#exercise-2-small-safe-steps">Exercise 2: Small, safe steps</a>}
             duration="2 h" />
       <Step id="exercise1b"
-            icon="🧑‍💻"
+            icon="👩‍💻"
             content={<><a href="#exercise-1-tetris">Exercise 1: Tetris</a>, levels 4-10</>}
             duration="8 h" />
       <Step id="chapter3"
@@ -100,7 +100,7 @@ function ExerciseSchedule() {
             content={<a href="/3-challenges">Chapter 3: The Untestables</a>}
             duration="30 min" />
       <Step id="exercise3"
-            icon="🧑‍💻"
+            icon="👨‍💻"
             content={<a href="#exercise-3-untestable-code">Exercise 3: Untestable code</a>}
             duration="2 h" />
       <Step id="chapter4"
@@ -108,7 +108,7 @@ function ExerciseSchedule() {
             content={<a href="/4-legacy-code">Chapter 4: Legacy code</a>}
             duration="15 min" />
       <Step id="exercise4"
-            icon="🧑‍💻"
+            icon="👩‍💻"
             content={<a href="#exercise-4-legacy-code">Exercise 4: Legacy code</a>}
             duration="2 h" />
       <Step id="chapter5"
@@ -116,11 +116,11 @@ function ExerciseSchedule() {
             content={<a href="/5-advanced">Chapter 5: Advanced techniques</a>}
             duration="15 min" />
       <Step id="exercise5"
-            icon="🧑‍💻"
+            icon="👨‍💻"
             content={<a href="#exercise-5-full-stack-web-app">Exercise 5: Full-stack web app</a>}
             duration="10-20 h" />
       <Step id="exercise6"
-            icon="🧑‍💻"
+            icon="👩‍💻"
             content={<a href="#exercise-6-conways-game-of-life">Exercise 6: Conway's Game of Life</a>}
             duration="5 h" />
       <Step id="chapter6"
