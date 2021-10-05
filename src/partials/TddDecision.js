@@ -55,7 +55,7 @@ const TextBox = (props) => {
       {previouslyAccepted ?
         <Header>
           <PreviouslyAccepted>
-            ✅ {promiseText}
+            <span aria-hidden="true">✅</span> {promiseText}
           </PreviouslyAccepted>
         </Header> :
         <Header>
@@ -72,7 +72,7 @@ const TextBox = (props) => {
           </CheckboxLabel>
           {accepted &&
           <Accepted>
-            ✅ Good. And don't you forget that.
+            <span aria-hidden="true">✅</span> Good. And don't you forget that.
           </Accepted>
           }
         </Header>
