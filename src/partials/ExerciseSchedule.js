@@ -82,7 +82,7 @@ function ExerciseSchedule() {
       <Step id="exercise1a"
             icon="👩‍💻"
             content={<><a href="#exercise-1-tetris">Exercise 1: Tetris</a>, levels 1-3</>}
-            duration="3 h" />
+            duration="3-6 h" />
       <Step id="chapter2"
             icon="📖"
             content={<a href="/2-design">Chapter 2: Refactoring and design</a>}
@@ -93,12 +93,16 @@ function ExerciseSchedule() {
             duration="2 h" />
       <Step id="exercise1b"
             icon="👩‍💻"
-            content={<><a href="#exercise-1-tetris">Exercise 1: Tetris</a>, levels 4-10</>}
-            duration="8 h" />
+            content={<><a href="#exercise-1-tetris">Exercise 1: Tetris</a>, levels 4-8</>}
+            duration="6-14 h" />
       <Step id="chapter3"
             icon="📖"
             content={<a href="/3-challenges">Chapter 3: The Untestables</a>}
             duration="30 min" />
+      <Step id="exercise1c"
+            icon="👩‍💻"
+            content={<><a href="#exercise-1-tetris">Exercise 1: Tetris</a>, levels 9-10</>}
+            duration="2-4 h" />
       <Step id="exercise3"
             icon="👨‍💻"
             content={<a href="#exercise-3-untestable-code">Exercise 3: Untestable code</a>}
@@ -122,7 +126,7 @@ function ExerciseSchedule() {
       <Step id="exercise6"
             icon="👩‍💻"
             content={<a href="#exercise-6-conways-game-of-life">Exercise 6: Conway's Game of Life</a>}
-            duration="5 h" />
+            duration="3-5 h" />
       <Step id="chapter6"
             icon="📖"
             content={<a href="/6-afterword">Chapter 6: To infinity and beyond</a>}

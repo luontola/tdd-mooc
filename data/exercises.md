@@ -31,17 +31,17 @@ If you get stuck, you may watch [this example screencast](https://www.youtube.co
 ##### Effort estimate
 
 The exercise is split into 10 levels:
-* Level 1 ≈ 1h
-* Level 2 ≈ 1h
-* Level 3 ≈ 1h
+* Level 1 ≈ 1-2h
+* Level 2 ≈ 1-2h
+* Level 3 ≈ 1-2h
 * Between 3 and 4 is a good time to do [exercise 2](#exercise-2-small-safe-steps). Refactoring in small steps makes level 4 easier.
-* Level 4 ≈ 2h
-* Level 5 ≈ 1h?
-* Level 6 ≈ 1h?
-* Level 7 ≈ 1h?
-* Level 8 ≈ 1h?
-* Level 9 ≈ 1h?
-* Level 10 ≈ 1h?
+* Level 4 ≈ 2-3h
+* Level 5 ≈ 1-3h
+* Level 6 ≈ 1-3h
+* Level 7 ≈ 1-3h
+* Level 8 ≈ 1-2h
+* Level 9 ≈ 1-2h
+* Level 10 ≈ 1-2h
 
 
 # Exercise 2: Small, safe steps
