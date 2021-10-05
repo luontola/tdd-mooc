@@ -118,6 +118,11 @@ Concurrency artifacts such as [CountDownLatch](https://docs.oracle.com/en/java/j
 Always have a timeout for asynchronous tests, in case the code gets stuck in an infinite loop or deadlock or doesn't send some event. The timeout needs to be long enough to not be triggered randomly when the computer is overloaded, but short enough that you don't need to wait long for the tests to fail, especially if the wait time is `NumberOfTests * Timeout`.
 
 
+## Randomness
+
+TODO
+
+
 ## User interface
 
 Tests should be sensitive to behavior changes and insensitive to structure changes. This is even more important in the user interface. Changing the visual style or layout of the UI, should not break behavioral tests.
