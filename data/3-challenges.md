@@ -149,7 +149,7 @@ Don't click buttons directly in test code. Create an automation layer of high-le
 
 Prefer selecting elements based on the visible text on the button/link/label; it makes the tests easier to read. But don't be afraid to add extra IDs, classes and [data attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) to simplify testing.
 
-Have only a few end-to-end tests. They are slow and flaky. Prefer unit tests. Set a hard limit for how many end-to-end tests the whole application may have (≤10 for even big apps) and stick to it. End-to-end tests should only check that things are wired together, not behavioral correctness.
+Have only a few end-to-end tests. They are slow and flaky. Prefer unit tests. Set a hard limit for how many end-to-end tests the whole application may have (≤10 for even big apps) and stick to it. End-to-end tests should only check that things are wired together, not behavioral correctness. Overreliance on end-to-end tests can [grind development to a halt](https://building.nubank.com.br/why-we-killed-our-end-to-end-test-suite/).
 
 
 ### Visual testing
