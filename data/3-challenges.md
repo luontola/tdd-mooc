@@ -120,7 +120,13 @@ Always have a timeout for asynchronous tests, in case the code gets stuck in an 
 
 ## Randomness
 
-TODO
+It's desirable for tests to pass or fail reliably. But what if the code being tested is meant to have randomness? If you can't anymore assert exact values, you will need to approach it like [property-based testing](https://increment.com/testing/in-praise-of-property-based-testing/) and assert *invariants*.
+
+For example, let's test a function which returns random integers between 1 and 10. You can call it lots of times and check that all values are within the range 1 to 10. You may also check that, with a sufficiently large sample size, each of the integers between 1 and 10 is returned at least once. You may also check that the values are returned in unpredictable order: build a few lists of same length from the return values, and check that the list contents are different. Depending on the domain, there might be other restrictions as well. For example, when dealing cards from a deck of cards, each card appears exactly once.
+
+But even if you assert that the random values are not predictable, once in a blue moon the values could be returned in seemingly predictable order[¹](https://dilbert.com/strip/2001-10-25) and your tests would fail. To improve repeatability, you could always use the same seed for the pseudorandom number generator. Or better yet, choose randomly from a couple different hard-coded seeds, so that the tests cannot be coupled to any single predictable random order.
+
+(Testing true randomness is outside the scope of this course. That's in the realm of mathematics and not TDD.)
 
 
 ## User interface
