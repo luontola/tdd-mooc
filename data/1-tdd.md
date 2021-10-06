@@ -52,6 +52,13 @@ http://www.jamesshore.com/v2/blog/2005/red-green-refactor
 https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html
 
 
+### Test list
+
+To stay focused on the current test and phase, it's helpful to maintain a [test list](https://twitter.com/ursenzler/status/1433096612088356866/photo/2) (on paper, a text file or as TODO comments in tests).
+
+Whenever you come up with an idea for a new test (e.g. a new feature or an edge case that needs to be covered), add it to your test list. Likewise for things that need refactoring. Then when you are done with the current feature, you can go through the list and handle them.
+
+
 ## What it looks like
 
 In the following video, [Otavio Lemos](https://twitter.com/otaviolemos) demonstrates TDD using the [Bowling Game Kata](https://kata-log.rocks/bowling-game-kata). Some points to pay attention to:
