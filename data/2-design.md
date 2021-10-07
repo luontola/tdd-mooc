@@ -41,9 +41,9 @@ The alternative is to have the same thing expressed in two or more places. Then 
 A common case of duplicated knowledge is similar code in two or more places. If the places are *almost* similar, first try to refactor them to be exactly the same code, after which it's easier to extract the common code to a shared function.
 
 
-### Rule of three
+### Three strikes and you refactor
 
-*aka "three strikes and you refactor"*
+*aka rule of three*
 
 If it's not yet obvious that in what way the duplicated code will vary from place to place, let the code fester/ripen a bit longer. Wait until the code is repeated in three places, and *then* refactor. This reduces the risk of creating the wrong abstraction. [[1]](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming))
 
