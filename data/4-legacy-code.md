@@ -6,17 +6,26 @@ information_page: true
 sidebar_priority: 3000
 ---
 
-TODO: legacy code definition
+What is legacy code? Code written by someone else? Code that you're afraid to change? If the code would have tests, you could change it without fear of breaking existing behavior. Thus the most useful definition of legacy code is *code without tests*. [[1]](https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052)
 
-
-## Fixing bugs test-first
-
-TODO
+The first step in refactoring is that the code has tests. [[2]](https://martinfowler.com/books/refactoring.html) Otherwise it's just changing stuff and hoping for the best. Even if the code is bad, we can improve the design safely if it has tests. The biggest challenge with legacy code is that it was not written with testing in mind.
 
 
 ## Seams
 
-TODO
+A seam is a place in the code where you can alter the behavior of the program without editing that place. In object-oriented languages, the most common seam is a polymorphic method call. In some languages (e.g. C), preprocessor and linker based seams are also an option.
+
+The basic strategy for changing legacy code is:
+
+1. Identify the place you need to change.
+2. Plan that where would be a good place to test it.
+3. Break dependencies which hinder testing. Without tests, you must introduce new seams using minimal, safe changes. The code quality may temporarily worsen.
+    * As an example, the *Extract and Override Call* technique goes like this: Extract the difficult line of code to a new method. In tests, create a testable subclass which overrides the problematic method with a fake implementation. Write tests against that testable subclass.
+4. Cover the code with characterization tests.
+5. Do the change you originally wanted.
+6. Refactor and make the code more testable.
+
+A whole book has been written about this topic, so it doesn't need to be repeated here. Read the book - [it gets better with age](https://www.commitstrip.com/en/2019/03/13/like-a-good-wine/).
 
 Read more:
 https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052
@@ -51,6 +60,13 @@ After the code is covered with characterization tests, it can be refactored, mak
 Read more:
 https://www.infoq.com/news/2007/03/characterization-testing/
 https://www.youtube.com/watch?v=8OxH9Lz0Ckg
+
+
+## Fixing bugs test-first
+
+TODO
+
+
 
 ---
 
