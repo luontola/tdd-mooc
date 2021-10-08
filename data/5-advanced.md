@@ -20,12 +20,21 @@ Then when the end-to-end test passes through the whole architecture, you can sta
 Read more:
 https://www.henricodolfing.com/2018/04/start-your-project-with-walking-skeleton.html
 
+
 ## Continuous delivery
 
 TODO
 
 Read more:
 http://www.jamesshore.com/v2/books/aoad2/continuous_deployment
+
+
+## Testing in production
+
+TODO
+
+Read more:
+https://www.youtube.com/watch?v=z-3aSVfoyBY
 
 
 ## test && commit || revert (TCR)
