@@ -30,7 +30,7 @@ https://martinfowler.com/bliki/BeckDesignRules.html
 
 ## Duplication
 
-The Don't Repeat Yourself (DRY) principle says:
+The *Don't Repeat Yourself* (DRY) principle says:
 
 > Every piece of knowledge must have a single, unambiguous, authoritative representation within a system.
 >
@@ -121,7 +121,7 @@ https://github.com/jnguyen095/clean-code/issues/28
 
 Many small changes is faster than one big change.
 
-When you refactor, don't change behavior. When you change behavior, don't refactor. Maintain three points of contact like a rock climber. 🧗
+When you refactor, don't change behavior. When you change behavior, don't refactor. Maintain three points of contact like a mountain climber. 🧗
 
 Read more:
 https://www.infoq.com/presentations/responsive-design/
