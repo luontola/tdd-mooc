@@ -67,7 +67,22 @@ TODO: tool to automatically check the size of steps and that the tests pass on e
 
 # Exercise 3: Untestable code
 
-Write a function which is as hard to test as possible. Then write tests for it.
+> **During this exercise, you are allowed to write the production code before the test code.**
+
+You may clone the project https://github.com/luontola/tdd-mooc-new-js-project to have a starting point.
+
+The assignment is to *write a function which is as hard to test as possible. Then write tests for it.*
+
+The following list contains some things which make testing harder (see [chapter 3](/3-challenges)). Write some code which uses at least four (4) of them.
+
+* Singletons or global variables
+* File system
+* Network sockets
+* Time
+* Concurrency
+* Randomness
+
+After you have written the hard-to-test code, write tests for it. Try to come up with tricks that allow you to test the code without refactoring it to be more testable.
 
 ##### What to submit
 
@@ -76,7 +91,7 @@ Write a function which is as hard to test as possible. Then write tests for it.
 
 ##### Effort estimate
 
-* 1-2 hours?
+* 1-2 hours
 
 
 # Exercise 4: Legacy code
