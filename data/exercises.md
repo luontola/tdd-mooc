@@ -96,11 +96,9 @@ After you have written the hard-to-test code, write tests for it. Try to come up
 
 # Exercise 4: Legacy code
 
-Clone the project <https://github.com/emilybache/GildedRose-Refactoring-Kata>. Take one of the JavaScript editions of that project and configure it to use the [Stryker mutation testing framework](https://stryker-mutator.io/). Also install a basic code coverage tool which calculates line coverage.
+Clone the project <https://github.com/luontola/tdd-mooc-legacy-code> and follow its instructions.
 
-The assignment is to *write tests for the above code, until it has 100% mutation test coverage.*
-
-TODO: simplify the project, preconfigure stryker and some line coverage tool
+The assignment is to *write tests for the above code, until it has 100% mutation test coverage*, and then *refactor it and add a new feature*. See the project's readme for details.
 
 ##### What to submit
 
