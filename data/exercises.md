@@ -107,7 +107,7 @@ The assignment is to *write tests for the above code, until it has 100% mutation
 
 ##### Effort estimate
 
-* 1-2 hours?
+* 2-4 hours
 
 
 # Exercise 5: Full-stack web app

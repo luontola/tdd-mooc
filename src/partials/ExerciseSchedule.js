@@ -90,7 +90,7 @@ function ExerciseSchedule() {
       <Step id="exercise2"
             icon="👨‍💻"
             content={<a href="#exercise-2-small-safe-steps">Exercise 2: Small, safe steps</a>}
-            duration="2 h" />
+            duration="1-2 h" />
       <Step id="exercise1b"
             icon="👩‍💻"
             content={<><a href="#exercise-1-tetris">Exercise 1: Tetris</a>, levels 4-8</>}
@@ -106,7 +106,7 @@ function ExerciseSchedule() {
       <Step id="exercise3"
             icon="👨‍💻"
             content={<a href="#exercise-3-untestable-code">Exercise 3: Untestable code</a>}
-            duration="2 h" />
+            duration="1-2 h" />
       <Step id="chapter4"
             icon="📖"
             content={<a href="/4-legacy-code">Chapter 4: Legacy code</a>}
@@ -114,7 +114,7 @@ function ExerciseSchedule() {
       <Step id="exercise4"
             icon="👩‍💻"
             content={<a href="#exercise-4-legacy-code">Exercise 4: Legacy code</a>}
-            duration="2 h" />
+            duration="2-4 h" />
       <Step id="chapter5"
             icon="📖"
             content={<a href="/5-advanced">Chapter 5: Advanced techniques</a>}
