@@ -25,7 +25,7 @@ If you get stuck, you may watch [this example screencast](https://www.youtube.co
 
 ##### What to submit
 
-* Submit to https://studies.cs.helsinki.fi/stats/courses/tdd-pilot a **Git repository** with the source code and history of you doing this exercise.
+* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-pilot> a **Git repository** with the source code and history of you doing this exercise.
 * Fill [this questionnaire](https://forms.gle/XCmGN4ZDvtdtGbLG6). Note the need for more detailed time tracking.
 
 ##### Effort estimate
@@ -57,7 +57,7 @@ TODO: tool to automatically check the size of steps and that the tests pass on e
 ##### What to submit
 
 * **Perform this refactoring live** in the weekly exercise groups.
-* Submit to https://studies.cs.helsinki.fi/stats/courses/tdd-pilot a **Git repository** with the history of you doing this refactoring, so that the commits are **as small as possible** and all the tests **pass on every commit**.
+* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-pilot> a **Git repository** with the history of you doing this refactoring, so that the commits are **as small as possible** and all the tests **pass on every commit**.
 * Fill [this questionnaire](https://forms.gle/bN6YkZEssTTewBxq8).
 
 ##### Effort estimate
@@ -69,7 +69,7 @@ TODO: tool to automatically check the size of steps and that the tests pass on e
 
 > **During this exercise, you are allowed to write the production code before the test code.**
 
-You may clone the project https://github.com/luontola/tdd-mooc-new-js-project to have a starting point.
+You may clone the project <https://github.com/luontola/tdd-mooc-new-js-project> to have a starting point.
 
 The assignment is to *write a function which is as hard to test as possible. Then write tests for it.*
 
@@ -86,7 +86,7 @@ After you have written the hard-to-test code, write tests for it. Try to come up
 
 ##### What to submit
 
-* Submit to https://studies.cs.helsinki.fi/stats/courses/tdd-pilot a **Git repository** with the source code and history of you doing this exercise.
+* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-pilot> a **Git repository** with the source code and history of you doing this exercise.
 * Fill [this questionnaire](https://forms.gle/27xgUm3WH4skKUj18).
 
 ##### Effort estimate
@@ -102,7 +102,7 @@ The assignment is to *write tests for the above code, until it has 100% mutation
 
 ##### What to submit
 
-* Submit to https://studies.cs.helsinki.fi/stats/courses/tdd-pilot a **Git repository** with the source code and history of you doing this exercise. Also include a file with the **mutation test results**.
+* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-pilot> a **Git repository** with the source code and history of you doing this exercise. Also include a file with the **mutation test results**.
 * Fill [this questionnaire](https://forms.gle/Z11PazAmaWyTXvX8A).
 
 ##### Effort estimate
@@ -127,7 +127,7 @@ Start the app's development using the [walking skeleton](/5-advanced#walking-ske
 
 ##### What to submit
 
-* Submit to https://studies.cs.helsinki.fi/stats/courses/tdd-pilot a **Git repository** with the source code and history of you doing this exercise.
+* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-pilot> a **Git repository** with the source code and history of you doing this exercise.
 * Fill [this questionnaire](https://forms.gle/rQpKzRaFJJdb3ZkK9). Note the need for more detailed time tracking.
 
 ##### Effort estimate
@@ -144,7 +144,7 @@ TODO: example RLE files for test data
 ##### What to submit
 
 * **Record a video** of you doing this exercise. Use a screen recording software (e.g. [OBS Studio](https://obsproject.com/), see [instructions](https://www.alphr.com/record-screen-obs/)). Upload the video to a streaming service (e.g. unlisted video on YouTube) and include a **link to the video** in the comment field as you submit the Git repository.
-* Submit to https://studies.cs.helsinki.fi/stats/courses/tdd-pilot a **Git repository** with the source code and history of you doing this exercise.
+* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-pilot> a **Git repository** with the source code and history of you doing this exercise.
 * Fill [this questionnaire](https://forms.gle/SyocAsQksBq5GUNk6). Note the need for more detailed time tracking.
 
 ##### Effort estimate
