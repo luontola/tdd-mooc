@@ -9,7 +9,7 @@ npm run build
 
 (
     cd public
-    echo tdd-mooc.luontola.fi > CNAME
+    echo tdd.mooc.fi > CNAME
     git add -A .
     git commit -m "Update site"
     git push
