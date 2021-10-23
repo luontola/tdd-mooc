@@ -19,7 +19,22 @@ Join communities of like-minded people. For example the [SoCraTes](https://www.s
 
 ## Books
 
-TODO
+Here are a few books that every software developer should read:
+
+[Test Driven Development: By Example](https://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530) (Kent Beck, 2002)<br>
+Covers everything there is to know about TDD, except mock objects.
+
+[Growing Object-Oriented Software, Guided by Tests 1st Edition](https://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627) (Steve Freeman, Nat Pryce, 2009)<br>
+Covers everything there is to know about mock objects and messaging passing based object-oriented programming.
+
+[Clean Code: A Handbook of Agile Software Craftsmanship](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) (Robert C. Martin, 2008)<br>
+About writing good code.
+
+[Understanding the Four Rules of Simple Design](https://leanpub.com/4rulesofsimpledesign) (Corey Haines, 2014)<br>
+About removing duplication and improving names.
+
+[Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912) (Jez Humble, David Farley, 2010)<br>
+Describes a fundamental practice of modern software development.
 
 ---
 
