@@ -37,7 +37,7 @@ https://martinfowler.com/books/continuousDelivery.html
 
 ## Testing in production
 
-TODO
+When testing *before* production is topnotch and you practise Continuous Delivery, then it's possible to start testing *also* in production. This includes getting feedback from how the users are using the application, for example through [A/B testing](https://en.wikipedia.org/wiki/A/B_testing) and [conversion funnels](https://en.wikipedia.org/wiki/Purchase_funnel). Another key term is [observability](https://thenewstack.io/monitoring-and-observability-whats-the-difference-and-why-does-it-matter/) - making the internal states of the system visible.
 
 Read more:
 https://www.youtube.com/watch?v=z-3aSVfoyBY
