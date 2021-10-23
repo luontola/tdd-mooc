@@ -53,7 +53,13 @@ https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864
 
 ## Test-after patterns
 
-TODO: spike and stabilize, ginger cake
+After you have practiced TDD for over 10 years, and writing tests and testable code is as easy as breathing, there may be times when writing tests *after* the code is faster.
+
+Testing and clean code need to be ingrained in your nature, so that you will always come back to clean up the code and write tests for it. The end result should look indistinguishable from whether it was written test-first or test-last.
+
+**Spike and stabilize:** Write some experimental code without tests, and if the experiment is successful, then write the tests afterwards and refactor the code up to production quality. This requires writing testable code instinctively, and intuitive knowledge that what tests would have been needed to produce the code, so that you can write the tests afterwards.
+
+**Ginger cake:** The story behind the name is about a granny's recipe collection; among the recipes there was a recipe for ginger cake, which read just "like chocolate cake, but with ginger". As a software development pattern, this can be used when you need to build a new feature which is quite similar to something you've done before. Copy-paste the old code, remove unnecessary parts and customize it. The code needs to be small enough to fit in your head. Afterwards clean up the duplication between the old and new code.
 
 Read more:
 https://vimeo.com/24681032
