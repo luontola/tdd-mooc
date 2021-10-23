@@ -45,7 +45,7 @@ https://www.youtube.com/watch?v=z-3aSVfoyBY
 
 ## test && commit || revert (TCR)
 
-TODO
+TCR is this crazy idea that every time that the tests pass, the code is committed automatically, and if the tests fail, the changes are reverted automatically. Try it and see what comes out of it.
 
 Read more:
 https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864
