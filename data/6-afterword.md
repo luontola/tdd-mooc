@@ -34,7 +34,7 @@ About writing good code.
 About removing duplication and improving names.
 
 [Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912) (Jez Humble, David Farley, 2010)<br>
-Describes a fundamental practice of modern software development.
+Describes one fundamental practice of modern software development.
 
 ---
 
