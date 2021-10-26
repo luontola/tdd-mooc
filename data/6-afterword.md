@@ -24,7 +24,7 @@ Here are a few books that every software developer should read:
 [Test Driven Development: By Example](https://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530) (Kent Beck, 2002)<br>
 Covers everything there is to know about TDD, except mock objects.
 
-[Growing Object-Oriented Software, Guided by Tests 1st Edition](https://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627) (Steve Freeman, Nat Pryce, 2009)<br>
+[Growing Object-Oriented Software, Guided by Tests](https://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627) (Steve Freeman, Nat Pryce, 2009)<br>
 Covers everything there is to know about mock objects and messaging passing based object-oriented programming.
 
 [Clean Code: A Handbook of Agile Software Craftsmanship](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) (Robert C. Martin, 2008)<br>
