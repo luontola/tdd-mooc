@@ -1,6 +1,8 @@
-# Material template
+# [TDD MOOC](https://tdd.mooc.fi): Course material
 
-This repository contains both the source code of this course's webpage and the source for the content of the course. The content is located in the `data` folder and everything else is for the website.
+The source code for the website of [TDD MOOC](https://tdd.mooc.fi) at the University of Helsinki, brought to you
+by [Esko Luontola](https://twitter.com/EskoLuontola) and [Nitor](https://nitor.com/). The course material is in the `data` directory.
+
 
 ## Contributing to the content
 
@@ -12,53 +14,18 @@ If you'd help us making the correction, you can open a pull request with your pr
 * [Markdown tutorial](https://commonmark.org/help/tutorial/)
 * [Markdown specification](https://spec.commonmark.org/current/)
 
-## Development environment
 
-Below are instructions on how to setup a development environment on your own machine. These instructions are only relevant to you if you wish to chage how the course's website works or looks like. If you don't know how to program or only wish to contribute to the content of the course, please skip this section.
+## License
 
-Requirements: recent Node
+The course material is licensed under the [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed) license.
 
-```sh
-npm ci
-npm run develop
-```
 
-Content is in the `data` folder.
+## Development
 
-Custom markdown components are located in `src/partials`
+Start development server at http://localhost:8000
 
-If you want to use local, unpublished version of moocfi-quizzes for testing, run `./use-local-quizzes.sh` before running the application.
-If your configuration differs from the default, add the path to the moocfi-quizzes as the first argument to the script.
-An illustration of the default configuration:
+    npm run develop
 
-```
-  (parent directory)
-  /                \ 
-(this repo)      [quizzes](https://github.com/rage/quizzes)
-                      |
-                  packages
-                      |
-                  moocfi-quizzes
-```
+Publish the website
 
-Sometimes when making certain type of changes to the queries, you may wish to restart Gatsby automatically each time the development server exits. To accomplish this you can run the script: `./develop-loop.sh`.
-
-## Authors
-
-Material template created by [Henrik Nygren](https://github.com/nygrenh) and [Antti Leinonen](https://github.com/Redande).
-
-# License
-
-## Material template
-
-Copyright 2018 [Henrik Nygren](https://github.com/nygrenh), [Antti Leinonen](https://github.com/Redande), and the [Agile Education Research group](https://www.helsinki.fi/en/researchgroups/data-driven-education).
-
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use this project except in compliance with the License. You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
-
-## Course material
-
-The course material is licensed under a [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed) license.
+    ./update-site.sh
