@@ -137,9 +137,11 @@ Start the app's development using the [walking skeleton](/5-advanced#walking-ske
 
 # Exercise 6: Conway's Game of Life
 
-The assignment is to *write [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) using TDD.* Write it as a command line application which takes as input (1) a pattern file in [RLE format](https://www.conwaylife.com/wiki/Run_Length_Encoded) and (2) the number of iterations to simulate, and then outputs the resulting pattern in RLE format after the specified number of iterations.
+The assignment is to *write [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) using TDD.* Write it as a command line application which takes as input a *pattern file* in [RLE format](https://www.conwaylife.com/wiki/Run_Length_Encoded) and the *number of iterations* to simulate, and then outputs the *resulting pattern* in RLE format after the specified number of iterations.
 
-TODO: example RLE files for test data
+For test data, you can download RLE files from LifeWiki; see the *Pattern files* section in each pattern's infobox, on the right side of the page. [Glider](https://www.conwaylife.com/wiki/Glider), [Blinker](https://www.conwaylife.com/wiki/Blinker) and [Block](https://www.conwaylife.com/wiki/Block) are some of the simplest patterns. [Gosper glider gun](https://www.conwaylife.com/wiki/Gosper_glider_gun) is an example of an infinitely growing pattern.
+
+Any programming language is okay. For a starter project, there is <https://github.com/luontola/tdd-mooc-new-js-project> from before, and <https://github.com/swkBerlin/kata-bootstraps> contains many other languages.
 
 ##### What to submit
 
