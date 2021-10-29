@@ -21,7 +21,7 @@ Join communities of like-minded people. For example the [SoCraTes](https://www.s
 
 Here are a few books that every software developer should read:
 
-[Test Driven Development: By Example](https://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530) (Kent Beck, 2002)<br>
+[Test-Driven Development: By Example](https://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530) (Kent Beck, 2002)<br>
 Covers everything there is to know about TDD, except mock objects.
 
 [Growing Object-Oriented Software, Guided by Tests](https://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627) (Steve Freeman, Nat Pryce, 2009)<br>
