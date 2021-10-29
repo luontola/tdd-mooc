@@ -6,9 +6,9 @@ information_page: true
 sidebar_priority: 3001
 ---
 
-In this course, 99% of the learning happens when doing the exercises. The prose chapters are there for support and to move things from "unknown unknowns" to "known unknowns". [[1]](https://en.wikipedia.org/wiki/There_are_known_knowns)
+In this course, 99% of the learning happens when doing the exercises. The prose chapters are there for support and to move things from "unknown unknowns" to "known unknowns".[¹](https://en.wikipedia.org/wiki/There_are_known_knowns)
 
-This is the suggested order of completing the material and exercises. You may use the checkboxes to keep track of your progress.
+Below is the suggested order of reading the chapters and doing the exercises. You may use the checkboxes to keep track of your progress.
 
 <exercise-schedule>
 </exercise-schedule>
