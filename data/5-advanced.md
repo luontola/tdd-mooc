@@ -62,7 +62,7 @@ Testing and clean code need to be ingrained in your nature, so that you will alw
 **Ginger cake:** The story behind the name is about a granny's recipe collection; among the recipes there was a recipe for ginger cake, which read just "like chocolate cake, but with ginger". As a software development pattern, this can be used when you need to build a new feature which is quite similar to something you've done before. Copy-paste the old code, remove unnecessary parts and customize it. The code needs to be small enough to fit in your head. Afterwards clean up the duplication between the old and new code.
 
 Read more:
-https://vimeo.com/24681032
+https://www.youtube.com/watch?v=USc-yLHXNUg
 
 ---
 
