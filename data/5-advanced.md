@@ -15,7 +15,7 @@ The walking skeleton approach can help in this situation. The idea is to start w
 
 At start the test could just send a "hello world" message which goes through the frontend, backend, database and back again to the frontend. Focus on just getting the end-to-end test passing and putting the architectural components together. Focused unit and integration tests are best added *after* you have created the architecture, when there are less unknowns.
 
-Then when the end-to-end test passes through the whole architecture, you can start fleshing out the system. As the system grows, keep improving the end-to-end test along with it.
+Then when the end-to-end test passes through the whole architecture, you can start fleshing out the system. As the system grows, keep improving the end-to-end test along with it. Typically it would test the happy path of an important use case which goes through the whole application.
 
 Read more:
 https://www.henricodolfing.com/2018/04/start-your-project-with-walking-skeleton.html

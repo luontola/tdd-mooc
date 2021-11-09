@@ -120,10 +120,13 @@ Only a few basic features are needed: add a to-do item, rename a to-do item, mar
 
 Start the app's development using the [walking skeleton](/5-advanced#walking-skeleton) approach. Focus on writing tests on every level of the stack:
 
-- unit tests to cover as much of the code as is possible to unit test
+- use unit tests to cover as much of the code as is possible to unit test
 - also unit test the user interface components ([visual testing](/3-challenges#visual-testing) is optional)
-- focused integration tests for the database and API layers
-- one (1) end-to-end test against a fully deployed application (e.g. Docker containers running locally) to make sure that things are connected correctly (start with this - see [walking skeleton](/5-advanced#walking-skeleton))
+    - tests for the UI components should not depend on the API
+- use focused integration tests for the database and API layers
+    - tests for the API (request routing and validation) should not depend on the database
+    - tests for the database should not depend on the API
+- write only one end-to-end test which requires a fully deployed application (e.g. Docker containers running locally) to make sure that things are wired together correctly (start with this - see [walking skeleton](/5-advanced#walking-skeleton))
 
 ##### What to submit
 
