@@ -121,7 +121,7 @@ function ExerciseSchedule() {
             duration="15 min" />
       <Step id="exercise5"
             icon="👨‍💻"
-            content={<a href="#exercise-5-full-stack-web-app">Exercise 5: Full-stack web app</a>}
+            content={<a href="#optional-exercise-5-full-stack-web-app">(optional) Exercise 5: Full-stack web app</a>}
             duration="10-20 h" />
       <Step id="exercise6"
             icon="👩‍💻"

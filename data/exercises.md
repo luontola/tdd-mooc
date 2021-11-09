@@ -110,7 +110,7 @@ The assignment is to *write tests for the above code, until it has 100% mutation
 * 2-4 hours
 
 
-# Exercise 5: Full-stack web app
+# (optional) Exercise 5: Full-stack web app
 
 You may clone the project template <https://github.com/luontola/tdd-mooc-webapp> to get started, but fundamentally the tool choices are up to you.
 
