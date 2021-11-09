@@ -151,7 +151,7 @@ Any programming language is okay. For a starter project, there is <https://githu
 
 ##### Effort estimate
 
-* 3-5 hours?
+* 4-7 hours
 
 </tdd-decision>
 

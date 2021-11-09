@@ -126,7 +126,7 @@ function ExerciseSchedule() {
       <Step id="exercise6"
             icon="👩‍💻"
             content={<a href="#exercise-6-conways-game-of-life">Exercise 6: Conway's Game of Life</a>}
-            duration="3-5 h" />
+            duration="4-7 h" />
       <Step id="chapter6"
             icon="📖"
             content={<a href="/6-afterword">Chapter 6: To infinity and beyond</a>}
