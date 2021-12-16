@@ -31,6 +31,7 @@ TDD can be described in terms of these three rules:
 
 Read more:
 http://www.butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd
+https://codingitwrong.com/2020/12/23/why-write-the-minimum-code-to-pass-the-test.html
 
 
 ## Red, Green, Refactor
