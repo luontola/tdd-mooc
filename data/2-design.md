@@ -50,7 +50,7 @@ If it's not yet obvious that in what way the duplicated code will vary from plac
 
 ### Naive duplication
 
-Not all code that looks similar is duplicated knowledge.
+Not all code that looks similar is duplicated knowledge. Even if chairs and dogs both have 4 legs, the 4s are not related.
 
 In [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life), the calculation of whether a cell will be alive in the next generation could be written like this:
 
