@@ -38,7 +38,7 @@ The exercises are in JavaScript, but if you prefer, you may write the projects i
 
 ## When?
 
-* [Practicalities for 2021 pilot run](/practicalities-2021-pilot)
+The next time this course will run is 17.1.-31.5.2022 as an unscheduled online course. More information coming soon.
 
 ---
 
