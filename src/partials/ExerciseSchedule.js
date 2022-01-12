@@ -77,16 +77,14 @@ function ExerciseSchedule() {
       <tbody>
       <Step id="chapter1"
             icon="📖"
-            content={<a href="/1-tdd">Chapter 1: What is TDD</a>}
-            duration="30 min" />
+            content={<a href="/1-tdd">Chapter 1: What is TDD</a>} />
       <Step id="exercise1a"
             icon="👩‍💻"
             content={<><a href="#exercise-1-tetris">Exercise 1: Tetris</a>, levels 1-3</>}
             duration="3-6 h" />
       <Step id="chapter2"
             icon="📖"
-            content={<a href="/2-design">Chapter 2: Refactoring and design</a>}
-            duration="15 min" />
+            content={<a href="/2-design">Chapter 2: Refactoring and design</a>} />
       <Step id="exercise2"
             icon="👨‍💻"
             content={<a href="#exercise-2-small-safe-steps">Exercise 2: Small, safe steps</a>}
@@ -97,8 +95,7 @@ function ExerciseSchedule() {
             duration="6-14 h" />
       <Step id="chapter3"
             icon="📖"
-            content={<a href="/3-challenges">Chapter 3: The Untestables</a>}
-            duration="30 min" />
+            content={<a href="/3-challenges">Chapter 3: The Untestables</a>} />
       <Step id="exercise1c"
             icon="👩‍💻"
             content={<><a href="#exercise-1-tetris">Exercise 1: Tetris</a>, levels 9-10</>}
@@ -109,16 +106,14 @@ function ExerciseSchedule() {
             duration="1-2 h" />
       <Step id="chapter4"
             icon="📖"
-            content={<a href="/4-legacy-code">Chapter 4: Legacy code</a>}
-            duration="15 min" />
+            content={<a href="/4-legacy-code">Chapter 4: Legacy code</a>} />
       <Step id="exercise4"
             icon="👩‍💻"
             content={<a href="#exercise-4-legacy-code">Exercise 4: Legacy code</a>}
             duration="2-4 h" />
       <Step id="chapter5"
             icon="📖"
-            content={<a href="/5-advanced">Chapter 5: Advanced techniques</a>}
-            duration="15 min" />
+            content={<a href="/5-advanced">Chapter 5: Advanced techniques</a>} />
       <Step id="exercise5"
             icon="👨‍💻"
             content={<a href="#optional-exercise-5-full-stack-web-app">(optional) Exercise 5: Full-stack web app</a>}
@@ -129,8 +124,7 @@ function ExerciseSchedule() {
             duration="4-7 h" />
       <Step id="chapter6"
             icon="📖"
-            content={<a href="/6-afterword">Chapter 6: To infinity and beyond</a>}
-            duration="5 min" />
+            content={<a href="/6-afterword">Chapter 6: To infinity and beyond</a>} />
       </tbody>
     </Table>
   )
