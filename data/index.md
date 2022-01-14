@@ -14,7 +14,9 @@ Test-Driven Development (TDD) is an iterative programming technique where you fi
 
 ## Why?
 
-In the following short video, [Dave Farley](https://twitter.com/davefarley77) explains why you should learn TDD:
+Fewer bugs. Less debugging. Better design. More fun.
+
+In the following 1-minute video, [Dave Farley](https://twitter.com/davefarley77) elaborates some more:
 
 <iframe width="315" height="560" src="https://www.youtube.com/embed/NhMGeHkzg0A" title="What Is TDD? by Dave Farley" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -28,7 +30,7 @@ To do the extended version of this course (4+1 cr), some experience in writing w
 
 ## How?
 
-This course consists of [six exercises](/exercises/) about using TDD, refactoring and writing tests. Exercise 5 (full-stack web app) is optional, but if you do it, you will get an extra credit. For that purpose, this course is visible as two course units:
+This course consists of [six exercises](/exercises) (or small projects) about using TDD, refactoring and writing tests. Exercise 5 (full-stack web app) is optional, but if you do it, you will get an extra study credit. For that purpose, this course is visible as two course units:
 
 * [Test-Driven Development (4 cr)](https://studies.helsinki.fi/courses/cu/otm-adcdbb43-dc29-467b-b68d-f5f7bf13ea7d) - do just the basic exercises (#1-4, #6)
 * [Test-Driven Development: Full Stack (1 cr)](https://studies.helsinki.fi/courses/cu/otm-6fd8f9b4-9566-449b-8668-d91b3134dbcf) - do also the full-stack exercise (#5)
@@ -38,7 +40,9 @@ The exercises are in JavaScript, but if you prefer, you may write the projects i
 
 ## When?
 
-The next time this course will run is 17.1.-31.5.2022 as an unscheduled online course. More information coming soon.
+This course will run 17.1.-31.5.2022 as a work-at-your-own-pace online course. There will be a Discord channel and weekly study groups. See [practicalities](/practicalities) for details.
+
+Of course you can also use this course material for self-study whenever you want, even if the course is not active.
 
 ---
 
