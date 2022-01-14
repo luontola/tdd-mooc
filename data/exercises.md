@@ -25,7 +25,7 @@ If you get stuck, you may watch [this example screencast](https://www.youtube.co
 
 ##### What to submit
 
-* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-pilot> a **Git repository** with the source code and history of you doing this exercise.
+* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-2022> "part1" a **Git repository** with the source code and history of you doing this exercise.
 * Fill [this questionnaire](https://forms.gle/XCmGN4ZDvtdtGbLG6). Note the need for more detailed time tracking.
 
 ##### Effort estimate
@@ -57,7 +57,7 @@ TODO: tool to automatically check the size of steps and that the tests pass on e
 ##### What to submit
 
 * **Perform this refactoring live** in the weekly exercise groups.
-* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-pilot> a **Git repository** with the history of you doing this refactoring, so that the commits are **as small as possible** and all the tests **pass on every commit**.
+* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-2022> "part2" a **Git repository** with the history of you doing this refactoring, so that the commits are **as small as possible** and all the tests **pass on every commit**.
 * Fill [this questionnaire](https://forms.gle/bN6YkZEssTTewBxq8).
 
 ##### Effort estimate
@@ -86,7 +86,7 @@ After you have written the hard-to-test code, write tests for it. Try to come up
 
 ##### What to submit
 
-* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-pilot> a **Git repository** with the source code and history of you doing this exercise.
+* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-2022> "part3" a **Git repository** with the source code and history of you doing this exercise.
 * Fill [this questionnaire](https://forms.gle/27xgUm3WH4skKUj18).
 
 ##### Effort estimate
@@ -102,7 +102,7 @@ The assignment is to *write tests for the above code, until it has 100% mutation
 
 ##### What to submit
 
-* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-pilot> a **Git repository** with the source code and history of you doing this exercise. Also include a file with the **mutation test results**.
+* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-2022> "part4" a **Git repository** with the source code and history of you doing this exercise. Also include a file with the **mutation test results**.
 * Fill [this questionnaire](https://forms.gle/Z11PazAmaWyTXvX8A).
 
 ##### Effort estimate
@@ -111,6 +111,8 @@ The assignment is to *write tests for the above code, until it has 100% mutation
 
 
 # (optional) Exercise 5: Full-stack web app
+
+> If you decide to not do this exercise, submit a blank reponse to <https://studies.cs.helsinki.fi/stats/courses/tdd-2022> "part5": Leave the exercise checkbox unchecked, enter 0 hours as the duration, and write a dummy repository URL (it doesn't need to exist).
 
 You may clone the project template <https://github.com/luontola/tdd-mooc-webapp> to get started, but fundamentally the tool choices are up to you.
 
@@ -130,15 +132,17 @@ Start the app's development using the [walking skeleton](/5-advanced#walking-ske
 
 ##### What to submit
 
-* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-pilot> a **Git repository** with the source code and history of you doing this exercise.
+* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-2022> "part5" a **Git repository** with the source code and history of you doing this exercise.
 * Fill [this questionnaire](https://forms.gle/rQpKzRaFJJdb3ZkK9). Note the need for more detailed time tracking.
 
 ##### Effort estimate
 
-* 10-20 hours? Most of the effort is in setting up the infrastructure, and that becomes the faster the more old projects you have from where to copy-paste snippets.
+* 10-20 hours? Maybe longer; we're still lacking statistics. Most of the effort is in setting up the infrastructure, and that becomes the faster the more old projects you have from where to copy-paste snippets.
 
 
 # Exercise 6: Conway's Game of Life
+
+> You should record it on video as you do this exercise. This is kind of like the final exam to demonstrate your TDD skills.
 
 The assignment is to *write [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) using TDD.* Write it as a command line application which takes as input a *pattern file* in [RLE format](https://www.conwaylife.com/wiki/Run_Length_Encoded) and the *number of iterations* to simulate, and then outputs the *resulting pattern* in RLE format after the specified number of iterations.
 
@@ -148,8 +152,8 @@ Any programming language is okay. For a starter project, there is <https://githu
 
 ##### What to submit
 
-* **Record a video** of you doing this exercise. Use a screen recording software (e.g. [OBS Studio](https://obsproject.com/), see [instructions](https://www.alphr.com/record-screen-obs/)). Upload the video to a streaming service (e.g. unlisted video on YouTube) and include a **link to the video** in the comment field as you submit the Git repository.
-* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-pilot> a **Git repository** with the source code and history of you doing this exercise.
+* **Record a video** of you doing this exercise. Use a screen recording software (e.g. [OBS Studio](https://obsproject.com/), see [instructions](https://www.alphr.com/record-screen-obs/)). Upload the video to any video streaming service (e.g. unlisted video on YouTube) and include a **link to the video** in the comment field as you submit the Git repository.
+* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-2022> "part6" a **Git repository** with the source code and history of you doing this exercise. Write a **link to your screen recording video** in the comment field.
 * Fill [this questionnaire](https://forms.gle/SyocAsQksBq5GUNk6). Note the need for more detailed time tracking.
 
 ##### Effort estimate
