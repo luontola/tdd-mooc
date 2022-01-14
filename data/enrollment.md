@@ -9,7 +9,7 @@ sidebar_priority: 4500
 
 This course is split into two parts, depending on whether you will do the optional *Exercise 5: Full-stack web app* or not. For the minimal 4 credits, enroll on the first course. For the full 5 credits, enroll on both courses.
 
-## Test-Driven Development (TKT21040), 4 cr
+## Test-Driven Development (TKT21040), 4 cr
 
 ### Course completion and ECTS credits
 
@@ -42,7 +42,7 @@ To complete the course and receive ECTS credits, follow these steps:
 - In the exercise submission system, click the blue button that confirms that you have completed the course ("I have completed the course...")
 
 
-## Test-Driven Development: Full Stack (TKT21041), 1 cr
+## Test-Driven Development: Full Stack (TKT21041), 1 cr
 
 ### Course completion and ECTS credits
 
