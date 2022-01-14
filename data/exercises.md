@@ -56,7 +56,7 @@ TODO: tool to automatically check the size of steps and that the tests pass on e
 
 ##### What to submit
 
-* **Perform this refactoring live** in the weekly exercise groups.
+* **Perform this refactoring live** in the weekly study groups.
 * Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-2022> "part2" a **Git repository** with the history of you doing this refactoring, so that the commits are **as small as possible** and all the tests **pass on every commit**.
 * Fill [this questionnaire](https://forms.gle/bN6YkZEssTTewBxq8).
 
