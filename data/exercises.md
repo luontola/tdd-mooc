@@ -142,7 +142,7 @@ Start the app's development using the [walking skeleton](/5-advanced#walking-ske
 
 # Exercise 6: Conway's Game of Life
 
-> You should record it on video as you do this exercise. This is kind of like the final exam to demonstrate your TDD skills.
+> Please create a screen recording video as you do this exercise. This is kind of like the final exam to demonstrate your TDD skills.
 
 The assignment is to *write [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) using TDD.* Write it as a command line application which takes as input a *pattern file* in [RLE format](https://www.conwaylife.com/wiki/Run_Length_Encoded) and the *number of iterations* to simulate, and then outputs the *resulting pattern* in RLE format after the specified number of iterations.
 

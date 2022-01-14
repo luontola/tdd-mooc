@@ -42,4 +42,4 @@ The next time this course will run is 17.1.-31.5.2022 as an unscheduled online c
 
 ---
 
-Proceed to [Exercises and schedule](/exercises)
+Proceed to [Practicalities](/practicalities) or [Exercises and schedule](/exercises)
