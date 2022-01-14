@@ -6,9 +6,11 @@ information_page: true
 sidebar_priority: 4500
 ---
 
-## Registration and receiving course credits
+## Enrollment and study credits
 
-TODO
+If you are a student in Finland, you may receive 4 or 5 study credits from completing this course. See the [enrollment instructions](/enrollment) for details.
+
+For everyone else, after completing and submitting all the exercises, you will receive a certificate/PNG that you can show off as a trophy. 🏅
 
 
 ## Discord channel
