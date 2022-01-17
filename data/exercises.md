@@ -52,8 +52,6 @@ The assignment is to *refactor the above code to replace [Date](https://develope
 
 Afterwards we will have a competition between the students of this course about doing this refactoring using the smallest possible steps.
 
-TODO: tool to automatically check the size of steps and that the tests pass on every step, maybe as TCR and by default disabled test https://mochajs.org/#inclusive-tests `this.skip()`, add retries for flaky tests https://mochajs.org/#retry-tests
-
 ##### What to submit
 
 * **Perform this refactoring live** in the weekly study groups.
