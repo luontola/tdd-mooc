@@ -20,7 +20,7 @@ Communication and study groups will happen over [Discord](https://discord.com/).
 
 ## Course duration
 
-The course will start on Tuesday 18.1.2022 at 16:15 in Discord `tdd_voice` channel with an information session (and the first study group if somebody already started doing the exercises).
+The course will start on Tuesday 18.1.2022 at 16:15 (Europe/Helsinki timezone) in Discord `tdd_voice` channel with an information session (and the first study group if somebody already started doing the exercises).
 
 The course will end on Tuesday 31.5.2022. There is no exam, but only the exercises.
 
@@ -29,7 +29,7 @@ The course will end on Tuesday 31.5.2022. There is no exam, but only the exercis
 
 Do the exercises at your own pace and use the `#tdd_general` Discord channel for peer help.
 
-We will have study groups every Tuesday at 16:15-18:00 in Discord `tdd_voice` channel. There we will go through what people have worked on, any obstacles, and give feedback. [Whatever happens is the only thing that could have happened, and it's over when it's over](https://www.youtube.com/watch?v=M_jhcvCYBbg).
+We will have study groups every Tuesday at 16:15-18:00 (Europe/Helsinki timezone) in Discord `tdd_voice` channel. There we will go through what people have worked on, any obstacles, and give feedback. [Whatever happens is the only thing that could have happened, and it's over when it's over](https://www.youtube.com/watch?v=M_jhcvCYBbg).
 
 Please [track the time](https://www.mytasktimer.com/) you spend on each exercise (and in case of *Exercise 1: Tetris*, track the time for each level). We will ask you to fill questionnaires for each exercise, so that we can improve the course for future students.
 
