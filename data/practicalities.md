@@ -20,7 +20,7 @@ Communication and study groups will happen over [Discord](https://discord.com/).
 
 ## Course duration
 
-The course will start on Tuesday 17.1.2022 at 16:15 in Discord `tdd_voice` channel with an information session (and the first study group if somebody already started doing the exercises).
+The course will start on Tuesday 18.1.2022 at 16:15 in Discord `tdd_voice` channel with an information session (and the first study group if somebody already started doing the exercises).
 
 The course will end on Tuesday 31.5.2022. There is no exam, but only the exercises.
 
