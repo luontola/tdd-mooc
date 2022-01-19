@@ -5,10 +5,10 @@ import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 
 const siteBackgroundColor = "#fcfcfc"
 
-const Header = styled.div`
+const StaticHeader = styled.div`
   position: relative;
 `
-const StickyHeader1 = styled.div`
+const StickyHeader = styled.div`
   position: sticky;
   top: 0;
   background-color: ${siteBackgroundColor}d0;
@@ -19,9 +19,12 @@ const StickyHeader1 = styled.div`
   margin: -0.5em -0.5em 0;
   padding: 0.5em 0.5em 0;
 `
-const StickyHeader2 = styled(StickyHeader1)`
-  // due to non-blurred background text, needs more opacity to achieve same readability  
+const SoonUnstuckHeader = styled(StickyHeader)`
+  // due to non-blurred background text, needs more opacity to achieve same readability
   background-color: ${siteBackgroundColor}f0;
+`
+const UnstuckHeader = styled(SoonUnstuckHeader)`
+  position: relative;
 `
 
 const CheckboxLabel = styled.label`
@@ -59,7 +62,7 @@ const ShowBody = styled.div`
 
 const promiseText = "During this course, I will not add any production code, unless it is required by a failing test."
 
-const QuestionDialog = ({ opacity, onAccept }) => (
+const PromiseForm = ({ opacity, onAccept }) => (
   <div style={{ opacity: opacity }}>
     Before starting the exercises, you should make the following decision:
     <CheckboxLabel>
@@ -76,29 +79,42 @@ const QuestionDialog = ({ opacity, onAccept }) => (
 )
 
 const NotYetAcceptedDialog = ({ onAccept }) => (
-  <StickyHeader1>
-    <QuestionDialog opacity={1} onAccept={onAccept} />
-  </StickyHeader1>
+  <StickyHeader>
+    <PromiseForm opacity={1} onAccept={onAccept} />
+  </StickyHeader>
 )
-const JustNowAcceptedDialog = () => (
-  <StickyHeader2>
-    <QuestionDialog opacity={0} />
-    <Accepted>
-      <span aria-hidden="true" style={{ marginRight: "1ex" }}>✅</span> Good. And don't you forget that.
-    </Accepted>
-  </StickyHeader2>
-)
+
+const JustNowAcceptedDialog = () => {
+  const [sticky, setSticky] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setSticky(false)
+    }, 5000)
+  }, [])
+
+  const MyHeader = sticky ? SoonUnstuckHeader : UnstuckHeader
+  return (
+    <MyHeader>
+      <PromiseForm opacity={0} />
+      <Accepted>
+        <span aria-hidden="true" style={{ marginRight: "1ex" }}>✅</span> Good. And don't you forget that.
+      </Accepted>
+    </MyHeader>
+  )
+}
+
 const PreviouslyAcceptedDialog = () => (
-  <Header>
+  <StaticHeader>
     <PreviouslyAccepted>
       <span aria-hidden="true">✅</span> {promiseText}
     </PreviouslyAccepted>
-  </Header>
+  </StaticHeader>
 )
 
 
-const TextBox = (props) => {
-  const [accepted, setAccepted] = useState(false)
+const TddDecision = (props) => {
+  const [justNowAccepted, setJustNowAccepted] = useState(false)
   const [previouslyAccepted, setPreviouslyAccepted] = useState(false)
 
   useEffect(() => {
@@ -106,23 +122,20 @@ const TextBox = (props) => {
   }, [])
 
   const onAccept = () => {
-    setAccepted(true)
-    setTimeout(() => { // avoids the confirmation text staying sticky until page reload
-      setPreviouslyAccepted(true)
-    }, 5000)
+    setJustNowAccepted(true)
     localStorage.setItem("tdd-decision", "yes")
   }
 
-  const Body = (accepted || previouslyAccepted) ? ShowBody : HideBody
+  const MyBody = (justNowAccepted || previouslyAccepted) ? ShowBody : HideBody
   return (
     <div>
       {previouslyAccepted ? <PreviouslyAcceptedDialog />
-        : accepted ? <JustNowAcceptedDialog />
+        : justNowAccepted ? <JustNowAcceptedDialog />
           : <NotYetAcceptedDialog onAccept={onAccept} />
       }
-      <Body>{props.children}</Body>
+      <MyBody>{props.children}</MyBody>
     </div>
   )
 }
 
-export default withSimpleErrorBoundary(TextBox)
+export default withSimpleErrorBoundary(TddDecision)
