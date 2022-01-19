@@ -3,8 +3,25 @@ import styled from "styled-components"
 
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 
+const siteBackgroundColor = "#fcfcfc"
+
 const Header = styled.div`
   position: relative;
+`
+const StickyHeader1 = styled.div`
+  position: sticky;
+  top: 0;
+  background-color: ${siteBackgroundColor}d0;
+  // With z-index 0 the background color would not be visible.
+  z-index: 1;
+  // Due to blur spread, the header needs to be larger than the content area
+  // to fully cover the blur underneath.
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em 0.5em 0;
+`
+const StickyHeader2 = styled(StickyHeader1)`
+  // due to non-blurred background text, needs more opacity to achieve same readability  
+  background-color: ${siteBackgroundColor}f0;
 `
 
 const CheckboxLabel = styled.label`
@@ -27,7 +44,6 @@ const Accepted = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fcfcfc;
   font-size: 1.5rem;
   color: green;
   display: flex;
@@ -50,6 +66,7 @@ const TextBox = (props) => {
   }, [])
   const Body = (accepted || previouslyAccepted) ? ShowBody : HideBody
   const promiseText = "During this course, I will not add any production code, unless it is required by a failing test."
+  const StickyHeader = accepted ? StickyHeader2 : StickyHeader1
   return (
     <div>
       {previouslyAccepted ?
@@ -58,24 +75,30 @@ const TextBox = (props) => {
             <span aria-hidden="true">✅</span> {promiseText}
           </PreviouslyAccepted>
         </Header> :
-        <Header>
-          Before starting the exercises, you should make the following decision:
-          <CheckboxLabel>
-            <input type="checkbox" id="tdd-decision"
-                   checked={accepted}
-                   onChange={e => {
-                     const accepted = e.target.checked
-                     setAccepted(accepted)
-                     localStorage.setItem("tdd-decision", accepted ? "yes" : "no")
-                   }}
-            /> {promiseText}
-          </CheckboxLabel>
+        <StickyHeader>
+          <div style={{ opacity: accepted ? 0 : 1 }}>
+            Before starting the exercises, you should make the following decision:
+            <CheckboxLabel>
+              <input type="checkbox" id="tdd-decision"
+                     checked={accepted}
+                     onChange={e => {
+                       const accepted = e.target.checked
+                       setAccepted(accepted)
+                       setTimeout(() => {
+                         // avoids the sticky text staying there until page reload
+                         setPreviouslyAccepted(true)
+                       }, 5000)
+                       localStorage.setItem("tdd-decision", accepted ? "yes" : "no")
+                     }}
+              /> {promiseText}
+            </CheckboxLabel>
+          </div>
           {accepted &&
-          <Accepted>
-            <span aria-hidden="true">✅</span> Good. And don't you forget that.
-          </Accepted>
+            <Accepted>
+              <span aria-hidden="true" style={{ marginRight: "1ex" }}>✅</span> Good. And don't you forget that.
+            </Accepted>
           }
-        </Header>
+        </StickyHeader>
       }
       <Body>{props.children}</Body>
     </div>
