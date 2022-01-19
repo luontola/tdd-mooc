@@ -57,48 +57,68 @@ const HideBody = styled.div`
 const ShowBody = styled.div`
 `
 
+const promiseText = "During this course, I will not add any production code, unless it is required by a failing test."
+
+const QuestionDialog = ({ opacity, onAccept }) => (
+  <div style={{ opacity: opacity }}>
+    Before starting the exercises, you should make the following decision:
+    <CheckboxLabel>
+      <input type="checkbox" id="tdd-decision"
+             checked={false}
+             onChange={e => {
+               if (e.target.checked) {
+                 onAccept()
+               }
+             }}
+      /> {promiseText}
+    </CheckboxLabel>
+  </div>
+)
+
+const NotYetAcceptedDialog = ({ onAccept }) => (
+  <StickyHeader1>
+    <QuestionDialog opacity={1} onAccept={onAccept} />
+  </StickyHeader1>
+)
+const JustNowAcceptedDialog = () => (
+  <StickyHeader2>
+    <QuestionDialog opacity={0} />
+    <Accepted>
+      <span aria-hidden="true" style={{ marginRight: "1ex" }}>✅</span> Good. And don't you forget that.
+    </Accepted>
+  </StickyHeader2>
+)
+const PreviouslyAcceptedDialog = () => (
+  <Header>
+    <PreviouslyAccepted>
+      <span aria-hidden="true">✅</span> {promiseText}
+    </PreviouslyAccepted>
+  </Header>
+)
+
 
 const TextBox = (props) => {
   const [accepted, setAccepted] = useState(false)
   const [previouslyAccepted, setPreviouslyAccepted] = useState(false)
+
   useEffect(() => {
     setPreviouslyAccepted(localStorage.getItem("tdd-decision") === "yes")
   }, [])
+
+  const onAccept = () => {
+    setAccepted(true)
+    setTimeout(() => { // avoids the confirmation text staying sticky until page reload
+      setPreviouslyAccepted(true)
+    }, 5000)
+    localStorage.setItem("tdd-decision", "yes")
+  }
+
   const Body = (accepted || previouslyAccepted) ? ShowBody : HideBody
-  const promiseText = "During this course, I will not add any production code, unless it is required by a failing test."
-  const StickyHeader = accepted ? StickyHeader2 : StickyHeader1
   return (
     <div>
-      {previouslyAccepted ?
-        <Header>
-          <PreviouslyAccepted>
-            <span aria-hidden="true">✅</span> {promiseText}
-          </PreviouslyAccepted>
-        </Header> :
-        <StickyHeader>
-          <div style={{ opacity: accepted ? 0 : 1 }}>
-            Before starting the exercises, you should make the following decision:
-            <CheckboxLabel>
-              <input type="checkbox" id="tdd-decision"
-                     checked={accepted}
-                     onChange={e => {
-                       const accepted = e.target.checked
-                       setAccepted(accepted)
-                       setTimeout(() => {
-                         // avoids the sticky text staying there until page reload
-                         setPreviouslyAccepted(true)
-                       }, 5000)
-                       localStorage.setItem("tdd-decision", accepted ? "yes" : "no")
-                     }}
-              /> {promiseText}
-            </CheckboxLabel>
-          </div>
-          {accepted &&
-            <Accepted>
-              <span aria-hidden="true" style={{ marginRight: "1ex" }}>✅</span> Good. And don't you forget that.
-            </Accepted>
-          }
-        </StickyHeader>
+      {previouslyAccepted ? <PreviouslyAcceptedDialog />
+        : accepted ? <JustNowAcceptedDialog />
+          : <NotYetAcceptedDialog onAccept={onAccept} />
       }
       <Body>{props.children}</Body>
     </div>
