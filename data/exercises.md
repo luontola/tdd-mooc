@@ -56,6 +56,7 @@ Afterwards we will have a competition between the students of this course about 
 
 * **Perform this refactoring live** in the weekly study groups.
 * Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-2022> "part2" a **Git repository** with the history of you doing this refactoring, so that the commits are **as small as possible** and all the tests **pass on every commit**.
+    * Note that the exercise submission system is rather limited and doesn't support submitting part2 before part1, nor does it allow editing old submissions. So even though we recommend doing exercise 2 in the middle of exercise 1, you will need to hold back from submitting it until after you have finished exercise 1.
 * Fill [this questionnaire](https://forms.gle/bN6YkZEssTTewBxq8).
 
 ##### Effort estimate
