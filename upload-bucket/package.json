@@ -8,6 +8,8 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
+    "deploy": "cdk deploy",
+    "deploy:diff": "cdk diff",
     "cdk": "cdk"
   },
   "devDependencies": {
