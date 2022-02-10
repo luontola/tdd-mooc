@@ -41,7 +41,7 @@ The exercise submitting service is at <https://studies.cs.helsinki.fi/stats/cour
 
 ## Screen recording
 
-For the *last exercise*, you will need to also create a *screen recording video* of when you do the exercise. It's kind of like the final exam of a course. You will not be rated based on how well you use TDD, only whether you use TDD or not.
+For the *last exercise*, you will need to also create a *screen recording video* of when you do the exercise. It's kind of like the final exam of the course. You will not be rated based on how well you use TDD, only whether you use TDD or not.
 
 The recordings may be used for research purposes to improve the course, to see how well this course manages to teach people TDD. If some of you would volunteer to record *all* of their exercises, that would be interesting research material as well.
 
