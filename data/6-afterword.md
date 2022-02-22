@@ -36,6 +36,8 @@ About removing duplication and improving names.
 [Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912) (Jez Humble, David Farley, 2010)<br>
 Describes one fundamental practice of modern software development.
 
+For a more higher level book about software development process, [Extreme Programming Explained: Embrace Change](https://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658) (Kent Beck, 1999/2004) is still as timely as ever. [The Art of Agile Development](https://www.amazon.com/Art-Agile-Development-James-Shore/dp/1492080691) (James Shore et al, 2007/2021) or [Modern Software Engineering](https://www.amazon.com/Modern-Software-Engineering-Discipline-Development/dp/0137314914) (David Farley, 2021) should be good as well, covering also some things learned more recently.
+
 ---
 
 EOF
