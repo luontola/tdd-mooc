@@ -15,37 +15,7 @@ Below is the suggested order of reading the chapters and doing the exercises. Yo
 
 <tdd-decision>
 
-# Exercise 1: Tetris
-
-Clone the project <https://github.com/luontola/tdd-mooc-tetris> and follow its instructions.
-
-The assignment is to *write a Tetris game using TDD.* The first couple dozen tests have already been written for you, so that it'll be easier to get into the rhythm of writing tests first.
-
-If you get stuck, you may watch [this example screencast](https://www.youtube.com/playlist?list=PLSADDT9dzgRCjVvS13ekPr1KwX_JkDQJM) for inspiration. It's based on an older version of the exercise, so it's in Java instead of JavaScript, but otherwise it's pretty much the same.
-
-##### What to submit
-
-* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-2022> "part1" a **Git repository** with the source code and history of you doing this exercise.
-    * Submit it after doing all 10 levels. The exercise submission system doesn't support editing old submissions.
-* Fill [this questionnaire](https://forms.gle/XCmGN4ZDvtdtGbLG6). Note the need for more detailed time tracking.
-
-##### Effort estimate
-
-The exercise is split into 10 levels:
-* Level 1 ≈ 1-2h
-* Level 2 ≈ 1-2h
-* Level 3 ≈ 1-2h
-* Between 3 and 4 is a good time to do [exercise 2](#exercise-2-small-safe-steps). Refactoring in small steps makes level 4 easier.
-* Level 4 ≈ 2-3h
-* Level 5 ≈ 1-3h
-* Level 6 ≈ 1-3h
-* Level 7 ≈ 1-3h
-* Level 8 ≈ 1-2h
-* Level 9 ≈ 1-2h
-* Level 10 ≈ 1-2h
-
-
-# Exercise 2: Small, safe steps
+# Exercise 1: Small, safe steps
 
 Clone the project <https://github.com/luontola/tdd-mooc-small-steps> and follow its instructions.
 
@@ -56,13 +26,41 @@ Afterwards we will have a competition between the students of this course about 
 ##### What to submit
 
 * **Perform this refactoring live** in the weekly study groups.
-* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-2022> "part2" a **Git repository** with the history of you doing this refactoring, so that the commits are **as small as possible** and all the tests **pass on every commit**.
-    * Note that the exercise submission system is rather limited and doesn't support submitting part2 before part1, nor does it allow editing old submissions. So even though we recommend doing exercise 2 in the middle of exercise 1, you will need to hold back from submitting it until after you have finished exercise 1.
+* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-2022> "part1" a **Git repository** with the history of you doing this refactoring, so that the commits are **as small as possible** and all the tests **pass on every commit**.
 * Fill [this questionnaire](https://forms.gle/bN6YkZEssTTewBxq8).
 
 ##### Effort estimate
 
 * 1-2 hours. Doing the refactoring once takes ~10 minutes, but you should repeat it many times and practice different approaches.
+
+
+# Exercise 2: Tetris
+
+Clone the project <https://github.com/luontola/tdd-mooc-tetris> and follow its instructions.
+
+The assignment is to *write a Tetris game using TDD.* The first couple dozen tests have already been written for you, so that it'll be easier to get into the rhythm of writing tests first.
+
+If you get stuck, you may watch [this example screencast](https://www.youtube.com/playlist?list=PLSADDT9dzgRCjVvS13ekPr1KwX_JkDQJM) for inspiration. It's based on an older version of the exercise, so it's in Java instead of JavaScript, but otherwise it's pretty much the same.
+
+##### What to submit
+
+* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-2022> "part2" a **Git repository** with the source code and history of you doing this exercise.
+    * Submit it after doing all 10 levels. The exercise submission system doesn't support editing old submissions.
+* Fill [this questionnaire](https://forms.gle/XCmGN4ZDvtdtGbLG6). Note the need for more detailed time tracking.
+
+##### Effort estimate
+
+The exercise is split into 10 levels:
+* Level 1 ≈ 1-2h
+* Level 2 ≈ 1-2h
+* Level 3 ≈ 1-2h
+* Level 4 ≈ 2-3h
+* Level 5 ≈ 1-3h
+* Level 6 ≈ 1-3h
+* Level 7 ≈ 1-3h
+* Level 8 ≈ 1-2h
+* Level 9 ≈ 1-2h
+* Level 10 ≈ 1-2h
 
 
 # Exercise 3: Untestable code

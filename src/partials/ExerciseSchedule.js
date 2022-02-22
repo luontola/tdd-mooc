@@ -78,28 +78,20 @@ function ExerciseSchedule() {
       <Step id="chapter1"
             icon="📖"
             content={<a href="/1-tdd">Chapter 1: What is TDD</a>} />
-      <Step id="exercise1a"
-            icon="👩‍💻"
-            content={<><a href="#exercise-1-tetris">Exercise 1: Tetris</a>, levels 1-3</>}
-            duration="3-6 h" />
       <Step id="chapter2"
             icon="📖"
             content={<a href="/2-design">Chapter 2: Refactoring and design</a>} />
-      <Step id="exercise2"
+      <Step id="exercise1"
             icon="👨‍💻"
-            content={<a href="#exercise-2-small-safe-steps">Exercise 2: Small, safe steps</a>}
+            content={<a href="#exercise-1-small-safe-steps">Exercise 1: Small, safe steps</a>}
             duration="1-2 h" />
-      <Step id="exercise1b"
+      <Step id="exercise2"
             icon="👩‍💻"
-            content={<><a href="#exercise-1-tetris">Exercise 1: Tetris</a>, levels 4-8</>}
-            duration="6-14 h" />
+            content={<><a href="#exercise-2-tetris">Exercise 2: Tetris</a></>}
+            duration="11-24 h" />
       <Step id="chapter3"
             icon="📖"
             content={<a href="/3-challenges">Chapter 3: The Untestables</a>} />
-      <Step id="exercise1c"
-            icon="👩‍💻"
-            content={<><a href="#exercise-1-tetris">Exercise 1: Tetris</a>, levels 9-10</>}
-            duration="2-4 h" />
       <Step id="exercise3"
             icon="👨‍💻"
             content={<a href="#exercise-3-untestable-code">Exercise 3: Untestable code</a>}
