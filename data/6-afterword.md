@@ -8,7 +8,7 @@ sidebar_priority: 3000
 
 ## Homework for the next 10 years
 
-After doing this course's exercises, you should have gotten over the initial hurdle of learning TDD, and have some idea of what TDD-done-well should look like. Likely your tests are still crap: test names which are not very descriptive, test code which is tightly coupled with implementation details, complex test setups, untestable code, duplication which has gone unnoticed and so on. But a bad test is better than no test, and the first step to improvement is admitting your deficiencies.
+After doing this course's exercises, you should have gotten over the initial hurdle of learning TDD, and have some idea of what TDD-done-well should look like. Likely your tests are still bad: test names which are not very descriptive, test code which is tightly coupled with implementation details, complex test setups, untestable code, duplication which has gone unnoticed and so on. But a bad test is better than no test, and the first step to improvement is awareness.
 
 It should take something like 200 hours of practice to reach moderate competence with TDD. For the first year, focus on giving [good names](/1-tdd#test-names-should-be-sentences) to your tests. Write lots of little applications which push you to solve different kinds of problems, whether they are [code katas](https://kata-log.rocks/) or real applications. Avoid things that make testing hard (e.g. database, user interface), so that you can focus on just improving test readability.
 
@@ -25,7 +25,7 @@ Here are a few books that every software developer should read:
 Covers everything there is to know about TDD, except mock objects.
 
 [Growing Object-Oriented Software, Guided by Tests](https://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627) (Steve Freeman, Nat Pryce, 2009)<br>
-Covers everything there is to know about mock objects and message passing based object-oriented programming.
+Covers everything there is to know about mock objects. Actually the book is about message passing based object-oriented programming.
 
 [Clean Code: A Handbook of Agile Software Craftsmanship](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) (Robert C. Martin, 2008)<br>
 About writing good code.
