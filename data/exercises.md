@@ -69,7 +69,7 @@ The exercise is split into 10 levels:
 
 You may clone the project <https://github.com/luontola/tdd-mooc-new-js-project> to have a starting point.
 
-The assignment is to *write a function which is as hard to test as possible. Then write tests for it.*
+The assignment is to *write a function which is as hard to test as possible. Then write tests for it.* (If you manage to write truly untestable code and can't figure out how to test it, please bring it to the [study group](/practicalities#study-groups) so that we can examine it together.)
 
 The following list contains some things which make testing harder (see [chapter 3](/3-challenges)). Write some code which uses at least four (4) of them.
 
