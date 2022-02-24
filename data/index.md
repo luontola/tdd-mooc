@@ -35,7 +35,7 @@ This course consists of [six exercises](/exercises) (or small projects) about us
 * [Test-Driven Development (4 cr)](https://studies.helsinki.fi/courses/cu/otm-adcdbb43-dc29-467b-b68d-f5f7bf13ea7d) - do just the basic exercises (#1-4, #6)
 * [Test-Driven Development: Full Stack (1 cr)](https://studies.helsinki.fi/courses/cu/otm-6fd8f9b4-9566-449b-8668-d91b3134dbcf) - do also the full-stack exercise (#5)
 
-The exercises are in JavaScript, but if you prefer, you may write the projects in any other language. To do the exercises, you'll need [Node.js](https://nodejs.org/), [Git](https://git-scm.com/), [Docker](https://www.docker.com/) and an IDE or text editor (e.g. [IntelliJ IDEA](https://www.jetbrains.com/idea/) or [VS Code](https://code.visualstudio.com/)). To submit the completed exercises, you'll need a [GitHub](https://github.com/) account and a screen recording software (e.g. [OBS Studio](https://obsproject.com/)).
+The exercises are in JavaScript, but for the exercises where you create a project from scratch, you may use any programming language. To do the exercises, you'll need [Node.js](https://nodejs.org/), [Git](https://git-scm.com/), [Docker](https://www.docker.com/) and an IDE or text editor (e.g. [IntelliJ IDEA](https://www.jetbrains.com/idea/) or [VS Code](https://code.visualstudio.com/)). To submit the completed exercises, you'll need a [GitHub](https://github.com/) account and a screen recording software (e.g. [OBS Studio](https://obsproject.com/)).
 
 
 ## When?
