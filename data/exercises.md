@@ -17,6 +17,8 @@ Below is the suggested order of reading the chapters and doing the exercises. Yo
 
 # Exercise 1: Small, safe steps
 
+> Here the goal is to learn fast feedback and making changes without breaking things. Both are essential skills for TDD.
+
 Clone the project <https://github.com/luontola/tdd-mooc-small-steps> and follow its instructions.
 
 The assignment is to *refactor the above code to replace [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) class with [Temporal.PlainDate](https://tc39.es/proposal-temporal/docs/plaindate.html) class.* Repeat this refactoring many times. Focus on doing as small changes as possible, so that *all tests will pass between every change*. Practice smaller and smaller steps, until you can **do the whole refactoring by _changing only one line at a time_**.
@@ -35,6 +37,8 @@ Afterwards, in the weekly study groups, we will have a competition between the s
 
 
 # Exercise 2: Tetris
+
+> This is the primary exercise for learning TDD. It will teach writing tests first, working incrementally and evolutionary design.
 
 Clone the project <https://github.com/luontola/tdd-mooc-tetris> and follow its instructions.
 
@@ -65,7 +69,7 @@ The exercise is split into 10 levels:
 
 # Exercise 3: Untestable code
 
-> **During this exercise, you are allowed to write the production code before the test code.**
+> This exercise's goal is to teach why test-last is harder than test-first, and how to cope with things that make testing hard. During this exercise, you are allowed to write the production code before the test code.
 
 You may clone the project <https://github.com/luontola/tdd-mooc-new-js-project> to have a starting point.
 
@@ -94,6 +98,8 @@ After you have written the hard-to-test code, write tests for it. Try to come up
 
 # Exercise 4: Legacy code
 
+> This exercise's goal is to learn writing tests for non-TDD'd legacy code, to make it safe to change the code.
+
 Clone the project <https://github.com/luontola/tdd-mooc-legacy-code> and follow its instructions.
 
 The assignment is to *write tests for the above code, until it has 100% mutation test coverage*, and then *refactor it and add a new feature*. See the project's readme for details.
@@ -110,7 +116,9 @@ The assignment is to *write tests for the above code, until it has 100% mutation
 
 # (optional) Exercise 5: Full-stack web app
 
-> If you decide to not do this exercise, submit a blank reponse to <https://studies.cs.helsinki.fi/stats/courses/tdd-2022> "part5": Leave the exercise checkbox unchecked, enter 0 hours as the duration, and write a dummy repository URL (it doesn't need to exist).
+> This exercise's goal is to learn writing tests for real applications. You will face all the things which commonly complicate testing in the real world: database, user interface, APIs.
+>
+> **If you decide to not do this exercise, submit a blank reponse to <https://studies.cs.helsinki.fi/stats/courses/tdd-2022> "part5": Leave the exercise checkbox unchecked, enter 0 hours as the duration, and write a dummy repository URL (it doesn't need to exist).**
 
 You may clone the project template <https://github.com/luontola/tdd-mooc-webapp> to get started, but fundamentally the tool choices are up to you. Any programming language is okay.
 
@@ -140,7 +148,9 @@ Start the app's development using the [walking skeleton](/5-advanced#walking-ske
 
 # Exercise 6: Conway's Game of Life
 
-> Please create a screen recording video as you do this exercise. This is kind of like the final exam to demonstrate your TDD skills.
+> This exercise's goal is to review what you have learned during this course.
+>
+> **Please create a screen recording video as you do this exercise. This is kind of like the final exam to demonstrate your TDD skills.**
 
 The assignment is to *write [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) using TDD.* Write it as a command line application which takes as input a *pattern file* in [RLE format](https://www.conwaylife.com/wiki/Run_Length_Encoded) and the *number of iterations* to simulate, and then outputs the *resulting pattern* in RLE format after the specified number of iterations.
 
