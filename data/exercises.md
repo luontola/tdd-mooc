@@ -21,12 +21,12 @@ Clone the project <https://github.com/luontola/tdd-mooc-small-steps> and follow 
 
 The assignment is to *refactor the above code to replace [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) class with [Temporal.PlainDate](https://tc39.es/proposal-temporal/docs/plaindate.html) class.* Repeat this refactoring many times. Focus on doing as small changes as possible, so that *all tests will pass between every change*. Practice smaller and smaller steps, until you can **do the whole refactoring by _changing only one line at a time_**.
 
-Afterwards we will have a competition between the students of this course about doing this refactoring using the smallest possible steps.
+Afterwards, in the weekly study groups, we will have a competition between the students of this course about doing this refactoring using the smallest possible steps.
 
 ##### What to submit
 
-* **Perform this refactoring live** in the weekly study groups.
 * Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-2022> "part1" a **Git repository** with the history of you doing this refactoring, so that the commits are **as small as possible** and all the tests **pass on every commit**.
+    * Doing the [TCR challenge](https://github.com/luontola/tdd-mooc-small-steps#tcr-challenge) is the simplest way to create such small commits.
 * Fill [this questionnaire](https://forms.gle/bN6YkZEssTTewBxq8).
 
 ##### Effort estimate
@@ -112,7 +112,7 @@ The assignment is to *write tests for the above code, until it has 100% mutation
 
 > If you decide to not do this exercise, submit a blank reponse to <https://studies.cs.helsinki.fi/stats/courses/tdd-2022> "part5": Leave the exercise checkbox unchecked, enter 0 hours as the duration, and write a dummy repository URL (it doesn't need to exist).
 
-You may clone the project template <https://github.com/luontola/tdd-mooc-webapp> to get started, but fundamentally the tool choices are up to you.
+You may clone the project template <https://github.com/luontola/tdd-mooc-webapp> to get started, but fundamentally the tool choices are up to you. Any programming language is okay.
 
 The assignment is to *write a To-Do List app using TDD.* It needs to have a [SPA](https://developer.mozilla.org/en-US/docs/Glossary/SPA) web user interface, an API backend and a database.
 
