@@ -238,3 +238,25 @@ blockquote {
 figcaption {
   text-align: center;
 }
+
+/* hovering <dfn> will show data-title as popup */
+
+dfn {
+  border-bottom: 2px dotted black;
+  font-style: normal;
+  position: relative;
+}
+
+dfn:hover:after {
+  content: attr(data-title);
+  color: #fff;
+  background: #333;
+  position: absolute;
+  top: 150%;
+  left: 20%;
+  transform: translateX(-20%);
+  white-space: nowrap;
+  z-index: 1000;
+  padding: 13px 10px 3px;
+  clip-path: polygon(0 20%, 15% 20%, 25% 0, 35% 20%, 100% 20%, 100% 100%, 0 100%);
+}

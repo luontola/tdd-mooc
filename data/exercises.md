@@ -33,7 +33,9 @@ Afterwards, in the weekly study groups, we will have a competition between the s
 
 ##### Effort estimate
 
-* 1-2 hours. Doing the refactoring once takes ~10 minutes, but you should repeat it many times and practice different approaches.
+* <dfn data-title="...if familiar with TDD and the problem domain">Minimum</dfn>: 1 hours
+* <dfn data-title="...based on past student submissions">Average</dfn>: 2½ hours
+* Doing the refactoring once takes ~10 minutes, but you should repeat it many times and practice different approaches.
 
 
 # Exercise 2: Tetris
@@ -54,17 +56,9 @@ If you get stuck, you may watch [this example screencast](https://www.youtube.co
 
 ##### Effort estimate
 
-The exercise is split into 10 levels:
-* Level 1 ≈ 1-2h
-* Level 2 ≈ 1-2h
-* Level 3 ≈ 1-2h
-* Level 4 ≈ 2-3h
-* Level 5 ≈ 1-3h
-* Level 6 ≈ 1-3h
-* Level 7 ≈ 1-3h
-* Level 8 ≈ 1-2h
-* Level 9 ≈ 1-2h
-* Level 10 ≈ 1-2h
+* <dfn data-title="...if familiar with TDD and the problem domain">Minimum</dfn>: 11 hours
+* <dfn data-title="...based on past student submissions">Average</dfn>: 38 hours
+* The exercise is split into 10 levels of roughly the same size, though level 4 is bigger due to the need for major refactoring.
 
 
 # Exercise 3: Untestable code
@@ -93,7 +87,8 @@ After you have written the hard-to-test code, write tests for it. Try to come up
 
 ##### Effort estimate
 
-* 1-2 hours
+* <dfn data-title="...if familiar with TDD and the problem domain">Minimum</dfn>: 1 hours
+* <dfn data-title="...based on past student submissions">Average</dfn>: 4 hours
 
 
 # Exercise 4: Legacy code
@@ -111,7 +106,8 @@ The assignment is to *write tests for the above code, until it has 100% mutation
 
 ##### Effort estimate
 
-* 2-4 hours
+* <dfn data-title="...if familiar with TDD and the problem domain">Minimum</dfn>: 2 hours
+* <dfn data-title="...based on past student submissions">Average</dfn>: 5 hours
 
 
 # (optional) Exercise 5: Full-stack web app
@@ -143,7 +139,9 @@ Start the app's development using the [walking skeleton](/5-advanced#walking-ske
 
 ##### Effort estimate
 
-* 10-20 hours? Maybe longer; we're still lacking statistics. Most of the effort is in setting up the infrastructure, and that becomes the faster the more old projects you have from where to copy-paste snippets.
+* <dfn data-title="...if familiar with TDD and the problem domain">Minimum</dfn>: 10 hours
+* <dfn data-title="...based on past student submissions">Average</dfn>: 30 hours
+* Most of the effort is in setting up the infrastructure, and that becomes the faster the more old projects you have from where to copy-paste snippets.
 
 
 # Exercise 6: Conway's Game of Life
@@ -166,7 +164,8 @@ Any programming language is okay. For a starter project, there is <https://githu
 
 ##### Effort estimate
 
-* 4-7 hours
+* <dfn data-title="...if familiar with TDD and the problem domain">Minimum</dfn>: 4 hours
+* <dfn data-title="...based on past student submissions">Average</dfn>: 8 hours
 
 </tdd-decision>
 
