@@ -17,7 +17,7 @@ If you'd help us making the correction, you can open a pull request with your pr
 
 ## License
 
-The course material is licensed under the [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed) license.
+The course material is licensed under the [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed) license.
 
 
 ## Development
