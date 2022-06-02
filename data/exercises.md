@@ -34,7 +34,7 @@ Afterwards, in the weekly study groups, we will have a competition between the s
 ##### Effort estimate
 
 * <dfn data-title="...if familiar with TDD and the problem domain">Minimum</dfn>: 1 hours
-* <dfn data-title="...based on past student submissions">Average</dfn>: 2½ hours
+* <dfn data-title="...based on past student submissions">Average</dfn>: 3 hours
 * Doing the refactoring once takes ~10 minutes, but you should repeat it many times and practice different approaches.
 
 
@@ -88,7 +88,7 @@ After you have written the hard-to-test code, write tests for it. Try to come up
 ##### Effort estimate
 
 * <dfn data-title="...if familiar with TDD and the problem domain">Minimum</dfn>: 1 hours
-* <dfn data-title="...based on past student submissions">Average</dfn>: 4 hours
+* <dfn data-title="...based on past student submissions">Average</dfn>: 5 hours
 
 
 # Exercise 4: Legacy code
@@ -107,7 +107,7 @@ The assignment is to *write tests for the above code, until it has 100% mutation
 ##### Effort estimate
 
 * <dfn data-title="...if familiar with TDD and the problem domain">Minimum</dfn>: 2 hours
-* <dfn data-title="...based on past student submissions">Average</dfn>: 5 hours
+* <dfn data-title="...based on past student submissions">Average</dfn>: 6 hours
 
 
 # (optional) Exercise 5: Full-stack web app
@@ -140,8 +140,8 @@ Start the app's development using the [walking skeleton](/5-advanced#walking-ske
 ##### Effort estimate
 
 * <dfn data-title="...if familiar with TDD and the problem domain">Minimum</dfn>: 10 hours
-* <dfn data-title="...based on past student submissions">Average</dfn>: 30 hours
-* Most of the effort is in setting up the infrastructure, and that becomes the faster the more old projects you have from where to copy-paste snippets.
+* <dfn data-title="...based on past student submissions">Average</dfn>: 32 hours
+* Much of the effort is in setting up the infrastructure, and that becomes the faster the more old full-stack projects you have from where to copy-paste snippets.
 
 
 # Exercise 6: Conway's Game of Life
@@ -164,8 +164,8 @@ Any programming language is okay. For a starter project, there is <https://githu
 
 ##### Effort estimate
 
-* <dfn data-title="...if familiar with TDD and the problem domain">Minimum</dfn>: 4 hours
-* <dfn data-title="...based on past student submissions">Average</dfn>: 8 hours
+* <dfn data-title="...if familiar with TDD and the problem domain">Minimum</dfn>: 6 hours
+* <dfn data-title="...based on past student submissions">Average</dfn>: 13 hours
 
 </tdd-decision>
 
