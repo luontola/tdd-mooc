@@ -40,7 +40,7 @@ The exercises are in JavaScript, but for the exercises where you create a projec
 
 ## When?
 
-This course will run 17.1.-31.5.2022 as a work-at-your-own-pace online course. There will be a Discord channel and weekly study groups. See [practicalities](/practicalities) for details.
+The next instance of this course will be from January until March 2023. There will be a Discord channel and weekly study groups. More details will be announced later.
 
 Of course you can also use this course material for self-study whenever you want, even if the course is not active.
 

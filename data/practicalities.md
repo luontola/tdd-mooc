@@ -6,6 +6,8 @@ information_page: true
 sidebar_priority: 4500
 ---
 
+*This page has not yet been updated for the 2023 January-March course instance. Come back later or join our Discord channel for announcements.*
+
 ## Enrollment and study credits
 
 If you are a student in Finland, you may receive 4 or 5 study credits from completing this course. See the [enrollment instructions](/enrollment) for details.
