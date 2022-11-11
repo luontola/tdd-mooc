@@ -63,22 +63,11 @@ If you get stuck, you may watch [this example screencast](https://www.youtube.co
 
 # Exercise 3: Untestable code
 
-> This exercise's goal is to teach why test-last is harder than test-first, and how to cope with things that make testing hard. During this exercise, you are allowed to write the production code before the test code.
+> This exercise's goal is to teach why test-last is harder than test-first, and how to cope with things that make testing hard.
 
-You may clone the project <https://github.com/luontola/tdd-mooc-new-js-project> to have a starting point.
+Clone the project <https://github.com/luontola/tdd-mooc-untestable-code> and follow its instructions.
 
-The assignment is to *write a function which is as hard to test as possible. Then write tests for it.* (If you manage to write truly untestable code and can't figure out how to test it, please bring it to the [study group](/practicalities#study-groups) so that we can examine it together.)
-
-The following list contains some things which make testing harder (see [chapter 3](/3-challenges)). Write some code which uses at least four (4) of them.
-
-* Singletons or global variables
-* File system
-* Network sockets
-* Time
-* Concurrency
-* Randomness
-
-After you have written the hard-to-test code, write tests for it. Try to come up with tricks that allow you to test the code without refactoring it to be more testable.
+The assignment is to *refactor the untestable code examples to make them testable, and then write tests for them.*
 
 ##### What to submit
 
@@ -87,8 +76,8 @@ After you have written the hard-to-test code, write tests for it. Try to come up
 
 ##### Effort estimate
 
-* <dfn data-title="...if familiar with TDD and the problem domain">Minimum</dfn>: 1 hours
-* <dfn data-title="...based on past student submissions">Average</dfn>: 5 hours
+* <dfn data-title="...if familiar with TDD and the problem domain">Minimum</dfn>: 2 hours
+* <dfn data-title="...based on past student submissions">Average</dfn>: TBD
 
 
 # Exercise 4: Legacy code
