@@ -13,6 +13,9 @@ There are things which make testing more challenging. Many of them are global va
 
 [Singleton](https://en.wikipedia.org/wiki/Singleton_pattern) is an anti-pattern. It is the object-oriented equivalent of a global variable. Instead, [just create one](http://www.butunclebob.com/ArticleS.UncleBob.SingletonVsJustCreateOne).
 
+Read more:
+http://www.butunclebob.com/ArticleS.UncleBob.SingletonVsJustCreateOne
+
 
 ## Test doubles
 
