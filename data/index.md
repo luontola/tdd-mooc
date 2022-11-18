@@ -14,7 +14,7 @@ Test-Driven Development (TDD) is an iterative programming technique where you fi
 
 ## Why?
 
-Fewer bugs. Less debugging. Better design. More fun.
+Fewer bugs. Less debugging. Better design. More fun. Produce better software faster.
 
 In the following 1-minute video, [Dave Farley](https://twitter.com/davefarley77) elaborates some more:
 
