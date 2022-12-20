@@ -21,7 +21,12 @@ Kent tried it with a stack, and half an hour later he was hooked. All the anxiet
 [[3]](https://youtu.be/cGuTmOUdFbo?t=325)
 
 
-## Three rules of TDD
+## What is TDD
+
+[A study from 2017](http://dx.doi.org/10.1109/TSE.2017.2776152) found that only 12% of developers who claimed to do TDD, did actually follow it.  Since there is such [semantic diffusion](https://martinfowler.com/bliki/SemanticDiffusion.html) about TDD, let's start with a definition:
+
+
+### Three rules of TDD
 
 TDD can be described in terms of these three rules:
 
@@ -34,7 +39,7 @@ http://www.butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd
 https://codingitwrong.com/2020/12/23/why-write-the-minimum-code-to-pass-the-test.html
 
 
-## Red, Green, Refactor
+### Red, Green, Refactor
 
 Another way to describe TDD is the following cycle of three phases. Every few minutes, in order:
 
@@ -53,7 +58,7 @@ http://www.jamesshore.com/v2/blog/2005/red-green-refactor
 https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html
 
 
-### Test list
+#### Test list
 
 To stay focused on the current test and phase, it's helpful to maintain a [test list](https://twitter.com/ursenzler/status/1433096612088356866/photo/2) (on paper, a text file or as TODO comments in tests).
 
