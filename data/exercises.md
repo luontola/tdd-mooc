@@ -27,7 +27,7 @@ Afterwards, in the weekly study groups, we will have a competition between the s
 
 ##### What to submit
 
-* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-2022> "part1" a **Git repository** with the history of you doing this refactoring, so that the commits are **as small as possible** and all the tests **pass on every commit**.
+* [Submit this exercise](/practicalities#exercise-submissions) as "part1". Provide a **Git repository** with the history of you doing this refactoring, so that the commits are **as small as possible** and all the tests **pass on every commit**.
     * Doing the [TCR challenge](https://github.com/luontola/tdd-mooc-small-steps#tcr-challenge) is the simplest way to create such small commits.
 * Fill [this questionnaire](https://forms.gle/bN6YkZEssTTewBxq8).
 
@@ -50,7 +50,7 @@ If you get stuck, you may watch [this example screencast](https://www.youtube.co
 
 ##### What to submit
 
-* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-2022> "part2" a **Git repository** with the source code and history of you doing this exercise.
+* [Submit this exercise](/practicalities#exercise-submissions) as "part2". Provide a **Git repository** with the source code and history of you doing this exercise.
     * Submit it after doing all 10 levels. The exercise submission system doesn't support editing old submissions.
 * Fill [this questionnaire](https://forms.gle/XCmGN4ZDvtdtGbLG6). Note the request for more detailed time tracking.
 
@@ -71,7 +71,7 @@ The assignment is to *refactor the untestable code examples to make them testabl
 
 ##### What to submit
 
-* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-2022> "part3" a **Git repository** with the source code and history of you doing this exercise.
+* [Submit this exercise](/practicalities#exercise-submissions) as "part3". Provide a **Git repository** with the source code and history of you doing this exercise.
 * Fill [this questionnaire](https://forms.gle/27xgUm3WH4skKUj18).
 
 ##### Effort estimate
@@ -90,7 +90,7 @@ The assignment is to *write tests for the above code, until it has 100% mutation
 
 ##### What to submit
 
-* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-2022> "part4" a **Git repository** with the source code and history of you doing this exercise. Also include a file with the **mutation test results**.
+* [Submit this exercise](/practicalities#exercise-submissions) as "part4". Provide a **Git repository** with the source code and history of you doing this exercise. Also include a file with the **mutation test results**.
 * Fill [this questionnaire](https://forms.gle/Z11PazAmaWyTXvX8A).
 
 ##### Effort estimate
@@ -103,7 +103,7 @@ The assignment is to *write tests for the above code, until it has 100% mutation
 
 > This exercise's goal is to learn writing tests for real applications. You will face all the things which commonly complicate testing in the real world: database, user interface, APIs.
 >
-> **If you decide to not do this exercise, submit a blank reponse to <https://studies.cs.helsinki.fi/stats/courses/tdd-2022> "part5": Leave the exercise checkbox unchecked, enter 0 hours as the duration, and write a dummy repository URL (it doesn't need to exist).**
+> **If you decide to not do this exercise, [submit a blank response](/practicalities#exercise-submissions) as "part5": Leave the exercise checkbox unchecked, enter 0 hours as the duration, and write a dummy repository URL (it doesn't need to exist).**
 
 You may clone the project template <https://github.com/luontola/tdd-mooc-webapp> to get started, but fundamentally the tool choices are up to you. Any programming language is okay.
 
@@ -123,7 +123,7 @@ Start the app's development using the [walking skeleton](/5-advanced#walking-ske
 
 ##### What to submit
 
-* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-2022> "part5" a **Git repository** with the source code and history of you doing this exercise.
+* [Submit this exercise](/practicalities#exercise-submissions) as "part5". Provide a **Git repository** with the source code and history of you doing this exercise.
 * Fill [this questionnaire](https://forms.gle/rQpKzRaFJJdb3ZkK9). Note the request for more detailed time tracking.
 
 ##### Effort estimate
@@ -138,6 +138,8 @@ Start the app's development using the [walking skeleton](/5-advanced#walking-ske
 > This exercise's goal is to review what you have learned during this course.
 >
 > **Please create a screen recording video as you do this exercise. This is kind of like the final exam to demonstrate your TDD skills.**
+>
+> ⚠️ If you wish to receive ECTS study credits, remember to [enroll on this course](/enrollment/) before [the course ends](/practicalities#course-duration).
 
 The assignment is to *write [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) using TDD.* Write it as a command line application which takes as input a *pattern file* in [RLE format](https://www.conwaylife.com/wiki/Run_Length_Encoded) and the *number of iterations* to simulate, and then outputs the *resulting pattern* in RLE format after the specified number of iterations.
 
@@ -148,7 +150,7 @@ Any programming language is okay. For a starter project, there is <https://githu
 ##### What to submit
 
 * **Record a video** of you doing this exercise. Use a screen recording software (e.g. [OBS Studio](https://obsproject.com/), see [instructions](https://www.alphr.com/record-screen-obs/)). Upload the video to any video streaming service (e.g. unlisted video on YouTube) and include a **link to the video** in the comment field as you submit the Git repository.
-* Submit to <https://studies.cs.helsinki.fi/stats/courses/tdd-2022> "part6" a **Git repository** with the source code and history of you doing this exercise. Write a **link to your screen recording video** in the comment field.
+* [Submit this exercise](/practicalities#exercise-submissions) as "part6". Provide a **Git repository** with the source code and history of you doing this exercise. Write a **link to your screen recording video** in the comment field.
 * Fill [this questionnaire](https://forms.gle/SyocAsQksBq5GUNk6). Note the request for more detailed time tracking.
 
 ##### Effort estimate
