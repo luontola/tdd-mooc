@@ -6,6 +6,8 @@ information_page: true
 sidebar_priority: 3000
 ---
 
+There's not really such as thing as "advanced TDD", other than [practising TDD more diligently](https://blog.thecodewhisperer.com/permalink/the-myth-of-advanced-tdd), but this chapter lists some situational techniques and things that are outside TDD.  
+
 
 ## Walking skeleton
 
