@@ -8,7 +8,7 @@ sidebar_priority: 3000
 
 ## Homework for the next 10 years
 
-After doing this course's exercises, you should have gotten over the initial hurdle of learning TDD, and have some idea of what TDD-done-well should look like. Likely your tests are still bad: test names which are not very descriptive, test code which is tightly coupled with implementation details, complex test setups, untestable code, duplication which has gone unnoticed and so on. But a bad test is better than no test, and the first step to improvement is awareness.
+After doing this course's exercises, you should have gotten over the initial hurdle of learning TDD, and have some idea of what TDD-done-well should look like. You'll likely have lots of room for improvement: trying to implement too much in one go, test names which are not very descriptive, test code which is tightly coupled with implementation details, complex test setups, untestable code, duplication which has gone unnoticed and so on. But a bad test is better than no test, and the first step to improvement is awareness.
 
 It should take something like 200 hours of practice to reach moderate competence with TDD. For the first year, focus on giving [good names](/1-tdd#test-names-should-be-sentences) to your tests. Write lots of little applications which push you to solve different kinds of problems, whether they are [code katas](https://kata-log.rocks/) or real applications. Avoid things that make testing hard (e.g. database, user interface), so that you can focus on just improving test readability.
 
@@ -36,7 +36,7 @@ About removing duplication and improving names.
 [Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912) (Jez Humble, David Farley, 2010)<br>
 Describes one fundamental practice of modern software development.
 
-For a more higher level book about software development process, [Extreme Programming Explained: Embrace Change](https://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658) (Kent Beck, 1999/2004) is still as timely as ever. [The Art of Agile Development](https://www.amazon.com/Art-Agile-Development-James-Shore/dp/1492080691) (James Shore et al, 2007/2021) or [Modern Software Engineering](https://www.amazon.com/Modern-Software-Engineering-Discipline-Development/dp/0137314914) (David Farley, 2021) should be good as well, covering also some things learned more recently.
+For a more higher level book about software development process, [Extreme Programming Explained: Embrace Change](https://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658) (Kent Beck, 1999/2004) is still as timely as ever. [The Art of Agile Development](https://www.amazon.com/Art-Agile-Development-James-Shore/dp/1492080691) (James Shore et al, 2007/2021) and [Modern Software Engineering](https://www.amazon.com/Modern-Software-Engineering-Discipline-Development/dp/0137314914) (David Farley, 2021) should be good as well, covering also some things learned more recently.
 
 ---
 
