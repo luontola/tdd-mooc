@@ -49,6 +49,9 @@ A common case of duplicated knowledge is similar code in two or more places. If 
 
 If it's not yet obvious that in what way the duplicated code will vary from place to place, let the code fester/ripen a bit longer. Wait until the code is repeated in three places, and *then* refactor. This reduces the risk of creating the wrong abstraction. [[1]](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming))
 
+Read more:
+https://blog.thecodewhisperer.com/permalink/when-should-i-remove-duplication
+
 
 ### Naive duplication
 
