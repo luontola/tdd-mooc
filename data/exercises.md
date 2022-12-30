@@ -52,7 +52,7 @@ If you get stuck, you may watch [this example screencast](https://www.youtube.co
 
 * [Submit this exercise](/practicalities#exercise-submissions) as "part2". Provide a **Git repository** with the source code and history of you doing this exercise.
     * Submit it after doing all 10 levels. The exercise submission system doesn't support editing old submissions.
-* Fill [this questionnaire](https://forms.gle/XCmGN4ZDvtdtGbLG6). Note the request for more detailed time tracking.
+* Fill [this questionnaire](https://forms.gle/XCmGN4ZDvtdtGbLG6).
 
 ##### Effort estimate
 
@@ -124,7 +124,7 @@ Start the app's development using the [walking skeleton](/5-advanced#walking-ske
 ##### What to submit
 
 * [Submit this exercise](/practicalities#exercise-submissions) as "part5". Provide a **Git repository** with the source code and history of you doing this exercise.
-* Fill [this questionnaire](https://forms.gle/rQpKzRaFJJdb3ZkK9). Note the request for more detailed time tracking.
+* Fill [this questionnaire](https://forms.gle/rQpKzRaFJJdb3ZkK9).
 
 ##### Effort estimate
 
@@ -151,7 +151,7 @@ Any programming language is okay. For a starter project, there is <https://githu
 
 * **Record a video** of you doing this exercise. Use a screen recording software (e.g. [OBS Studio](https://obsproject.com/), see [instructions](https://www.alphr.com/record-screen-obs/)). Upload the video to any video streaming service (e.g. unlisted video on YouTube) and include a **link to the video** in the comment field as you submit the Git repository.
 * [Submit this exercise](/practicalities#exercise-submissions) as "part6". Provide a **Git repository** with the source code and history of you doing this exercise. Write a **link to your screen recording video** in the comment field.
-* Fill [this questionnaire](https://forms.gle/SyocAsQksBq5GUNk6). Note the request for more detailed time tracking.
+* Fill [this questionnaire](https://forms.gle/SyocAsQksBq5GUNk6).
 
 ##### Effort estimate
 
