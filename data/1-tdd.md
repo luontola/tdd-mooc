@@ -6,6 +6,9 @@ information_page: true
 sidebar_priority: 3000
 ---
 
+The philosophy of this course material is that if something has been written online, there is no need to repeat it here. Instead, we just link to it. The "read more" links contain additional information which makes the summaries in this course material more understandable. The inline links, on the other hand, just explain terms and provide sources.
+
+
 ## History
 
 Sometime in the 1970s, the 12-year-old [Kent Beck](https://en.wikipedia.org/wiki/Kent_Beck) [[1]](https://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530) was reading books that his father had brought home. One of the books said that this is how you write programs: *You take the input tape, look at its contents, and type manually the output tape that you expect to create. Then programming is the process of writing a program until the actual output tape matches the expected output tape.*
