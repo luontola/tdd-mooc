@@ -6,7 +6,7 @@ information_page: true
 sidebar_priority: 3001
 ---
 
-In this course, 99% of the learning happens when doing the exercises. The prose chapters are there for support and to move things from "unknown unknowns" to "known unknowns".[¹](https://en.wikipedia.org/wiki/There_are_known_knowns)
+In this course, 99% of the learning happens when doing the exercises. The prose chapters are there for support and to move things from "unknown unknowns" to "known unknowns".[¹](https://en.wikipedia.org/wiki/There_are_unknown_unknowns)
 
 Below is the suggested order of reading the chapters and doing the exercises. You may use the checkboxes to keep track of your progress; they are saved only in your browser's local storage.
 
@@ -21,9 +21,9 @@ Below is the suggested order of reading the chapters and doing the exercises. Yo
 
 Clone the project <https://github.com/luontola/tdd-mooc-small-steps> and follow its instructions.
 
-The assignment is to *refactor the above code to replace [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) class with [Temporal.PlainDate](https://tc39.es/proposal-temporal/docs/plaindate.html) class.* Repeat this refactoring many times. Focus on doing as small changes as possible, so that *all tests will pass between every change*. Practice smaller and smaller steps, until you can **do the whole refactoring by _changing only one line at a time_**.
+The assignment is to *refactor the above code to replace [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) class with [Temporal.PlainDate](https://tc39.es/proposal-temporal/docs/plaindate.html) class.* Repeat this refactoring many times. Focus on doing as small changes as possible, so that *all tests will pass between every change*. Practice smaller and smaller steps, until you can **do the whole refactoring by changing only _one or two lines at a time_**.
 
-Afterwards, in the weekly study groups, we will have a competition between the students of this course about doing this refactoring using the smallest possible steps.
+Afterwards, in the weekly study groups, we will have an informal competition between the students of this course about doing this refactoring using the smallest possible steps or as quickly as possible.
 
 ##### What to submit
 
