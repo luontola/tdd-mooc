@@ -13,8 +13,11 @@ There are things which make testing more challenging. Many of them are global va
 
 [Singleton](https://en.wikipedia.org/wiki/Singleton_pattern) is an anti-pattern. It is the object-oriented equivalent of a global variable. Instead, [just create one](http://www.butunclebob.com/ArticleS.UncleBob.SingletonVsJustCreateOne).
 
-Read more:
-http://www.butunclebob.com/ArticleS.UncleBob.SingletonVsJustCreateOne
+<recommended-reading>
+
+- [Singleton vs. Just Create One](http://www.butunclebob.com/ArticleS.UncleBob.SingletonVsJustCreateOne)
+
+</recommended-reading>
 
 
 ## Test doubles
@@ -31,9 +34,12 @@ There are five main categories of test doubles:
 
 Only mock types you own.
 
-Read more:
-https://jesusvalerareales.medium.com/testing-with-test-doubles-7c3abb9eb3f2
-https://medium.com/@xpmatteo/how-i-learned-to-love-mocks-1-fb341b71328
+<recommended-reading>
+
+- [Test Doubles: Dummy, Stub, Spy, Mock & Fake](https://jesusvalerareales.medium.com/testing-with-test-doubles-7c3abb9eb3f2)
+- [How I learned to love mocks](https://medium.com/@xpmatteo/how-i-learned-to-love-mocks-1-fb341b71328)
+
+</recommended-reading>
 
 
 ### London school of TDD
@@ -44,9 +50,12 @@ London style TDD focuses on the communication protocols between objects sending 
 
 When using mock objects, it's important to understand the object-oriented style for which they were created. Otherwise, over-mocking may lead to tight coupling between tests and implementation details. The best description of how mock objects were meant to be used is the book *Growing Object-Oriented Software, Guided by Tests* (Steve Freeman, Nat Pryce 2009).
 
-Read more:
-http://www.mockobjects.com/2009/09/brief-history-of-mock-objects.html
-https://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627
+<recommended-reading>
+
+- [A Brief History of Mock Objects](http://www.mockobjects.com/2009/09/brief-history-of-mock-objects.html)
+- [Growing Object-Oriented Software, Guided by Tests](https://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627) - a book from the inventors of mock objects
+
+</recommended-reading>
 
 
 ## File system
@@ -163,8 +172,11 @@ There are tools like [Storybook](https://storybook.js.org/) for rendering UI com
 
 Optimize the diff for humans. Even video and audio can be diffed as an image.
 
-Read more:
-https://www.youtube.com/watch?v=5_IW7npQk9k
+<recommended-reading>
+
+- [You're Testing WHAT?](https://www.youtube.com/watch?v=5_IW7npQk9k)
+
+</recommended-reading>
 
 ---
 

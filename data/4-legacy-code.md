@@ -27,8 +27,11 @@ The basic strategy for changing legacy code is:
 
 A whole book has been written about this topic, so it doesn't need to be repeated here. Read the book - [it gets better with age](https://www.commitstrip.com/en/2019/03/13/like-a-good-wine/).
 
-Read more:
-https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052
+<recommended-reading>
+
+- [Working Effectively with Legacy Code](https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052) - the definitive book about refactoring legacy code
+
+</recommended-reading>
 
 
 ## Code coverage
@@ -43,8 +46,11 @@ Code coverage tools can be useful in finding untested areas, but not all of them
 
 When writing tests for legacy code, code coverage can be helpful. See which lines are not covered and for each conditional, write test cases that cause the code to take both branches.
 
-Read more:
-https://www.artima.com/weblogs/viewpost.jsp?thread=204677
+<recommended-reading>
+
+- [How Much Unit Test Coverage Do You Need? - The Testivus Answer](https://www.artima.com/weblogs/viewpost.jsp?thread=204677)
+
+</recommended-reading>
 
 
 ## Characterization tests
@@ -57,9 +63,12 @@ Write tests which just assert that the code *does what it does*. Understanding t
 
 After the code is covered with characterization tests, it can be refactored, making it easier to understand what the code does. After you understand the code, it's easier to write more descriptive tests for it and begin changing what the code does.
 
-Read more:
-https://www.infoq.com/news/2007/03/characterization-testing/
-https://www.youtube.com/watch?v=8OxH9Lz0Ckg
+<recommended-reading>
+
+- [Understanding Legacy Code with Characterization Testing](https://www.infoq.com/news/2007/03/characterization-testing/)
+- [Cutting Code Quickly: From 0% to Cleanly Refactored 100% Tested Code](https://www.youtube.com/watch?v=8OxH9Lz0Ckg)
+
+</recommended-reading>
 
 
 ## Fixing bugs test-first

@@ -19,8 +19,11 @@ At start the test could just send a "hello world" message which goes through the
 
 Then when the end-to-end test passes through the whole architecture, you can start fleshing out the system. As the system grows, keep improving the end-to-end test along with it. Typically it would test the happy path of an important use case which goes through the whole application.
 
-Read more:
-https://www.henricodolfing.com/2018/04/start-your-project-with-walking-skeleton.html
+<recommended-reading>
+
+- [Start Your Project With a Walking Skeleton](https://www.henricodolfing.com/2018/04/start-your-project-with-walking-skeleton.html)
+
+</recommended-reading>
 
 
 ## Continuous delivery
@@ -33,24 +36,33 @@ A core tenet of Continuous Delivery is that *at a moment's notice, the current d
 
 Continuous Delivery may include a human decision on *when* to deploy to production. If that decision is automated and every build which passes its tests is deployed to production automatically, then it's called *Continuous Deployment*.
 
-Read more:
-https://martinfowler.com/books/continuousDelivery.html
+<recommended-reading>
+
+- [Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](https://martinfowler.com/books/continuousDelivery.html) - the original book about continuous delivery
+
+</recommended-reading>
 
 
 ## Testing in production
 
 When testing *before* production is topnotch and you practice Continuous Delivery, then it's possible to start testing *also* in production. This includes getting feedback from how the users are using the application, for example through [A/B testing](https://en.wikipedia.org/wiki/A/B_testing) and [conversion funnels](https://en.wikipedia.org/wiki/Purchase_funnel). Another key term is [observability](https://thenewstack.io/monitoring-and-observability-whats-the-difference-and-why-does-it-matter/) - making the internal states of the system visible.
 
-Read more:
-https://www.youtube.com/watch?v=z-3aSVfoyBY
+<recommended-reading>
+
+- [Testing Strategy for DevOps: What to Test and When](https://www.youtube.com/watch?v=z-3aSVfoyBY)
+
+</recommended-reading>
 
 
 ## test && commit || revert (TCR)
 
 TCR is this crazy idea that every time that the tests pass, the code is committed automatically, and if the tests fail, the changes are reverted automatically. Try it and see what comes out of it.
 
-Read more:
-https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864
+<recommended-reading>
+
+- [test && commit || revert](https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864) - the original article about TCR
+
+</recommended-reading>
 
 
 ## Test-after patterns
@@ -63,8 +75,11 @@ Testing and clean code need to be ingrained in your nature, so that you have the
 
 **Ginger cake:** The story behind the name is about a granny's recipe box. There is a recipe for chocolate cake, listing all the ingredients and instructions. Later in the box there is also a recipe for ginger cake, which reads just "like chocolate cake, but with ginger". As a software development pattern, this can be used when you need to build a new feature which is quite similar to something you've done before - and you *know the code intimately*. Copy-paste the old code, remove unnecessary parts and customize it suit the new feature.
 
-Read more:
-https://www.youtube.com/watch?v=USc-yLHXNUg
+<recommended-reading>
+
+- [Software, Faster](https://www.youtube.com/watch?v=USc-yLHXNUg)
+
+</recommended-reading>
 
 ---
 

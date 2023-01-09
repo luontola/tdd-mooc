@@ -25,9 +25,12 @@ With TDD, point 1 is a given. If points 2 and 3 are covered, then point 4 rarely
 
 Keep practicing these, and in a few decades every other design principle and pattern will emerge.
 
-Read more:
-https://blog.jbrains.ca/permalink/the-four-elements-of-simple-design
-https://martinfowler.com/bliki/BeckDesignRules.html
+<recommended-reading>
+
+- [The Four Elements of Simple Design](https://blog.jbrains.ca/permalink/the-four-elements-of-simple-design)
+- [BeckDesignRules](https://martinfowler.com/bliki/BeckDesignRules.html)
+
+</recommended-reading>
 
 
 ## Duplication
@@ -49,8 +52,11 @@ A common case of duplicated knowledge is similar code in two or more places. If 
 
 If it's not yet obvious that in what way the duplicated code will vary from place to place, let the code fester/ripen a bit longer. Wait until the code is repeated in three places, and *then* refactor. This reduces the risk of creating the wrong abstraction. [[1]](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming))
 
-Read more:
-https://blog.thecodewhisperer.com/permalink/when-should-i-remove-duplication
+<recommended-reading>
+
+- [When should I remove duplication?](https://blog.thecodewhisperer.com/permalink/when-should-i-remove-duplication)
+
+</recommended-reading>
 
 
 ### Naive duplication
@@ -85,8 +91,11 @@ will_live? = if alive?
                  genetically_fertile_neighborhood?
 ```
 
-Read more:
-this example was from the book https://leanpub.com/4rulesofsimpledesign
+<recommended-reading>
+
+- This example was from the book [Understanding the Four Rules of Simple Design](https://leanpub.com/4rulesofsimpledesign)
+
+</recommended-reading>
 
 
 ## Naming things
@@ -99,10 +108,13 @@ Removing duplication and improving names feed into each other in a virtuous cycl
 
 Naming is a process: nonsense, accurate-but-vague, precise, meaningful. Never stop improving.
 
-Read more:
-https://agileinaflash.blogspot.com/2009/02/meaningful-names.html
-https://blog.thecodewhisperer.com/permalink/a-model-for-improving-names
-https://www.digdeeproots.com/articles/on/naming-process/
+<recommended-reading>
+
+- [Meaningful Names](https://agileinaflash.blogspot.com/2009/02/meaningful-names.html)
+- [A Model for Improving Names](https://blog.thecodewhisperer.com/permalink/a-model-for-improving-names)
+- [Naming as a Process](https://www.digdeeproots.com/articles/on/naming-process/)
+
+</recommended-reading>
 
 
 ## Composed method
@@ -117,9 +129,12 @@ The code should read like a newspaper article. First the high-level overview, th
 
 Each refactoring can be done in two directions. If you inline everything into one big method, it may be possible to see a different way to split it into small methods.
 
-Read more:
-https://farenda.com/patterns/composed-method-pattern/
-https://github.com/jnguyen095/clean-code/issues/28
+<recommended-reading>
+
+- [Composed Method Pattern explained](https://farenda.com/posts/composed-method-pattern/)
+- [The Newspaper Metaphor](https://github.com/jnguyen095/clean-code/issues/28) - a snippet from the [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) book
+
+</recommended-reading>
 
 
 ## Small, safe steps
@@ -133,16 +148,22 @@ Many small changes is faster than one big change.
 
 When you refactor, don't change behavior. When you change behavior, don't refactor. Maintain three points of contact like a mountain climber. 🧗
 
-Read more:
-https://www.infoq.com/presentations/responsive-design/
+<recommended-reading>
+
+- [Responsive Design](https://www.infoq.com/presentations/responsive-design/)
+
+</recommended-reading>
 
 
 ### Refactoring hell
 
 If it's been more than a few minutes since the tests last passed, `git reset --hard` and try again. (Your IDE's [local history](https://www.jetbrains.com/help/idea/local-history.html) may also show when all tests last passed, so you can revert to that point in time.)
 
-Read more:
-https://wiki.c2.com/?RefactoringHell
+<recommended-reading>
+
+- [Refactoring Hell](https://wiki.c2.com/?RefactoringHell)
+
+</recommended-reading>
 
 
 ## Four strategies
@@ -156,8 +177,11 @@ There are four strategies to refactor and design using small, safe steps:
 
 Design is scale-free. The *parallel change* strategy works the same way regardless of whether we're adding a new field to a class, or replacing the healthcare software system of a city.
 
-Read more:
-https://www.infoq.com/presentations/responsive-design/
+<recommended-reading>
+
+- [Responsive Design](https://www.infoq.com/presentations/responsive-design/)
+
+</recommended-reading>
 
 
 ## Test quality
@@ -176,10 +200,12 @@ In five seconds you will have forgotten over half of your [working memory](https
 
 ![Decay of working memory if rehearsal is prevented. The time scale is of the order of a few seconds.](images/working-memory-decay.png "How quickly working memory decays when you think of something else. [[1]](https://www.researchgate.net/figure/Decay-of-working-memory-if-rehearsal-is-prevented-The-time-scale-is-of-the-order-of-a_fig7_35883885)")
 
+<recommended-reading>
 
-Read more:
-https://agileinaflash.blogspot.com/2009/02/first.html
-https://medium.com/@kentbeck_7670/programmer-test-principles-d01c064d7934
+- [F.I.R.S.T properties of unit tests](https://agileinaflash.blogspot.com/2009/02/first.html)
+- [Programmer Test Principles](https://medium.com/@kentbeck_7670/programmer-test-principles-d01c064d7934)
+
+</recommended-reading>
 
 
 ### Test smells
