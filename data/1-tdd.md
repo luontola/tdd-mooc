@@ -40,7 +40,7 @@ TDD can be described in terms of these three rules:
 <recommended-reading>
 
 - [The Three Laws of TDD](http://www.butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd) - a definition of TDD
-- [Why Write the Minimum Code to Pass the Test?](https://codingitwrong.com/2020/12/23/why-write-the-minimum-code-to-pass-the-test.html) - on the importance of small iterative steps 
+- [Why Write the Minimum Code to Pass the Test?](https://codingitwrong.com/2020/12/23/why-write-the-minimum-code-to-pass-the-test.html) - on the importance of implementing features in small iterative steps 
 
 </recommended-reading>
 
@@ -53,7 +53,7 @@ Another way to describe TDD is the following cycle of three phases. Every few mi
 2. **Green**: Make the test pass. ASAP. Commit any sins necessary. Hard-coded values. If statements. Fake it until you make it.
 3. **Refactor**: Improve the design of the code, without changing its behavior. Atone for your sins. Remove duplication. Improve names. Minimal code which passes the current tests.
 
-Repeat until there are no more tests to write/until bored.
+Repeat until there are no more tests to write or until bored.
 
 If the current design makes it difficult to make a new test pass, consider commenting out the new test and refactoring first. "Make the change easy (warning: this may be hard), then make the easy change." [[1]](https://twitter.com/KentBeck/status/250733358307500032)
 
@@ -100,7 +100,7 @@ In the following video, [Otavio Lemos](https://twitter.com/otaviolemos) demonstr
 
 <recommended-reading>
 
-- [Direct and Indirect Effects of TDD](http://blog.orfjackal.net/2010/04/direct-and-indirect-effects-of-tdd.html) - how TDD's design feedback mechanism works and why pain is good
+- [Direct and Indirect Effects of TDD](http://blog.orfjackal.net/2010/04/direct-and-indirect-effects-of-tdd.html) - how TDD works as a _design feedback mechanism_ and why pain is good
 
 </recommended-reading>
 
@@ -126,14 +126,14 @@ When a test fails, look at the name of the test. There are three possibilities:
 
 <recommended-reading>
 
-- [Introducing BDD](https://dannorth.net/introducing-bdd/) - about naming tests, and how replacing the word "test" with "behavior" or "specification" might help beginners in learning TDD done well
+- [Introducing BDD](https://dannorth.net/introducing-bdd/) - the original article about Behavior-Driven Development; on naming tests and how replacing the word _test_ with _behavior_ or _specification_ might help in learning what is _TDD done well_
 
 </recommended-reading>
 
 
 ## Is TDD testing?
 
-The tests written as part of TDD do help ensure a level of _basic correctness_ in the software, but it's still a _development_ technique, as what the last D of TDD stands for. The role of the tests in TDD is to support building the software, whereas the role of tests in software testing is to break the software. Think of scaffolding instead of a wrecking ball.
+The tests written as part of TDD do help ensure a level of _basic correctness_ in the software, but it's still a _development_ technique - that's what the last D in TDD stands for. The role of the tests in TDD is to support building the software, whereas the role of tests in software testing is to break the software. Think of scaffolding instead of a wrecking ball.
 
 TDD's tests can be thought of as a specification of the system's behavior, or as small examples of how the code functions. In the software development life cycle, the TDD mindset focuses more on requirements and design than on verification, though the verification side is also important to support refactoring and new features.
 
