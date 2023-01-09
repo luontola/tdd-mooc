@@ -66,11 +66,13 @@ import Vocabulary from "./Vocabulary"
 import VocabularyWord from "./Vocabulary/VocabularyWord"
 import TddDecision from "./TddDecision"
 import ExerciseSchedule from "./ExerciseSchedule"
+import RecommendedReading from "./RecommendedReading"
 
 const mapping = () => ({
   test: Test,
   "tdd-decision": TddDecision,
   "exercise-schedule": ExerciseSchedule,
+  "recommended-reading": RecommendedReading,
   "pages-in-this-section": PagesInThisSection,
   "programming-exercise": ProgrammingExercise,
   "text-box": TextBox,

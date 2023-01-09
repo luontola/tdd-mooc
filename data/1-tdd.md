@@ -6,7 +6,7 @@ information_page: true
 sidebar_priority: 3000
 ---
 
-The philosophy of this course material is that if something has been written online, there is no need to repeat it here. Instead, we just link to it. The "read more" links contain additional information which makes the summaries in this course material more understandable. The inline links, on the other hand, just explain terms and provide sources.
+The philosophy of this course material is that if something has been written online, there is no need to repeat it here. Instead, we just link to it. The _recommended reading_ links contain additional information which makes the summaries in this course material more understandable. The inline links, on the other hand, just explain terms and provide sources.
 
 
 ## History
@@ -37,9 +37,12 @@ TDD can be described in terms of these three rules:
 2. You shall not write more of a unit test, than is required to fail (assertion failure/program crash/compile error).
 3. You shall not write more production code, than is sufficient to make the one failing unit test pass.
 
-Read more:
-http://www.butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd
-https://codingitwrong.com/2020/12/23/why-write-the-minimum-code-to-pass-the-test.html
+<recommended-reading>
+
+- [The Three Laws of TDD](http://www.butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd) - a definition of TDD
+- [Why Write the Minimum Code to Pass the Test?](https://codingitwrong.com/2020/12/23/why-write-the-minimum-code-to-pass-the-test.html) - on the importance of small iterative steps 
+
+</recommended-reading>
 
 
 ### Red, Green, Refactor
@@ -56,9 +59,12 @@ If the current design makes it difficult to make a new test pass, consider comme
 
 As the tests get more specific, the implementation gets more generic.
 
-Read more:
-http://www.jamesshore.com/v2/blog/2005/red-green-refactor
-https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html
+<recommended-reading>
+
+- [Red-Green-Refactor](http://www.jamesshore.com/v2/blog/2005/red-green-refactor) - a definition of TDD
+- [The Cycles of TDD](https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html) - the various iterative cycles of TDD, from the second-by-second up to the hour-by-hour scale
+
+</recommended-reading>
 
 
 #### Test list
@@ -92,8 +98,11 @@ In the following video, [Otavio Lemos](https://twitter.com/otaviolemos) demonstr
 - Enables changing the code without breaking it
 - Improves the quality of the code
 
-Read more:
-http://blog.orfjackal.net/2010/04/direct-and-indirect-effects-of-tdd.html
+<recommended-reading>
+
+- [Direct and Indirect Effects of TDD](http://blog.orfjackal.net/2010/04/direct-and-indirect-effects-of-tdd.html) - how TDD's design feedback mechanism works and why pain is good
+
+</recommended-reading>
 
 
 ## What tests to write?
@@ -117,8 +126,11 @@ When a test fails, look at the name of the test. There are three possibilities:
 - The behavior is still needed, but the test needs updating. Change the test. Think of how to decouple the test from unrelated behaviors, to have fewer unwanted test failures.
 - The behavior is no more needed. Delete the test.
 
-Read more:
-https://dannorth.net/introducing-bdd/
+<recommended-reading>
+
+- [Introducing BDD](https://dannorth.net/introducing-bdd/) - about naming tests, and how replacing the word "test" with "behavior" or "specification" might help beginners in learning TDD done well
+
+</recommended-reading>
 
 
 ## Is TDD testing?
@@ -127,8 +139,13 @@ The tests written as part of TDD do help ensure a level of _basic correctness_ i
 
 ![Photos of scaffolding around a building and a wrecking ball destroying a brick wall.](images/tdd-vs-testing.jpg "Photo credits: [Niklas Hamann](https://unsplash.com/photos/jAj0pjdzvic), [Rhys Asplundh](https://www.flickr.com/photos/rhysasplundh/5202454842)")
 
-Read more:
-https://blog.thecodewhisperer.com/permalink/interlude-basic-correctness
+
+<recommended-reading>
+
+- [Interlude: Basic Correctness](https://blog.thecodewhisperer.com/permalink/interlude-basic-correctness) - discussion between a TDD and a software testing expert
+
+</recommended-reading>
+
 
 ---
 
