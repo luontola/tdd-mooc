@@ -114,8 +114,6 @@ When writing the first test, it helps to start small and simplify the problem: W
 
 ### Test names should be sentences
 
-Software testing attempts to find faults in the code. But in TDD, the "tests" are thought of as a specification of the system's behavior, or as small examples of how the code functions. The focus is more on requirements and design than on verification.
-
 The test names should be sentences which describe what the system should do - its behavior.
 
 Thought exercise: All production and test code has disappeared. The only thing remaining is the test names. Can someone reimplement the system, so that it will do pretty much the same things as before?
@@ -136,6 +134,8 @@ When a test fails, look at the name of the test. There are three possibilities:
 ## Is TDD testing?
 
 The tests written as part of TDD do help ensure a level of _basic correctness_ in the software, but it's still a _development_ technique, as what the last D of TDD stands for. The role of the tests in TDD is to support building the software, whereas the role of tests in software testing is to break the software. Think of scaffolding instead of a wrecking ball.
+
+TDD's tests can be thought of as a specification of the system's behavior, or as small examples of how the code functions. In the software development life cycle, the TDD mindset focuses more on requirements and design than on verification, though the verification side is also important to support refactoring and new features.
 
 ![Photos of scaffolding around a building and a wrecking ball destroying a brick wall.](images/tdd-vs-testing.jpg "Photo credits: [Niklas Hamann](https://unsplash.com/photos/jAj0pjdzvic), [Rhys Asplundh](https://www.flickr.com/photos/rhysasplundh/5202454842)")
 
