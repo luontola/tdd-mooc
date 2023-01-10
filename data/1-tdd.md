@@ -109,18 +109,18 @@ In the following video, [Otavio Lemos](https://twitter.com/otaviolemos) demonstr
 
 Ask yourself: What is the next most important thing, which the system *does not* yet do? [[1]](https://dannorth.net/introducing-bdd/)
 
-Stop thinking about HOW your software works. Instead, specify WHAT your software does - from the point of view of its user (a human or the code that calls it). [[2]](https://www.youtube.com/watch?v=gXh0iUt4TXA)
+Stop thinking about _HOW your software works_. Instead, specify _WHAT your software does_ from the point of view of its user. [[2]](https://www.youtube.com/watch?v=gXh0iUt4TXA&t=380s)
 
 When writing the first test, it helps to start small and simplify the problem: Where to start writing a sudoku solver? Solving a 1×1 sudoku. [[3]](https://www.infoq.com/presentations/responsive-design/)
 
 
 ### Test names should be sentences
 
-The test names should be sentences which describe what the system should do - its behavior.
+The test names should be sentences which describe what the system should do - its behavior. Think of them as a specification of what your software does.
 
 Thought exercise: All production and test code has disappeared. The only thing remaining is the test names. Can someone reimplement the system, so that it will do pretty much the same things as before?
 
-When a test fails, look at the name of the test. There are three possibilities:
+When a test fails, look at the name of the test - the behavior that it defines. There are three possibilities:
 
 - The system has a bug. Fix the implementation.
 - The behavior is still needed, but the test needs updating. Change the test. Think of how to decouple the test from unrelated behaviors, to have fewer unwanted test failures.
@@ -138,7 +138,7 @@ When a test fails, look at the name of the test. There are three possibilities:
 
 The tests written as part of TDD do help ensure a level of _basic correctness_ in the software, but it's still a _development_ technique - that's what the last D in TDD stands for. The role of the tests in TDD is to support building the software, whereas the role of tests in software testing is to break the software. Think of scaffolding instead of a wrecking ball.
 
-TDD's tests can be thought of as a specification of the system's behavior, or as small examples of how the code functions. In the software development life cycle, the TDD mindset focuses more on requirements and design than on verification, though the verification side is also important to support refactoring and new features.
+TDD's tests can be thought of as a specification of the system's behavior, or as small examples of how the code works. In the software development life cycle, the TDD mindset focuses more on requirements and design than on verification, though the verification side is also important to support refactoring and adding new features.
 
 ![Photos of scaffolding around a building and a wrecking ball destroying a brick wall.](images/tdd-vs-testing.jpg "Photo credits: [Niklas Hamann](https://unsplash.com/photos/jAj0pjdzvic), [Rhys Asplundh](https://www.flickr.com/photos/rhysasplundh/5202454842)")
 
