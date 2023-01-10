@@ -107,9 +107,11 @@ In the following video, [Otavio Lemos](https://twitter.com/otaviolemos) demonstr
 
 ## What tests to write?
 
-Ask yourself: What is the next most important thing, which the system *does not* yet do?
+Ask yourself: What is the next most important thing, which the system *does not* yet do? [[1]](https://dannorth.net/introducing-bdd/)
 
-When writing the first test, it helps to start small and simplify the problem: Where to start writing a sudoku solver? Solving a 1×1 sudoku.
+Stop thinking about HOW your software works. Instead, specify WHAT your software does - from the point of view of its user (a human or the code that calls it). [[2]](https://www.youtube.com/watch?v=gXh0iUt4TXA)
+
+When writing the first test, it helps to start small and simplify the problem: Where to start writing a sudoku solver? Solving a 1×1 sudoku. [[3]](https://www.infoq.com/presentations/responsive-design/)
 
 
 ### Test names should be sentences
@@ -127,6 +129,7 @@ When a test fails, look at the name of the test. There are three possibilities:
 <recommended-reading>
 
 - [Introducing BDD](https://dannorth.net/introducing-bdd/) - the original article about Behavior-Driven Development; on naming tests and how replacing the word _test_ with _behavior_ or _specification_ might help in learning what is _TDD done well_
+- [An Ultimate Guide To BDD](https://www.youtube.com/watch?v=gXh0iUt4TXA)
 
 </recommended-reading>
 
