@@ -29,7 +29,7 @@ Kent tried it with a stack, and half an hour later he was hooked. All the anxiet
 [A study from 2017](http://dx.doi.org/10.1109/TSE.2017.2776152) found that only 12% of developers who claimed to do TDD, did actually follow it.  Since there is such [semantic diffusion](https://martinfowler.com/bliki/SemanticDiffusion.html) about TDD, let's start with a definition:
 
 
-### Three rules of TDD
+### Three laws of TDD
 
 TDD can be described in terms of these three rules:
 
@@ -40,7 +40,6 @@ TDD can be described in terms of these three rules:
 <recommended-reading>
 
 - [The Three Laws of TDD](http://www.butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd) - a definition of TDD
-- [Why Write the Minimum Code to Pass the Test?](https://codingitwrong.com/2020/12/23/why-write-the-minimum-code-to-pass-the-test.html) - on the importance of implementing features in small iterative steps 
 
 </recommended-reading>
 
@@ -57,12 +56,25 @@ Repeat until there are no more tests to write or until bored.
 
 If the current design makes it difficult to make a new test pass, consider commenting out the new test and refactoring first. "Make the change easy (warning: this may be hard), then make the easy change." [[1]](https://twitter.com/KentBeck/status/250733358307500032)
 
-"As the tests get more specific, the code gets more generic." [[2]](https://thecleancoder.blogspot.com/2010/11/craftsman-63-specifics-and-generics.html) It is called _triangulation_ when we write tests to expose the deficiencies of still naive production code. By making those tests pass, the production code approaches a complete solution which will handle all edge cases. 
-
 <recommended-reading>
 
 - [Red-Green-Refactor](http://www.jamesshore.com/v2/blog/2005/red-green-refactor) - a definition of TDD
 - [The Cycles of TDD](https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html) - the various iterative cycles of TDD, from the second-by-second up to the hour-by-hour scale
+
+</recommended-reading>
+ 
+
+#### Triangulation
+
+"As the tests get more specific, the code gets more generic." [[1]](https://thecleancoder.blogspot.com/2010/11/craftsman-63-specifics-and-generics.html)
+
+In the _green_ phase, it's important to not write any more code than is required to pass the test. This means at first using hard-coded return values and naive implementations. If we added behavior without first specifying it with a test, then we would be adding unspecified behavior.
+
+It is called _triangulation_ when we write tests to expose the deficiencies of still naive production code. By making those tests pass, the production code approaches a completely tested solution which will handle all edge cases. 
+
+<recommended-reading>
+
+- [Why Write the Minimum Code to Pass the Test?](https://codingitwrong.com/2020/12/23/why-write-the-minimum-code-to-pass-the-test.html) - on the importance of implementing features in small iterative steps
 - [Getting Stuck While Doing TDD. Part 3: Triangulation to the Rescue!](https://www.tddfellow.com/blog/2016/08/31/getting-stuck-while-doing-tdd-part-3-triangulation-to-the-rescue/) - what is triangulation and an example of doing it
 
 </recommended-reading>
@@ -89,7 +101,7 @@ In the following video, [Otavio Lemos](https://twitter.com/otaviolemos) demonstr
 
 ## Direct and indirect effects of TDD
 
-*Direct effects*, if just following the three rules of TDD:
+*Direct effects*, if just following the three laws of TDD:
 
 - Guarantees code coverage
 - Amplifies the pain caused by bad code
