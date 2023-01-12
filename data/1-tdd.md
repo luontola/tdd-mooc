@@ -133,6 +133,8 @@ The test names should be sentences which describe what the system should do - it
 
 Thought exercise: All production and test code has disappeared. The only thing remaining is the test names. Can someone reimplement the system, so that it will do pretty much the same things as before?
 
+Corollary: All test names have disappeared. Can someone read the test code and understand what behavior it is specifying, so that they can write a test name which says pretty much the same as it said before?
+
 When a test fails, look at the name of the test - the behavior that it defines. There are three possibilities:
 
 - The system has a bug. Fix the implementation.
