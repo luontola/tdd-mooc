@@ -76,6 +76,7 @@ It is called _triangulation_ when we write tests to expose the deficiencies of s
 
 - [Why Write the Minimum Code to Pass the Test?](https://codingitwrong.com/2020/12/23/why-write-the-minimum-code-to-pass-the-test.html) - on the importance of implementing features in small iterative steps
 - [Getting Stuck While Doing TDD. Part 3: Triangulation to the Rescue!](https://www.tddfellow.com/blog/2016/08/31/getting-stuck-while-doing-tdd-part-3-triangulation-to-the-rescue/) - what is triangulation and an example of doing it
+- [TDD Guided by ZOMBIES](http://blog.wingman-sw.com/tdd-guided-by-zombies) - an acronym about in which order to implement things and what to consider
 
 </recommended-reading>
 
