@@ -9,6 +9,25 @@ sidebar_priority: 3000
 An essential part of TDD is [refactoring](https://martinfowler.com/bliki/DefinitionOfRefactoring.html): improving the structure of the code without changing its observable behavior. TDD's tests provide a feedback mechanism: if something is hard to test, it means the code's design needs improvement. When learning TDD, listening to your tests and learning about design is what takes the longest.
 
 
+## Evolutionary design
+
+*aka incremental design, aka continuous design*
+
+Designing a whole system up-front without mistakes is impossible. At the start of a project is the time when we know the least about the problem we are solving. That's why our design must evolve as we learn more. We put our learning back into the program by modifying it to look *as if we had know what we were doing all along, and as if had been easy to do.* [[1]](https://www.youtube.com/watch?v=pqeJFYwnkjE)
+
+We should *start with an idea of a design, but assume it's wrong.* [[2]](https://youtu.be/Hybt9NdmsBw?t=100) We'll continually look for signs that our current design doesn't fit the problem, and then we'll modify the design to fit it better.
+
+But we shouldn't build flexible and reusable components up-front. They would increase complexity and anyway might not flex in the right direction. Instead, we'll follow the principles of [YAGNI](https://martinfowler.com/bliki/Yagni.html) and [Simple Design](https://martinfowler.com/bliki/BeckDesignRules.html) to reduce the friction of changing our design into *any* direction.
+
+<recommended-reading>
+
+- [What's the relationship between TDD and Evolutionary Design?](https://jhall.io/archive/2022/10/27/whats-the-relationship-between-tdd-and-evolutionary-design/)
+- [Debt Metaphor](https://www.youtube.com/watch?v=pqeJFYwnkjE) - about putting our learning back into the program 
+- [Is Design Dead?](https://www.martinfowler.com/articles/designDead.html) - about evolutionary design and how the XP practices enable it
+
+</recommended-reading>
+
+
 ## Four elements of simple design
 
 In priority order:
@@ -28,7 +47,8 @@ Keep practicing these, and in a few decades every other design principle and pat
 <recommended-reading>
 
 - [The Four Elements of Simple Design](https://blog.jbrains.ca/permalink/the-four-elements-of-simple-design)
-- [BeckDesignRules](https://martinfowler.com/bliki/BeckDesignRules.html)
+- [Kent Beck's Design Rules](https://martinfowler.com/bliki/BeckDesignRules.html)
+- [YAGNI: You Aren't Gonna Need It](https://martinfowler.com/bliki/Yagni.html)
 
 </recommended-reading>
 
