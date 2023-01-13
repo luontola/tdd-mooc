@@ -126,7 +126,7 @@ will_live? = if alive?
 
 Removing duplication and improving names feed into each other in a virtuous cycle.
 
-Naming is a process: nonsense, accurate-but-vague, precise, meaningful. Never stop improving.
+Naming is a process: nonsense → accurate-but-vague → precise → meaningful. Never stop improving.
 
 <recommended-reading>
 
