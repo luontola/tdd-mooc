@@ -87,7 +87,7 @@ In [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 
 ```pseudo
 will_live? = if alive?
-                 neighbors == 2 || neighbors == 3
+                 neighbors == 2 || neighbors == 3
              else
                  neighbors == 3
 ```
@@ -95,7 +95,7 @@ will_live? = if alive?
 The `neighbors == 3` is repeated, so let's remove the duplication:
 
 ```pseudo
-will_live? = (alive? && neighbors == 2) || neighbors == 3
+will_live? = (alive? && neighbors == 2) || neighbors == 3
 ```
 
 But this is wrong. It couples together two unrelated concepts:

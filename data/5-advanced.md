@@ -54,7 +54,7 @@ When testing *before* production is topnotch and you practice Continuous Deliver
 </recommended-reading>
 
 
-## test && commit || revert (TCR)
+## test && commit || revert (TCR)
 
 TCR is this crazy idea that every time that the tests pass, the code is committed automatically, and if the tests fail, the changes are reverted automatically.
 
