@@ -15,6 +15,8 @@ In general there are two options:
 
 - Pass in the result of the untestable thing as a parameter:
 
+<table><tr><td>
+
 ```
 fn():
   ...
@@ -22,7 +24,7 @@ fn():
   ...
 ```
 
-⬇
+</td><td>➡</td><td>
 
 ```
 fn(something):
@@ -30,7 +32,12 @@ fn(something):
   ...
 ```
 
+</td></tr></table>
+
+
 - Extract the untestable thing to a method and override it in a subclass:
+
+<table><tr><td>
 
 ```
 fn():
@@ -39,7 +46,7 @@ fn():
   ...
 ```
 
-⬇
+</td><td>➡</td><td>
 
 ```
 fn():
@@ -50,6 +57,8 @@ fn():
 something():
   ☠️☠️☠️
 ```
+
+</td></tr></table>
 
 
 ## Singletons
