@@ -217,7 +217,7 @@ There are patterns like [passive view](https://martinfowler.com/eaaDev/PassiveSc
 
 ### Unit testing web app components
 
-Asserting on the [innerText](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText) of a component (with whitespace normalization) produces tests which are decoupled from visual changes.
+Asserting on the [innerText](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText) of a component (after whitespace normalization) produces tests which are decoupled from visual changes.
 
 Asserting the presence/absence of a CSS class is useful for testing logic that is observable only visually. Make sure to use the same constant for presence and absence checks; a mispelled <!-- sic --> CSS class is always absent.
 
