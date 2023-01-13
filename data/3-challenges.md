@@ -9,6 +9,49 @@ sidebar_priority: 3000
 There are things which make testing more challenging. Many of them are global variables of sorts. Global variables cause spooky action at a distance. Do the same thing over and over again, and get a different result. Tests may randomly pass or fail, depending on the order in which they are run.
 
 
+## How to make any code testable
+
+In general there are two options:
+
+- Pass in the result of the untestable thing as a parameter:
+
+```
+fn():
+  ...
+  ☠️☠️☠️
+  ...
+```
+
+⬇
+
+```
+fn(something):
+  ...
+  ...
+```
+
+- Extract the untestable thing to a method and override it in a subclass:
+
+```
+fn():
+  ...
+  ☠️☠️☠️
+  ...
+```
+
+⬇
+
+```
+fn():
+  ...
+  something()
+  ...
+  
+something():
+  ☠️☠️☠️
+```
+
+
 ## Singletons
 
 [Singleton](https://en.wikipedia.org/wiki/Singleton_pattern) is an anti-pattern. It is the object-oriented equivalent of a global variable. Instead, [just create one](http://www.butunclebob.com/ArticleS.UncleBob.SingletonVsJustCreateOne).
