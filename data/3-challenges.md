@@ -205,7 +205,7 @@ For example, let's test a function which returns random integers between 1 and 1
 
 But even if you assert that the random values are not predictable, once in a blue moon the values could be returned in seemingly predictable order[¹](https://dilbert.com/strip/2001-10-25) and your tests would fail. To improve repeatability, you could always use the same seed for the pseudorandom number generator. Or better yet, choose randomly from a couple different hard-coded seeds, so that the tests cannot be coupled to any single predictable random order.
 
-(Testing true randomness is outside the scope of this course. That's in the realm of mathematics and not TDD.)
+(Testing whether something is true randomness is outside the scope of this course. That's in the realm of mathematics and not TDD.)
 
 
 ## User interface
