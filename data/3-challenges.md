@@ -11,7 +11,7 @@ There are things which make testing more challenging. Many of them are global va
 
 ## How to make any code testable
 
-In general there are two options:
+In general there are two options, the first one being simpler:
 
 - Pass in the result of the untestable thing as a parameter:
 
