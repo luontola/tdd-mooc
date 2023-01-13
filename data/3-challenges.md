@@ -15,8 +15,10 @@ In general there are two options:
 
 - Pass in the result of the untestable thing as a parameter:
 
-<table><tr><td>
+<div style="columns: 2">
+<div>
 
+Before
 ```
 fn():
   ...
@@ -24,21 +26,25 @@ fn():
   ...
 ```
 
-</td><td>➡</td><td>
+</div>
+<div style="break-before: column">
 
+After
 ```
 fn(something):
   ...
   ...
 ```
 
-</td></tr></table>
-
+</div>
+</div>
 
 - Extract the untestable thing to a method and override it in a subclass:
 
-<table><tr><td>
+<div style="columns: 2">
+<div>
 
+Before
 ```
 fn():
   ...
@@ -46,8 +52,10 @@ fn():
   ...
 ```
 
-</td><td>➡</td><td>
+</div>
+<div style="break-before: column">
 
+After
 ```
 fn():
   ...
@@ -58,7 +66,8 @@ something():
   ☠️☠️☠️
 ```
 
-</td></tr></table>
+</div>
+</div>
 
 
 ## Singletons
