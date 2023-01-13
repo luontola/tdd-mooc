@@ -130,7 +130,7 @@ Naming is a process: nonsense, accurate-but-vague, precise, meaningful. Never st
 
 <recommended-reading>
 
-- [Meaningful Names](https://agileinaflash.blogspot.com/2009/02/meaningful-names.html)
+- [Meaningful Names](https://agileinaflash.blogspot.com/2009/02/meaningful-names.html) - a summary of chapter 2 of the [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) book
 - [A Model for Improving Names](https://blog.thecodewhisperer.com/permalink/a-model-for-improving-names)
 - [Naming as a Process](https://www.digdeeproots.com/articles/on/naming-process/)
 
@@ -152,7 +152,7 @@ Each refactoring can be done in two directions. If you inline everything into on
 <recommended-reading>
 
 - [Composed Method Pattern explained](https://farenda.com/posts/composed-method-pattern/)
-- [The Newspaper Metaphor](https://github.com/jnguyen095/clean-code/issues/28) - a snippet from the [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) book
+- [The Newspaper Metaphor](https://github.com/jnguyen095/clean-code/issues/28) - an excerpt from chapter 5 of the [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) book
 
 </recommended-reading>
 
