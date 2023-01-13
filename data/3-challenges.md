@@ -230,6 +230,12 @@ Prefer selecting elements based on the visible text on the button/link/label; it
 
 Have only a few end-to-end tests. They are slow and flaky. Prefer unit tests. Set a hard limit for how many end-to-end tests the whole application may have (≤10 for even big apps) and stick to it. End-to-end tests should only check that things are wired together, not behavioral correctness. Overreliance on end-to-end tests can [grind development to a halt](https://building.nubank.com.br/why-we-killed-our-end-to-end-test-suite/).
 
+<recommended-reading>
+
+- [Integrated Tests Are A Scam](https://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam)
+
+</recommended-reading>
+
 
 ### Visual testing
 
