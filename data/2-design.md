@@ -147,7 +147,7 @@ Each new method is an opportunity to introduce a new name.
 
 The code should read like a newspaper article. First the high-level overview, then dig deeper into more details.
 
-Each refactoring can be done in two directions. If you inline everything into one big method, it may be possible to see a different way to split it into small methods.
+Keep in mind that each refactoring can be done in two directions: If you inline everything into one big method, it may be possible to see a different way to split it into small methods.
 
 <recommended-reading>
 
