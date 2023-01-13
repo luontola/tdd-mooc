@@ -65,8 +65,8 @@ After the code is covered with characterization tests, it can be refactored, mak
 
 <recommended-reading>
 
-- [Understanding Legacy Code with Characterization Testing](https://www.infoq.com/news/2007/03/characterization-testing/)
-- [Cutting Code Quickly: From 0% to Cleanly Refactored 100% Tested Code](https://www.youtube.com/watch?v=8OxH9Lz0Ckg)
+- [Understanding Legacy Code with Characterization Testing](https://www.infoq.com/news/2007/03/characterization-testing/) - what is characterization testing
+- [Cutting Code Quickly: From 0% to Cleanly Refactored 100% Tested Code](https://www.youtube.com/watch?v=8OxH9Lz0Ckg) - a technique for characterization testing and refactoring without having to understand the code
 
 </recommended-reading>
 
