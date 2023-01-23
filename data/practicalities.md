@@ -31,6 +31,17 @@ We will have study groups **every Tuesday at 16:15-18:00** ([Europe/Helsinki tim
 
 There we will go through the exercises and it's an opportunity to receive feedback from your code. This could include code review, refactoring, pair or mob programming, ad-hoc exercises etc.
 
+Preliminary agenda, will change based on what people joining the study groups have done:
+
+- **17.1.2023**: TDD intro and demo, recap of practicalities, getting started with TDD: the first tests, Q&A
+- **24.1.2023**: exercise 1 (Small, safe steps) and a playful refactoring competition, exercise 2 (Tetris) levels 1-3
+- **31.1.2023**: exercise 2 (Tetris) levels 4-6, [sparrow decks](https://llewellynfalco.blogspot.com/p/sparrow-decks.html)
+- **7.2.2023**: exercise 2 (Tetris)
+- **14.2.2023**: exercise 3 (Untestable code) and exercise 4 (Legacy code)
+- **21.2.2023**: exercise 5 (Full-stack web app)
+- **28.2.2023**: exercise 5 (Full-stack web app)
+- **7.3.2023**: exercise 6 (Conway's Game of Life)
+
 
 ## Exercises
 
