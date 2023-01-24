@@ -34,7 +34,7 @@ There we will go through the exercises and it's an opportunity to receive feedba
 Preliminary agenda, will change based on what people joining the study groups have done:
 
 - **17.1.2023**: TDD intro and demo, recap of practicalities, getting started with TDD: the first tests, Q&A
-- **24.1.2023**: <!-- selective attention and writing down what you noticed https://www.youtube.com/watch?v=IGQmdoK_ZfY --> exercise 1 (Small, safe steps) and a playful refactoring competition, exercise 2 (Tetris) levels 1-3
+- **24.1.2023**: [selective attention](https://www.youtube.com/watch?v=vJG698U2Mvo)[](https://youtu.be/IGQmdoK_ZfY?t=4), exercise 1 (Small, safe steps), a light refactoring competition, exercise 2 (Tetris) levels 1-3
 - **31.1.2023**: [sparrow decks](https://llewellynfalco.blogspot.com/p/sparrow-decks.html), exercise 2 (Tetris) levels 4-6
 - **7.2.2023**: exercise 2 (Tetris)
 - **14.2.2023**: exercise 3 (Untestable code) and exercise 4 (Legacy code)
