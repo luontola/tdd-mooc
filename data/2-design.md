@@ -13,7 +13,7 @@ An essential part of TDD is [refactoring](https://martinfowler.com/bliki/Definit
 
 *aka incremental design, aka continuous design*
 
-Designing a whole system up-front without mistakes is impossible. At the start of a project is the time when we know the least about the problem we are solving. That's why our design must evolve as we learn more. We put our learning back into the program by modifying it to look *as if we had know what we were doing all along, and as if had been easy to do.* [[1]](https://www.youtube.com/watch?v=pqeJFYwnkjE)
+Designing a whole system up-front without mistakes is impossible. At the start of a project is the time when we know the least about the problem we are solving. That's why our design must evolve as we learn more. We put our learning back into the program by modifying it to look *as if we had known what we were doing all along, and as if had been easy to do.* [[1]](https://www.youtube.com/watch?v=pqeJFYwnkjE)
 
 We should *start with an idea of a design, but assume it's wrong.* [[2]](https://youtu.be/Hybt9NdmsBw?t=100) We'll continually look for signs that our current design doesn't fit the problem, and then we'll modify the design to fit it better.
 
