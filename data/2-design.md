@@ -13,7 +13,7 @@ An essential part of TDD is [refactoring](https://martinfowler.com/bliki/Definit
 
 *aka incremental design, aka continuous design*
 
-Designing a whole system up-front without mistakes is impossible. At the start of a project is the time when we know the least about the problem we are solving. That's why our design must evolve as we learn more. We put our learning back into the program by modifying it to look *as if we had known what we were doing all along, and as if had been easy to do.* [[1]](https://www.youtube.com/watch?v=pqeJFYwnkjE)
+Designing a whole system up-front without mistakes is impossible. At the start of a project is the time when we know the least about the problem we are solving. That's why our design must evolve as we learn more. We put our learning back into the program by modifying it to look *as if we had known what we were doing all along, and as if it had been easy to do.* [[1]](https://www.youtube.com/watch?v=pqeJFYwnkjE)
 
 We should *start with an idea of a design, but assume it's wrong.* [[2]](https://youtu.be/Hybt9NdmsBw?t=100) We'll continually look for signs that our current design doesn't fit the problem, and then we'll modify the design to fit it better.
 
@@ -22,7 +22,7 @@ But we shouldn't build flexible and reusable components up-front. They would inc
 <recommended-reading>
 
 - [What's the relationship between TDD and Evolutionary Design?](https://jhall.io/archive/2022/10/27/whats-the-relationship-between-tdd-and-evolutionary-design/)
-- [Debt Metaphor](https://www.youtube.com/watch?v=pqeJFYwnkjE) - about putting our learning back into the program 
+- [Debt Metaphor](https://www.youtube.com/watch?v=pqeJFYwnkjE) - about putting our learning back into the program
 - [Is Design Dead?](https://www.martinfowler.com/articles/designDead.html) - about evolutionary design and how the XP practices enable it
 
 </recommended-reading>
