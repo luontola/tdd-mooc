@@ -25,7 +25,7 @@ In the following 1-minute video, [Dave Farley](https://twitter.com/davefarley77)
 
 ## Who?
 
-You are ready for this course if you have no problems writing small applications of a few thousand lines of code.
+You are ready for this course if you have written at least a few small applications of over 1000 lines of code.
 
 The basic version of this course (4 cr) requires good JavaScript and object-oriented programming skills.
 
