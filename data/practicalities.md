@@ -31,7 +31,7 @@ We will have study groups **every Tuesday at 16:15-18:00** ([Europe/Helsinki tim
 
 There we will go through the exercises, and it's an opportunity (the only opportunity) to receive feedback from your code quality. This could include code review, refactoring, pair or mob programming, ad-hoc exercises etc. There are things about design that you won't notice until somebody points them out to you, so it's highly recommended to show your code to more experienced developers.
 
-Preliminary agenda, will change based on what people joining the study groups have done:
+The *preliminary agenda* is shown below, assuming the students will do all the exercises at a constant pace. The actual content of the study groups will adapt to what the students have actually done.
 
 - **17.1.2023**: TDD intro and demo, recap of practicalities, getting started with TDD: the first tests, Q&A
 - **24.1.2023**: [selective attention](https://www.youtube.com/watch?v=vJG698U2Mvo)[](https://youtu.be/IGQmdoK_ZfY?t=4), exercise 1 (Small, safe steps), a light refactoring competition, exercise 2 (Tetris) levels 1-3
