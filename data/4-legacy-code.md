@@ -36,6 +36,8 @@ A whole book has been written about this topic, so it doesn't need to be repeate
 
 ## Code coverage
 
+[A study from 2014](https://www.usenix.org/conference/osdi14/technical-sessions/presentation/yuan) found that 58% of catastrophic failures were caused by "trivial mistakes or can be exposed by statement coverage testing." With TDD you'll get such coverage out of the box, but in non-TDD'ed codebases you can't trust that everything has been covered.
+
 Code coverage tools can be useful in finding untested areas, but not all of them can tell whether the code is well tested.
 
 **Line/statement coverage** says whether a line was executed by a test. (You could have 100% line coverage even if the tests have zero assertions.)
