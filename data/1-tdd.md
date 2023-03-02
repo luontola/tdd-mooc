@@ -60,6 +60,7 @@ If the current design makes it difficult to make a new test pass, consider comme
 
 - [Red-Green-Refactor](http://www.jamesshore.com/v2/blog/2005/red-green-refactor) - a definition of TDD
 - [The Cycles of TDD](https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html) - the various iterative cycles of TDD, from the second-by-second up to the hour-by-hour scale
+- [TDD Process Smells](https://agileinaflash.blogspot.com/2009/03/tdd-process-smells.html) - common ways of doing TDD wrong
 
 </recommended-reading>
  
