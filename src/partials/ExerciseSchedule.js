@@ -95,7 +95,7 @@ function ExerciseSchedule() {
       <Step id="exercise3"
             icon="👨‍💻"
             content={<a href="#exercise-3-untestable-code">Exercise 3: Untestable code</a>}
-            duration="TBD" />
+            duration="7 h" />
       <Step id="chapter4"
             icon="📖"
             content={<a href="/4-legacy-code">Chapter 4: Legacy code</a>} />

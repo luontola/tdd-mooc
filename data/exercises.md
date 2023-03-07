@@ -77,7 +77,7 @@ The assignment is to *refactor the untestable code examples to make them testabl
 ##### Effort estimate
 
 * <dfn data-title="...if familiar with TDD and the problem domain">Minimum</dfn>: 2 hours
-* <dfn data-title="...based on past student submissions">Average</dfn>: TBD
+* <dfn data-title="...based on past student submissions">Average</dfn>: 7 hours
 
 
 # Exercise 4: Legacy code
