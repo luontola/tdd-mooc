@@ -137,7 +137,7 @@ Start the app's development using the [walking skeleton](/5-advanced#walking-ske
 
 > This exercise's goal is to review what you have learned during this course.
 >
-> **Please create a screen recording video as you do this exercise. This is kind of like the final exam to demonstrate your TDD skills.**
+> **Create a screen recording video which shows you programming this exercise. This is like this course's final exam to demonstrate that you can write code using TDD.**
 >
 > ⚠️ If you wish to receive ECTS study credits, remember to [enroll on this course](/enrollment/) before [the course ends](/practicalities#course-duration).
 
@@ -149,7 +149,10 @@ Any programming language is okay. For a starter project, there is <https://githu
 
 ##### What to submit
 
-* **Record a video** of you doing this exercise. Use a screen recording software (e.g. [OBS Studio](https://obsproject.com/), see [instructions](https://www.alphr.com/record-screen-obs/)). Upload the video to any video streaming service (e.g. unlisted video on YouTube) and include a **link to the video** in the comment field as you submit the Git repository.
+* **Record a video** of you coding this exercise from the beginning to the end.
+  * Audio commentary is not necessary (we'll anyway use 5x playback speed when checking the submissions). No textual explanations either. The video only needs to show your text editor and test runner as you write code, so that we can check that you use TDD.
+  * Use a screen recording software such as [OBS Studio](https://obsproject.com/) (see [instructions](https://www.alphr.com/record-screen-obs/)) or similar.
+  * Upload the video to any video streaming service (e.g. unlisted video on YouTube) and include a **link to the video** in the comment field as you submit the Git repository. Having the link in the Git repository's readme file is also fine. If the video is in multiple parts, provide all their links or a link to a playlist which contains all of them.
 * [Submit this exercise](/practicalities#exercise-submissions) as "part6". Provide a **Git repository** with the source code and history of you doing this exercise. Write a **link to your screen recording video** in the comment field.
 * Fill [this questionnaire](https://forms.gle/SyocAsQksBq5GUNk6).
 
