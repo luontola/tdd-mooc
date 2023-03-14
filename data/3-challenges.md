@@ -71,16 +71,6 @@ something():
 
 Tests can then replace the untestable thing with a value object or a test double. 
 
-## Singletons
-
-[Singleton](https://en.wikipedia.org/wiki/Singleton_pattern) is an anti-pattern. It is the object-oriented equivalent of a global variable. Instead, [just create one](http://www.butunclebob.com/ArticleS.UncleBob.SingletonVsJustCreateOne).
-
-<recommended-reading>
-
-- [Singleton vs. Just Create One](http://www.butunclebob.com/ArticleS.UncleBob.SingletonVsJustCreateOne)
-
-</recommended-reading>
-
 
 ## Test doubles
 
@@ -116,6 +106,17 @@ When using mock objects, it's important to understand the object-oriented style 
 
 - [A Brief History of Mock Objects](http://www.mockobjects.com/2009/09/brief-history-of-mock-objects.html)
 - [Growing Object-Oriented Software, Guided by Tests](https://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627) - how the inventors of mock objects use them
+
+</recommended-reading>
+
+
+## Singletons
+
+[Singleton](https://en.wikipedia.org/wiki/Singleton_pattern) is an anti-pattern. It is the object-oriented equivalent of a global variable. Instead, [just create one](http://www.butunclebob.com/ArticleS.UncleBob.SingletonVsJustCreateOne).
+
+<recommended-reading>
+
+- [Singleton vs. Just Create One](http://www.butunclebob.com/ArticleS.UncleBob.SingletonVsJustCreateOne)
 
 </recommended-reading>
 
