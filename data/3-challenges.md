@@ -13,7 +13,7 @@ There are things which make testing more challenging. Many of them are global va
 
 In general there are two options, the first one being simpler:
 
-- Pass in the result of the untestable thing as a parameter:
+* **Pass in the result of the untestable thing as a parameter.**
 
 <div style="columns: 2">
 <div>
@@ -39,7 +39,7 @@ fn(something):
 </div>
 </div>
 
-- Extract the untestable thing to a method and override it in a subclass:
+- **Extract the untestable thing to a method and override it in a subclass.** Or in a language with first-class functions, extract it to a function and pass in the untestable function as a parameter.
 
 <div style="columns: 2">
 <div>
@@ -69,6 +69,7 @@ something():
 </div>
 </div>
 
+Tests can then replace the untestable thing with a value object or a test double. 
 
 ## Singletons
 
