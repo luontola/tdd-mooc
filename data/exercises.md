@@ -33,7 +33,7 @@ Afterwards, in the weekly study groups, we will have an informal competition bet
 
 ##### Effort estimate
 
-* <dfn data-title="...if familiar with TDD and the problem domain">Minimum</dfn>: 1 hours
+* <dfn data-title="...assuming a professional developer with good design skills">Minimum</dfn>: 1 hours
 * <dfn data-title="...based on past student submissions">Average</dfn>: 3 hours
 * Doing the refactoring once takes ~10 minutes, but you should repeat it many times and practice different approaches.
 
@@ -56,7 +56,7 @@ If you get stuck, you may watch [this example screencast](https://www.youtube.co
 
 ##### Effort estimate
 
-* <dfn data-title="...if familiar with TDD and the problem domain">Minimum</dfn>: 11 hours
+* <dfn data-title="...assuming a professional developer with good design skills">Minimum</dfn>: 11 hours
 * <dfn data-title="...based on past student submissions">Average</dfn>: 38 hours
 * The exercise is split into 10 levels of roughly the same size, though level 4 is bigger due to the need for major refactoring.
 
@@ -76,7 +76,7 @@ The assignment is to *refactor the untestable code examples to make them testabl
 
 ##### Effort estimate
 
-* <dfn data-title="...if familiar with TDD and the problem domain">Minimum</dfn>: 2 hours
+* <dfn data-title="...assuming a professional developer with good design skills">Minimum</dfn>: 2 hours
 * <dfn data-title="...based on past student submissions">Average</dfn>: 7 hours
 
 
@@ -95,7 +95,7 @@ The assignment is to *write tests for the above code, until it has 100% mutation
 
 ##### Effort estimate
 
-* <dfn data-title="...if familiar with TDD and the problem domain">Minimum</dfn>: 2 hours
+* <dfn data-title="...assuming a professional developer with good design skills">Minimum</dfn>: 2 hours
 * <dfn data-title="...based on past student submissions">Average</dfn>: 6 hours
 
 
@@ -128,7 +128,7 @@ Start the app's development using the [walking skeleton](/5-advanced#walking-ske
 
 ##### Effort estimate
 
-* <dfn data-title="...if familiar with TDD and the problem domain">Minimum</dfn>: 10 hours
+* <dfn data-title="...assuming a professional developer with good design skills">Minimum</dfn>: 10 hours
 * <dfn data-title="...based on past student submissions">Average</dfn>: 32 hours
 * Much of the effort is in setting up the infrastructure, and that becomes the faster the more old full-stack projects you have from where to copy-paste snippets.
 
@@ -158,7 +158,7 @@ Any programming language is okay. For a starter project, there is <https://githu
 
 ##### Effort estimate
 
-* <dfn data-title="...if familiar with TDD and the problem domain">Minimum</dfn>: 6 hours
+* <dfn data-title="...assuming a professional developer with good design skills">Minimum</dfn>: 6 hours
 * <dfn data-title="...based on past student submissions">Average</dfn>: 13 hours
 
 </tdd-decision>
