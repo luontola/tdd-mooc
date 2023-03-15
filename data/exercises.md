@@ -103,7 +103,7 @@ The assignment is to *write tests for the above code, until it has 100% mutation
 
 > This exercise's goal is to learn writing tests for real applications. You will face all the things which commonly complicate testing in the real world: database, user interface, APIs.
 >
-> **If you decide to not do this exercise, [submit a blank response](/practicalities#exercise-submissions) as "part5": Leave the exercise checkbox unchecked, enter 0 hours as the duration, and write a dummy repository URL (it doesn't need to exist).**
+> **If you decide to not do this exercise, [submit a blank response](/practicalities#exercise-submissions) as "part5": Leave the exercise checkbox unchecked, enter 0 or 1 hours as the duration, and write a dummy repository URL (it doesn't need to exist).**
 
 You may clone the project template <https://github.com/luontola/tdd-mooc-webapp> to get started, but fundamentally the tool choices are up to you. Any programming language is okay.
 
