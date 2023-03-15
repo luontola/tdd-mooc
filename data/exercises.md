@@ -141,7 +141,7 @@ Start the app's development using the [walking skeleton](/5-advanced#walking-ske
 >
 > ⚠️ If you wish to receive ECTS study credits, remember to [enroll on this course](/enrollment/) before [the course ends](/practicalities#course-duration).
 
-The assignment is to *write [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) using TDD.* Write it as a command line application which takes as input a *pattern file* in [RLE format](https://www.conwaylife.com/wiki/Run_Length_Encoded) and the *number of iterations* to simulate, and then outputs the *resulting pattern* in RLE format after the specified number of iterations.
+The assignment is to *write [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) using TDD.* Write it as a command line application which takes as input a *pattern file* in [RLE format](https://www.conwaylife.com/wiki/Run_Length_Encoded) and the *number of generations* to simulate, and then outputs the *resulting pattern* in RLE format after the specified number of generations.
 
 For test data, you can download RLE files from LifeWiki; see the *Pattern files* section in each pattern's infobox, on the right side of the page. [Glider](https://www.conwaylife.com/wiki/Glider), [Blinker](https://www.conwaylife.com/wiki/Blinker) and [Block](https://www.conwaylife.com/wiki/Block) are some of the simplest patterns. [Gosper glider gun](https://www.conwaylife.com/wiki/Gosper_glider_gun) is an example of an infinitely growing pattern. Clicking the animated picture on a pattern's wiki page opens the LifeViewer app, from which you can also select and copy to clipboard the pattern's specific generation.
 
