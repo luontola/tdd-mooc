@@ -150,8 +150,8 @@ Any programming language is okay. For a starter project, there is <https://githu
 ##### What to submit
 
 * **Record a video** of you coding this exercise from the beginning to the end.
-  * Audio commentary is not necessary (we'll anyway use 5x playback speed when checking the submissions). No textual explanations either. The video only needs to show your text editor and test runner as you write code, so that we can check that you use TDD.
-  * Use a screen recording software such as [OBS Studio](https://obsproject.com/) (see [instructions](https://www.alphr.com/record-screen-obs/)) or similar.
+  * Audio commentary is not necessary (we'll anyway use 5x playback speed when checking the submissions). No textual explanations either (they only make it slower to see how you code). The video only needs to show your text editor and test runner as you write code, so that we can check that you use TDD.
+  * Use a screen recording software such as [OBS Studio](https://obsproject.com/) (see [instructions](https://www.alphr.com/record-screen-obs/)) or similar. Remember to do a short test recording before doing the real thing, to make sure that the recording looks as it should.
   * Upload the video to any video streaming service (e.g. unlisted video on YouTube) and include a **link to the video** in the comment field as you submit the Git repository. Having the link in the Git repository's readme file is also fine. If the video is in multiple parts, provide all their links or a link to a playlist which contains all of them.
 * [Submit this exercise](/practicalities#exercise-submissions) as "part6". Provide a **Git repository** with the source code and history of you doing this exercise. Write a **link to your screen recording video** in the comment field.
 * Fill [this questionnaire](https://forms.gle/SyocAsQksBq5GUNk6).
