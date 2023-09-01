@@ -151,7 +151,7 @@ Keep in mind that each refactoring can be done in two directions: If you inline 
 
 <recommended-reading>
 
-- [Composed Method Pattern explained](https://farenda.com/posts/composed-method-pattern/)
+- [Composed Method Pattern explained](https://farenda.com/composed-method-pattern/)
 - [The Newspaper Metaphor](https://github.com/jnguyen095/clean-code/issues/28) - an excerpt from chapter 5 of the [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) book
 
 </recommended-reading>
