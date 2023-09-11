@@ -24,7 +24,7 @@ The course material is licensed under the [Creative Commons BY-SA 4.0](https://c
 
 Start development server at http://localhost:8000
 
-    npm run develop
+    nvm use && npm run develop
 
 Publish the website
 
