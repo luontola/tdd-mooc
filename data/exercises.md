@@ -21,9 +21,9 @@ Below is the suggested order of reading the chapters and doing the exercises. Yo
 
 Clone the project <https://github.com/luontola/tdd-mooc-small-steps> and follow its instructions.
 
-The assignment is to *refactor the above code to replace [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) class with [Temporal.PlainDate](https://tc39.es/proposal-temporal/docs/plaindate.html) class.* Repeat this refactoring many times. Focus on doing as small changes as possible, so that *all tests will pass between every change*. Practice smaller and smaller steps, until you can **do the whole refactoring by changing only _one or two lines at a time_**.
+The assignment is to *refactor the above code to replace [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) class with [Temporal.PlainDate](https://tc39.es/proposal-temporal/docs/plaindate.html) class.* Repeat this refactoring many times. Focus on doing as small changes as possible, so that *all tests will pass between every change*. Practice smaller and smaller steps, until you can **do the whole refactoring by changing only _one or two lines at a time, in under 10 minutes_**.
 
-Afterwards, in the weekly study groups, we will have an informal competition between the students of this course about doing this refactoring using the smallest possible steps or as quickly as possible.
+In the weekly study groups, we will have an informal competition between the students of this course about doing this refactoring using the smallest possible steps or as quickly as possible. This kind of mechanical refactorings, which don't require thinking, benefit from training your muscle memory and learning IDE shortcuts.
 
 ##### What to submit
 
@@ -150,8 +150,8 @@ Any programming language is okay. For a starter project, there is <https://githu
 ##### What to submit
 
 * **Record a video** of you coding this exercise from the beginning to the end.
-  * Audio commentary is not necessary (we'll anyway use 5x playback speed when checking the submissions). No textual explanations either (they only make it slower to see how you code). The video only needs to show your text editor and test runner as you write code, so that we can check that you use TDD.
-  * Use a screen recording software such as [OBS Studio](https://obsproject.com/) (see [instructions](https://www.alphr.com/record-screen-obs/)) or similar. Remember to do a short test recording before doing the real thing, to make sure that the recording looks as it should.
+  * Audio commentary is not necessary (we'll anyway use 5x playback speed when checking the submissions). No textual explanations either (they just make it slower to see how you code). The video only needs to show your text editor and test runner as you write code, so that we can check that you use TDD.
+  * Use a screen recording software such as [OBS Studio](https://obsproject.com/) (see [instructions](https://obsproject.com/kb/quick-start-guide)) or similar. Remember to do a short test recording before doing the real thing, to make sure that the recording shows your editor and test runner.
   * Upload the video to any video streaming service (e.g. unlisted video on YouTube) and include a **link to the video** in the comment field as you submit the Git repository. Having the link in the Git repository's readme file is also fine. If the video is in multiple parts, provide all their links or a link to a playlist which contains all of them.
 * [Submit this exercise](/practicalities#exercise-submissions) as "part6". Provide a **Git repository** with the source code and history of you doing this exercise. Write a **link to your screen recording video** in the comment field.
 * Fill [this questionnaire](https://forms.gle/SyocAsQksBq5GUNk6).

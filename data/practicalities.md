@@ -8,9 +8,9 @@ sidebar_priority: 4500
 
 ## Enrollment and study credits
 
-If you are a student in Finland, you may receive 4 or 5 study credits from completing this course. See the [enrollment instructions](/enrollment) for details. Receiving study credits requires completing the course [while the course is active](#course-duration).
+**If you are a student in Finland**, you may receive 4 or 5 study credits from completing this course. See the [enrollment instructions](/enrollment) for details. Receiving study credits requires completing the course [while the course is active](#course-duration).
 
-For everyone, after completing and submitting all the exercises, you will receive a certificate (see [example](https://studies.cs.helsinki.fi/stats/api/certificate/tdd-2022/en/818b05333d6adad5d36bcf7a4e4f4fbf)) that you can show off as a trophy. 🏅 You will receive the certificate even if the course is not active.
+**For everyone**, after completing and submitting all the exercises, you will receive a certificate (see [example](https://studies.cs.helsinki.fi/stats/api/certificate/tdd-2022/en/818b05333d6adad5d36bcf7a4e4f4fbf)) that you can show off as a trophy. 🏅 You will receive the certificate even if the course is not active.
 
 
 ## Discord channel
@@ -54,7 +54,7 @@ The dates of the study groups are shown below. On this course, students do the e
 
 ## Exercises
 
-Do the exercises at your own pace and use the `#tdd_general` Discord channel for peer help.
+Do the [exercises](/exercises) at your own pace and use the `#tdd_general` Discord channel for peer help.
 
 ### Exercise submissions
 
@@ -69,7 +69,7 @@ For the *last exercise*, you will need to also create a *screen recording video*
 
 The recordings may be used for research purposes to improve the course, to see how well this course manages to teach people TDD. If some of you would volunteer to record *all* of their exercises, that would be interesting research material as well.
 
-It's [quite easy](https://obsproject.com/wiki/OBS-Studio-Quickstart) to do screen recording with [OBS Studio](https://obsproject.com/) - all the kids on Twitch can do it, and so can you. You can upload the videos to a video streaming service of your choice.
+It's [quite easy](https://obsproject.com/kb/quick-start-guide) to do screen recording with [OBS Studio](https://obsproject.com/) - all the kids on Twitch can do it, and so can you. You can upload the videos to a video streaming service of your choice.
 
 ---
 
