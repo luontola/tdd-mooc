@@ -44,7 +44,7 @@ The exercises are in JavaScript, but for the exercises where you create a projec
 
 ## When?
 
-This course will run from January until March 2023 (and presumably next year around the same time). There will be a Discord channel and weekly study groups. See the [practicalities page](/practicalities) for details.
+This course will run from January until May 2024 (and presumably next year around the same time). There will be a Discord channel and weekly study groups. See the [practicalities page](/practicalities) for details.
 
 Of course, you can also use this course material for self-study whenever you want, even if the course is not active.
 

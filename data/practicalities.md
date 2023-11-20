@@ -1,6 +1,6 @@
 ---
 path: "/practicalities"
-title: "Practicalities (2023 Spring)"
+title: "Practicalities (2024 Spring)"
 hidden: false
 information_page: true
 sidebar_priority: 4500
@@ -20,27 +20,36 @@ Communication and study groups will happen remotely over [Discord](https://disco
 
 ## Course duration
 
-The course will start on **Tuesday 17.1.2023 at 16:15** ([Europe/Helsinki timezone](https://www.timeanddate.com/worldclock/finland/helsinki)) in Discord `tdd_voice` channel with an information session (and the first study group if somebody already started doing the exercises).
+The course will start on **Tuesday 16.1.2024 at 16:15** ([Europe/Helsinki timezone](https://www.timeanddate.com/worldclock/finland/helsinki)) in Discord `tdd_voice` channel with an information session (and the first study group).
 
-The course will end on **Sunday 12.3.2023**. There is no exam, but only the exercises. Submit all your exercises before that date. If you want to receive study credits, remember to [enroll on the course](/enrollment/#enroll-on-the-course) before that date.
+The course will end on **Sunday 12.5.2024**. There is no exam, but only the exercises. Submit all your exercises before that date. If you want to receive study credits, remember to [enroll on the course](/enrollment/#enroll-on-the-course) before that date.
 
 
 ## Study groups
 
-We will have study groups **every Tuesday at 16:15-18:00** ([Europe/Helsinki timezone](https://www.timeanddate.com/worldclock/finland/helsinki)) in Discord `tdd_voice` channel while the course is active.
+We will have study groups **every second Tuesday at 16:15-18:00** ([Europe/Helsinki timezone](https://www.timeanddate.com/worldclock/finland/helsinki)) in Discord `tdd_voice` channel while the course is active.
 
-There we will go through the exercises, and it's an opportunity (the only opportunity) to receive feedback from your code quality. This could include code review, refactoring, pair or mob programming, ad-hoc exercises etc. There are things about design that you won't notice until somebody points them out to you, so it's highly recommended to show your code to more experienced developers.
+There we will go through the exercises, and it's an opportunity (the only opportunity) to receive feedback from your code quality. This could include code review, refactoring, pair or mob programming, ad-hoc exercises etc. Have your programming environment ready when joining a study group.
 
-The *preliminary agenda* is shown below, assuming the students will do all the exercises at a constant pace. The actual content of the study groups will adapt to what the students have actually done.
+*There are things about design that you won't notice until somebody points them out to you, so it's highly recommended to show your code to more experienced developers.*
 
-- **17.1.2023**: TDD intro and demo, recap of practicalities, getting started with TDD: the first tests, Q&A
-- **24.1.2023**: [selective attention](https://www.youtube.com/watch?v=vJG698U2Mvo)[](https://youtu.be/IGQmdoK_ZfY?t=4), exercise 1 (Small, safe steps), a light refactoring competition, exercise 2 (Tetris) levels 1-3
-- **31.1.2023**: [sparrow decks](https://llewellynfalco.blogspot.com/p/sparrow-decks.html), exercise 2 (Tetris) levels 4-6
-- **7.2.2023**: exercise 2 (Tetris)
-- **14.2.2023**: exercise 3 (Untestable code) and exercise 4 (Legacy code)
-- **21.2.2023**: exercise 5 (Full-stack web app)
-- **28.2.2023**: exercise 5 (Full-stack web app)
-- **7.3.2023**: exercise 6 (Conway's Game of Life)
+The dates of the study groups are shown below. On this course, students do the exercises at their own pace, so the content of each study group will be improvised on the fly.
+
+- **16.1.2024**: TDD intro and demo, recap of practicalities, getting started with TDD: the first tests, Q&A
+- **30.1.2024**
+- **13.2.2024**
+- **27.2.2024**
+- **12.3.2024**
+- **26.3.2024**
+- **9.4.2024**
+- **23.4.2024**
+- **7.5.2024**
+
+<!--
+[selective attention](https://www.youtube.com/watch?v=vJG698U2Mvo)
+[](https://youtu.be/IGQmdoK_ZfY?t=4)
+[sparrow decks](https://llewellynfalco.blogspot.com/p/sparrow-decks.html)
+-->
 
 
 ## Exercises
@@ -49,7 +58,7 @@ Do the exercises at your own pace and use the `#tdd_general` Discord channel for
 
 ### Exercise submissions
 
-Submit your completed exercises to **<https://studies.cs.helsinki.fi/stats/courses/tdd-2023>**
+Submit your completed exercises to **<https://studies.cs.helsinki.fi/stats/courses/tdd-2024>**
 
 When submitting there, you will need to provide a link to a GitHub repository with your solution to the exercise. If your repository is private, please add [luontola](https://github.com/luontola) as a [collaborator](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository) to your private repository so that we can view it.
 
