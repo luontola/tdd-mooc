@@ -155,6 +155,8 @@ When a test fails, look at the name of the test - the behavior that it defines. 
 
 The tests written as part of TDD do help ensure a level of _basic correctness_ in the software, but it's still a _development_ technique - that's what the last D in TDD stands for. The role of the tests in TDD is to support building the software, whereas the role of tests in software testing is to break the software. Think of scaffolding instead of a wrecking ball.
 
+TODO: tdd is good for deterministic code, but other kinds of testing is needed for: usability, accessibility, security, resilience etc. 
+
 TDD's tests can be thought of as a specification of the system's behavior, or as small examples of how the code works. In the software development life cycle, the TDD mindset focuses more on requirements and design than on verification, though the verification side is also important to support refactoring and adding new features.
 
 ![Photos of scaffolding around a building and a wrecking ball destroying a brick wall.](images/tdd-vs-testing.jpg "Photo credits: [Niklas Hamann](https://unsplash.com/photos/jAj0pjdzvic), [Rhys Asplundh](https://www.flickr.com/photos/rhysasplundh/5202454842)")

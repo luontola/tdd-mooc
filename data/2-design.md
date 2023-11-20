@@ -175,6 +175,9 @@ When you refactor, don't change behavior. When you change behavior, don't refact
 </recommended-reading>
 
 
+TODO: keep the feedback cycle in under 1 minute; feedback cycle visualization: (Start) begin changing code—— code complete —— start tests —— tests done —- see results/find out if the code worked (end) —- decide what to do next
+
+
 ### Refactoring hell
 
 If it's been more than a few minutes since the tests last passed, `git reset --hard` and try again using smaller steps.
