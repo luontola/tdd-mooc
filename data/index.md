@@ -18,9 +18,11 @@ This course should help you get over the initial hurdle of getting started with 
 
 Fewer bugs. Less debugging. Better design. More fun. Produce better software faster.
 
-In the following 1-minute video, [Dave Farley](https://twitter.com/davefarley77) elaborates some more:
+[TDD Outcomes](https://tidyfirst.substack.com/p/tdd-outcomes) lists some things that you can expect from using TDD.
 
-<iframe width="315" height="560" src="https://www.youtube.com/embed/NhMGeHkzg0A" title="What Is TDD? by Dave Farley" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[How Test-Driven Development Works (And More!)](https://blog.jbrains.ca/permalink/how-test-driven-development-works-and-more) gives a more theoretical explanation on *why* TDD works than just "it works for me".
+
+If you'd like to read academic papers, there's the 2020 research paper on [Why Research on Test-Driven Development is Inconclusive?](https://arxiv.org/pdf/2007.09863) (TLDR: most test subjects have <1 year experience).
 
 
 ## Who?
