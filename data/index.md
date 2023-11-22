@@ -52,4 +52,4 @@ Of course, you can also use this course material for self-study whenever you wan
 
 ---
 
-Proceed to [Practicalities](/practicalities) or [Exercises and schedule](/exercises)
+Proceed to [Practicalities](/practicalities) or [Exercises](/exercises)

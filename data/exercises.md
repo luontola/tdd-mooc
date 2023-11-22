@@ -1,6 +1,6 @@
 ---
 path: "/exercises"
-title: "Exercises and schedule"
+title: "Exercises"
 hidden: false
 information_page: true
 sidebar_priority: 3001

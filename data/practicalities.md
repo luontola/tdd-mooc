@@ -73,4 +73,4 @@ It's [quite easy](https://obsproject.com/kb/quick-start-guide) to do screen reco
 
 ---
 
-Proceed to [Exercises and schedule](/exercises)
+Proceed to [Exercises](/exercises)
