@@ -1,13 +1,15 @@
 (ns tdd-mooc.web
-  (:require [hiccup.page :as page]
+  (:require [hiccup.page]
+            [hiccup.util]
             [hiccup2.core :as h]
             [stasis.core :as stasis]))
+
+(alter-var-root #'hiccup.util/*html-mode* (constantly :html))
 
 (def export-dir "target/dist")
 
 (defn layout-page [content]
-  (str (h/html {:mode :html}
-               (page/doctype :html5)
+  (str (h/html (hiccup.page/doctype :html5)
                [:html
                 [:head
                  [:meta {:charset "utf-8"}]
