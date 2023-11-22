@@ -20,7 +20,22 @@ If you'd help us making the correction, you can open a pull request with your pr
 The course material is licensed under the [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed) license.
 
 
-## Development
+## Development (new)
+
+Start development server at http://localhost:3000
+
+    lein ring server-headless
+
+Export the website to disk
+
+    lein export
+
+Check for dependency updates
+
+    lein ancient :all
+
+
+## Development (doomed)
 
 Start development server at http://localhost:8000
 
