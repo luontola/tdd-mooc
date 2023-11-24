@@ -21,7 +21,9 @@
                     (str title " - "))
                   "Test-Driven Development MOOC"]
                  [:meta {:name "viewport", :content "width=device-width, initial-scale=1.0"}]
-                 [:link {:rel "stylesheet", :href "/style.css"}]]
+                 [:link {:rel "stylesheet", :href "/reboot.css"}]
+                 [:link {:rel "stylesheet", :href "/theme.css"}]
+                 [:link {:rel "stylesheet", :href "/remark.css"}]]
                 [:body
                  [:h1 title]
                  [:main content]]])))
