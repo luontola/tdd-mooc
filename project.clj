@@ -1,6 +1,7 @@
 (defproject tdd-mooc "1-SNAPSHOT"
 
   :dependencies [[hiccup "2.0.0-RC2"]
+                 [markdown-clj "1.11.7"]
                  [medley "1.4.0"]
                  [org.clojure/clojure "1.11.1"]
                  [stasis "2023.11.21"]]
