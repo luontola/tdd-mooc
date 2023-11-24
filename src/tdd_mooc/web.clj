@@ -21,8 +21,9 @@
                  [:main content]]])))
 
 (defn get-pages []
-  (merge (stasis/slurp-directory "resources/public" #".*\.(html|css|js)$")
-         {"/" (layout-page (h/raw "hello <u>there</u>"))}))
+  (stasis/merge-page-sources
+   {:public (stasis/slurp-directory "resources/public" #".*\.(html|css|js)$")
+    :dynamic {"/" (layout-page (h/raw "hello <u>there</u>"))}}))
 
 (def app (stasis/serve-pages get-pages))
 
