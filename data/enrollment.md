@@ -47,6 +47,6 @@ To complete the course and receive ECTS credits, follow these steps:
 
 - In the exercise submission system, after you have submitted solutions to all the exercises, click the blue button that confirms that you have completed the course ("I have completed the course...").
 
----
+<hr>
 
 Return to [Practicalities](/practicalities)

@@ -50,6 +50,6 @@ This course will run from January until May 2024 (and presumably next year aroun
 
 Of course, you can also use this course material for self-study whenever you want, even if the course is not active.
 
----
+<hr>
 
 Proceed to [Practicalities](/practicalities) or [Exercises](/exercises)

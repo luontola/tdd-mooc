@@ -71,6 +71,6 @@ The recordings may be used for research purposes to improve the course, to see h
 
 It's [quite easy](https://obsproject.com/kb/quick-start-guide) to do screen recording with [OBS Studio](https://obsproject.com/) - all the kids on Twitch can do it, and so can you. You can upload the videos to a video streaming service of your choice.
 
----
+<hr>
 
 Proceed to [Exercises](/exercises)

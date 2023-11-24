@@ -238,6 +238,6 @@ Like there are [many code smells](https://refactoring.guru/refactoring/smells), 
 
 **Complex test setup:** If the *arrange* part of a test is long, requiring the careful arrangement of many collaborators to get the system into the desired initial state for the test, it may indicate design problems in the code. Lots of constructor arguments is a similar smell (which is why dependency injection frameworks are best avoided - they make it too easy to add dependencies). Instead, try to think of a design which eliminates some of the dependencies.
 
----
+<hr>
 
 Proceed to [Chapter 3: The Untestables](/3-challenges) or [Exercises](/exercises)
