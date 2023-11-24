@@ -10,7 +10,9 @@
   :javac-options ["--release" "21"]
   :jvm-opts ["-XX:-OmitStackTraceInFastThrow"]
 
-  :ring {:handler tdd-mooc.web/app}
+  :ring {:handler tdd-mooc.web/app
+         :auto-refresh? true
+         :refresh-paths ["src" "resources" "data"]}
   :aliases {"export" ["run" "-m" "tdd-mooc.web/export"]
             "kaocha" ["with-profile" "+kaocha" "run" "-m" "kaocha.runner"]}
 
