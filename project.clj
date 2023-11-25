@@ -3,7 +3,9 @@
   :dependencies [[hiccup "2.0.0-RC2"]
                  [markdown-clj "1.11.7"]
                  [medley "1.4.0"]
+                 [optimus "2023.11.21"]
                  [org.clojure/clojure "1.11.1"]
+                 [ring/ring-core "1.11.0-RC1"]
                  [stasis "2023.11.21"]]
   :managed-dependencies []
   :pedantic? :warn

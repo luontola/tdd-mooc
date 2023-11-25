@@ -1,0 +1,93 @@
+.l-docs__title {
+  margin-top: 1.5rem;
+}
+
+.p-side-navigation__drawer h3 {
+  margin-top: 1rem;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 20rem;
+  max-height: 50vh;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  gap: 1rem;
+
+  background-color: #c0392b;
+  background-image: url(/banner.png);
+  background-size: contain;
+
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 500;
+  font-size: clamp(2rem, -1.5rem + 8vw, 3rem);
+  text-align: center;
+  text-wrap: balance;
+
+  > div {
+    line-height: 1.3em;
+    padding: 0.5rem;
+    color: #c0392b;
+    background: white;
+  }
+
+  > div:last-of-type {
+    font-size: 0.5em;
+  }
+}
+
+.moocfi-logo {
+  display: inline-block;
+  padding-left: 1.5rem;
+
+  & a {
+    display: flex;
+    align-items: center;
+
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1.75rem;
+    color: white;
+    text-decoration: none;
+
+    &:visited, &:hover {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    & img {
+      width: 2em;
+      height: 2em;
+      margin-right: 0.25em;
+    }
+  }
+}
+
+.social-links-footer {
+  display: flex;
+  gap: 1.5rem;
+
+  & a {
+    color: white;
+
+    &:visited, &:hover {
+      color: inherit;
+    }
+  }
+
+  & svg {
+    height: 2rem;
+  }
+}
+
+.university-links-footer {
+  display: flex;
+  gap: 1.5rem;
+
+  & img {
+    height: 6rem;
+  }
+}
