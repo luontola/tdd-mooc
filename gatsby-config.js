@@ -10,7 +10,14 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-styled-components",
+    {
+      resolve: "gatsby-plugin-styled-components",
+      options: {
+        displayName: true,
+        minify: false,
+        transpileTemplateLiterals: false,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
