@@ -220,8 +220,8 @@
 
   (testing "markdown with frontmatter"
     (is (= {:html "<h1>Title</h1>"
-            :metadata {:key ["value"]}}
-           (parse-markdown "key: value\n---\n# Title")))))
+            :metadata {:key "value"}}
+           (parse-markdown "---\nkey: value\n---\n\n# Title")))))
 
 (defn get-markdown-pages [pages]
   (->> pages
