@@ -1,0 +1,15 @@
+#kaocha/v1
+        {:tests [{:id :fast
+                  :skip-meta [:slow]
+                  :source-paths ["src" "resources" "data"]
+                  :test-paths ["src"]
+                  :ns-patterns ["^tdd-mooc"]}
+                 #_{:id :slow
+                    :focus-meta [:slow]
+                    :source-paths ["src" "resources" "data"]
+                    :test-paths ["src"]
+                    :ns-patterns ["^tdd-mooc"]}]
+         :kaocha/reporter [kaocha.report.progress/report]
+         :plugins [:kaocha.plugin/profiling]
+         :kaocha.plugin.profiling/count 3
+         :capture-output? true}

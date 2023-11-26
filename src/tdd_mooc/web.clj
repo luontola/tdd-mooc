@@ -1,5 +1,6 @@
 (ns tdd-mooc.web
   (:require [clojure.string :as str]
+            [clojure.test :refer [deftest is testing]]
             [hiccup.page]
             [hiccup.util]
             [hiccup2.core :as h]
@@ -206,13 +207,29 @@
 
                  (layout-footer)]])))
 
+(defn parse-markdown [markdown]
+  (let [{:keys [html metadata]} (markdown/md-to-html-string-with-meta markdown)]
+    {:html html
+     :metadata metadata}))
+
+(deftest test-parse-markdown
+  (testing "plain markdown"
+    (is (= {:html "<h1>Title</h1>"
+            :metadata nil}
+           (parse-markdown "# Title"))))
+
+  (testing "markdown with frontmatter"
+    (is (= {:html "<h1>Title</h1>"
+            :metadata {:key ["value"]}}
+           (parse-markdown "key: value\n---\n# Title")))))
+
 (defn get-markdown-pages [pages]
   (->> pages
        (map (fn [[path markdown]]
               (let [path (-> path
                              (str/replace #"/index\.md$" "/")
                              (str/replace #"\.md$" "/"))
-                    {:keys [html metadata]} (markdown/md-to-html-string-with-meta markdown)]
+                    {:keys [html metadata]} (parse-markdown markdown)]
                 [path (layout-page {:path path
                                     :title (:title metadata)
                                     :content (h/raw html)})])))
