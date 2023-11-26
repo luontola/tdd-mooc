@@ -70,7 +70,7 @@
                navigation-tree)))
 
 (defn layout-navigation [current-path]
-  (h/html [:aside.l-docs__sidebar
+  (h/html [:div.l-docs__sidebar
            [:nav#drawer.p-side-navigation--raw-html.is-sticky {:aria-label "Table of contents"}
             [:div.u-hide--large.p-strip.is-shallow
              [:div.u-fixed-width
