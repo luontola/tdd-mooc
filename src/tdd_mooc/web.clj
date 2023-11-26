@@ -252,7 +252,6 @@
        (into {})))
 
 (defn get-pages []
-  ;; TODO: speed up local dev (this fn can't be memoized, or markdown changes won't be visible)
   (stasis/merge-page-sources
    {:public (stasis/slurp-directory "resources/public" #".*\.(html)$")
     :markdown (get-markdown-pages (stasis/slurp-directory "data" #"\.md$"))}))
