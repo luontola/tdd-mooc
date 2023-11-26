@@ -1,11 +1,14 @@
 ---
 path: "/enrollment"
-title: "Enrollment"
+title: "Enrollment instructions"
 hidden: false
 information_page: true
 hide_in_sidebar: true
 sidebar_priority: 4500
 ---
+
+> **These instructions are for students in Finland.  
+> Other people don't need to register to this course.**
 
 Depending on whether you do the optional *Exercise 5: Full-stack web app* exercise, you can receive either 4 or 5 ECTS credits for completing this course.
 

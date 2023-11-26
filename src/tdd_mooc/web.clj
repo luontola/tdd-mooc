@@ -27,7 +27,9 @@
   [{:children [{:href "/"
                 :title "Course overview"}
                {:href "/practicalities/"
-                :title "Practicalities (2024 Spring)"}
+                :title "Practicalities (2024 Spring)"
+                :children [{:href "/enrollment/"
+                            :title "Enrollment instructions"}]}
                {:title [:strong "Course material"]
                 :children [{:href "/exercises/"
                             :title "Exercises"}
