@@ -15,7 +15,7 @@ sidebar_priority: 4500
 
 ## Discord channel
 
-Communication and study groups will happen remotely over [Discord](https://discord.com/). Join the course's Discord channel through https://study.cs.helsinki.fi/discord/join/tdd
+Communication and study groups will happen remotely over [Discord](https://discord.com/). Join the course's Discord channel through <https://study.cs.helsinki.fi/discord/join/tdd>
 
 
 ## Course duration
