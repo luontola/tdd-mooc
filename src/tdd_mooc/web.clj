@@ -259,7 +259,7 @@
     :markdown (get-markdown-pages (stasis/slurp-directory "data" #"\.md$"))}))
 
 (defn get-assets []
-  (optimus.assets/load-assets "public" [#".*\.(css|png)$"]))
+  (optimus.assets/load-assets "public" [#".*\.(css|png|jpg)$"]))
 
 (def app
   (-> (stasis/serve-pages get-pages)
