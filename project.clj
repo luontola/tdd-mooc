@@ -1,10 +1,11 @@
 (defproject tdd-mooc "1-SNAPSHOT"
 
-  :dependencies [[hiccup "2.0.0-RC2"]
-                 [markdown-clj "1.11.7"]
+  :dependencies [[com.vladsch.flexmark/flexmark-all "0.64.8"]
+                 [hiccup "2.0.0-RC2"]
                  [medley "1.4.0"]
                  [optimus "2023.11.21"]
                  [org.clojure/clojure "1.11.1"]
+                 [org.clojure/java.data "1.0.95"]
                  [ring/ring-core "1.11.0-RC1"]
                  [stasis "2023.11.21"]]
   :managed-dependencies []

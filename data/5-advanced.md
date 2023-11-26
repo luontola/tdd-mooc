@@ -83,6 +83,6 @@ Testing and clean code need to be ingrained in your nature, so that you have the
 
 </recommended-reading>
 
-<hr>
+---
 
 Proceed to [Chapter 6: To infinity and beyond](/6-afterword) or [Exercises](/exercises)

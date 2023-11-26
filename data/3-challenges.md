@@ -253,6 +253,6 @@ Optimize the diff for humans. Even video and audio can be diffed as an image.
 
 </recommended-reading>
 
-<hr>
+---
 
 Proceed to [Chapter 4: Legacy code](/4-legacy-code) or [Exercises](/exercises)

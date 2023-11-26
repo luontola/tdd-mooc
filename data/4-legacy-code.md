@@ -81,6 +81,6 @@ In the larger scope, this slowly improves the codebase as a whole. Bugs tend to 
 
 Also when adding new features, it's best to do it test-first. You can write the new code as an isolated component using TDD, and then change the legacy code to just delegate to the new code. Little by little you grow oases of safe areas that are easy to work with, and those will be in the areas of the codebase which change most often.
 
-<hr>
+---
 
 Proceed to [Chapter 5: Advanced techniques](/5-advanced) or [Exercises](/exercises)

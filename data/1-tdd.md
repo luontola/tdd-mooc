@@ -167,6 +167,6 @@ TDD's tests can be thought of as a specification of the system's behavior, or as
 </recommended-reading>
 
 
-<hr>
+---
 
 Proceed to [Chapter 2: Refactoring and design](/2-design) or [Exercises](/exercises)

@@ -163,6 +163,6 @@ Any programming language is okay. For a starter project, there is <https://githu
 
 </tdd-decision>
 
-<hr>
+---
 
 Proceed to [Chapter 1: What is TDD](/1-tdd)

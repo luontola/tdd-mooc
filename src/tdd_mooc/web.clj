@@ -1,17 +1,23 @@
 (ns tdd-mooc.web
-  (:require [clojure.string :as str]
+  (:require [clojure.java.data :as j]
+            [clojure.string :as str]
             [clojure.test :refer [deftest is testing]]
+            [clojure.walk :as walk]
             [hiccup.page]
             [hiccup.util]
             [hiccup2.core :as h]
-            [markdown.core :as markdown]
             [optimus.assets :as optimus.assets]
             [optimus.export :as optimus.export]
             [optimus.optimizations :as optimizations]
             [optimus.prime :as optimus]
             [optimus.strategies :as optimus.strategies]
             [ring.middleware.content-type :refer [wrap-content-type]]
-            [stasis.core :as stasis]))
+            [stasis.core :as stasis])
+  (:import (com.vladsch.flexmark.ext.yaml.front.matter AbstractYamlFrontMatterVisitor YamlFrontMatterBlock YamlFrontMatterExtension)
+           (com.vladsch.flexmark.html HtmlRenderer)
+           (com.vladsch.flexmark.parser Parser)
+           (com.vladsch.flexmark.util.ast Node)
+           (com.vladsch.flexmark.util.data MutableDataSet)))
 
 (alter-var-root #'hiccup.util/*html-mode* (constantly :html))
 
@@ -207,20 +213,35 @@
 
                  (layout-footer)]])))
 
-(defn parse-markdown [markdown]
-  (let [{:keys [html metadata]} (markdown/md-to-html-string-with-meta markdown)]
+(defn- parse-front-matter [^Node document]
+  (let [^YamlFrontMatterBlock front-matter (.getFirstChild document)]
+    (when (instance? YamlFrontMatterBlock front-matter)
+      (let [visitor (AbstractYamlFrontMatterVisitor.)]
+        (.visit visitor front-matter)
+        (-> (.getData visitor)
+            (j/from-java-deep {})
+            (walk/keywordize-keys))))))
+
+(defn parse-markdown [^String markdown]
+  (let [options (doto (MutableDataSet.)
+                  (.set Parser/EXTENSIONS [(YamlFrontMatterExtension/create)]))
+        parser (.build (Parser/builder options))
+        renderer (.build (HtmlRenderer/builder options))
+        document (.parse parser markdown)
+        html (.render renderer document)
+        metadata (parse-front-matter document)]
     {:html html
      :metadata metadata}))
 
 (deftest test-parse-markdown
   (testing "plain markdown"
-    (is (= {:html "<h1>Title</h1>"
+    (is (= {:html "<h1>Title</h1>\n"
             :metadata nil}
            (parse-markdown "# Title"))))
 
   (testing "markdown with frontmatter"
-    (is (= {:html "<h1>Title</h1>"
-            :metadata {:key "value"}}
+    (is (= {:html "<h1>Title</h1>\n"
+            :metadata {:key ["value"]}}
            (parse-markdown "---\nkey: value\n---\n\n# Title")))))
 
 (defn get-markdown-pages [pages]
