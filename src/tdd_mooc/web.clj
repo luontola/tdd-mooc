@@ -1,8 +1,7 @@
 (ns tdd-mooc.web
-  (:require [clojure.java.data :as j]
+  (:require [clj-yaml.core :as yaml]
             [clojure.string :as str]
             [clojure.test :refer [deftest is testing]]
-            [clojure.walk :as walk]
             [hiccup.page]
             [hiccup.util]
             [hiccup2.core :as h]
@@ -13,7 +12,7 @@
             [optimus.strategies :as optimus.strategies]
             [ring.middleware.content-type :refer [wrap-content-type]]
             [stasis.core :as stasis])
-  (:import (com.vladsch.flexmark.ext.yaml.front.matter AbstractYamlFrontMatterVisitor YamlFrontMatterBlock YamlFrontMatterExtension)
+  (:import (com.vladsch.flexmark.ext.yaml.front.matter YamlFrontMatterBlock YamlFrontMatterExtension)
            (com.vladsch.flexmark.html HtmlRenderer)
            (com.vladsch.flexmark.parser Parser)
            (com.vladsch.flexmark.util.ast Node)
@@ -214,13 +213,9 @@
                  (layout-footer)]])))
 
 (defn- parse-front-matter [^Node document]
-  (let [^YamlFrontMatterBlock front-matter (.getFirstChild document)]
+  (let [front-matter (.getFirstChild document)]
     (when (instance? YamlFrontMatterBlock front-matter)
-      (let [visitor (AbstractYamlFrontMatterVisitor.)]
-        (.visit visitor front-matter)
-        (-> (.getData visitor)
-            (j/from-java-deep {})
-            (walk/keywordize-keys))))))
+      (yaml/parse-string (.toString (.getChildChars front-matter))))))
 
 (defn parse-markdown [^String markdown]
   (let [options (doto (MutableDataSet.)
@@ -241,7 +236,7 @@
 
   (testing "markdown with frontmatter"
     (is (= {:html "<h1>Title</h1>\n"
-            :metadata {:key ["value"]}}
+            :metadata {:key "value"}}
            (parse-markdown "---\nkey: value\n---\n\n# Title")))))
 
 (defn get-markdown-pages [pages]

@@ -1,6 +1,7 @@
 (defproject tdd-mooc "1-SNAPSHOT"
 
-  :dependencies [[com.vladsch.flexmark/flexmark-all "0.64.8"]
+  :dependencies [[clj-commons/clj-yaml "1.0.27"]
+                 [com.vladsch.flexmark/flexmark-all "0.64.8"]
                  [hiccup "2.0.0-RC2"]
                  [medley "1.4.0"]
                  [optimus "2023.11.21"]
