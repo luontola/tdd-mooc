@@ -65,7 +65,7 @@
   (h/html (for [{:keys [children]} navigation-tree]
             [:ul (map #(navigation-item % current-path) children)])))
 
-(defn layout-navigation [current-path get-page-title]
+(defn layout-navigation [current-path navigation-tree]
   (h/html [:div.l-docs__sidebar
            [:nav#drawer.p-side-navigation--raw-html.is-sticky {:aria-label "Table of contents"}
             [:div.u-hide--large.p-strip.is-shallow
@@ -78,7 +78,7 @@
               [:a.p-side-navigation__toggle--in-drawer.js-drawer-toggle {:href "#" :aria-controls "drawer"}
                "Toggle side navigation"]]
              [:h3 "TDD MOOC"]
-             (navigation-menu current-path (enrich-navigation-tree navigation-tree get-page-title))]]]))
+             (navigation-menu current-path navigation-tree)]]]))
 
 (defn twitter-icon []
   (h/html [:svg {:aria-hidden "true"
@@ -161,7 +161,7 @@
                 [:img {:alt "Massive Open Online Courses MOOC.fi"
                        :src "/moocfi-logo-big.png"}]]]]]]]))
 
-(defn layout-page [{:keys [path title content get-page-title]}]
+(defn layout-page [{:keys [path title content navigation-tree]}]
   (str (h/html (hiccup.page/doctype :html5)
                [:html {:lang "en"}
                 [:head
@@ -178,7 +178,7 @@
                  [:link {:rel "stylesheet" :href "/styles.css"}]]
                 [:body
                  [:div.l-docs {} ; explicit argument maps avoid "Method code too large!" when Hiccup can't guess a dynamic element's type
-                  (layout-navigation path get-page-title)
+                  (layout-navigation path navigation-tree)
 
                   [:div#main-content.l-docs__title {}
                    (when (= "/" path)
@@ -247,13 +247,14 @@
        (into {})))
 
 (defn render-markdown-pages [pages]
-  (let [get-page-title (update-vals pages (comp :title :metadata))]
+  (let [get-page-title (update-vals pages (comp :title :metadata))
+        navigation-tree (enrich-navigation-tree navigation-tree get-page-title)]
     (->> pages
          (map (fn [[path page]]
                 [path (layout-page {:path path
                                     :title (:title (:metadata page))
                                     :content (h/raw (:html page))
-                                    :get-page-title get-page-title})]))
+                                    :navigation-tree navigation-tree})]))
          (into {}))))
 
 (defn get-pages []
