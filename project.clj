@@ -11,6 +11,10 @@
                  [stasis "2023.11.21"]]
   :managed-dependencies []
   :pedantic? :warn
+
+  :source-paths ["src"]
+  :test-paths ["src"]
+  :resource-paths ["resources"]
   :global-vars {*warn-on-reflection* false}
   :javac-options ["--release" "21"]
   :jvm-opts ["-XX:-OmitStackTraceInFastThrow"]
