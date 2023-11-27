@@ -2,6 +2,7 @@
   (:require [clj-yaml.core :as yaml]
             [clojure.string :as str]
             [clojure.test :refer [deftest is testing]]
+            [clojure.walk :as walk]
             [hiccup.page]
             [hiccup.util]
             [hiccup2.core :as h]
@@ -22,33 +23,29 @@
 
 (def export-dir "target/dist")
 
-;; TODO: read page titles from markdown
 (def navigation-tree
-  [{:children [{:href "/"
-                :title "Course overview"}
+  [{:children [{:href "/"}
                {:href "/practicalities/"
-                :title "Practicalities (2024 Spring)"
-                :children [{:href "/enrollment/"
-                            :title "Enrollment instructions"}]}
+                :children [{:href "/enrollment/"}]}
                {:title [:strong "Course material"]
-                :children [{:href "/exercises/"
-                            :title "Exercises"}
-                           {:href "/1-tdd/"
-                            :title "Chapter 1: What is TDD"}
-                           {:href "/2-design/"
-                            :title "Chapter 2: Refactoring and design"}
-                           {:href "/3-challenges/"
-                            :title "Chapter 3: The Untestables"}
-                           {:href "/4-legacy-code/"
-                            :title "Chapter 4: Legacy code"}
-                           {:href "/5-advanced/"
-                            :title "Chapter 5: Advanced techniques"}
-                           {:href "/6-afterword/"
-                            :title "Chapter 6: To infinity and beyond"}]}]}
-   {:children [{:href "/credits/"
-                :title "About the material"}
-               {:href "/coaching/"
-                :title "Technical coach for your team"}]}])
+                :children [{:href "/exercises/"}
+                           {:href "/1-tdd/"}
+                           {:href "/2-design/"}
+                           {:href "/3-challenges/"}
+                           {:href "/4-legacy-code/"}
+                           {:href "/5-advanced/"}
+                           {:href "/6-afterword/"}]}]}
+   {:children [{:href "/credits/"}
+               {:href "/coaching/"}]}])
+
+(defn enrich-navigation-tree [navigation-tree get-page-title]
+  (walk/postwalk (fn [v]
+                   (if (and (map? v)
+                            (some? (:href v)))
+                     (assoc v :title (or (get-page-title (:href v))
+                                         (:href v)))
+                     v))
+                 navigation-tree))
 
 (def external-link
   {:target "_blank"
@@ -64,12 +61,11 @@
            (when (some? children)
              [:ul (map #(navigation-item % current-path) children)])]))
 
-(defn navigation-menu [current-path]
-  (h/html (map (fn [{:keys [children]}]
-                 [:ul (map #(navigation-item % current-path) children)])
-               navigation-tree)))
+(defn navigation-menu [current-path navigation-tree]
+  (h/html (for [{:keys [children]} navigation-tree]
+            [:ul (map #(navigation-item % current-path) children)])))
 
-(defn layout-navigation [current-path]
+(defn layout-navigation [current-path get-page-title]
   (h/html [:div.l-docs__sidebar
            [:nav#drawer.p-side-navigation--raw-html.is-sticky {:aria-label "Table of contents"}
             [:div.u-hide--large.p-strip.is-shallow
@@ -82,7 +78,7 @@
               [:a.p-side-navigation__toggle--in-drawer.js-drawer-toggle {:href "#" :aria-controls "drawer"}
                "Toggle side navigation"]]
              [:h3 "TDD MOOC"]
-             (navigation-menu current-path)]]]))
+             (navigation-menu current-path (enrich-navigation-tree navigation-tree get-page-title))]]]))
 
 (defn twitter-icon []
   (h/html [:svg {:aria-hidden "true"
@@ -165,7 +161,7 @@
                 [:img {:alt "Massive Open Online Courses MOOC.fi"
                        :src "/moocfi-logo-big.png"}]]]]]]]))
 
-(defn layout-page [{:keys [path title content]}]
+(defn layout-page [{:keys [path title content get-page-title]}]
   (str (h/html (hiccup.page/doctype :html5)
                [:html {:lang "en"}
                 [:head
@@ -182,7 +178,7 @@
                  [:link {:rel "stylesheet" :href "/styles.css"}]]
                 [:body
                  [:div.l-docs {} ; explicit argument maps avoid "Method code too large!" when Hiccup can't guess a dynamic element's type
-                  (layout-navigation path)
+                  (layout-navigation path get-page-title)
 
                   [:div#main-content.l-docs__title {}
                    (when (= "/" path)
@@ -246,17 +242,24 @@
        (map (fn [[path markdown]]
               (let [path (-> path
                              (str/replace #"/index\.md$" "/")
-                             (str/replace #"\.md$" "/"))
-                    {:keys [html metadata]} (parse-markdown markdown)]
-                [path (layout-page {:path path
-                                    :title (:title metadata)
-                                    :content (h/raw html)})])))
+                             (str/replace #"\.md$" "/"))]
+                [path (parse-markdown markdown)])))
        (into {})))
+
+(defn render-markdown-pages [pages]
+  (let [get-page-title (update-vals pages (comp :title :metadata))]
+    (->> pages
+         (map (fn [[path page]]
+                [path (layout-page {:path path
+                                    :title (:title (:metadata page))
+                                    :content (h/raw (:html page))
+                                    :get-page-title get-page-title})]))
+         (into {}))))
 
 (defn get-pages []
   (stasis/merge-page-sources
    {:public (stasis/slurp-directory "resources/public" #".*\.(html)$")
-    :markdown (get-markdown-pages (stasis/slurp-directory "data" #"\.md$"))}))
+    :markdown (render-markdown-pages (get-markdown-pages (stasis/slurp-directory "data" #"\.md$")))}))
 
 (defn get-assets []
   (optimus.assets/load-assets "public" [#".*\.(css|png|jpg)$"]))
