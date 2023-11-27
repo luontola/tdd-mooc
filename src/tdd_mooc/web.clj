@@ -47,10 +47,6 @@
                      v))
                  navigation-tree))
 
-(def external-link
-  {:target "_blank"
-   :rel "noopener noreferrer"})
-
 (defn navigation-item [{:keys [title href children]} current-path]
   (h/html [:li
            (if (some? href)
@@ -105,10 +101,9 @@
                    :d "M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"}]]))
 
 (defn social-link [{:keys [label href icon]}]
-  (h/html [:a (assoc external-link
-                     :href href,
-                     :aria-label label
-                     :title label)
+  (h/html [:a {:href href,
+               :aria-label label
+               :title label}
            icon]))
 
 (defn layout-footer []
@@ -117,23 +112,23 @@
 
             [:div.l-docs__sidebar
              [:div.moocfi-logo
-              [:a (assoc external-link :href "https://mooc.fi")
+              [:a {:href "https://mooc.fi"}
                [:img {:src "/moocfi-logo.png" :alt ""}]
                [:span "MOOC.fi"]]]]
 
             [:div.l-docs__main
              [:div.row
               [:p "This course was brought to you by "
-               [:a.is-dark (assoc external-link :href "https://twitter.com/EskoLuontola")
+               [:a.is-dark {:href "https://twitter.com/EskoLuontola"}
                 "Esko Luontola"]
                " and "
-               [:a.is-dark (assoc external-link :href "https://nitor.com/")
+               [:a.is-dark {:href "https://nitor.com/"}
                 "Nitor"]
                "."]
 
               [:ul.p-inline-list
                [:li.p-inline-list__item
-                [:a.is-dark (assoc external-link :href "https://github.com/luontola/tdd-mooc")
+                [:a.is-dark {:href "https://github.com/luontola/tdd-mooc"}
                  [:small "Website source code"]]]
 
                [:li.p-inline-list__item
@@ -154,10 +149,10 @@
 
              [:div.row
               [:div.university-links-footer
-               [:a (assoc external-link :href "https://www.helsinki.fi")
+               [:a {:href "https://www.helsinki.fi"}
                 [:img {:alt "University of Helsinki"
                        :src "/hy-logo-big.png"}]]
-               [:a (assoc external-link :href "https://www.mooc.fi")
+               [:a {:href "https://www.mooc.fi"}
                 [:img {:alt "Massive Open Online Courses MOOC.fi"
                        :src "/moocfi-logo-big.png"}]]]]]]]))
 
