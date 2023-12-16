@@ -28,10 +28,21 @@ Kent tried it with a stack, and half an hour later he was hooked. All the anxiet
 
 [A study from 2017](http://dx.doi.org/10.1109/TSE.2017.2776152) found that only 12% of developers who claimed to do TDD, did actually follow it.  Since there is such [semantic diffusion](https://martinfowler.com/bliki/SemanticDiffusion.html) about TDD, let's start with a definition:
 
+1. Write a list of the test scenarios you want to cover
+2. Turn exactly one item on the list into an actual, concrete, runnable test
+3. Change the code to make the test (& all previous tests) pass (adding items to the list as you discover them)
+4. Optionally refactor to improve the implementation design
+5. Until the list is empty, go back to #2
+
+<recommended-reading>
+
+- [Canon TDD](https://tidyfirst.substack.com/p/canon-tdd) - a definition of TDD from the inventor of TDD, and a list of typical mistakes
+
+</recommended-reading>
 
 ### Three laws of TDD
 
-TDD can be described in terms of these three rules:
+TDD can also be defined in terms of these three rules:
 
 1. You shall not write any production code, unless required by a failing unit test.
 2. You shall not write more of a unit test, than is required to fail (assertion failure/program crash/compile error).
