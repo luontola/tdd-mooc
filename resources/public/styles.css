@@ -181,3 +181,71 @@ dfn:hover:after {
     }
   }
 }
+
+#tdd-decision {
+  --site-background-color: 254 254 254;
+
+  .not-yet-accepted-dialog {
+    position: sticky;
+    top: 0;
+    background-color: rgba(var(--site-background-color) / 0.82);
+    /* with z-index 0 the background color would not be visible */
+    z-index: 1;
+    /* due to blur spread, the header needs to be larger than the content area to fully cover the blur underneath */
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em 0.5em 0;
+
+    &.accepted {
+      /* due to non-blurred background text, needs more opacity to achieve the same readability */
+      background-color: rgba(var(--site-background-color) / 0.94);
+    }
+
+    &.unstuck {
+      position: relative;
+    }
+
+    .checkbox-label {
+      font-size: 1.25rem;
+      padding: 1rem 3rem;
+      text-indent: -1em;
+      margin-left: 1em;
+    }
+  }
+
+  .not-yet-accepted-dialog:not(.accepted) {
+    .confirmation {
+      display: none;
+    }
+  }
+
+  .not-yet-accepted-dialog.accepted {
+    /* To avoid a changing the dialog's height when the question disappears, we make the question invisible and put
+       the confirmation on top of it. This way the question's height will keep determining the dialog's height. */
+
+    .question {
+      opacity: 0;
+    }
+
+    .confirmation {
+      position: absolute;
+      inset: 0;
+      font-size: 1.5rem;
+      color: green;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .previously-accepted-dialog {
+    font-size: 1.25rem;
+    padding: 1rem 3rem;
+    text-indent: -1.25em;
+    margin-left: 1.25em;
+    color: green;
+  }
+
+  > .content.hidden {
+    filter: blur(5px);
+  }
+}

@@ -311,12 +311,39 @@
                            :icon "📖"
                            :content [:a {:href "/6-afterword"} "Chapter 6: To infinity and beyond"]})]]))))
 
-(defn render-custom-elements [page]
-  (enlive/sniptest page
-                   [:recommended-reading] (fn [recommended-reading]
+(def tdd-decision-snippet
+  (let [promise-text " During this course, I will not add any production code, unless it is required by a failing test."]
+    (enlive/html-snippet
+     (str (h/html
+           [:div#tdd-decision
+            [:div.not-yet-accepted-dialog {:style {:display "none"}}
+             [:div.question
+              "Before starting the exercises, you should make the following decision:"
+              [:label.checkbox-label
+               [:input {:type "checkbox"}]
+               promise-text]]
+
+             [:div.confirmation
+              [:span {:aria-hidden "true"
+                      :style {:margin-right "1ex"}}
+               "✅"]
+              " Good. And don't you forget that."]]
+
+            [:div.previously-accepted-dialog {:style {:display "none"}}
+             [:span {:aria-hidden "true"} "✅"]
+             promise-text]
+
+            [:div.content]])))))
+
+(defn render-custom-elements [page-html]
+  (enlive/sniptest page-html
+                   [:recommended-reading] (fn [{:keys [content]}]
                                             (enlive/at recommended-reading-snippet
-                                                       [:.content] (enlive/append (:content recommended-reading))))
-                   [:exercise-schedule] (enlive/substitute exercise-schedule-snippet)))
+                                                       [:.content] (enlive/append content)))
+                   [:exercise-schedule] (enlive/substitute exercise-schedule-snippet)
+                   [:tdd-decision] (fn [{:keys [content]}]
+                                     (enlive/at tdd-decision-snippet
+                                                [:.content] (enlive/append content)))))
 
 (defn render-markdown-pages [pages]
   (let [get-page-title (update-vals pages (comp :title :metadata))
