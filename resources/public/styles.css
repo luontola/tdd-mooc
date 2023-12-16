@@ -149,3 +149,35 @@ dfn:hover:after {
     }
   }
 }
+
+#exercise-schedule {
+  table-layout: auto;
+
+  border: 1px solid lightgray;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+
+  .icon-cell {
+    width: 0;
+    /* TODO: use SASS, use (max-width: $breakpoint-small - 1) here https://vanillaframework.io/docs/settings/breakpoint-settings */
+    @media only screen and (max-width: 619px) {
+      display: none;
+    }
+  }
+
+  .big-checkbox {
+    width: 1.5em;
+    height: 1.5em;
+    margin: -0.25em 0;
+    vertical-align: middle;
+  }
+
+  & tr:has(:checked) {
+    background-color: #32cd324f;
+
+    & td:not(.icon-cell) {
+      text-decoration: line-through;
+    }
+  }
+}

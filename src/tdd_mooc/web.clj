@@ -171,7 +171,8 @@
                  [:link {:rel "stylesheet" :href "https://cdn.jsdelivr.net/npm/@openfonts/open-sans-condensed_all@1.44.2/index.min.css"}]
                  [:link {:rel "stylesheet" :href "https://cdn.jsdelivr.net/npm/@fontsource/roboto-slab@5.0.17/index.min.css"}]
                  [:link {:rel "stylesheet" :href "https://assets.ubuntu.com/v1/vanilla-framework-version-4.5.0.min.css"}]
-                 [:link {:rel "stylesheet" :href "/styles.css"}]]
+                 [:link {:rel "stylesheet" :href "/styles.css"}]
+                 [:script {:type "module" :defer true :src "/custom-elements.mjs"}]]
                 [:body
                  [:div.l-docs {} ; explicit argument maps avoid "Method code too large!" when Hiccup can't guess a dynamic element's type
                   (layout-navigation path navigation-tree)
@@ -248,11 +249,74 @@
                                 [:h5.heading "📖 Recommended reading"]
                                 [:div.content]])))
 
+(defn schedule-step [{:keys [id icon content duration]}]
+  (h/html [:tr
+           [:td.icon-cell {:aria-hidden "true"} icon]
+           [:td content]
+           [:td duration]
+           [:td [:input.big-checkbox {:type "checkbox"
+                                      :data-schedule-step id}]]]))
+
+(def exercise-schedule-snippet
+  (enlive/html-snippet
+   (str (h/html
+         [:table#exercise-schedule
+          [:thead
+           [:tr
+            [:th.icon-cell {:aria-hidden "true"}]
+            [:th "What to read and do"]
+            [:th "Duration (average)"]
+            [:th "Done"]]]
+          [:tbody
+           (schedule-step {:id "chapter1"
+                           :icon "📖"
+                           :content [:a {:href "/1-tdd"} "Chapter 1: What is TDD"]})
+           (schedule-step {:id "chapter2"
+                           :icon "📖"
+                           :content [:a {:href "/2-design"} "Chapter 2: Refactoring and design"]})
+           (schedule-step {:id "exercise1"
+                           :icon "👨‍💻"
+                           :content [:a {:href "#exercise-1-small-safe-steps"} "Exercise 1: Small, safe steps"]
+                           :duration "3 h"})
+           (schedule-step {:id "exercise2"
+                           :icon "👩‍💻"
+                           :content [:a {:href "#exercise-2-tetris"} "Exercise 2: Tetris"]
+                           :duration "38 h"})
+           (schedule-step {:id "chapter3"
+                           :icon "📖"
+                           :content [:a {:href "/3-challenges"} "Chapter 3: The Untestables"]})
+           (schedule-step {:id "exercise3"
+                           :icon "👨‍💻"
+                           :content [:a {:href "#exercise-3-untestable-code"} "Exercise 3: Untestable code"]
+                           :duration "7 h"})
+           (schedule-step {:id "chapter4"
+                           :icon "📖"
+                           :content [:a {:href "/4-legacy-code"} "Chapter 4: Legacy code"]})
+           (schedule-step {:id "exercise4"
+                           :icon "👩‍💻"
+                           :content [:a {:href "#exercise-4-legacy-code"} "Exercise 4: Legacy code"]
+                           :duration "6 h"})
+           (schedule-step {:id "chapter5"
+                           :icon "📖"
+                           :content [:a {:href "/5-advanced"} "Chapter 5: Advanced techniques"]})
+           (schedule-step {:id "exercise5"
+                           :icon "👨‍💻"
+                           :content [:a {:href "#optional-exercise-5-full-stack-web-app"} "(optional) Exercise 5: Full-stack web app"]
+                           :duration "32 h"})
+           (schedule-step {:id "exercise6"
+                           :icon "👩‍💻"
+                           :content [:a {:href "#exercise-6-conways-game-of-life"} "Exercise 6: Conway's Game of Life"]
+                           :duration "13 h"})
+           (schedule-step {:id "chapter6"
+                           :icon "📖"
+                           :content [:a {:href "/6-afterword"} "Chapter 6: To infinity and beyond"]})]]))))
+
 (defn render-custom-elements [page]
   (enlive/sniptest page
                    [:recommended-reading] (fn [recommended-reading]
                                             (enlive/at recommended-reading-snippet
-                                                       [:.content] (enlive/append (:content recommended-reading))))))
+                                                       [:.content] (enlive/append (:content recommended-reading))))
+                   [:exercise-schedule] (enlive/substitute exercise-schedule-snippet)))
 
 (defn render-markdown-pages [pages]
   (let [get-page-title (update-vals pages (comp :title :metadata))
@@ -273,7 +337,7 @@
     :markdown (render-markdown-pages (get-markdown-pages (stasis/slurp-directory "data" #"\.md$")))}))
 
 (defn get-assets []
-  (optimus.assets/load-assets "public" [#".*\.(css|png|jpg)$"]))
+  (optimus.assets/load-assets "public" [#".*\.(css|png|jpg|mjs)$"]))
 
 (def app
   (-> (stasis/serve-pages get-pages)
