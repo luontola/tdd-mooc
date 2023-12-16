@@ -16,7 +16,11 @@ This course should help you get over the initial hurdle of getting started with 
 
 ## Why?
 
-Fewer bugs. Less debugging. Better design. More fun. Produce better software faster.
+*TDD saves time.*
+
+First of all, you'll waste no time finding out whether your code works, since the computer will check it for you in under a second. Since you'll be running your tests many times per minute, you'll find out immediately if your change broke something. You won't waste time debugging, because it will be faster to undo your most recent change and try again.
+
+TDD also works as a feedback mechanism, to find out sooner if the design you've chosen inhibits change. Then you can evaluate other designs, until you find one that lets you keep making changes quickly in the long run. Produce better software faster.
 
 [TDD Outcomes](https://tidyfirst.substack.com/p/tdd-outcomes) lists some things that you can expect from using TDD.
 
