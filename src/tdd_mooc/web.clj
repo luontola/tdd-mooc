@@ -6,6 +6,7 @@
             [hiccup.page]
             [hiccup.util]
             [hiccup2.core :as h]
+            [net.cgrand.enlive-html :as enlive]
             [optimus.assets :as optimus.assets]
             [optimus.export :as optimus.export]
             [optimus.optimizations :as optimizations]
@@ -241,6 +242,18 @@
                 [path (parse-markdown markdown)])))
        (into {})))
 
+
+(def recommended-reading-snippet
+  (enlive/html-snippet (h/html [:aside.recommended-reading
+                                [:h5.heading "📖 Recommended reading"]
+                                [:div.content]])))
+
+(defn render-custom-elements [page]
+  (enlive/sniptest page
+                   [:recommended-reading] (fn [recommended-reading]
+                                            (enlive/at recommended-reading-snippet
+                                                       [:.content] (enlive/append (:content recommended-reading))))))
+
 (defn render-markdown-pages [pages]
   (let [get-page-title (update-vals pages (comp :title :metadata))
         navigation-tree (enrich-navigation-tree navigation-tree get-page-title)]
@@ -248,7 +261,9 @@
          (map (fn [[path page]]
                 [path (layout-page {:path path
                                     :title (:title (:metadata page))
-                                    :content (h/raw (:html page))
+                                    :content (-> (:html page)
+                                                 (render-custom-elements)
+                                                 (h/raw))
                                     :navigation-tree navigation-tree})]))
          (into {}))))
 

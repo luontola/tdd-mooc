@@ -2,6 +2,7 @@
 
   :dependencies [[clj-commons/clj-yaml "1.0.27"]
                  [com.vladsch.flexmark/flexmark-all "0.64.8"]
+                 [enlive "1.1.6"]
                  [hiccup "2.0.0-RC2"]
                  [medley "1.4.0"]
                  [optimus "2023.11.21"]
