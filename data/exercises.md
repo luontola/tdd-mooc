@@ -213,6 +213,16 @@ Any programming language is okay. For a starter project, you may use <https://gi
 * <dfn data-title="...assuming a professional developer with good design skills">Minimum</dfn>: 6 hours
 * <dfn data-title="...based on past student submissions">Average</dfn>: 13 hours
 
+<details>
+  <summary>Reference solution</summary>
+
+There's [a screencast](https://www.youtube.com/watch?v=xw-kmp14u0M) of doing this exercise. Enable subtitles for
+commentary. Pay attention to the choice of what tests to write in which order, so that the implementation can be driven
+in small increments. Also note how quickly the first end-to-end test is made pass, after which the walking skeleton is
+fleshed out while keeping the tests green.
+
+</details>
+
 </tdd-decision>
 
 ---
