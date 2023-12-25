@@ -157,7 +157,7 @@ the code mechanically, without having to understand the code, is valuable.
 >
 > **If you decide to not do this exercise, [submit a blank response](/practicalities#exercise-submissions) as "part5": Leave the exercise checkbox unchecked, enter 0 or 1 hours as the duration, and write a dummy repository URL (it doesn't need to exist).**
 
-You may clone the project template <https://github.com/luontola/tdd-mooc-webapp> to get started, but fundamentally the tool choices are up to you. Any programming language is okay.
+You may clone the project template <https://github.com/luontola/tdd-mooc-webapp> to get started, but fundamentally the tool choices are up to you. *Any programming language is okay.*
 
 The assignment is to *write a To-Do List app using TDD.* It needs to have a [SPA](https://developer.mozilla.org/en-US/docs/Glossary/SPA) web user interface, an API backend and a database.
 
@@ -197,7 +197,7 @@ The assignment is to *write [Conway's Game of Life](https://en.wikipedia.org/wik
 
 For test data, you can download RLE files from LifeWiki; see the *Pattern files* section in each pattern's infobox, on the right side of the page. [Glider](https://www.conwaylife.com/wiki/Glider), [Blinker](https://www.conwaylife.com/wiki/Blinker) and [Block](https://www.conwaylife.com/wiki/Block) are some of the simplest patterns. [Gosper glider gun](https://www.conwaylife.com/wiki/Gosper_glider_gun) is an example of an infinitely growing pattern. Clicking the animated picture on a pattern's wiki page opens the LifeViewer app, from which you can also select and copy to clipboard the pattern's specific generation.
 
-Any programming language is okay. For a starter project, you may use <https://github.com/luontola/tdd-mooc-new-js-project> (JavaScript), <https://github.com/swkBerlin/kata-bootstraps> (many languages) or build your own.
+*Any programming language is okay.* For a starter project, you may use <https://github.com/luontola/tdd-mooc-new-js-project> (JavaScript), <https://github.com/swkBerlin/kata-bootstraps> (many languages) or build your own.
 
 ##### What to submit
 
