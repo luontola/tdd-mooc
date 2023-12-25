@@ -55,8 +55,6 @@ Clone the project <https://github.com/luontola/tdd-mooc-tetris> and follow its i
 
 The assignment is to *write a Tetris game using TDD.* The first couple dozen tests have already been written for you, so that it'll be easier to get into the rhythm of writing tests first.
 
-If you get stuck, you may watch [this example screencast](https://www.youtube.com/playlist?list=PLSADDT9dzgRCjVvS13ekPr1KwX_JkDQJM) for inspiration. It's based on an older version of the exercise, so it's in Java instead of JavaScript, but otherwise it's pretty much the same.
-
 ##### What to submit
 
 * [Submit this exercise](/practicalities#exercise-submissions) as "part2". Provide a **Git repository** with the source code and history of you doing this exercise.
@@ -68,6 +66,14 @@ If you get stuck, you may watch [this example screencast](https://www.youtube.co
 * <dfn data-title="...assuming a professional developer with good design skills">Minimum</dfn>: 11 hours
 * <dfn data-title="...based on past student submissions">Average</dfn>: 38 hours
 * The exercise is split into 10 levels of roughly the same size, though level 4 is bigger due to the need for major refactoring.
+
+<details>
+  <summary>Reference solution</summary>
+
+There's [a screencast](https://www.youtube.com/playlist?list=PLSADDT9dzgRCjVvS13ekPr1KwX_JkDQJM) of doing an
+older version of this exercise. It's in Java instead of JavaScript, but otherwise it's pretty much the same.
+
+</details>
 
 
 # Exercise 3: Untestable code
