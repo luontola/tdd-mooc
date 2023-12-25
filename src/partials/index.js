@@ -117,7 +117,7 @@ const mapping = () => ({
   h6: H6,
   hr: Hr,
   points: Points,
-  summary: Summary,
+  "chapter-summary": Summary,
   button: Button,
 })
 

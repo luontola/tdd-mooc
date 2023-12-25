@@ -114,6 +114,10 @@ dfn:hover:after {
   clip-path: polygon(0 20%, 15% 20%, 25% 0, 35% 20%, 100% 20%, 100% 100%, 0 100%);
 }
 
+summary {
+  font-weight: 550;
+}
+
 .recommended-reading {
   padding: 0.8rem;
   margin-bottom: 2rem;

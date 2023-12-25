@@ -79,6 +79,33 @@ The assignment is to *refactor the untestable code examples to make them testabl
 * <dfn data-title="...assuming a professional developer with good design skills">Minimum</dfn>: 2 hours
 * <dfn data-title="...based on past student submissions">Average</dfn>: 7 hours
 
+<details>
+  <summary>Reference solution</summary>
+
+See the comments in the following code and test files for details on the testing strategy.
+
+###### Untestable 1: Time
+
+- [Refactored code](https://github.com/luontola/tdd-mooc-untestable-code/blob/solutions/src/testableTime.mjs)
+- [Tests](https://github.com/luontola/tdd-mooc-untestable-code/blob/solutions/test/testableTime.test.mjs)
+
+###### Untestable 2: Randomness
+
+- [Refactored code](https://github.com/luontola/tdd-mooc-untestable-code/blob/solutions/src/testableRandom.mjs)
+- [Tests](https://github.com/luontola/tdd-mooc-untestable-code/blob/solutions/test/testableRandom.test.mjs)
+
+###### Untestable 3: Files
+
+- [Refactored code](https://github.com/luontola/tdd-mooc-untestable-code/blob/solutions/src/testableFiles.mjs)
+- [Tests](https://github.com/luontola/tdd-mooc-untestable-code/blob/solutions/test/testableFiles.test.mjs)
+
+###### Untestable 4: Global and Singletons
+
+- [Refactored code](https://github.com/luontola/tdd-mooc-untestable-code/blob/solutions/src/testableGlobals.mjs)
+- [Tests](https://github.com/luontola/tdd-mooc-untestable-code/blob/solutions/test/testableGlobals.test.mjs)
+
+</details>
+
 
 # Exercise 4: Legacy code
 
