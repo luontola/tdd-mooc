@@ -37,6 +37,15 @@ In the study groups, we will have an informal competition between the students o
 * <dfn data-title="...based on past student submissions">Average</dfn>: 3 hours
 * Doing the refactoring once takes ~10 minutes, but you should repeat it many times and practice different approaches.
 
+<details>
+  <summary>Reference solution</summary>
+
+There is no substitute to practise. The instructions
+listed [two example refactoring strategies](https://github.com/luontola/tdd-mooc-small-steps#example-parallel-change).
+Practise their mechanics until you can do them smoothly.
+
+</details>
+
 
 # Exercise 2: Tetris
 
