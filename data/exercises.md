@@ -140,6 +140,16 @@ The assignment is to *write tests for the above code, until it has 100% mutation
 * <dfn data-title="...assuming a professional developer with good design skills">Minimum</dfn>: 2 hours
 * <dfn data-title="...based on past student submissions">Average</dfn>: 6 hours
 
+<details>
+  <summary>Reference solution</summary>
+
+[Cutting Code Quickly: From 0% to Cleanly Refactored 100% Tested Code](https://www.youtube.com/watch?v=8OxH9Lz0Ckg)
+by Llewellyn Falco shows a particularly efficient way of getting the code under coverage and then refactoring it. With
+more primitive tooling you'll need to write more tests manually, but the basic idea of testing and refactoring
+the code mechanically, without having to understand the code, is valuable.
+
+</details>
+
 
 # (optional) Exercise 5: Full-stack web app
 
