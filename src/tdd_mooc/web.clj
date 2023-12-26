@@ -363,6 +363,15 @@
    {:public (stasis/slurp-directory "resources/public" #".*\.(html)$")
     :markdown (render-markdown-pages (get-markdown-pages (stasis/slurp-directory "data" #"\.md$")))}))
 
+(deftest test-get-pages
+  (let [pages (get-pages)
+        chapter-1 (get pages "/1-tdd/")]
+    (testing "navigation menu"
+      (testing "shows page titles"
+        (is (str/includes? chapter-1 "<li><a href=\"/exercises/\">Exercises</a></li>")))
+      (testing "highlights the current page"
+        (is (str/includes? chapter-1 "<li><a class=\"is-active\" href=\"/1-tdd/\">Chapter 1: What is TDD</a></li>"))))))
+
 (defn get-assets []
   (optimus.assets/load-assets "public" [#".*\.(css|png|jpg|mjs)$"]))
 
