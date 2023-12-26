@@ -6,6 +6,34 @@
   margin-top: 1rem;
 }
 
+/* heading anchor links */
+
+h1, h2, h3, h4, h5, h6 {
+  & > a {
+    color: unset;
+    text-decoration: none;
+
+    &:visited {
+      color: unset;
+    }
+
+    &:hover {
+      &:after {
+        --icon-size: 0.5em;
+        content: "";
+        position: absolute;
+        width: var(--icon-size);
+        height: var(--icon-size);
+        background-size: var(--icon-size) var(--icon-size);
+        background-image: url('link-chain.svg');
+        background-repeat: no-repeat;
+        margin-top: calc(var(--icon-size) * 0.8);
+        margin-left: 4px;
+      }
+    }
+  }
+}
+
 .banner {
   display: flex;
   flex-direction: column;

@@ -14,7 +14,8 @@
             [optimus.strategies :as optimus.strategies]
             [ring.middleware.content-type :refer [wrap-content-type]]
             [stasis.core :as stasis])
-  (:import (com.vladsch.flexmark.ext.yaml.front.matter YamlFrontMatterBlock YamlFrontMatterExtension)
+  (:import (com.vladsch.flexmark.ext.anchorlink AnchorLinkExtension)
+           (com.vladsch.flexmark.ext.yaml.front.matter YamlFrontMatterBlock YamlFrontMatterExtension)
            (com.vladsch.flexmark.html HtmlRenderer)
            (com.vladsch.flexmark.parser Parser)
            (com.vladsch.flexmark.util.ast Node)
@@ -214,7 +215,8 @@
 
 (defn parse-markdown [^String markdown]
   (let [options (doto (MutableDataSet.)
-                  (.set Parser/EXTENSIONS [(YamlFrontMatterExtension/create)]))
+                  (.set Parser/EXTENSIONS [(YamlFrontMatterExtension/create)
+                                           (AnchorLinkExtension/create)]))
         parser (.build (Parser/builder options))
         renderer (.build (HtmlRenderer/builder options))
         document (.parse parser markdown)
@@ -225,14 +227,19 @@
 
 (deftest test-parse-markdown
   (testing "plain markdown"
-    (is (= {:html "<h1>Title</h1>\n"
+    (is (= {:html "<p>content</p>\n"
             :metadata nil}
-           (parse-markdown "# Title"))))
+           (parse-markdown "content"))))
 
   (testing "markdown with frontmatter"
-    (is (= {:html "<h1>Title</h1>\n"
+    (is (= {:html "<p>content</p>\n"
             :metadata {:key "value"}}
-           (parse-markdown "---\nkey: value\n---\n\n# Title")))))
+           (parse-markdown "---\nkey: value\n---\n\ncontent"))))
+
+  (testing "headings have anchor links"
+    (is (= {:html "<h1><a href=\"#some-title\" id=\"some-title\">Some Title</a></h1>\n"
+            :metadata nil}
+           (parse-markdown "# Some Title")))))
 
 (defn get-markdown-pages [pages]
   (->> pages
