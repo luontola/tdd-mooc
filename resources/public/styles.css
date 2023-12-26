@@ -41,44 +41,44 @@ h1, h2, h3, h4, h5, h6 {
 
 /* heading numbering */
 
-h1 {
+main {
   counter-reset: h2-counter;
-}
 
-h2 {
-  counter-increment: h2-counter;
-  counter-reset: h3-counter;
+  & h2 {
+    counter-increment: h2-counter;
+    counter-reset: h3-counter;
 
-  &:before {
-    content: counter(h2-counter);
+    &:before {
+      content: counter(h2-counter);
+    }
   }
-}
 
-h3 {
-  counter-increment: h3-counter;
-  counter-reset: h4-counter;
+  & h3 {
+    counter-increment: h3-counter;
+    counter-reset: h4-counter;
 
-  &:before {
-    content: counter(h2-counter) "." counter(h3-counter);
+    &:before {
+      content: counter(h2-counter) "." counter(h3-counter);
+    }
   }
-}
 
-h4 {
-  counter-increment: h4-counter;
+  & h4 {
+    counter-increment: h4-counter;
 
-  &:before {
-    content: counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter);
+    &:before {
+      content: counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter);
+    }
   }
-}
 
-main h2:before,
-main h3:before,
-main h4:before {
-  margin-right: 0.5em;
-  vertical-align: top;
-  font-size: 0.8em;
-  font-weight: 500;
-  color: #dd3f4f;
+  & h2:before,
+  & h3:before,
+  & h4:before {
+    margin-right: 0.5em;
+    vertical-align: top;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #dd3f4f;
+  }
 }
 
 
