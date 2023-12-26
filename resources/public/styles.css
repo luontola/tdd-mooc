@@ -6,6 +6,11 @@
   margin-top: 1rem;
 }
 
+figure {
+  /* don't go wider than text content */
+  max-width: 40em;
+}
+
 /* heading anchor links */
 
 h1, h2, h3, h4, h5, h6 {

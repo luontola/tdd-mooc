@@ -168,7 +168,10 @@ The tests written as part of TDD do help ensure a level of _basic correctness_ i
 
 TDD's tests can be thought of as a specification of the system's behavior, or as small examples of how the code works. In the software development life cycle, the TDD mindset focuses more on requirements and design than on verification, though the verification side is also important to support refactoring and adding new features.
 
-![Photos of scaffolding around a building and a wrecking ball destroying a brick wall.](images/tdd-vs-testing.jpg "Photo credits: [Niklas Hamann](https://unsplash.com/photos/jAj0pjdzvic), [Rhys Asplundh](https://www.flickr.com/photos/rhysasplundh/5202454842)")
+<figure>
+<img class="p-image--bordered" src="images/tdd-vs-testing.jpg" alt="Photos of scaffolding around a building and a wrecking ball destroying a brick wall.">
+<figcaption>Photo credits: <a href="https://unsplash.com/photos/jAj0pjdzvic">Niklas Hamann</a>, <a href="https://www.flickr.com/photos/rhysasplundh/5202454842">Rhys Asplundh</a></figcaption>
+</figure>
 
 
 <recommended-reading>

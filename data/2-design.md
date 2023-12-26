@@ -220,7 +220,10 @@ If some code can be commented out and no test fails, the code should be dead.
 
 In five seconds you will have forgotten over half of your [working memory](https://en.wikipedia.org/wiki/Working_memory). Make the tests so fast that you won't forget what you were thinking.
 
-![Decay of working memory if rehearsal is prevented. The time scale is of the order of a few seconds.](images/working-memory-decay.png "How quickly working memory decays when you think of something else. [[1]](https://www.researchgate.net/figure/Decay-of-working-memory-if-rehearsal-is-prevented-The-time-scale-is-of-the-order-of-a_fig7_35883885)")
+<figure>
+<img class="p-image--bordered" src="images/working-memory-decay.png" alt="Decay of working memory if rehearsal is prevented. The time scale is of the order of a few seconds.">
+<figcaption>How quickly working memory decays when you think of something else. <a href="https://www.researchgate.net/figure/Decay-of-working-memory-if-rehearsal-is-prevented-The-time-scale-is-of-the-order-of-a_fig7_35883885">[1]</a></figcaption>
+</figure>
 
 <recommended-reading>
 
