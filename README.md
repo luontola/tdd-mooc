@@ -26,6 +26,10 @@ Start development server at http://localhost:3000
 
     lein ring server-headless
 
+Run tests
+
+    lein kaocha --watch
+
 Export the website to disk
 
     lein export
