@@ -7,7 +7,7 @@ hide_in_sidebar: true
 sidebar_priority: 4500
 ---
 
-> **These instructions are for students in Finland.  
+> **These instructions are for students in Finland or other European countries which accept [ECTS](https://en.wikipedia.org/wiki/European_Credit_Transfer_and_Accumulation_System) credits.  
 > Other people don't need to register to this course.**
 
 Depending on whether you do the optional *Exercise 5: Full-stack web app* exercise, you can receive either 4 or 5 ECTS credits for completing this course.

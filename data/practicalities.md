@@ -8,7 +8,7 @@ sidebar_priority: 4500
 
 ## Enrollment and study credits
 
-**If you are a student in Finland**, you may receive 4 or 5 study credits from completing this course. See the [enrollment instructions](/enrollment) for details. Receiving study credits requires completing the course [while the course is active](#course-duration).
+**If you are a student in Finland or Europe**, you may receive 4 or 5 study credits from completing this course. See the [enrollment instructions](/enrollment) for details. Receiving study credits requires completing the course [while the course is active](#course-duration).
 
 **For everyone**, after completing and submitting all the exercises, you will receive a certificate (see [example](https://studies.cs.helsinki.fi/stats/api/certificate/tdd-2022/en/818b05333d6adad5d36bcf7a4e4f4fbf)) that you can show off as a trophy. 🏅 You will receive the certificate even if the course is not active.
 
