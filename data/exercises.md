@@ -187,6 +187,8 @@ Start the app's development using the [walking skeleton](/5-advanced#walking-ske
 * <dfn data-title="...based on past student submissions">Average</dfn>: 32 hours
 * Much of the effort is in setting up the infrastructure, and that becomes the faster the more old full-stack projects you have from where to copy-paste snippets.
 
+##### (No reference solution available)
+
 
 # Exercise 6: Conway's Game of Life
 
