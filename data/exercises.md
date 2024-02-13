@@ -73,6 +73,9 @@ The assignment is to *write a Tetris game using TDD.* The first couple dozen tes
 There's [a screencast](https://www.youtube.com/playlist?list=PLSADDT9dzgRCjVvS13ekPr1KwX_JkDQJM) of doing an
 older version of this exercise. It's in Java instead of JavaScript, but otherwise it's pretty much the same.
 
+The [reference branch](https://github.com/luontola/tdd-mooc-tetris/tree/reference) of the exercise's Git repository
+contains an implementation up to level 4. It can be helpful for gaining design ideas.
+
 </details>
 
 
