@@ -27,7 +27,7 @@ The course will end on **Sunday 12.5.2024**. There is no exam, but only the exer
 
 ## Study groups
 
-We will have study groups **every second Tuesday at 16:15-18:00** ([Europe/Helsinki timezone](https://www.timeanddate.com/worldclock/finland/helsinki)) in Discord `tdd_voice` channel while the course is active.
+We will have study groups **every second Tuesday at 16:15-18:00** ([Europe/Helsinki timezone](https://www.timeanddate.com/worldclock/finland/helsinki)) in Discord `tdd_voice` channel while the course is active. Join the channel before 16:30. The study group will end early if the agenda runs out or there are no people present. 
 
 There we will go through the exercises, and it's an opportunity (the only opportunity) to receive feedback from your code quality. This could include code review, refactoring, pair or mob programming, ad-hoc exercises etc. Have your programming environment ready when joining a study group.
 
