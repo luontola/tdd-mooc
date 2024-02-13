@@ -35,15 +35,15 @@ There we will go through the exercises, and it's an opportunity (the only opport
 
 The dates of the study groups are shown below. On this course, students do the exercises at their own pace, so the content of each study group will be improvised on the fly.
 
-- **16.1.2024**: TDD intro and demo, recap of practicalities, getting started with TDD: the first tests, Q&A
-- **30.1.2024**
-- **13.2.2024**
-- **27.2.2024**
-- **12.3.2024**
-- **26.3.2024**
-- **9.4.2024**
-- **23.4.2024**
-- **7.5.2024**
+- **16.1.2024**: course practicalities, TDD intro and demo, getting started with TDD (what tests to write first), Q&A
+- **30.1.2024**: review of exercise 1 (example solution, comparing strategies), checkup of current blockers etc.
+- **13.2.2024**: checkup of current blockers etc.
+- **27.2.2024**: checkup of current blockers etc.
+- **12.3.2024**: checkup of current blockers etc.
+- **26.3.2024**: checkup of current blockers etc.
+- **9.4.2024**: checkup of current blockers etc.
+- **23.4.2024**: checkup of current blockers etc.
+- **7.5.2024**: checkup of current blockers etc.
 
 <!--
 [selective attention](https://www.youtube.com/watch?v=vJG698U2Mvo)

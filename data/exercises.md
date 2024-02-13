@@ -23,7 +23,7 @@ Clone the project <https://github.com/luontola/tdd-mooc-small-steps> and follow 
 
 The assignment is to *refactor the above code to replace [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) class with [Temporal.PlainDate](https://tc39.es/proposal-temporal/docs/plaindate.html) class.* Repeat this refactoring many times. Focus on doing as small changes as possible, so that *all tests will pass between every change*. Practice smaller and smaller steps, until you can **do the whole refactoring by changing only _one or two lines at a time, in under 10 minutes_**.
 
-In the study groups, we will have an informal competition between the students of this course about doing this refactoring using the smallest possible steps or as quickly as possible. This kind of mechanical refactorings, which don't require thinking, benefit from training your muscle memory and learning IDE shortcuts.
+In the study groups, we could have a playful competition about doing this refactoring using the smallest possible steps or as quickly as possible. This kind of mechanical refactorings, which don't require thinking, benefit from training your muscle memory and learning IDE shortcuts.
 
 ##### What to submit
 
