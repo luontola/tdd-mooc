@@ -88,7 +88,7 @@ Only mock types you own.
 
 <recommended-reading>
 
-- [Test Doubles: Dummy, Stub, Spy, Mock & Fake](https://jesusvalerareales.medium.com/testing-with-test-doubles-7c3abb9eb3f2)
+- [Test Doubles: Dummy, Stub, Spy, Mock & Fake](https://archive.ph/2yx7C)
 - [How I learned to love mocks](https://medium.com/@xpmatteo/how-i-learned-to-love-mocks-1-fb341b71328)
 
 </recommended-reading>
@@ -104,7 +104,7 @@ When using mock objects, it's important to understand the object-oriented style 
 
 <recommended-reading>
 
-- [A Brief History of Mock Objects](http://www.mockobjects.com/2009/09/brief-history-of-mock-objects.html)
+- [A Brief History of Mock Objects](https://web.archive.org/web/20230318070013/http://www.mockobjects.com/2009/09/brief-history-of-mock-objects.html)
 - [Growing Object-Oriented Software, Guided by Tests](https://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627) - how the inventors of mock objects use them
 
 </recommended-reading>
