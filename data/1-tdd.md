@@ -74,7 +74,18 @@ If the current design makes it difficult to make a new test pass, consider comme
 - [TDD Process Smells](https://agileinaflash.blogspot.com/2009/03/tdd-process-smells.html) - common ways of doing TDD wrong
 
 </recommended-reading>
- 
+
+
+#### Why run a test, when you know it'll fail?
+
+A key part of the _red_ phase is to **run the new test and see it fail**. That's where the name of the phase comes from; test runners show failing tests typically in red.
+
+A second before running the test, you should predict how the test will fail. If the test fails differently from how you expected, you should stop for a moment and think. Is the code working differently from how you thought? Is the test not actually testing the thing it was meant to test? Likewise, if the test passed when you expected it to fail. Is the feature already implemented? Does the test have a bug, and it'll never fail?
+
+This is also a good opportunity to improve the readability of the failure message. That will make investigating future test failures easier.
+
+The red phase is an answer to the age-old internet debate of "but who will test the tests?" Good tests fail when the production code has a problem. Running a test before the production code has been implemented is the least you can do to ensure the test's correctness.
+
 
 #### Triangulation
 
