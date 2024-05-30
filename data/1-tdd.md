@@ -61,7 +61,7 @@ Another way to describe TDD is the following cycle of three phases. Every few mi
 
 1. **Red**: Write a failing test. Predict (mentally or out loud) how the test should fail. Run the test. See it fail. If it failed in an unexpected way, check your assumptions. Improve the failure's readability.
 2. **Green**: Make the test pass. ASAP. Commit any sins necessary. Hard-coded values. If statements. Fake it until you make it.
-3. **Refactor**: Improve the design of the code, without changing its behavior. Atone for your sins. Remove duplication. Improve names. Minimal code which passes the current tests.
+3. **Refactor**: Improve the design of the code, without changing its behavior. Atone for your sins. Remove duplication. Improve names. Minimal code which passes the current tests. Make it look as if you knew all along what you were doing.
 
 Repeat until there are no more tests to write or until bored.
 
