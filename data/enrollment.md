@@ -1,10 +1,9 @@
 ---
 path: "/enrollment"
-title: "Enrollment instructions"
+title: "Enrollment for study credits"
 hidden: false
 information_page: true
-hide_in_sidebar: true
-sidebar_priority: 4500
+sidebar_priority: 4400
 ---
 
 > **These instructions are for students in Finland or other European countries which accept [ECTS](https://en.wikipedia.org/wiki/European_Credit_Transfer_and_Accumulation_System) credits.  
