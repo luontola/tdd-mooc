@@ -1,6 +1,6 @@
 ---
 path: "/practicalities"
-title: "Practicalities (2024 Spring)"
+title: "Practicalities (Spring 2025)"
 hidden: false
 information_page: true
 sidebar_priority: 4500
@@ -20,30 +20,29 @@ Communication and study groups will happen remotely over [Discord](https://disco
 
 ## Course duration
 
-The course will start on **Tuesday 16.1.2024 at 16:15** ([Europe/Helsinki timezone](https://www.timeanddate.com/worldclock/finland/helsinki)) in Discord `tdd_voice` channel with an information session (and the first study group).
+The course will start on **Wednesday 15.1.2025 at 16:15** ([Europe/Helsinki timezone](https://time.is/Helsinki)) in Discord `tdd_voice` channel with an information session.
 
-The course will end on **Sunday 12.5.2024**. There is no exam, but only the exercises. Submit all your exercises before that date. If you want to receive study credits, remember to [enroll on the course](/enrollment/#enroll-on-the-course) before that date.
+The course will end on **Monday 12.5.2025**. There is no exam, but only the exercises. Submit all your exercises before the end of that day ([Anywhere on Earth timezone](https://time.is/Anywhere_on_Earth)).
+
+If you want to receive **study credits**, remember to [enroll on the course](/enrollment/#enroll-on-the-course) before the course end date ([Europe/Helsinki timezone](https://time.is/Helsinki)), as the registration will close then.
 
 
 ## Study groups
 
-We will have study groups **every second Tuesday at 16:15-18:00** ([Europe/Helsinki timezone](https://www.timeanddate.com/worldclock/finland/helsinki)) in Discord `tdd_voice` channel while the course is active. Join the channel before 16:30. The study group will end early if the agenda runs out or there are no people present. 
+We will have study groups **about once per month, on Wednesday, from 16:15 until 16:30-18:00** ([Europe/Helsinki timezone](https://time.is/Helsinki)) in Discord `tdd_voice` channel while the course is active. Join the channel before 16:30. The study group will end early if the agenda runs out or there are no people present. 
 
-There we will go through the exercises, and it's an opportunity (the only opportunity) to receive feedback from your code quality. This could include code review, refactoring, pair or mob programming, ad-hoc exercises etc. Have your programming environment ready when joining a study group.
+The dates of the study groups:
+
+- **15.1.2025**: course practicalities, TDD intro and demo, getting started with TDD (what tests to write first), Q&A
+- **22.1.2025**: review of exercise 1 (example solution, comparing strategies), checkup of current blockers etc.
+- **19.2.2025**: checkup of current blockers etc.
+- **19.3.2025**: checkup of current blockers etc.
+- **16.4.2025**: checkup of current blockers etc.
+- **7.5.2025**: checkup of current blockers etc.
+
+The agenda will be improvised on the fly, based on what the participants are working on currently, because on this course the students do the exercises at their own pace. It's an opportunity (the only opportunity) to receive feedback from your code quality. This could include code review, refactoring, pair or mob programming, ad-hoc exercises etc. Have your programming environment ready when joining a study group.
 
 *There are things about design that you won't notice until somebody points them out to you, so it's highly recommended to show your code to more experienced developers.*
-
-The dates of the study groups are shown below. On this course, students do the exercises at their own pace, so the content of each study group will be improvised on the fly.
-
-- **16.1.2024**: course practicalities, TDD intro and demo, getting started with TDD (what tests to write first), Q&A
-- **30.1.2024**: review of exercise 1 (example solution, comparing strategies), checkup of current blockers etc.
-- **13.2.2024**: checkup of current blockers etc.
-- **27.2.2024**: checkup of current blockers etc.
-- **12.3.2024**: checkup of current blockers etc.
-- **26.3.2024**: checkup of current blockers etc.
-- **9.4.2024**: checkup of current blockers etc.
-- **23.4.2024**: checkup of current blockers etc.
-- **7.5.2024**: checkup of current blockers etc.
 
 <!--
 [selective attention](https://www.youtube.com/watch?v=vJG698U2Mvo)
@@ -58,7 +57,7 @@ Do the [exercises](/exercises) at your own pace and use the `#tdd_general` Disco
 
 ### Exercise submissions
 
-Submit your completed exercises to **<https://studies.cs.helsinki.fi/stats/courses/tdd-2024>**
+Submit your completed exercises to **<https://studies.cs.helsinki.fi/stats/courses/tdd-2025>**
 
 When submitting there, you will need to provide a link to a GitHub repository with your solution to the exercise. If your repository is private, please add [luontola](https://github.com/luontola) as a [collaborator](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository) to your private repository so that we can view it.
 

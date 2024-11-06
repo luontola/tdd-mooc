@@ -42,15 +42,15 @@ The extended version of this course (4+1 cr) requires additionally some web deve
 
 This course consists of [six exercises](/exercises) (or small projects) about using TDD, refactoring and writing tests. Exercise 5 (full-stack web app) is optional, but if you do it, you will get an extra study credit. For that purpose, this course is visible as two course units:
 
-* [Test-Driven Development (4 cr)](https://studies.helsinki.fi/courses/course-unit/otm-adcdbb43-dc29-467b-b68d-f5f7bf13ea7d) - do just the basic exercises (#1-4, #6)
-* [Test-Driven Development: Full Stack (1 cr)](https://studies.helsinki.fi/courses/course-unit/otm-6fd8f9b4-9566-449b-8668-d91b3134dbcf) - do also the full-stack exercise (#5)
+* [Test-Driven Development (4 cr)](https://studies.helsinki.fi/courses/course-unit/otm-fc27aa54-1060-41eb-8d3e-39ce8793cb61/TKT21040) - do just the basic exercises (#1-4, #6)
+* [Test-Driven Development: Full Stack (1 cr)](https://studies.helsinki.fi/courses/course-unit/otm-790e3594-b2c8-402b-b928-6f4dd7d4e245/TKT21041) - do also the full-stack exercise (#5)
 
 The exercises are in JavaScript, but for the exercises where you create a project from scratch, you may use any programming language of your choice. To do the basic exercises, you'll need [Node.js](https://nodejs.org/), [Git](https://git-scm.com/) and an IDE or text editor (e.g. [IntelliJ IDEA](https://www.jetbrains.com/idea/) or [VS Code](https://code.visualstudio.com/)). For the full-stack exercise, [Docker](https://www.docker.com/) would be useful. To submit the completed exercises, you'll need a [GitHub](https://github.com/) account and a screen recording software (e.g. [OBS Studio](https://obsproject.com/)).
 
 
 ## When?
 
-This course will run from January until May 2024 (and presumably next year around the same time). There will be a Discord channel and study groups. See the [practicalities page](/practicalities) for details.
+This course will run from January until May 2025 (and presumably next year around the same time). There will be a Discord channel and study groups. See the [practicalities page](/practicalities) for details.
 
 Of course, you can also use this course material for self-study whenever you want, even if the course is not active.
 
