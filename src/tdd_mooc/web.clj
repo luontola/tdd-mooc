@@ -64,19 +64,9 @@
             [:ul (map #(navigation-item % current-path) children)])))
 
 (defn layout-navigation [current-path navigation-tree]
-  (h/html [:div.l-docs__sidebar
-           [:nav#drawer.p-side-navigation--raw-html.is-sticky {:aria-label "Table of contents"}
-            [:div.u-hide--large.p-strip.is-shallow
-             [:div.u-fixed-width
-              [:a.p-side-navigation__toggle.js-drawer-toggle {:href "#drawer" :aria-controls "drawer"}
-               "Toggle side navigation"]]]
-            [:div.p-side-navigation__overlay.js-drawer-toggle {:aria-controls "drawer"}]
-            [:div.p-side-navigation__drawer
-             [:div.p-side-navigation__drawer-header
-              [:a.p-side-navigation__toggle--in-drawer.js-drawer-toggle {:href "#" :aria-controls "drawer"}
-               "Toggle side navigation"]]
-             [:h3 "TDD MOOC"]
-             (navigation-menu current-path navigation-tree)]]]))
+  (h/html [:nav {:aria-label "Table of contents"}
+           [:h3 "TDD MOOC"]
+           (navigation-menu current-path navigation-tree)]))
 
 (defn twitter-icon []
   (h/html [:svg {:aria-hidden "true"
@@ -109,61 +99,44 @@
            icon]))
 
 (defn layout-footer []
-  (h/html [:footer.l-docs__footer
-           [:div.p-strip--dark.l-docs__subgrid
+  (h/html [:footer
+           [:div "This course was brought to you by "
+            [:a {:href "https://twitter.com/EskoLuontola"} "Esko Luontola"]
+            " and "
+            [:a {:href "https://nitor.com/"} "Nitor"]
+            "."]
 
-            [:div.l-docs__sidebar
-             [:div.moocfi-logo
-              [:a {:href "https://mooc.fi"}
-               [:img {:src "/moocfi-logo.png" :alt ""}]
-               [:span "MOOC.fi"]]]]
+           [:div [:a {:href "https://github.com/luontola/tdd-mooc"}
+                  [:small "Website source code"]]]
 
-            [:div.l-docs__main
-             [:div.row
-              [:p "This course was brought to you by "
-               [:a.is-dark {:href "https://twitter.com/EskoLuontola"}
-                "Esko Luontola"]
-               " and "
-               [:a.is-dark {:href "https://nitor.com/"}
-                "Nitor"]
-               "."]
+           [:div [:a {:href "/credits"}
+                  [:small "Credits and about the material"]]]
 
-              [:ul.p-inline-list
-               [:li.p-inline-list__item
-                [:a.is-dark {:href "https://github.com/luontola/tdd-mooc"}
-                 [:small "Website source code"]]]
+           [:div.social-links-footer
+            (social-link {:label "Mooc.fi Twitter profile"
+                          :href "https://twitter.com/moocfi"
+                          :icon (twitter-icon)})
+            (social-link {:label "Mooc.fi Facebook profile"
+                          :href "https://www.facebook.com/Moocfi"
+                          :icon (facebook-icon)})
+            (social-link {:label "Mooc.fi YouTube channel"
+                          :href "https://www.youtube.com/@mooc-fi"
+                          :icon (youtube-icon)})]
 
-               [:li.p-inline-list__item
-                [:a.is-dark {:href "/credits"}
-                 [:small "Credits and about the material"]]]]]
-
-             [:div.row
-              [:div.social-links-footer
-               (social-link {:label "Mooc.fi Twitter profile"
-                             :href "https://twitter.com/moocfi"
-                             :icon (twitter-icon)})
-               (social-link {:label "Mooc.fi Facebook profile"
-                             :href "https://www.facebook.com/Moocfi"
-                             :icon (facebook-icon)})
-               (social-link {:label "Mooc.fi YouTube channel"
-                             :href "https://www.youtube.com/@mooc-fi"
-                             :icon (youtube-icon)})]]
-
-             [:div.row
-              [:div.university-links-footer
-               [:a {:href "https://www.helsinki.fi"}
-                [:img {:alt "University of Helsinki"
-                       :src "/hy-logo-big.png"}]]
-               [:a {:href "https://www.mooc.fi"}
-                [:img {:alt "Massive Open Online Courses MOOC.fi"
-                       :src "/moocfi-logo-big.png"}]]]]]]]))
+           [:div.university-links-footer
+            [:a {:href "https://www.helsinki.fi"}
+             [:img {:alt "University of Helsinki"
+                    :src "/hy-logo-big.png"}]]
+            [:a {:href "https://www.mooc.fi"}
+             [:img {:alt "Massive Open Online Courses MOOC.fi"
+                    :src "/moocfi-logo-big.png"}]]]]))
 
 (defn layout-page [{:keys [path title content navigation-tree]}]
   (str (h/html (hiccup.page/doctype :html5)
                [:html {:lang "en"}
                 [:head
                  [:meta {:charset "utf-8"}]
-                 [:title {}
+                 [:title
                   (when (and (some? title)
                              (not= "/" path))
                     (str title " - "))
@@ -171,40 +144,26 @@
                  [:meta {:name "viewport", :content "width=device-width, initial-scale=1.0"}]
                  [:link {:rel "stylesheet" :href "https://cdn.jsdelivr.net/npm/@openfonts/open-sans-condensed_all@1.44.2/index.min.css"}]
                  [:link {:rel "stylesheet" :href "https://cdn.jsdelivr.net/npm/@fontsource/roboto-slab@5.0.17/index.min.css"}]
-                 [:link {:rel "stylesheet" :href "https://assets.ubuntu.com/v1/vanilla-framework-version-4.5.0.min.css"}]
+                 [:link {:rel "stylesheet" :href "https://cdn.simplecss.org/simple.css"}]
                  [:link {:rel "stylesheet" :href "/styles.css"}]
                  [:script {:type "module" :defer true :src "/custom-elements.mjs"}]]
                 [:body
-                 [:div.l-docs {} ; explicit argument maps avoid "Method code too large!" when Hiccup can't guess a dynamic element's type
+                 [:header
                   (layout-navigation path navigation-tree)
+                  [:div.moocfi-logo
+                   [:a {:href "https://mooc.fi"}
+                    [:img {:src "/moocfi-logo.png" :alt ""}]
+                    [:span "MOOC.fi"]]]]
 
-                  [:div#main-content.l-docs__title {}
-                   (when (= "/" path)
-                     [:header.banner
-                      [:div "Test-Driven Development"]
-                      [:div "a plunge into the TDD programming technique"]])
-                   [:div.p-section--shallow
-                    [:div.row
-                     [:div.col-12
-                      [:h1 {} title]]]]]
+                 (when (= "/" path)
+                   [:div#home-banner
+                    [:div "Test-Driven Development"]
+                    [:div "a plunge into the TDD programming technique"]])
 
+                 [:main
+                  [:h1 title]
                   ;; TODO: table of contents from markdown
-                  #_[:div.l-docs__meta
-                     [:div.l-docs__sticky-container
-                      [:aside.p-table-of-contents
-                       [:div.p-table-of-contents__section
-                        [:h2.p-table-of-contents__header "On this page"]
-                        [:nav.p-table-of-contents__nav {:aria-label "Table of contents"}
-                         [:ul.p-table-of-contents__list
-                          [:li.p-table-of-contents__item [:a.p-table-of-contents__link {:href "#link1"} "Install from snap"]]
-                          [:li.p-table-of-contents__item [:a.p-table-of-contents__link {:href "#link2"} "Initialisation"]]
-                          [:li.p-table-of-contents__item [:a.p-table-of-contents__link.is-active {:href "#link3"} "Configuration verification"]]
-                          [:li.p-table-of-contents__item [:a.p-table-of-contents__link {:href "#link4"} "Service statuses"]]]]]]]]
-
-                  [:main.l-docs__main
-                   [:div.row
-                    [:div.col-12 {}
-                     content]]]]
+                  content]
 
                  (layout-footer)]])))
 
