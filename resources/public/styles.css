@@ -191,6 +191,7 @@ dfn:hover:after {
 }
 
 summary {
+  cursor: pointer;
   font-weight: 550;
 }
 
