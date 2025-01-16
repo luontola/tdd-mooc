@@ -130,7 +130,7 @@
 
 (defn export []
   (println "Exporting to" export-dir)
-  (let [assets (optimizations/all (get-assets) {})
+  (let [assets (optimizations/none (get-assets) {})
         pages (get-pages)]
     (stasis/empty-directory! export-dir)
     (optimus.export/save-assets assets export-dir)
