@@ -30,7 +30,7 @@
   [{:children [{:href "/"}
                {:href "/practicalities/"
                 :children [{:href "/enrollment/"}]}
-               {:title [:strong "Course material"]
+               {:title "Course material"
                 :children [{:href "/exercises/"}
                            {:href "/1-tdd/"}
                            {:href "/2-design/"}
@@ -53,10 +53,11 @@
 (defn navigation-item [{:keys [title href children]} current-path]
   (h/html [:li
            (if (some? href)
-             [:a {:class (when (= current-path href)
-                           "is-active")
-                  :href href} title]
-             title)
+             [:a (merge {:href href}
+                        (when (= current-path href)
+                          {:aria-current "page"}))
+              title]
+             [:span title])
            (when (some? children)
              [:ul (map #(navigation-item % current-path) children)])]))
 
@@ -65,9 +66,13 @@
             [:ul (map #(navigation-item % current-path) children)])))
 
 (defn layout-navigation [current-path navigation-tree]
-  (h/html [:nav {:aria-label "Table of contents"}
-           [:h3 "TDD MOOC"]
-           (navigation-menu current-path navigation-tree)]))
+  (h/html [:nav#site-navigation {:aria-label "Table of contents"}
+           [:div.nav-title "TDD MOOC"]
+           (navigation-menu current-path navigation-tree)
+           [:div.moocfi-logo
+            [:a {:href "https://mooc.fi"}
+             [:img {:src "/moocfi-logo.png" :alt ""}]
+             [:span "MOOC.fi"]]]]))
 
 (defn twitter-icon []
   (h/html [:svg {:aria-hidden "true"
@@ -149,19 +154,13 @@
                  [:link {:rel "stylesheet" :href "/styles.css"}]
                  [:script {:type "module" :defer true :src "/custom-elements.mjs"}]]
                 [:body
-                 [:header
-                  (layout-navigation path navigation-tree)
-                  [:div.moocfi-logo
-                   [:a {:href "https://mooc.fi"}
-                    [:img {:src "/moocfi-logo.png" :alt ""}]
-                    [:span "MOOC.fi"]]]]
-
-                 (when (= "/" path)
-                   [:div#home-banner
-                    [:div "Test-Driven Development"]
-                    [:div "a plunge into the TDD programming technique"]])
+                 (layout-navigation path navigation-tree)
 
                  [:main
+                  (when (= "/" path)
+                    [:div#home-banner
+                     [:div "Test-Driven Development"]
+                     [:div "a plunge into the TDD programming technique"]])
                   [:h1 title]
                   ;; TODO: table of contents from markdown
                   content]
@@ -337,7 +336,7 @@
       (testing "shows page titles"
         (is (str/includes? chapter-1 "<li><a href=\"/exercises/\">Exercises</a></li>")))
       (testing "highlights the current page"
-        (is (str/includes? chapter-1 "<li><a class=\"is-active\" href=\"/1-tdd/\">Chapter 1: What is TDD</a></li>"))))))
+        (is (str/includes? chapter-1 "<li><a aria-current=\"page\" href=\"/1-tdd/\">Chapter 1: What is TDD</a></li>"))))))
 
 (defn get-assets []
   (optimus.assets/load-assets "public" [#".*\.(css|png|jpg|mjs)$"]))
