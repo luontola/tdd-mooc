@@ -1,14 +1,16 @@
 #!/bin/bash
 set -euxo pipefail
 
-npm run clean
+lein clean
 git worktree prune
-git worktree add --no-checkout public gh-pages
+git worktree add --no-checkout target/dist gh-pages
 
-npm run build
+gitfile=$(cat target/dist/.git)
+lein export
+echo "$gitfile" > target/dist/.git
 
 (
-    cd public
+    cd target/dist
     echo tdd.mooc.fi > CNAME
     git add -A .
     git commit -m "Update site"

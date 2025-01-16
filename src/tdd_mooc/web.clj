@@ -129,6 +129,7 @@
       wrap-content-type))
 
 (defn export []
+  (println "Exporting to" export-dir)
   (let [assets (optimizations/all (get-assets) {})
         pages (get-pages)]
     (stasis/empty-directory! export-dir)
