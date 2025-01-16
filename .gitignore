@@ -1,8 +1,5 @@
 .DS_Store
-/.cache/
 /.idea/
 /.lein-*
 /.nrepl-port
-/node_modules/
-/public/
 /target/
