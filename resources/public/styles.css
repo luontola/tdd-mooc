@@ -68,8 +68,6 @@ main {
 }
 
 #site-navigation {
-  grid-column: 1;
-  max-width: 20rem;
   text-align: initial;
 
   .nav-title {
@@ -79,8 +77,10 @@ main {
   }
 
   & li > a[aria-current='page'] {
-    font-weight: 600;
+    font-weight: bold;
+    color: var(--text);
     background-color: var(--accent-bg);
+    text-decoration: none;
   }
 
   & li > :is(a, span) {
@@ -104,6 +104,25 @@ main {
     & + ul {
       margin-top: 0.5em;
     }
+  }
+}
+
+@media (max-width: 67rem) {
+  /* mobile */
+  #site-navigation {
+    grid-column: 1 / -1;
+    padding: 0.5rem 1rem;
+    background-color: var(--accent-bg);
+    border-bottom: 1px solid var(--border);
+  }
+}
+
+@media (min-width: 67rem) {
+  /* desktop */
+  #site-navigation {
+    grid-column: 1;
+    width: 20rem;
+    margin-right: 1rem;
   }
 }
 
@@ -149,34 +168,13 @@ footer > * {
   margin-bottom: 0.5rem;
 }
 
-.moocfi-logo {
-  display: inline-block;
-  padding: 0.5rem;
-
-  & a {
-    display: flex;
-    align-items: center;
-
-    font-family: "Open Sans Condensed", sans-serif;
-    font-size: 1.5rem;
-    color: black;
-    text-decoration: none;
-
-    & img {
-      width: 1.75em;
-      height: 1.75em;
-      margin-right: 0.25em;
-    }
-  }
-}
-
 .social-links-footer {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
 
   & a {
-    color: black;
+    color: var(--text);
 
     &:visited, &:hover {
       color: inherit;
@@ -191,17 +189,49 @@ footer > * {
 .university-links-footer {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1.5rem;
 
-  & img {
-    height: 6rem;
+  & img, svg {
+    height: 3rem;
+  }
+}
+
+.hy-logo a {
+  display: flex;
+  align-items: center;
+  gap: 1ex;
+  min-width: max-content;
+  max-width: max-content;
+
+  color: var(--text);
+  font-size: 1rem;
+  font-stretch: condensed;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.moocfi-logo {
+  display: inline-block;
+  padding: 0.5rem;
+
+  & a {
+    display: flex;
+    align-items: center;
+    gap: 0.5ex;
+
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1.5rem;
+    color: var(--text);
+    text-decoration: none;
   }
 }
 
 /* hovering <dfn> will show data-title as popup */
 
 dfn {
-  border-bottom: 2px dotted black;
+  border-bottom: 2px dotted var(--text);
   font-style: normal;
   position: relative;
 }
@@ -223,7 +253,7 @@ dfn:hover:after {
 aside.recommended-reading {
   padding: 0.8rem;
   margin-bottom: 2rem;
-  border-left: 0.2rem solid #528afc;
+  border-left: 0.2rem solid var(--accent-hover);
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2),
   0 1px 1px 0 rgba(0, 0, 0, 0.14),
   0 2px 1px -1px rgba(0, 0, 0, 0.12);
@@ -262,26 +292,11 @@ aside.recommended-reading {
 }
 
 #exercise-schedule {
-  table-layout: auto;
-
-  border: 1px solid lightgray;
-  background-color: white;
-  border-radius: 4px;
-  box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
-
   .icon-cell {
     width: 0;
-    /* TODO: use SASS, use (max-width: $breakpoint-small - 1) here https://vanillaframework.io/docs/settings/breakpoint-settings */
     @media only screen and (max-width: 619px) {
       display: none;
     }
-  }
-
-  .big-checkbox {
-    width: 1.5em;
-    height: 1.5em;
-    margin: -0.25em 0;
-    vertical-align: middle;
   }
 
   & tr:has(:checked) {
@@ -291,15 +306,17 @@ aside.recommended-reading {
       text-decoration: line-through;
     }
   }
+
+  & td:nth-of-type(4) {
+    text-align: center;
+  }
 }
 
 #tdd-decision {
-  --site-background-color: 254 254 254;
-
   .not-yet-accepted-dialog {
     position: sticky;
     top: 0;
-    background-color: rgba(var(--site-background-color) / 0.82);
+    background-color: rgba(from var(--bg) r g b / 0.82);
     /* with z-index 0 the background color would not be visible */
     z-index: 1;
     /* due to blur spread, the header needs to be larger than the content area to fully cover the blur underneath */
@@ -308,7 +325,7 @@ aside.recommended-reading {
 
     &.accepted {
       /* due to non-blurred background text, needs more opacity to achieve the same readability */
-      background-color: rgba(var(--site-background-color) / 0.94);
+      background-color: rgba(from var(--bg) r g b / 0.94);
     }
 
     &.unstuck {
