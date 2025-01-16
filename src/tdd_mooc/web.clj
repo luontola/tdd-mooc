@@ -1,5 +1,6 @@
 (ns tdd-mooc.web
-  (:require [clj-yaml.core :as yaml]
+  (:require [clj-async-profiler.core :as prof]
+            [clj-yaml.core :as yaml]
             [clojure.string :as str]
             [clojure.test :refer [deftest is testing]]
             [clojure.walk :as walk]
@@ -352,3 +353,5 @@
     (stasis/empty-directory! export-dir)
     (optimus.export/save-assets assets export-dir)
     (stasis/export-pages pages export-dir {:optimus-assets assets})))
+
+#_(prof/serve-ui 3001)

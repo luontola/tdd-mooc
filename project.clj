@@ -1,6 +1,7 @@
 (defproject tdd-mooc "1-SNAPSHOT"
 
   :dependencies [[clj-commons/clj-yaml "1.0.29"]
+                 [com.clojure-goes-fast/clj-async-profiler "1.6.0"]
                  [com.vladsch.flexmark/flexmark-all "0.64.8"]
                  [enlive "1.1.6"]
                  [hiccup "2.0.0-RC2"]
@@ -18,7 +19,8 @@
   :resource-paths ["resources"]
   :global-vars {*warn-on-reflection* false}
   :javac-options ["--release" "21"]
-  :jvm-opts ["-XX:-OmitStackTraceInFastThrow"]
+  :jvm-opts ["-XX:-OmitStackTraceInFastThrow"
+             "-Djdk.attach.allowAttachSelf"]
 
   :ring {:handler tdd-mooc.web/app
          :auto-refresh? true
