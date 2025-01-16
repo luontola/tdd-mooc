@@ -1,1 +1,386 @@
-h1,h2,h3,h4,h5,h6{text-decoration:none}& h3{counter-increment:h3-counter;counter-reset:h4-counter}& h4{counter-increment:h4-counter}& h2:before,& h3:before,& h4:before{margin-right:.5em;font-size:.9em;font-weight:500;color:#dd3f4f}& li>a[aria-current=page]{font-weight:700;color:var(--text);background-color:var(--accent-bg);text-decoration:none}& li>:is(a,span){padding:.1rem .5rem;display:block}& li li>:is(a,span){padding-left:2rem}& li li li>:is(a,span){padding-left:3.5rem}& ul{list-style:none;padding:0;margin:0}.social-links-footer{display:flex;justify-content:center;gap:1.5rem}& svg{height:2rem}.moocfi-logo{display:inline-block;padding:.5rem;align-items:center;gap:.5ex;font-family:"Open Sans Condensed",sans-serif;font-size:1.5rem;color:var(--text);text-decoration:none}dfn:hover:after{content:attr(data-title);color:#fff;background:#333;position:absolute;top:150%;left:10%;transform:translateX(-10%);white-space:nowrap;z-index:1000;padding:13px 10px 3px;clip-path:polygon(0 20%,15% 20%,25% 0,35% 20%,100% 20%,100% 100%,0 100%)}blockquote>p:first-child{margin-top:0}blockquote>p:last-child{margin-bottom:0}aside.recommended-reading{padding:.8rem .8rem 1rem;border-left:.2rem solid var(--accent-hover);box-shadow:0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);border-radius:4px;width:100%;float:none;margin-inline-start:0;font-weight:400;margin:0}.content{margin:0;padding:0}& li{margin-bottom:.5rem}& li:last-child{margin-bottom:0}& td:nth-of-type(4){text-align:center}&.unstuck{position:relative}.checkbox-label{font-size:1.25rem;padding:1rem 3rem;text-indent:-1em;margin-left:1em}.confirmation{position:absolute;inset:0;font-size:1.5rem;color:green;display:flex;justify-content:center;align-items:center}
+/* heading anchor links */
+
+h1, h2, h3, h4, h5, h6 {
+  & > a {
+    color: unset;
+    text-decoration: none;
+
+    &:visited {
+      color: unset;
+    }
+
+    &:hover {
+      &:after {
+        --icon-size: 0.5em;
+        content: "";
+        position: absolute;
+        width: var(--icon-size);
+        height: var(--icon-size);
+        background-size: var(--icon-size) var(--icon-size);
+        background-image: url('/link-chain.svg');
+        background-repeat: no-repeat;
+        margin-top: calc(var(--icon-size) * 0.6);
+        margin-left: 4px;
+      }
+    }
+  }
+}
+
+/* heading numbering */
+
+main {
+  counter-reset: h2-counter;
+
+  & h2 {
+    counter-increment: h2-counter;
+    counter-reset: h3-counter;
+
+    &:before {
+      content: counter(h2-counter);
+    }
+  }
+
+  & h3 {
+    counter-increment: h3-counter;
+    counter-reset: h4-counter;
+
+    &:before {
+      content: counter(h2-counter) "." counter(h3-counter);
+    }
+  }
+
+  & h4 {
+    counter-increment: h4-counter;
+
+    &:before {
+      content: counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter);
+    }
+  }
+
+  & h2:before,
+  & h3:before,
+  & h4:before {
+    margin-right: 0.5em;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #dd3f4f;
+  }
+}
+
+#site-navigation {
+  text-align: initial;
+
+  .nav-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    padding: 0.25rem 0.5rem;
+  }
+
+  & li > a[aria-current='page'] {
+    font-weight: bold;
+    color: var(--text);
+    background-color: var(--accent-bg);
+    text-decoration: none;
+  }
+
+  & li > :is(a, span) {
+    padding: 0.1rem 0.5rem;
+    display: block;
+  }
+
+  & li li > :is(a, span) {
+    padding-left: 2rem;
+  }
+
+  & li li li > :is(a, span) {
+    padding-left: 3.5rem;
+  }
+
+  & ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    & + ul {
+      margin-top: 0.5em;
+    }
+  }
+}
+
+@media (max-width: 67rem) {
+  /* mobile */
+  #site-navigation {
+    grid-column: 1 / -1;
+    padding: 0.5rem 1rem;
+    background-color: var(--accent-bg);
+    border-bottom: 1px solid var(--border);
+  }
+}
+
+@media (min-width: 67rem) {
+  /* desktop */
+  #site-navigation {
+    grid-column: 1;
+    width: 20rem;
+    margin-right: 1rem;
+  }
+}
+
+#home-banner {
+  grid-column: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 20rem;
+  max-height: 50vh;
+  margin-top: 1rem;
+  padding: 1rem;
+  gap: 1rem;
+
+  background-image: url(/banner.png);
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: top;
+
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 500;
+  font-size: clamp(2rem, -1.5rem + 8vw, 3rem);
+  text-align: center;
+  text-wrap: balance;
+
+  > div {
+    line-height: 1.3em;
+    padding: 0.5rem;
+    color: #c0392b;
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  > div:last-of-type {
+    font-size: 0.5em;
+  }
+}
+
+footer > * {
+  margin-bottom: 0.5rem;
+}
+
+.social-links-footer {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+
+  & a {
+    color: var(--text);
+
+    &:visited, &:hover {
+      color: inherit;
+    }
+  }
+
+  & svg {
+    height: 2rem;
+  }
+}
+
+.university-links-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+
+  & img, svg {
+    height: 3rem;
+  }
+}
+
+.hy-logo a {
+  display: flex;
+  align-items: center;
+  gap: 1ex;
+  min-width: max-content;
+  max-width: max-content;
+
+  color: var(--text);
+  font-size: 1rem;
+  font-stretch: condensed;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.moocfi-logo {
+  display: inline-block;
+  padding: 0.5rem;
+
+  & a {
+    display: flex;
+    align-items: center;
+    gap: 0.5ex;
+
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1.5rem;
+    color: var(--text);
+    text-decoration: none;
+  }
+}
+
+/* hovering <dfn> will show data-title as popup */
+
+dfn {
+  border-bottom: 2px dotted var(--text);
+  font-style: normal;
+  position: relative;
+}
+
+dfn:hover:after {
+  content: attr(data-title);
+  color: #fff;
+  background: #333;
+  position: absolute;
+  top: 150%;
+  left: 10%;
+  transform: translateX(-10%);
+  white-space: nowrap;
+  z-index: 1000;
+  padding: 13px 10px 3px;
+  clip-path: polygon(0 20%, 15% 20%, 25% 0, 35% 20%, 100% 20%, 100% 100%, 0 100%);
+}
+
+blockquote > p:first-child {
+  margin-top: 0;
+}
+
+blockquote > p:last-child {
+  margin-bottom: 0;
+}
+
+aside.recommended-reading {
+  padding: 0.8rem;
+  margin-bottom: 2rem;
+  border-left: 0.2rem solid var(--accent-hover);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2),
+  0 1px 1px 0 rgba(0, 0, 0, 0.14),
+  0 2px 1px -1px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+
+  /* override <aside> stying from Simple.css */
+  width: 100%;
+  float: none;
+  margin-inline-start: 0;
+
+  .heading {
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+
+  .content {
+    margin: 0;
+    padding-bottom: 0.5rem;
+
+    & ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    & li {
+      margin-bottom: 0.5rem;
+    }
+
+    & li:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+#exercise-schedule {
+  .icon-cell {
+    width: 0;
+    @media only screen and (max-width: 619px) {
+      display: none;
+    }
+  }
+
+  & tr:has(:checked) {
+    background-color: #32cd324f;
+
+    & td:not(.icon-cell) {
+      text-decoration: line-through;
+    }
+  }
+
+  & td:nth-of-type(4) {
+    text-align: center;
+  }
+}
+
+#tdd-decision {
+  .not-yet-accepted-dialog {
+    position: sticky;
+    top: 0;
+    background-color: rgba(from var(--bg) r g b / 0.82);
+    /* with z-index 0 the background color would not be visible */
+    z-index: 1;
+    /* due to blur spread, the header needs to be larger than the content area to fully cover the blur underneath */
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em 0.5em 0;
+
+    &.accepted {
+      /* due to non-blurred background text, needs more opacity to achieve the same readability */
+      background-color: rgba(from var(--bg) r g b / 0.94);
+    }
+
+    &.unstuck {
+      position: relative;
+    }
+
+    .checkbox-label {
+      font-size: 1.25rem;
+      padding: 1rem 3rem;
+      text-indent: -1em;
+      margin-left: 1em;
+    }
+  }
+
+  .not-yet-accepted-dialog:not(.accepted) {
+    .confirmation {
+      display: none;
+    }
+  }
+
+  .not-yet-accepted-dialog.accepted {
+    /* To avoid a changing the dialog's height when the question disappears, we make the question invisible and put
+       the confirmation on top of it. This way the question's height will keep determining the dialog's height. */
+
+    .question {
+      opacity: 0;
+    }
+
+    .confirmation {
+      position: absolute;
+      inset: 0;
+      font-size: 1.5rem;
+      color: green;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .previously-accepted-dialog {
+    font-size: 1.25rem;
+    padding: 1rem 3rem;
+    text-indent: -1.25em;
+    margin-left: 1.25em;
+    color: green;
+  }
+
+  > .content.hidden {
+    filter: blur(5px);
+  }
+}
