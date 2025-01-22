@@ -33,8 +33,8 @@ We will have study groups **about once per month, on Wednesday, from 16:15 until
 
 The dates of the study groups:
 
-- **15.1.2025**: course practicalities, TDD intro and demo, getting started with TDD (what tests to write first), Q&A
-- **22.1.2025**: review of exercise 1 (example solution, comparing strategies), checkup of current blockers etc.
+- **15.1.2025**: TDD intro and demo, getting started with TDD (what tests to write first), course practicalities, Q&A
+- **22.1.2025**: [elephant carpaccio](https://blog.crisp.se/2013/07/25/henrikkniberg/elephant-carpaccio-facilitation-guide), review of exercise 1 (example solution, comparing strategies), checkup of current blockers etc.
 - **19.2.2025**: checkup of current blockers etc.
 - **19.3.2025**: checkup of current blockers etc.
 - **16.4.2025**: checkup of current blockers etc.
