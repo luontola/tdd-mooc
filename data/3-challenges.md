@@ -168,6 +168,13 @@ Some people use an embedded in-memory database in tests and a different database
 
 You just saved 5+ years of experimenting.
 
+<recommended-reading>
+
+- [Taming backend complexity: lessons from a decade of TDD](https://nitor.com/en/articles/taming-backend-complexity-lessons-from-a-decade-of-tdd)
+
+</recommended-reading>
+
+
 
 ## Network sockets
 
@@ -223,9 +230,9 @@ But even if you assert that the random values are not predictable, once in a blu
 
 ## User interface
 
-Tests should be sensitive to behavior changes and insensitive to structure changes. This is even more important in the user interface. Changing the visual style or layout of the UI, should not break behavioral tests.
+Tests should be sensitive to behavior changes and insensitive to structure changes. This is even more important in the user interface. Changing the visual style or layout of the UI, should not break behavioral tests. The tests should only care about what data the UI shows.
 
-There are patterns like [passive view](https://martinfowler.com/eaaDev/PassiveScreen.html) which try to separate the logic and visuals of the UI, to make the logic more testable. With the advent of [React](https://reactjs.org/), UI components can be written as stateless functions, which makes testing them easier.
+There are patterns like [passive view](https://martinfowler.com/eaaDev/PassiveScreen.html) which try to separate the logic and visuals of the UI, to make the logic more testable. With the advent of [React](https://reactjs.org/), UI components can be written as stateless functions, which makes testing them easier. But then again, most React code today uses hooks, which make the code stateful and untestable.
 
 
 ### Unit testing web app components
@@ -233,6 +240,12 @@ There are patterns like [passive view](https://martinfowler.com/eaaDev/PassiveSc
 Asserting on the [innerText](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText) of a component (after whitespace normalization) produces tests which are decoupled from visual changes.
 
 Asserting the presence/absence of a CSS class is useful for testing logic that is observable only visually. Make sure to use the same constant for presence and absence checks; a mispelled <!-- sic --> CSS class is always absent.
+
+<recommended-reading>
+
+- [Testing the untestable: 4 practical techniques for unit testing web user interfaces](https://nitor.com/en/articles/testing-the-untestable-4-practical-techniques-for-unit-testing-web-user)
+
+</recommended-reading>
 
 
 ### End-to-end testing web apps
