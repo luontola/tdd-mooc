@@ -1,6 +1,6 @@
 ---
 path: "/practicalities"
-title: "Practicalities (Spring 2025)"
+title: "Practicalities (Spring 2026)"
 hidden: false
 information_page: true
 sidebar_priority: 4500
@@ -15,40 +15,20 @@ sidebar_priority: 4500
 
 ## Discord channel
 
-Communication and study groups will happen remotely over [Discord](https://discord.com/). Join the course's Discord channel through <https://study.cs.helsinki.fi/discord/join/tdd>
+All course related communication will happen remotely over [Discord](https://discord.com/). Join the course's Discord channel through <https://study.cs.helsinki.fi/discord/join/tdd>
+
+Check the `#tdd_announcement` channel regularly for any announcements, especially when the course nears its end.
+
+There will not be scheduled study groups. If you have any questions, you can ask them on the `#tdd_general` channel.
 
 
 ## Course duration
 
-The course will start on **Wednesday 15.1.2025 at 16:15** ([Europe/Helsinki timezone](https://time.is/Helsinki)) in Discord `tdd_voice` channel with an information session.
+The course will start on **15.1.2026** and end on **12.5.2026**. 
 
-The course will end on **Monday 12.5.2025**. There is no exam, but only the exercises. Submit all your exercises before the end of that day ([Anywhere on Earth timezone](https://time.is/Anywhere_on_Earth)).
+There is no exam, but only the exercises. Submit all your exercises before the end of the last day ([Anywhere on Earth timezone](https://time.is/Anywhere_on_Earth)).
 
 If you want to receive **study credits**, remember to [enroll on the course](/enrollment/#enroll-on-the-course) before the course end date ([Europe/Helsinki timezone](https://time.is/Helsinki)), as the registration will close then.
-
-
-## Study groups
-
-We will have study groups **about once per month, on Wednesday, from 16:15 until 16:30-18:00** ([Europe/Helsinki timezone](https://time.is/Helsinki)) in Discord `tdd_voice` channel while the course is active. Join the channel before 16:30. The study group will end early if the agenda runs out or there are no people present. 
-
-The dates of the study groups:
-
-- **15.1.2025**: TDD intro and demo, getting started with TDD (what tests to write first), course practicalities, Q&A
-- **22.1.2025**: [elephant carpaccio](https://blog.crisp.se/2013/07/25/henrikkniberg/elephant-carpaccio-facilitation-guide), review of exercise 1 (example solution, comparing strategies), checkup of current blockers etc.
-- **19.2.2025**: checkup of current blockers etc.
-- **19.3.2025**: checkup of current blockers etc.
-- **16.4.2025**: checkup of current blockers etc.
-- **7.5.2025**: checkup of current blockers etc.
-
-The agenda will be improvised on the fly, based on what the participants are working on currently, because on this course the students do the exercises at their own pace. It's an opportunity (the only opportunity) to receive feedback from your code quality. This could include code review, refactoring, pair or mob programming, ad-hoc exercises etc. Have your programming environment ready when joining a study group.
-
-*There are things about design that you won't notice until somebody points them out to you, so it's highly recommended to show your code to more experienced developers.*
-
-<!--
-[selective attention](https://www.youtube.com/watch?v=vJG698U2Mvo)
-[](https://youtu.be/IGQmdoK_ZfY?t=4)
-[sparrow decks](https://llewellynfalco.blogspot.com/p/sparrow-decks.html)
--->
 
 
 ## Exercises
@@ -57,14 +37,14 @@ Do the [exercises](/exercises) at your own pace and use the `#tdd_general` Disco
 
 ### Exercise submissions
 
-Submit your completed exercises to **<https://studies.cs.helsinki.fi/stats/courses/tdd-2025>**
+Submit your completed exercises to **<https://studies.cs.helsinki.fi/stats/courses/tdd-2026>**
 
 When submitting there, you will need to provide a link to a GitHub repository with your solution to the exercise. If your repository is private, please add [luontola](https://github.com/luontola) as a [collaborator](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository) to your private repository so that we can view it.
 
 
 ## Screen recording
 
-For the *last exercise*, you will need to also create a *screen recording video* of when you do the exercise. It's kind of like the final exam of the course. You will not be rated based on how well you use TDD, only whether you use TDD or not.
+For the *last exercise*, you will need to also create a *screen recording video* of when you do the exercise. It's kind of like the final exam of the course. You will not be rated based on how well you use TDD, but only whether you use [TDD](/1-tdd/#what-is-tdd) or not (pass/fail).
 
 The recordings may be used for research purposes to improve the course, to see how well this course manages to teach people TDD. If some of you would volunteer to record *all* of their exercises, that would be interesting research material as well.
 
