@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><title>Chapter 3: The Untestables - Test-Driven Development MOOC</title><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://cdn.jsdelivr.net/npm/@openfonts/open-sans-condensed_all@1.44.2/index.min.css" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/@fontsource/roboto-slab@5.0.17/index.min.css" rel="stylesheet"><link href="https://cdn.simplecss.org/simple.css" rel="stylesheet"><link href="/styles.css" rel="stylesheet"><script defer src="/custom-elements.mjs" type="module"></script></head><body><nav aria-label="Table of contents" id="site-navigation"><div class="nav-title">TDD MOOC</div><ul><li><a href="/">Course overview</a></li><li><a href="/practicalities/">Practicalities (Spring 2025)</a><ul><li><a href="/enrollment/">Enrollment for study credits</a></li></ul></li><li><span>Course material</span><ul><li><a href="/exercises/">Exercises</a></li><li><a href="/1-tdd/">Chapter 1: What is TDD</a></li><li><a href="/2-design/">Chapter 2: Refactoring and design</a></li><li><a aria-current="page" href="/3-challenges/">Chapter 3: The Untestables</a></li><li><a href="/4-legacy-code/">Chapter 4: Legacy code</a></li><li><a href="/5-advanced/">Chapter 5: Advanced techniques</a></li><li><a href="/6-afterword/">Chapter 6: To infinity and beyond</a></li></ul></li></ul><ul><li><a href="/credits/">About the material</a></li><li><a href="/coaching/">Technical coach for your team</a></li></ul></nav><main><h1>Chapter 3: The Untestables</h1><p>There are things which make testing more challenging. Many of them are global variables of sorts. Global variables cause spooky action at a distance. Do the same thing over and over again, and get a different result. Tests may randomly pass or fail, depending on the order in which they are run.</p>
+<html lang="en"><head><meta charset="utf-8"><title>Chapter 3: The Untestables - Test-Driven Development MOOC</title><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://cdn.jsdelivr.net/npm/@openfonts/open-sans-condensed_all@1.44.2/index.min.css" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/@fontsource/roboto-slab@5.0.17/index.min.css" rel="stylesheet"><link href="https://cdn.simplecss.org/simple.css" rel="stylesheet"><link href="/styles.css" rel="stylesheet"><script defer src="/custom-elements.mjs" type="module"></script></head><body><nav aria-label="Table of contents" id="site-navigation"><div class="nav-title">TDD MOOC</div><ul><li><a href="/">Course overview</a></li><li><a href="/practicalities/">Practicalities (Spring 2026)</a><ul><li><a href="/enrollment/">Enrollment for study credits</a></li></ul></li><li><span>Course material</span><ul><li><a href="/exercises/">Exercises</a></li><li><a href="/1-tdd/">Chapter 1: What is TDD</a></li><li><a href="/2-design/">Chapter 2: Refactoring and design</a></li><li><a aria-current="page" href="/3-challenges/">Chapter 3: The Untestables</a></li><li><a href="/4-legacy-code/">Chapter 4: Legacy code</a></li><li><a href="/5-advanced/">Chapter 5: Advanced techniques</a></li><li><a href="/6-afterword/">Chapter 6: To infinity and beyond</a></li></ul></li></ul><ul><li><a href="/credits/">About the material</a></li><li><a href="/coaching/">Technical coach for your team</a></li></ul></nav><main><h1>Chapter 3: The Untestables</h1><p>There are things which make testing more challenging. Many of them are global variables of sorts. Global variables cause spooky action at a distance. Do the same thing over and over again, and get a different result. Tests may randomly pass or fail, depending on the order in which they are run.</p>
 <h2><a href="#how-to-make-any-code-testable" id="how-to-make-any-code-testable">How to make any code testable</a></h2>
 <p>In general there are two options, the first one being simpler:</p>
-<ul>
-<li><strong>Pass in the result of the untestable thing as a parameter.</strong></li>
-</ul>
+<p><strong>1.) Pass in the result of the untestable thing as a parameter.</strong></p>
 <div style="columns: 2">
 <div>
 <p>Before</p>
@@ -18,13 +16,12 @@
 <p>After</p>
 <pre><code>fn(something):
   ...
+  something
   ...
 </code></pre>
 </div>
 </div>
-<ul>
-<li><strong>Extract the untestable thing to a method and override it in a subclass.</strong> Or in a language with first-class functions, extract it to a function and pass in the untestable function as a parameter.</li>
-</ul>
+<p><strong>2.) Extract the untestable thing to a method and override* it in a subclass.</strong></p>
 <div style="columns: 2">
 <div>
 <p>Before</p>
@@ -47,6 +44,7 @@ something():
 </div>
 </div>
 <p>Tests can then replace the untestable thing with a value object or a test double.</p>
+<p>* In a functional language without inheritance, you could extract the untestable code to a function and pass in the function as a parameter, or use <a href="https://clojuredocs.org/clojure.core/binding">dynamic binding</a>.</p>
 <h2><a href="#test-doubles" id="test-doubles">Test doubles</a></h2>
 <p>If the SUT (system under test) is not a pure function and it's hard to test together with the real objects, its dependencies can be replaced with <a href="https://martinfowler.com/bliki/TestDouble.html">test doubles</a>. The dependencies can be provided as method or constructor arguments (aka dependency injection).</p>
 <p>There are five main categories of test doubles:</p>
@@ -70,7 +68,7 @@ something():
 <p>When using mock objects, it's important to understand the object-oriented style for which they were created. Otherwise, over-mocking may lead to tight coupling between tests and implementation details. The best description of how mock objects were meant to be used is the book <em>Growing Object-Oriented Software, Guided by Tests</em> (Steve Freeman, Nat Pryce 2009).</p>
 <aside class="recommended-reading"><h5 class="heading">📖 Recommended reading</h5><div class="content">
 <ul>
-<li><a href="https://web.archive.org/web/20230318070013/http://www.mockobjects.com/2009/09/brief-history-of-mock-objects.html">A Brief History of Mock Objects</a></li>
+<li><a href="https://archive.ph/4SfQW">A Brief History of Mock Objects</a></li>
 <li><a href="https://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627">Growing Object-Oriented Software, Guided by Tests</a> - how the inventors of mock objects use them</li>
 </ul>
 </div></aside>
@@ -102,6 +100,11 @@ something():
 <p>You <em>could</em> replace the database with an in-memory fake implementation for tests (e.g. hashmap). It will make the tests faster, but will require maintaining two parallel implementations - the real and the fake persistence layer. It works in simple cases, but gets harder the more database code there is. Even when using <a href="https://blog.thecodewhisperer.com/permalink/getting-started-with-contract-tests">contract tests</a> to make the implementations functionally equivalent, they will be leaky abstractions with non-obvious differences (transactions, foreign key constraints etc.). It's better to decouple business logic from persistence: you won't need to fake dependencies if you have no dependencies.<a href="https://imgflip.com/i/5kxd8x">¹</a></p>
 <p>Some people use an embedded in-memory database in tests and a different database in production, for example HSQLDB vs PostgreSQL. This is a road to madness. Even if SQL is a standard,<a href="https://xkcd.com/927/">²</a> each implementation is different, so you will anyways need to run the tests against both databases. It might avoid having to install a database and the data will be removed after the test process exits, but nowadays <code>docker compose up -d db</code> is easy and even with an in-memory database you will need to handle isolation between test cases. Speed is not an argument either; a PostgreSQL which is already running is faster than a HSQLDB that needs to start every test run, not to speak of runtime performance. Most importantly, you would be limited to a subset of SQL that works on both databases, or you will need to maintain alternative versions of the queries; you would miss out on useful database-specific features such as <a href="https://www.postgresql.org/docs/13/plpgsql-trigger.html">triggers/stored procedures</a> and <a href="https://medium.com/pyankit/postgres-range-types-are-dope-ca18923f3d46">range types</a>. Summa summarum, use the same technology in tests as in production.</p>
 <p>You just saved 5+ years of experimenting.</p>
+<aside class="recommended-reading"><h5 class="heading">📖 Recommended reading</h5><div class="content">
+<ul>
+<li><a href="https://nitor.com/en/articles/taming-backend-complexity-lessons-from-a-decade-of-tdd">Taming backend complexity: lessons from a decade of TDD</a></li>
+</ul>
+</div></aside>
 <h2><a href="#network-sockets" id="network-sockets">Network sockets</a></h2>
 <p>Network socket port numbers are a global variable at the operating system level.</p>
 <p>If using a shared <a href="https://martinfowler.com/articles/continuousIntegration.html">continuous integration</a> server, there can be many builds running on the same machine and they compete for the same port numbers. Even when running tests locally, you will typically have an application instance for manual testing running at the same time as the automated tests. The local development instance may use hard-coded ports, but the tests should allocate a random free port for the database and web server.</p>
@@ -126,18 +129,23 @@ something():
 <h2><a href="#randomness" id="randomness">Randomness</a></h2>
 <p>It's desirable for tests to pass or fail reliably. But what if the code being tested is meant to have randomness? If you can't anymore assert exact values, you will need to approach it like <a href="https://increment.com/testing/in-praise-of-property-based-testing/">property-based testing</a> and assert <em>invariants</em>.</p>
 <p>For example, let's test a function which returns random integers between 1 and 10. You can call it lots of times and check that all values are within the range 1 to 10. You may also check that, with a sufficiently large sample size, each of the integers between 1 and 10 is returned at least once. You may also check that the values are returned in unpredictable order: build a few lists of same length from the return values, and check that the list contents are different. Depending on the domain, there might be other restrictions as well. For example, when dealing cards from a deck of cards, each card appears exactly once.</p>
-<p>But even if you assert that the random values are not predictable, once in a blue moon the values could be returned in seemingly predictable order<a href="https://web.archive.org/web/20230304094645/https://dilbert.com/strip/2001-10-25">¹</a> and your tests would fail. To improve repeatability, you could always use the same seed for the pseudorandom number generator. Or better yet, choose randomly from a couple different hard-coded seeds, so that the tests cannot be coupled to any single predictable random order.</p>
+<p>But even if you assert that the random values are not predictable, once in a blue moon the values could be returned in seemingly predictable order<a href="https://archive.ph/1y5R9">¹</a> and your tests would fail. To improve repeatability, you could always use the same seed for the pseudorandom number generator. Or better yet, choose randomly from a couple different hard-coded seeds, so that the tests cannot be coupled to any single predictable random order.</p>
 <p>(Testing whether something is true randomness is outside the scope of this course. That's in the realm of mathematics and not TDD.)</p>
 <h2><a href="#user-interface" id="user-interface">User interface</a></h2>
-<p>Tests should be sensitive to behavior changes and insensitive to structure changes. This is even more important in the user interface. Changing the visual style or layout of the UI, should not break behavioral tests.</p>
-<p>There are patterns like <a href="https://martinfowler.com/eaaDev/PassiveScreen.html">passive view</a> which try to separate the logic and visuals of the UI, to make the logic more testable. With the advent of <a href="https://reactjs.org/">React</a>, UI components can be written as stateless functions, which makes testing them easier.</p>
+<p>Tests should be sensitive to behavior changes and insensitive to structure changes. This is even more important in the user interface. Changing the visual style or layout of the UI, should not break behavioral tests. The tests should only care about what data the UI shows.</p>
+<p>There are patterns like <a href="https://martinfowler.com/eaaDev/PassiveScreen.html">passive view</a> which try to separate the logic and visuals of the UI, to make the logic more testable. With the advent of <a href="https://react.dev/">React</a>, UI components can be written as stateless functions, which makes testing them easier. But then again, most React code today uses hooks, which make the code stateful and untestable.</p>
 <h3><a href="#unit-testing-web-app-components" id="unit-testing-web-app-components">Unit testing web app components</a></h3>
 <p>Asserting on the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText">innerText</a> of a component (after whitespace normalization) produces tests which are decoupled from visual changes.</p>
 <p>Asserting the presence/absence of a CSS class is useful for testing logic that is observable only visually. Make sure to use the same constant for presence and absence checks; a mispelled <!-- sic --> CSS class is always absent.</p>
+<aside class="recommended-reading"><h5 class="heading">📖 Recommended reading</h5><div class="content">
+<ul>
+<li><a href="https://nitor.com/en/articles/testing-the-untestable-4-practical-techniques-for-unit-testing-web-user">Testing the untestable: 4 practical techniques for unit testing web user interfaces</a></li>
+</ul>
+</div></aside>
 <h3><a href="#end-to-end-testing-web-apps" id="end-to-end-testing-web-apps">End-to-end testing web apps</a></h3>
 <p>Don't click buttons directly in test code. Create an automation layer of high-level operations and call those. The tests should focus on <em>what</em> the system does, and the automation layer on <em>how</em> the system does it. That way when the UI changed, only the automation layer needs to be updated, instead of fixing all tests individually.</p>
 <p>Prefer selecting elements based on the visible text on the button/link/label; it makes the tests easier to read. But don't be afraid to add extra IDs, classes and <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes">data attributes</a> to simplify testing.</p>
-<p>Have only a few end-to-end tests. They are slow and flaky. Prefer unit tests. Set a hard limit for how many end-to-end tests the whole application may have (≤10 for even big apps) and stick to it. End-to-end tests should only check that things are wired together, not behavioral correctness. Overreliance on end-to-end tests can <a href="https://building.nubank.com.br/why-we-killed-our-end-to-end-test-suite/">grind development to a halt</a>.</p>
+<p>Have only a few end-to-end tests. They are slow and flaky. Prefer unit tests. Set a hard limit for how many end-to-end tests the whole application may have (≤10 for even big apps) and stick to it. End-to-end tests should only check that things are wired together, not behavioral correctness. Overreliance on end-to-end tests can <a href="https://building.nubank.com/why-we-killed-our-end-to-end-test-suite/">grind development to a halt</a>.</p>
 <aside class="recommended-reading"><h5 class="heading">📖 Recommended reading</h5><div class="content">
 <ul>
 <li><a href="https://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam">Integrated Tests Are A Scam</a></li>
@@ -145,7 +153,7 @@ something():
 </div></aside>
 <h3><a href="#visual-testing" id="visual-testing">Visual testing</a></h3>
 <p>It's hard to write an assertion that something looks good. But for a human it's easy to check it visually, and the computer can compare whether the pixels have changed since the last approval.</p>
-<p>There are tools like <a href="https://storybook.js.org/">Storybook</a> for rendering UI components in various states, and it's possible to <a href="https://storybook.js.org/docs/react/workflows/visual-testing">take a screenshot</a> of the result and check whether it has changed.</p>
+<p>There are tools like <a href="https://storybook.js.org/">Storybook</a> for rendering UI components in various states, and it's possible to <a href="https://storybook.js.org/docs/writing-tests/visual-testing">take a screenshot</a> of the result and check whether it has changed.</p>
 <p>Optimize the diff for humans. Even video and audio can be diffed as an image.</p>
 <aside class="recommended-reading"><h5 class="heading">📖 Recommended reading</h5><div class="content">
 <ul>
