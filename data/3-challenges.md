@@ -232,7 +232,7 @@ But even if you assert that the random values are not predictable, once in a blu
 
 Tests should be sensitive to behavior changes and insensitive to structure changes. This is even more important in the user interface. Changing the visual style or layout of the UI, should not break behavioral tests. The tests should only care about what data the UI shows.
 
-There are patterns like [passive view](https://martinfowler.com/eaaDev/PassiveScreen.html) which try to separate the logic and visuals of the UI, to make the logic more testable. With the advent of [React](https://reactjs.org/), UI components can be written as stateless functions, which makes testing them easier. But then again, most React code today uses hooks, which make the code stateful and untestable.
+There are patterns like [passive view](https://martinfowler.com/eaaDev/PassiveScreen.html) which try to separate the logic and visuals of the UI, to make the logic more testable. With the advent of [React](https://react.dev/), UI components can be written as stateless functions, which makes testing them easier. But then again, most React code today uses hooks, which make the code stateful and untestable.
 
 
 ### Unit testing web app components
@@ -254,7 +254,7 @@ Don't click buttons directly in test code. Create an automation layer of high-le
 
 Prefer selecting elements based on the visible text on the button/link/label; it makes the tests easier to read. But don't be afraid to add extra IDs, classes and [data attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) to simplify testing.
 
-Have only a few end-to-end tests. They are slow and flaky. Prefer unit tests. Set a hard limit for how many end-to-end tests the whole application may have (≤10 for even big apps) and stick to it. End-to-end tests should only check that things are wired together, not behavioral correctness. Overreliance on end-to-end tests can [grind development to a halt](https://building.nubank.com.br/why-we-killed-our-end-to-end-test-suite/).
+Have only a few end-to-end tests. They are slow and flaky. Prefer unit tests. Set a hard limit for how many end-to-end tests the whole application may have (≤10 for even big apps) and stick to it. End-to-end tests should only check that things are wired together, not behavioral correctness. Overreliance on end-to-end tests can [grind development to a halt](https://building.nubank.com/why-we-killed-our-end-to-end-test-suite/).
 
 <recommended-reading>
 
@@ -267,7 +267,7 @@ Have only a few end-to-end tests. They are slow and flaky. Prefer unit tests. Se
 
 It's hard to write an assertion that something looks good. But for a human it's easy to check it visually, and the computer can compare whether the pixels have changed since the last approval.
 
-There are tools like [Storybook](https://storybook.js.org/) for rendering UI components in various states, and it's possible to [take a screenshot](https://storybook.js.org/docs/react/workflows/visual-testing) of the result and check whether it has changed.
+There are tools like [Storybook](https://storybook.js.org/) for rendering UI components in various states, and it's possible to [take a screenshot](https://storybook.js.org/docs/writing-tests/visual-testing) of the result and check whether it has changed.
 
 Optimize the diff for humans. Even video and audio can be diffed as an image.
 
