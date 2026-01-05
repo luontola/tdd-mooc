@@ -1,5 +1,7 @@
 .DS_Store
+/.clj-kondo/
 /.idea/
 /.lein-*
+/.lsp/
 /.nrepl-port
 /target/
