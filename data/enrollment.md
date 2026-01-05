@@ -24,12 +24,12 @@ To complete the course and receive ECTS credits, follow these steps:
 
 - **[4 credits version]** Enroll on this course through Open University:
     - [Test-Driven Development (TKT21040), 4 cr](https://studies.helsinki.fi/courses/course-unit/otm-fc27aa54-1060-41eb-8d3e-39ce8793cb61/TKT21040)
-      - [Registration link](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-7e2ab5b9-72d1-4e05-9159-a1d447389d67)
+      - [Base course registration link](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-cf43a252-a86e-4bf2-806b-c1ea5b4b346b)
 - **[5 credits version]** Enroll on both of these courses through Open University:
     - [Test-Driven Development (TKT21040), 4 cr](https://studies.helsinki.fi/courses/course-unit/otm-fc27aa54-1060-41eb-8d3e-39ce8793cb61/TKT21040)
-      - [Registration link](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-7e2ab5b9-72d1-4e05-9159-a1d447389d67)
+      - [Base course registration link](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-cf43a252-a86e-4bf2-806b-c1ea5b4b346b)
     - [Test-Driven Development: Full Stack (TKT21041), 1 cr](https://studies.helsinki.fi/courses/course-unit/otm-790e3594-b2c8-402b-b928-6f4dd7d4e245/TKT21041)
-      - [Registration link](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-fb7d04c2-736c-4da2-8139-94cc537097a0)
+      - [Full stack registration link](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-f9096225-93c7-4e44-afaa-e6994bd66e94)
 - Enrollment for the course through Open University is possible [until the end of the course](/practicalities#course-duration).
 - Credits for the course are only available to those students who have successfully enrolled on the course through Open University and have completed the course according to the instructions.
 
