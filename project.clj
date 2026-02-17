@@ -23,7 +23,7 @@
              "-Djdk.attach.allowAttachSelf"]
 
   :ring {:handler tdd-mooc.web/app
-         :auto-refresh? true
+         #_#_:auto-refresh? true ; TODO: disabled to avoid thread starvation: https://github.com/weavejester/lein-ring/issues/226
          :refresh-paths ["src" "resources" "data"]}
   :aliases {"export" ["run" "-m" "tdd-mooc.web/export"]
             "kaocha" ["with-profile" "+kaocha" "run" "-m" "kaocha.runner"]}
