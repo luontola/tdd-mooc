@@ -58,7 +58,11 @@ something():
 <p>Only mock types you own.</p>
 <aside class="recommended-reading"><h5 class="heading">📖 Recommended reading</h5><div class="content">
 <ul>
-<li><a href="https://archive.ph/2yx7C">Test Doubles: Dummy, Stub, Spy, Mock &amp; Fake</a></li>
+<li><a href="http://xunitpatterns.com/Mocks,%20Fakes,%20Stubs%20and%20Dummies.html">Mocks, Fakes, Stubs and Dummies at XUnitPatterns.com</a></li>
+</ul>
+<!-- - [Test Doubles: Dummy, Stub, Spy, Mock & Fake](https://archive.ph/2yx7C) https://jesusvalerareales.medium.com/testing-with-test-doubles-7c3abb9eb3f2 -->
+<ul>
+<li><a href="https://jmock.org/oopsla2004.pdf">Mock Roles, not Objects</a> (PDF) - the original paper about mock objects</li>
 <li><a href="https://medium.com/@xpmatteo/how-i-learned-to-love-mocks-1-fb341b71328">How I learned to love mocks</a></li>
 </ul>
 </div></aside>
@@ -68,7 +72,7 @@ something():
 <p>When using mock objects, it's important to understand the object-oriented style for which they were created. Otherwise, over-mocking may lead to tight coupling between tests and implementation details. The best description of how mock objects were meant to be used is the book <em>Growing Object-Oriented Software, Guided by Tests</em> (Steve Freeman, Nat Pryce 2009).</p>
 <aside class="recommended-reading"><h5 class="heading">📖 Recommended reading</h5><div class="content">
 <ul>
-<li><a href="https://archive.ph/4SfQW">A Brief History of Mock Objects</a></li>
+<li><a href="https://web.archive.org/web/20230318070013/http://www.mockobjects.com/2009/09/brief-history-of-mock-objects.html">A Brief History of Mock Objects</a></li>
 <li><a href="https://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627">Growing Object-Oriented Software, Guided by Tests</a> - how the inventors of mock objects use them</li>
 </ul>
 </div></aside>
@@ -129,7 +133,7 @@ something():
 <h2><a href="#randomness" id="randomness">Randomness</a></h2>
 <p>It's desirable for tests to pass or fail reliably. But what if the code being tested is meant to have randomness? If you can't anymore assert exact values, you will need to approach it like <a href="https://increment.com/testing/in-praise-of-property-based-testing/">property-based testing</a> and assert <em>invariants</em>.</p>
 <p>For example, let's test a function which returns random integers between 1 and 10. You can call it lots of times and check that all values are within the range 1 to 10. You may also check that, with a sufficiently large sample size, each of the integers between 1 and 10 is returned at least once. You may also check that the values are returned in unpredictable order: build a few lists of same length from the return values, and check that the list contents are different. Depending on the domain, there might be other restrictions as well. For example, when dealing cards from a deck of cards, each card appears exactly once.</p>
-<p>But even if you assert that the random values are not predictable, once in a blue moon the values could be returned in seemingly predictable order<a href="https://archive.ph/1y5R9">¹</a> and your tests would fail. To improve repeatability, you could always use the same seed for the pseudorandom number generator. Or better yet, choose randomly from a couple different hard-coded seeds, so that the tests cannot be coupled to any single predictable random order.</p>
+<p>But even if you assert that the random values are not predictable, once in a blue moon the values could be returned in seemingly predictable order<a href="https://web.archive.org/web/20230304094645/https://dilbert.com/strip/2001-10-25">¹</a> and your tests would fail. To improve repeatability, you could always use the same seed for the pseudorandom number generator. Or better yet, choose randomly from a couple different hard-coded seeds, so that the tests cannot be coupled to any single predictable random order.</p>
 <p>(Testing whether something is true randomness is outside the scope of this course. That's in the realm of mathematics and not TDD.)</p>
 <h2><a href="#user-interface" id="user-interface">User interface</a></h2>
 <p>Tests should be sensitive to behavior changes and insensitive to structure changes. This is even more important in the user interface. Changing the visual style or layout of the UI, should not break behavioral tests. The tests should only care about what data the UI shows.</p>
