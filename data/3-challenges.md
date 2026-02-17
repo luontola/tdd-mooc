@@ -109,6 +109,7 @@ When using mock objects, it's important to understand the object-oriented style 
 <recommended-reading>
 
 - [A Brief History of Mock Objects](https://web.archive.org/web/20230318070013/http://www.mockobjects.com/2009/09/brief-history-of-mock-objects.html)
+- [Mock Roles, not Objects](https://jmock.org/oopsla2004.pdf) (PDF) - the original paper about mock objects
 - [Growing Object-Oriented Software, Guided by Tests](https://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627) - how the inventors of mock objects use them
 
 </recommended-reading>
