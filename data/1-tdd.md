@@ -181,7 +181,7 @@ TDD's tests can be thought of as a specification of the system's behavior, or as
 
 <figure>
 <img class="p-image--bordered" src="images/tdd-vs-testing.jpg" alt="Photos of scaffolding around a building and a wrecking ball destroying a brick wall.">
-<figcaption>Photo credits: <a href="https://unsplash.com/photos/jAj0pjdzvic">Niklas Hamann</a>, <a href="https://www.flickr.com/photos/rhysasplundh/5202454842">Rhys Asplundh</a></figcaption>
+<figcaption>Photo credits: <a href="https://unsplash.com/photos/worm-view-photo-of-scaffolding-jAj0pjdzvic">Niklas Hamann</a>, <a href="https://www.flickr.com/photos/rhysasplundh/5202454842">Rhys Asplundh</a></figcaption>
 </figure>
 
 

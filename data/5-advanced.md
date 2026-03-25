@@ -21,7 +21,7 @@ Then when the end-to-end test passes through the whole architecture, you can sta
 
 <recommended-reading>
 
-- [Start Your Project With a Walking Skeleton](https://www.henricodolfing.com/2018/04/start-your-project-with-walking-skeleton.html)
+- [Start Your Project With a Walking Skeleton](https://www.henricodolfing.ch/start-your-project-with-a-walking-skeleton/)
 
 </recommended-reading>
 
